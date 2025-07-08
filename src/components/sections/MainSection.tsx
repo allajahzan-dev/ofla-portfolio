@@ -8,6 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import HeroSection from "./HeroSection";
 import InsightsSection from "./InsightsSection";
+import ContactIndicator from "../animated/ContactIndicator";
 
 const sections = ["hero-section", "insights-section"];
 
@@ -42,6 +43,7 @@ function MainSection() {
     return (
         <div id="smooth-wrapper" className="w-full h-full">
             {/* <ScrollIndicator sections={sections} /> */}
+            <ContactIndicator />
 
             {/* Content */}
             <div id="smooth-content" className="min-h-screen">
