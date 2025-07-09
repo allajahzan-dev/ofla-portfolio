@@ -22,7 +22,7 @@ export default function Navbar() {
 
                 <div className="flex items-start gap-12 tracking-widest">
                     <NavbarItems text="(+91) 123456789" color="text-white" />
-                    <Mail className="w-5 h-5" />
+                    {/* <Mail className="w-5 h-5" /> */}
                 </div>
             </div>
         </div>

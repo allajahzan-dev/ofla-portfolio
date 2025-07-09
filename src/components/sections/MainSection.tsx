@@ -7,10 +7,10 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import HeroSection from "./HeroSection";
-import InsightsSection from "./InsightsSection";
+import InsightsSection from "./AboutSection";
 import ContactIndicator from "../animated/ContactIndicator";
 
-const sections = ["hero-section", "insights-section"];
+const sections = ["hero-section", "about-section"];
 
 // Main Section
 function MainSection() {

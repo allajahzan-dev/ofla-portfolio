@@ -32,13 +32,13 @@ export default function HeroSection() {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-6xl font-extrabold tracking-wide">
+                    <h1 className="text-6xl font-semibold tracking-wide">
                         Where comfort meets productivity, every seat tells
                         <span className="italic font-serif"> a success</span> story.
                     </h1>
 
                     {/* Sub title */}
-                    <p className="text-xl font-medium w-[80%]">
+                    <p className="text-xl font-normal w-[80%]">
                         Experience the perfect fusion of innovative design, premium
                         craftsmanship, and all day comfort.
                     </p>
