@@ -1,7 +1,7 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { Star, TrendingUp } from "lucide-react";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 
 // About Section
 export default function AboutSection() {
@@ -10,20 +10,22 @@ export default function AboutSection() {
         return ["/user1.png", "/user2.png", "/user3.png", "/user4.png", ""];
     }, []);
 
+    useEffect(() => { }, []);
+
     return (
         <section
             id="about-section"
-            className="min-h-screen relative bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] p-10 py-14 will-change-transform"
+            className="min-h-screen relative z-20 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] p-10 pb-40 will-change-transform"
         >
             {/* Holder */}
             <div className="absolute top-5 left-[50%] -translate-x-1/2 w-40 h-3 bg-zinc-200 rounded-full" />
 
             {/* Title */}
-            {/* <div className="w-full flex gap-5">
+            <div className="w-full flex gap-5">
                 <p className="text-2xl font-medium text-nowrap tracking-wider">
-                   About Us
+                    About Us
                 </p>
-            </div> */}
+            </div>
 
             {/* Small Details */}
             <div className="w-full grid grid-cols-3 gap-5 text-start items-start">

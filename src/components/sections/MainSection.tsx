@@ -1,32 +1,18 @@
 "use client";
 
 import { useEffect } from "react";
-import ScrollIndicator from "@/components/animated/ScrollIndicator";
 import Navbar from "@/components/common/navbar/Navbar";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import ScrollSmoother from "gsap/ScrollSmoother";
 import HeroSection from "./HeroSection";
-import InsightsSection from "./AboutSection";
+import AboutSection from "./AboutSection";
 import ContactIndicator from "../animated/ContactIndicator";
-
-const sections = ["hero-section", "about-section"];
+import ProductsSection from "./ProductsSection";
+import { setupSmoother } from "@/lib/gsap/SetupSmoother";
 
 // Main Section
 function MainSection() {
-    // GSAP Animations
+    // Scroll smoother Animations
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-        // Smooth scroll
-        const smoother = ScrollSmoother.create({
-            wrapper: "#smooth-wrapper",
-            content: "#smooth-content",
-            smooth: 1.5,
-            smoothTouch: 0.1,
-            effects: true,
-        });
-
+        setupSmoother();
         // // Pin hero section after little scroll
         // ScrollTrigger.create({
         //     trigger: "#hero-section",
@@ -42,14 +28,14 @@ function MainSection() {
 
     return (
         <div id="smooth-wrapper" className="w-full h-full">
-            {/* <ScrollIndicator sections={sections} /> */}
             <ContactIndicator />
 
-            {/* Content */}
+            {/* Sections */}
             <div id="smooth-content" className="min-h-screen">
                 <Navbar />
                 <HeroSection />
-                <InsightsSection />
+                <AboutSection />
+                <ProductsSection />
             </div>
         </div>
     );
