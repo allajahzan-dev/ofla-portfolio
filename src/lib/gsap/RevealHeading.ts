@@ -6,14 +6,14 @@ export const revealHeading = (divRef: any) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(divRef.current, {
-    y: -360,
+    y: -385,
   });
 
   gsap.to(divRef.current, {
     y: 0,
     scrollTrigger: {
       trigger: divRef.current,
-      start: "top 58%",
+      start: "top 70%",
       end: "top top",
       scrub: true,
     },
@@ -28,21 +28,20 @@ export const revealHeading = (divRef: any) => {
       scale: 1,
       scrollTrigger: {
         trigger: divRef.current,
-        start: "top 58%",
-        end: "top -25%",
+        start: "top 70%",
+        end: "top -20%",
         scrub: true,
-        markers: true,
         onEnter: () => {
-          setupSmoother()?.smooth(5);
+          setupSmoother()?.smooth(4);
         },
         onLeave: () => {
-          setupSmoother()?.smooth(1.5);
+          setupSmoother()?.smooth(2);
         },
         onEnterBack: () => {
-          setupSmoother()?.smooth(5);
+          setupSmoother()?.smooth(4);
         },
         onLeaveBack: () => {
-          setupSmoother()?.smooth(1.5);
+          setupSmoother()?.smooth(2);
         },
       },
     }

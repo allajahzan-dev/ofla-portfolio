@@ -17,13 +17,13 @@ export default function HeroSection() {
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 via-black/10 to-black/30" />
 
             {/* Cuttout */}
-            <img className="absolute bottom-[51px] -right-[84px] w-[calc(100%-280px)]" src="/bg-bg.png" alt="" />
+            <img className="absolute bottom-[51px] -right-[84px] w-[calc(100%-280px)]" src="/bg-bg.png" alt="table-cuttout" />
 
             {/* Hero content */}
             <div className="h-[calc(100vh-70px)] relative -top-5 z-10 grid grid-cols-2">
                 {/* Left side */}
                 <div className="flex flex-col gap-8 items-start justify-center">
-                    {/* Line */}
+                    {/* company name */}
                     <div className="w-full flex items-center gap-5">
                         <div className="bg-white w-24 h-0.5 rounded-full" />
                         <p className="text-base font-medium text-nowrap tracking-wider">
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-6xl font-semibold tracking-wide">
+                    <h1 className="text-6xl font-semibold">
                         Where comfort meets productivity, every seat tells
                         <span className="italic font-serif"> a success</span> story.
                     </h1>

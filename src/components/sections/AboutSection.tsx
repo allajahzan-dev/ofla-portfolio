@@ -15,13 +15,13 @@ export default function AboutSection() {
     return (
         <section
             id="about-section"
-            className="min-h-screen relative z-20 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] p-10 pb-40 will-change-transform"
+            className="min-h-screen relative z-20 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] px-10 py-40 will-change-transform"
         >
             {/* Holder */}
             <div className="absolute top-5 left-[50%] -translate-x-1/2 w-40 h-3 bg-zinc-200 rounded-full" />
 
             {/* Title */}
-            <div className="w-full flex gap-5">
+            <div className="w-full flex gap-5 absolute left-10 top-10">
                 <p className="text-2xl font-semibold text-nowrap tracking-wider">
                     About us
                 </p>
@@ -121,10 +121,10 @@ export default function AboutSection() {
                         <br />
                         that drive productivity.
                     </h1>
-                    <p className="text-lg font-medium text-zinc-600">
-                        We deliver exceptional office furniture - ergonomic chairs, desks,
-                        tables, storage, and workstations, that enhance workplace
-                        performance and clients satisfaction.
+                    <p className="text-lg font-medium text-zinc-600 tracking-tight">
+                        We deliver exceptional office furniture,<br/>ergonomic chairs, desks,
+                        tables, storage, and workstations, that enhance workplace.
+                        {/* performance and clients satisfaction. */}
                     </p>
                     <img
                         src="/double-quote.svg"
@@ -145,7 +145,7 @@ export default function AboutSection() {
                         <h1 className={cn("font-semibold text-8xl", oswald.className)}>
                             200+
                         </h1>
-                        <p className="text-lg font-medium text-zinc-600">
+                        <p className="text-lg font-medium text-zinc-600 tracking-tight">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.
                         </p>
