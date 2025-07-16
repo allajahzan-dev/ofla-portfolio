@@ -22,8 +22,8 @@ export default function AboutSection() {
 
             {/* Title */}
             <div className="w-full flex gap-5">
-                <p className="text-2xl font-medium text-nowrap tracking-wider">
-                    About Us
+                <p className="text-2xl font-semibold text-nowrap tracking-wider">
+                    About us
                 </p>
             </div>
 
@@ -129,7 +129,7 @@ export default function AboutSection() {
                     <img
                         src="/double-quote.svg"
                         alt="Doublt Quote"
-                        className="w-80 absolute -bottom-16 -right-20"
+                        className="w-80 absolute -bottom-16 -right-16"
                     />
                 </div>
 

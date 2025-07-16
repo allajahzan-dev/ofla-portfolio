@@ -6,7 +6,7 @@ export const revealHeading = (divRef: any) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(divRef.current, {
-    y: -350,
+    y: -360,
   });
 
   gsap.to(divRef.current, {
@@ -29,8 +29,9 @@ export const revealHeading = (divRef: any) => {
       scrollTrigger: {
         trigger: divRef.current,
         start: "top 58%",
-        end: "top top",
+        end: "top -25%",
         scrub: true,
+        markers: true,
         onEnter: () => {
           setupSmoother()?.smooth(5);
         },
