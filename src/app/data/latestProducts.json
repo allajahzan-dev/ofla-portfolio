@@ -20,6 +20,13 @@
             "title" : "Everlyn Cabinet",
             "description1" : "A sleek wooden sideboard crafted for modern living",
             "description2" : "warm wood finish."
+        },
+         {
+            "id" : 4,
+            "img" : "/images/home/product/lounge.jpg",
+            "title" : "Emerald Lounge",
+            "description1" : "An exquisite blend of comfort and luxury",
+            "description2" : "deep green elegance."
         }
     ]
 }

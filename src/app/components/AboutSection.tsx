@@ -13,8 +13,7 @@ export default function AboutSection() {
 
     return (
         <section
-            id="about-section"
-            className="min-h-screen relative z-20 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] px-10 py-40 will-change-transform"
+            className="min-h-screen relative z-40 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] px-10 py-40 will-change-transform"
         >
             {/* Holder */}
             <div className="absolute top-5 left-[50%] -translate-x-1/2 w-40 h-3 bg-zinc-200 rounded-full" />

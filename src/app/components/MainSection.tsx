@@ -2,6 +2,7 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
 import { Fragment } from "react";
+import ServicesSection from "./ServicesSection";
 
 // Main Section
 function MainSection() {
@@ -25,6 +26,7 @@ function MainSection() {
             <HeroSection />
             <AboutSection />
             <ProductsSection />
+            <ServicesSection/>
         </Fragment>
     );
 }

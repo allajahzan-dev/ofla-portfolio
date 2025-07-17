@@ -42,8 +42,7 @@ export default async function ProductsSection() {
 
     return (
         <section
-            id="about-section"
-            className="min-h-screen relative -top-1 bg-white flex flex-col gap-20 items-center px-10 py-40 pb-0 will-change-transform"
+            className="min-h-screen relative z-30 bg-white flex flex-col gap-20 items-center px-10 py-40 pb-0 will-change-transform"
         >
             {/* Title */}
             <HeadingAnimated
@@ -62,6 +61,7 @@ export default async function ProductsSection() {
                         productivity and comfort.
                     </p>
                 }
+                className="flex flex-col gap-5 items-center"
             />
 
             {/* Products */}

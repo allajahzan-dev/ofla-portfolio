@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function HeroSection() {
     return (
         <section
-            id="hero-section"
             data-speed="0.1"
             style={{
                 backgroundImage: "url(/images/home/hero/bg-bg-new.jpg)",
@@ -18,13 +17,13 @@ export default function HeroSection() {
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 via-black/10 to-black/30" />
 
             {/* Cuttout */}
-            <Image
+            {/* <Image
                 src="/images/home/hero/bg-bg.png"
                 alt="table-cuttout"
                 width={1000}
                 height={1000}
                 className="absolute bottom-[51px] -right-[84px] w-[calc(100%-280px)]"
-            />
+            /> */}
 
             {/* Hero content */}
             <div className="h-[calc(100vh-70px)] relative -top-5 z-10 grid grid-cols-2">
