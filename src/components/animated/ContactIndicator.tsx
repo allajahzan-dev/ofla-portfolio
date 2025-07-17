@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Mail, ChevronUp, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ContactIndicator() {
     const [isHovered, setIsHovered] = useState(false);
@@ -21,12 +22,14 @@ export default function ContactIndicator() {
                         isHovered && "opacity-100 translate-y-0"
                     )}
                 >
-                    <img
-                        src="/whatsapp.svg"
+                    <Image
+                        src="/svgs/home/whatsapp.svg"
                         alt="WhatsApp"
+                        width={100}
+                        height={100}
                         className="w-8 cursor-pointer"
                     />
-                    <img src="/gmail.svg" alt="Gmail" className="w-8 cursor-pointer" />
+                    <Image src="/svgs/home/gmail.svg" alt="Gmail" width={100} height={100} className="w-8 cursor-pointer" />
                 </div>
 
                 {/* Main button */}
@@ -41,7 +44,7 @@ export default function ContactIndicator() {
                                 initial={{ opacity: 0, rotate: -60 }}
                                 animate={{ opacity: 1, rotate: 0 }}
                                 exit={{ opacity: 0, rotate: -60 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.2 }}
                             >
                                 <ChevronUp className="w-6 h-6" />
                             </motion.div>
@@ -51,9 +54,9 @@ export default function ContactIndicator() {
                                 initial={{ opacity: 0, rotate: 60 }}
                                 animate={{ opacity: 1, rotate: 0 }}
                                 exit={{ opacity: 0, rotate: 60 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.2 }}
                             >
-                                <Send className="w-6 h-6" />
+                                <Mail className="w-6 h-6" />
                             </motion.div>
                         )}
                     </AnimatePresence>

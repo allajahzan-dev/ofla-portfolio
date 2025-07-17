@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { setupSmoother } from "./SetupSmoother";
+import { smoothScroller } from "./SmoothScroller";
 
 export const revealHeading = (divRef: any) => {
   gsap.registerPlugin(ScrollTrigger);
@@ -32,16 +32,16 @@ export const revealHeading = (divRef: any) => {
         end: "top -20%",
         scrub: true,
         onEnter: () => {
-          setupSmoother()?.smooth(4);
+          smoothScroller()?.smooth(4);
         },
         onLeave: () => {
-          setupSmoother()?.smooth(2);
+          smoothScroller()?.smooth(2);
         },
         onEnterBack: () => {
-          setupSmoother()?.smooth(4);
+          smoothScroller()?.smooth(4);
         },
         onLeaveBack: () => {
-          setupSmoother()?.smooth(2);
+          smoothScroller()?.smooth(2);
         },
       },
     }

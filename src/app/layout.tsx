@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import MousePointer from "@/components/animated/MousePointer";
 import { urbanist } from "@/fonts/urbanist";
+import ScrollSmoother from "@/components/animated/ScrollSmoother";
+import ContactIndicator from "@/components/animated/ContactIndicator";
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Nujoomu Sulthan",
@@ -14,12 +17,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en" className={`${urbanist.className}`}>
-      <body className="h-screen w-full bg-zinc-200 text-[#171717]">
-        {children}
-        {/* <MousePointer /> */}
+      <body className="h-screen w-full bg-white text-[#171717]">
+        <div id="smooth-wrapper" className="w-full h-full">
+          <ContactIndicator />
+
+          {/* Sections */}
+          <div id="smooth-content" className="min-h-screen">
+            <Navbar />
+            {children}
+          </div>
+
+          <ScrollSmoother />
+        </div>
       </body>
     </html>
   );

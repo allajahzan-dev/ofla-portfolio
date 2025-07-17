@@ -1,0 +1,25 @@
+{
+    "latestProducts" : [
+        {
+            "id" : 1,
+            "img" : "/images/home/product/chair.jpg",
+            "title" : "Areo seat",
+            "description1" : "A sleek, modern swivel chair with a curved",
+            "description2" : "faux-leather finish."
+        },
+        {
+            "id" : 2,
+            "img" : "/images/home/product/table.jpg",
+            "title" : "Flow desk",
+            "description1" : "A premium workspace desk with soft curved",
+            "description2" : "seamless matte finish."
+        },
+        {
+            "id" : 3,
+            "img" : "/images/home/product/storage.jpg",
+            "title" : "Everlyn Cabinet",
+            "description1" : "A sleek wooden sideboard crafted for modern living",
+            "description2" : "warm wood finish."
+        }
+    ]
+}
