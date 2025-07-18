@@ -2,8 +2,8 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { smoothScroller } from "./SmoothScroller";
 
-// Reveal heading
-export const revealHeading = (divRef: any) => {
+// Reveal service heading
+export const revealServiceHeading = (divRef: any) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(divRef.current, {
@@ -15,7 +15,7 @@ export const revealHeading = (divRef: any) => {
     scrollTrigger: {
       trigger: divRef.current,
       start: "top 70%",
-      end: "top top",
+      end: "top 9%",
       scrub: true,
     },
   });
@@ -30,9 +30,9 @@ export const revealHeading = (divRef: any) => {
       scrollTrigger: {
         trigger: divRef.current,
         start: "top 70%",
-        end: "top -20%",
+        end: "top 9%",
         scrub: true,
-        // markers: true,
+        markers: true,
         onEnter: () => {
           smoothScroller()?.smooth(4);
         },

@@ -1,0 +1,40 @@
+{
+    "services" : [
+        {
+            "id": 1,
+            "title" : "Design & Planning",
+            "points" : [
+                "Office space planning and layout design",
+                "Ergonomic workspace consultation",
+                "Custom furniture design solutions"
+            ]
+        },
+        {
+            "id": 2,
+            "title" : "Installation setup",
+            "points" : [
+                "Professional furniture assembly and installation",
+                "Office relocation and setup services",
+                "Furniture reconfiguration and rearrangement"
+            ]
+        },
+        {
+            "id": 3,
+            "title" : "Maintenance support",
+            "points" : [
+                "Furniture repair and maintenance services",
+                "Warranty and after-sales support",
+                "Furniture refurbishment and restoration"
+            ]
+        },
+        {
+            "id": 4,
+            "title" : "Consultation",
+            "points" : [
+                "Ergonomic assessments and recommendations",
+                "Workplace wellness consulting",
+                "Budget planning and cost optimization"
+            ]
+        }
+    ]
+}

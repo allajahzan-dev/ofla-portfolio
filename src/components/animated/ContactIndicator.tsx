@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, ChevronUp, Send } from "lucide-react";
+import { Mail, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";

@@ -1,5 +1,4 @@
 import { Mouse } from "lucide-react";
-import Image from "next/image";
 
 // Hero Section
 export default function HeroSection() {

@@ -1,9 +1,9 @@
-import { ArrowRight, ArrowUpRight, Plus } from "lucide-react";
-import HeadingAnimated from "../../components/animated/HeadingAnimated";
-
+import { ArrowRight, ArrowUpRight, } from "lucide-react";
+import HeadingAnimated from "@/components/animated/HeadingAnimated";
 import path from "path";
 import { promises as fs } from "fs";
 import Image from "next/image";
+import BulletPoint from "@/components/ui/pointer";
 
 // Fetch latest products
 const fetchLatestProdcuts = async (): Promise<{
@@ -28,7 +28,7 @@ const fetchLatestProdcuts = async (): Promise<{
 
 // Interface for LatestProduct
 interface ILatestProduct {
-    id: string;
+    id: number;
     img: string;
     title: string;
     description1: string;
@@ -69,7 +69,7 @@ export default async function ProductsSection() {
                 {latestProducts.map((item) => (
                     <div
                         key={item.id}
-                        className="group flex flex-col w-full p-2 rounded-3xl 
+                        className="group flex flex-col w-full p-2 rounded-4xl 
                 cursor-pointer hover:bg-zinc-100 transition-colors duration-300"
                     >
                         <Image
@@ -78,7 +78,7 @@ export default async function ProductsSection() {
                             width={1000}
                             height={1000}
                             quality={100}
-                            className="h-[700px] w-full object-cover object-bottom rounded-2xl"
+                            className="h-[700px] w-full object-cover object-bottom rounded-3xl"
                         />
                         <div className="w-full flex gap-2 p-5">
                             <div className="flex flex-col gap-2 flex-1">
@@ -100,8 +100,8 @@ export default async function ProductsSection() {
                 ))}
 
                 {/* More */}
-                <div className="w-full flex items-center gap-10 pt-16 pb-10 col-span-2">
-                    <Plus className="w-5 h-5 rotate-90 text-zinc-400" />
+                <div className="w-full flex items-center gap-10 pt-12 pb-10 col-span-2">
+                    <BulletPoint/>
                     <div className="bg-zinc-200 w-24 h-0.5 rounded-full flex-1" />
                     <div className=" group flex items-center gap-2 cursor-pointer">
                         <ArrowUpRight className="w-7 h-7 text-orange-600" />

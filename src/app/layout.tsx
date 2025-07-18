@@ -30,6 +30,8 @@ export default function RootLayout({
           </div>
 
           <ScrollSmoother />
+
+          <MousePointer/>
         </div>
       </body>
     </html>
