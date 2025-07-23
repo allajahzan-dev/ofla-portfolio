@@ -32,7 +32,7 @@ export const revealServiceHeading = (divRef: any) => {
         start: "top 70%",
         end: "top 9%",
         scrub: true,
-        markers: true,
+        // markers: true,
         onEnter: () => {
           smoothScroller()?.smooth(4);
         },

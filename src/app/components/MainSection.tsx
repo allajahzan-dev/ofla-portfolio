@@ -3,6 +3,10 @@ import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
 import { Fragment } from "react";
 import ServicesSection from "./ServicesSection";
+import FaqSection from "./FaqSection";
+import ContactSection from "./ContactSection";
+import ReviewSection from "./ReviewSection";
+import ProcessSection from "./ProcessSection";
 
 // Main Section
 function MainSection() {
@@ -24,9 +28,15 @@ function MainSection() {
     return (
         <Fragment>
             <HeroSection />
-            <AboutSection />
-            <ProductsSection />
-            <ServicesSection/>
+            <div className="relative z-50 bg-[#292929] rounded-t-[50px]">
+                <AboutSection />
+                <ProductsSection />
+                <ServicesSection />
+                {/* <ReviewSection /> */}
+                <FaqSection />
+                <ProcessSection/>
+                <ContactSection />
+            </div>
         </Fragment>
     );
 }

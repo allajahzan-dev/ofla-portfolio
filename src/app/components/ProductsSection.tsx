@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import HeadingAnimated from "@/components/animated/HeadingAnimated";
 import path from "path";
 import { promises as fs } from "fs";
@@ -41,9 +41,8 @@ export default async function ProductsSection() {
     const { latestProducts } = await fetchLatestProdcuts();
 
     return (
-        <section
-            className="min-h-screen relative z-30 bg-white flex flex-col gap-20 items-center px-10 py-40 pb-0 will-change-transform"
-        >
+        <section className="min-h-screen relative z-30 bg-white flex flex-col gap-20 items-center 
+        px-10 py-40 pb-0 rounded-[50px] -mt-0.5 will-change-transform overflow-hidden">
             {/* Title */}
             <HeadingAnimated
                 title={
@@ -72,14 +71,16 @@ export default async function ProductsSection() {
                         className="group flex flex-col w-full p-2 rounded-4xl 
                 cursor-pointer hover:bg-zinc-100 transition-colors duration-300"
                     >
-                        <Image
-                            src={item.img}
-                            alt={item.img.slice(1).split(".")[0]}
-                            width={1000}
-                            height={1000}
-                            quality={100}
-                            className="h-[700px] w-full object-cover object-bottom rounded-3xl"
-                        />
+                        <div className="w-full h-[700px] rounded-3xl overflow-hidden">
+                            <Image
+                                src={item.img}
+                                alt={item.img.slice(1).split(".")[0]}
+                                width={200}
+                                height={200}
+                                quality={100}
+                                className="h-full w-full object-cover object-bottom scale-105"
+                            />
+                        </div>
                         <div className="w-full flex gap-2 p-5">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1 className="text-4xl font-semibold">{item.title}</h1>
@@ -101,7 +102,7 @@ export default async function ProductsSection() {
 
                 {/* More */}
                 <div className="w-full flex items-center gap-10 pt-12 pb-10 col-span-2">
-                    <BulletPoint/>
+                    <BulletPoint />
                     <div className="bg-zinc-200 w-24 h-0.5 rounded-full flex-1" />
                     <div className=" group flex items-center gap-2 cursor-pointer">
                         <ArrowUpRight className="w-7 h-7 text-orange-600" />

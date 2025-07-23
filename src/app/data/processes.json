@@ -1,0 +1,24 @@
+{
+    "processes" : [
+        {
+            "id" : 1,
+            "title" : "Discovery",
+            "color" : "bg-[#fceae5]"
+        },
+        {
+            "id" : 2,
+            "title" : "Concept",
+            "color" : "bg-[#ffc9b9]"
+        },
+        {
+            "id" : 3,
+            "title" : "Execution",
+            "color" : "bg-[#ff9f82]"
+        },
+        {
+            "id" : 4,
+            "title" : "Launch",
+            "color" : "bg-[#fd8662]"
+        }
+    ]
+}

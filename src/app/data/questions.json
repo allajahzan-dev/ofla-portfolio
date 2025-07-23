@@ -1,0 +1,24 @@
+{ 
+    "questions": [
+        {
+            "question": "Where are you located?",
+            "answer": "We are based in Dubai, India and Chaina. We are looking forward to expanding our operations to other countries."
+        },
+        {
+            "question": "Do you offer custom furniture design?",
+            "answer": "Yes, we specialize in creating bespoke furniture tailored to your needs. We work closely with our clients to understand their requirements and create designs that reflect their style and functionality."
+        },
+        {
+            "question": "How long does it take to receive custom furniture?",
+            "answer" : "The timeline varies depending on the project; please contact us for specific details. Typically, it takes 3-6 months to complete a custom furniture project."
+        },
+        {
+            "question" : "What is your design philosophy?",
+            "answer" : "Our philosophy combines innovation, elegance, and sustainability to create timeless furniture pieces. We believe that furniture should be both functional and beautiful, and we work tirelessly to ensure that our designs meet these standards."
+        },
+        {
+            "question" : "How can I contact you?",
+            "answer" : "You can contact us through our website's contact form or email us at sulthan@example.com, We look forward to hearing from you!"
+        }
+    ]
+}

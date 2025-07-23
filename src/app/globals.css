@@ -140,7 +140,6 @@
 html {
     scrollbar-width: thin;
     scroll-behavior: smooth;
-    will-change: auto;
 }
 
 @keyframes once-ping {

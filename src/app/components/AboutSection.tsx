@@ -1,3 +1,4 @@
+import Counter from "@/components/animated/Counter";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { Star, TrendingUp } from "lucide-react";
@@ -12,9 +13,8 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <section
-            className="min-h-screen relative z-40 bg-zinc-100 flex flex-col gap-20 items-center rounded-t-[50px] px-10 py-40 will-change-transform"
-        >
+        <section className="min-h-screen relative z-40 bg-zinc-100 flex flex-col gap-20 items-center 
+        px-10 py-40 rounded-[50px] will-change-transform">
             {/* Holder */}
             <div className="absolute top-5 left-[50%] -translate-x-1/2 w-40 h-3 bg-zinc-200 rounded-full" />
 
@@ -147,8 +147,10 @@ export default function AboutSection() {
                     </div>
                     <div className="flex flex-col gap-5">
                         <h1 className={cn("font-semibold text-8xl", oswald.className)}>
-                            200+
+                            100+
                         </h1>
+
+                        {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
                         <p className="text-lg font-medium text-zinc-600 tracking-tight">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.

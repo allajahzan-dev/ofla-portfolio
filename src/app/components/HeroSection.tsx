@@ -10,7 +10,7 @@ export default function HeroSection() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
-            className="min-h-screen relative text-white flex flex-col items-center justify-start px-10 will-change-transform"
+            className="min-h-screen relative bg-white text-white flex flex-col items-center justify-start px-10 will-change-transform"
         >
             {/* Shadow */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 via-black/10 to-black/30" />

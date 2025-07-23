@@ -2,6 +2,8 @@ import HeadingAnimated from "@/components/animated/HeadingAnimated";
 import BulletPoint from "@/components/ui/pointer";
 import path from "path";
 import { promises as fs } from "fs";
+import { motion } from "framer-motion";
+import ServiceAnimated from "@/components/animated/ServiceAnimated";
 
 // Fetch services
 const fetchServices = async (): Promise<{
@@ -19,7 +21,7 @@ const fetchServices = async (): Promise<{
         const data = JSON.parse(fileContent);
         return data;
     } catch (err) {
-        console.error("Failed to read lastest products:", err);
+        console.error("Failed to read services:", err);
         return { services: [] };
     }
 };
@@ -37,7 +39,8 @@ export default async function ServicesSection() {
     const { services } = await fetchServices();
 
     return (
-        <section className="min-h-screen relative z-20 bg-[#171717] flex flex-col gap-40 items-center py-40 will-change-transform">
+        <section className="min-h-screen relative z-20 bg-[#171717] flex flex-col gap-40 items-center 
+        py-40 pb-[calc(160px-64px)] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden">
             {/* Title */}
             <HeadingAnimated
                 title={
@@ -58,20 +61,22 @@ export default async function ServicesSection() {
             {/* Services */}
             <div className="w-full flex flex-col text-white">
                 {services.map((service) => (
-                    <div
+                    <ServiceAnimated
                         key={service.id}
-                        className="w-full grid grid-cols-3 gap-5 p-10 py-16 border-t-[0.5px] border-t-zinc-700"
-                    >
-                        <h1 className="text-8xl font-bold col-span-2">{service.title}</h1>
-                        <div className="col-span-1">
-                            {service.points.map((point, index) => (
-                                <p key={index} className="text-lg">
-                                    <BulletPoint className="text-zinc-400" />
-                                    &nbsp;&nbsp;{point}
-                                </p>
-                            ))}
-                        </div>
-                    </div>
+                        title={
+                            <h1 className="text-7xl font-bold col-span-2">{service.title}</h1>
+                        }
+                        points={
+                            <div className="col-span-1">
+                                {service.points.map((point, index) => (
+                                    <p key={index} className="text-lg">
+                                        <BulletPoint className="text-orange-600" />
+                                        &nbsp;&nbsp;{point}
+                                    </p>
+                                ))}
+                            </div>
+                        }
+                    />
                 ))}
             </div>
         </section>
