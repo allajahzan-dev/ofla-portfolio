@@ -12,7 +12,7 @@ export default function ReviewSection() {
       className="min-h-screen relative z-10 bg-white flex flex-col gap-0 items-center 
         px-10 py-40 -mt-[1px] rounded-t-[50px] will-change-transform overflow-hidden"
     >
-      {/* {/* <div className="w-full grid grid-cols-3"> */}
+      {/* <div className="w-full grid grid-cols-3"> */}
         <div className="w-full space-y-5 absolute left-10 top-10">
           <h1 className="font-semibold text-2xl text-start text-zinc-900 leading-[1]">
             Clients
@@ -21,7 +21,7 @@ export default function ReviewSection() {
             What our clients want to say about their workspace transformation
             experience with us.
           </p> */}
-        </div> *
+        </div> 
 
       <div
         ref={divRef1}
@@ -79,7 +79,6 @@ export default function ReviewSection() {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 }
