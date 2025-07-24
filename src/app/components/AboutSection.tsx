@@ -64,11 +64,9 @@ export default function AboutSection() {
                                         )}
                                     >
                                         {user ? (
-                                            <Image
+                                            <img
                                                 src={`/images/home/about` + user}
                                                 alt={`User${index}`}
-                                                width={1000}
-                                                height={1000}
                                                 className="h-full w-full object-cover rounded-full"
                                             />
                                         ) : (

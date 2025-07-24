@@ -78,6 +78,7 @@ export default async function ProductsSection() {
                                 width={500}
                                 height={100}
                                 // quality={100}
+                                priority
                                 className="h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
