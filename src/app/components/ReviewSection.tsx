@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
+// Review section
 export default function ReviewSection() {
   const sectionRef = useRef(null);
   const divRef1 = useRef(null);
@@ -30,7 +31,7 @@ export default function ReviewSection() {
             >
               &quot;Excellent service from start to finish! They helped us design our
               new office layout and provided high-quality chairs and desks that
-              our team absolutely loves&&quot;
+              our team absolutely loves&quot;
             </h1>
             <div className="flex items-start">
               <p className="text-xl font-semibold text-orange-600">//&nbsp;</p>
