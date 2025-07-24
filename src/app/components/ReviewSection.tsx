@@ -34,7 +34,7 @@ export default function ReviewSection() {
               our team absolutely loves&quot;
             </h1>
             <div className="flex items-start">
-              <p className="text-xl font-semibold text-orange-600">//&nbsp;</p>
+              <p className="text-xl font-semibold text-orange-600">&sol;&sol;&nbsp;</p>
               <div className="flex flex-col">
                 <p className="text-xl font-semibold">Sarah Johnson</p>
                 <p className="text-lg font-semibold text-zinc-400">
