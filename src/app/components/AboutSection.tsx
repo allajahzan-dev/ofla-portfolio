@@ -7,7 +7,7 @@ import { useMemo } from "react";
 // About Section
 export default function AboutSection() {
     // Users
-    let users = useMemo(() => {
+    const users = useMemo(() => {
         return ["/user1.png", "/user2.png", "/user3.png", "/user4.png", ""];
     }, []);
 

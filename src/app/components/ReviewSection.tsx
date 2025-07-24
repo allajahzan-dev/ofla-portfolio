@@ -1,30 +1,9 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import SplitType from "split-type";
-// import Image from "next/image";
-// import HeadingAnimated from "@/components/animated/HeadingAnimated";
-
-gsap.registerPlugin(ScrollTrigger);
+import Image from "next/image";
+import { useRef } from "react";
 
 export default function ReviewSection() {
   const sectionRef = useRef(null);
   const divRef1 = useRef(null);
-  const divRef2 = useRef(null);
-
-  useEffect(() => {
-    // const trigger = ScrollTrigger.create({
-    //   trigger: sectionRef.current,
-    //   start: "top top",
-    //   end: "+=3000", // pin duration (adjust for how long you want to pin)
-    //   scrub: true,
-    //   pin: true,
-    //   anticipatePin: 1,
-    //   markers: true, // Remove in production
-    // });
-  }, []);
 
   return (
     <section
@@ -55,9 +34,9 @@ export default function ReviewSection() {
               id="first-div"
               className="text-4xl font-semibold tracking-tight text-zinc-600"
             >
-              "Excellent service from start to finish! They helped us design our
+              &quot;Excellent service from start to finish! They helped us design our
               new office layout and provided high-quality chairs and desks that
-              our team absolutely loves"
+              our team absolutely loves&&quot;
             </h1>
             <div className="flex items-start">
               <p className="text-xl font-semibold text-orange-600">//&nbsp;</p>
@@ -73,21 +52,27 @@ export default function ReviewSection() {
 
         <div className="flex flex-col gap-5">
           <div className="h-24 w-24 border-4 border-orange-600 rounded-full overflow-hidden">
-            <img
+            <Image
+              width={200}
+              height={200}
               src="/images/home/clients/user1.png"
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
           <div className="h-24 w-24 border-4 border-orange-600 rounded-full overflow-hidden">
-            <img
+            <Image
+              width={200}
+              height={200}
               src="/images/home/clients/user1.png"
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
           <div className="h-24 w-24 border-4 border-orange-600 rounded-full overflow-hidden">
-            <img
+            <Image
+              width={200}
+              height={200}
               src="/images/home/clients/user1.png"
               alt=""
               className="w-full h-full object-cover"

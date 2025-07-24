@@ -17,7 +17,7 @@ export default function Counter({ limit, className }: CounterProps) {
   useEffect(() => {
     if (!counterRef.current) return;
 
-    let obj = { val: 0 };
+    const obj = { val: 0 };
 
     const trigger = ScrollTrigger.create({
       trigger: counterRef.current,

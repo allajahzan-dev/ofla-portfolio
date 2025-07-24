@@ -22,7 +22,7 @@ export default function ContactSection() {
                                 SULTHAN
                             </p>
                             <h1 className="font-semibold text-8xl text-start text-white leading-[1]">
-                                Let's connect
+                                Let&rsquo;s connect
                                 <br />
                                 {/* shop */}
                             </h1>
