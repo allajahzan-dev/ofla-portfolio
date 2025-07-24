@@ -30,7 +30,6 @@ export default function ReviewSection() {
         <div className="relative flex-1">
           <div className="absolute top-1/2 -translate-y-1/2 flex flex-col gap-5">
             <h1
-              // ref={textRef}
               id="first-div"
               className="text-4xl font-semibold tracking-tight text-zinc-600"
             >

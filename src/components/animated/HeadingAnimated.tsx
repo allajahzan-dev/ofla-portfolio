@@ -32,7 +32,7 @@ export default function HeadingAnimated({
             else if (isContactSection) revealContactHeading(divRef);
             else revealHeading(divRef);
         }
-    }, [isServiceSection, isContactSection, divRef.current]);
+    }, [isServiceSection, isContactSection]);
     
     return (
         <div ref={divRef} className={cn("perspective-[1200px] w-full", className)}>
