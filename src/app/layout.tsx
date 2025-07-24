@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${urbanist.className}`}>
-      <body className="h-screen w-full bg-white text-[#171717]">
+      <body className="h-screen w-full bg-white text-[#171717] overflow-x-hidden">
         <div id="smooth-wrapper" className="w-full h-full">
           <ContactIndicator />
 
