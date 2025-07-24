@@ -3,7 +3,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { smoothScroller } from "./SmoothScroller";
 
 // Reveal heading
-export const revealHeading = (divRef: any) => {
+export const revealHeading = (divRef: React.RefObject<HTMLDivElement | null>) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(divRef.current, {

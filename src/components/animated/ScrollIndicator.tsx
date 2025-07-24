@@ -22,7 +22,7 @@ const ScrollIndicator = ({ sections }: any) => {
         window.addEventListener("scroll", handleScroll);
         handleScroll(); // init on load
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [sections]);
+    }, [sections, handleScroll]);
 
     // On dot click: scroll to section
     const scrollToSection = (id: string) => {
