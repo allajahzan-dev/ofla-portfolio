@@ -44,7 +44,7 @@ export default async function FaqSection() {
   return (
     <section
       className="min-h-screen relative z-20 bg-white flex flex-col gap-20 items-center 
-            px-10 py-40 -mt-0.5 rounded-t-[50px] will-change-transform overflow-hidden"
+      px-10 py-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
     >
       <div className="w-full grid grid-cols-3 gap-10">
         {/* First column */}

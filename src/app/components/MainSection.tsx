@@ -5,8 +5,9 @@ import { Fragment } from "react";
 import ServicesSection from "./ServicesSection";
 import FaqSection from "./FaqSection";
 import ContactSection from "./ContactSection";
-import ReviewSection from "./ReviewSection";
+// import ReviewSection from "./ReviewSection";
 import ProcessSection from "./ProcessSection";
+// import FooterSection from "./FooterSection";
 
 // Main Section
 function MainSection() {
@@ -33,9 +34,11 @@ function MainSection() {
                 <ProductsSection />
                 <ServicesSection />
                 {/* <ReviewSection /> */}
-                <FaqSection />
+              
                 <ProcessSection/>
+                <FaqSection />
                 <ContactSection />
+                {/* <FooterSection/> */}
             </div>
         </Fragment>
     );

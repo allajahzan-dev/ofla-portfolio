@@ -2,7 +2,6 @@ import HeadingAnimated from "@/components/animated/HeadingAnimated";
 import BulletPoint from "@/components/ui/pointer";
 import path from "path";
 import { promises as fs } from "fs";
-import { motion } from "framer-motion";
 import ServiceAnimated from "@/components/animated/ServiceAnimated";
 
 // Fetch services

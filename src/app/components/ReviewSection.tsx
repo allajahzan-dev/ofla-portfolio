@@ -3,9 +3,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitType from "split-type";
-import Image from "next/image";
-import HeadingAnimated from "@/components/animated/HeadingAnimated";
+// import SplitType from "split-type";
+// import Image from "next/image";
+// import HeadingAnimated from "@/components/animated/HeadingAnimated";
 
 gsap.registerPlugin(ScrollTrigger);
 

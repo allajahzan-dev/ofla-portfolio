@@ -75,9 +75,9 @@ export default async function ProductsSection() {
                             <Image
                                 src={item.img}
                                 alt={item.img.slice(1).split(".")[0]}
-                                width={200}
-                                height={200}
-                                quality={100}
+                                width={500}
+                                height={500}
+                                // quality={100}
                                 className="h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>

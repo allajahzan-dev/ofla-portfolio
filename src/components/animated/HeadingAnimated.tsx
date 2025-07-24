@@ -1,5 +1,6 @@
 "use client";
 
+import { revealContactHeading } from "@/lib/gsap/RevealContactHeading";
 import { revealHeading } from "@/lib/gsap/RevealHeading";
 import { revealServiceHeading } from "@/lib/gsap/RevealServiceHeading";
 import { cn } from "@/lib/utils";
@@ -11,6 +12,7 @@ interface Props {
     subTitle: ReactNode;
     className?: string;
     isServiceSection?: boolean;
+    isContactSection?: boolean;
 }
 
 // Heading Animated
@@ -19,6 +21,7 @@ export default function HeadingAnimated({
     subTitle,
     className,
     isServiceSection,
+    isContactSection,
 }: Props) {
     const divRef = useRef<HTMLDivElement>(null);
 
@@ -26,6 +29,7 @@ export default function HeadingAnimated({
     useEffect(() => {
         if (divRef.current) {
             if (isServiceSection) revealServiceHeading(divRef);
+            else if (isContactSection) revealContactHeading(divRef);
             else revealHeading(divRef);
         }
     }, []);

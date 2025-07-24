@@ -1,4 +1,3 @@
-import Counter from "@/components/animated/Counter";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { Star, TrendingUp } from "lucide-react";

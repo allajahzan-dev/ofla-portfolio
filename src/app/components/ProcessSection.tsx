@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
 import ProcessAnimated from "@/components/animated/ProcessAnimated";
+import HeadingAnimated from "@/components/animated/HeadingAnimated";
 
 // Fetch processess
 const fetchProcesses = async (): Promise<{
@@ -39,31 +40,35 @@ export default async function ProcessSection() {
 
     return (
         <section
-            className="h-fit relative z-20 bg-white flex flex-col gap-20 items-center 
-            pt-10 -mt-0.5 rounded-b-[50px] will-change-transform overflow-hidden"
+            className="h-min-screen relative z-20 bg-white flex flex-col gap-40 items-center 
+            pt-[100px] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
         >
             {/* Title */}
-            <div className="flex flex-col gap-5 items-start">
-                <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
-                    Process
-                </h1>
-
-                <p className="text-xl text-start font-semibold text-zinc-600">
-                    Let’s dive into the process. From first idea to final
-                    <br />
-                    launch, every step is clear and intentional.
-                </p>
-            </div>
+            <HeadingAnimated
+                title={
+                    <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
+                        Process
+                    </h1>
+                }
+                subTitle={
+                    <p className="text-xl text-center font-semibold text-zinc-600">
+                        Let’s dive into the process. From first idea to final
+                        <br />
+                        launch, every step is clear and intentional.
+                    </p>
+                }
+                className="flex flex-col gap-5 items-center"
+            />
 
             {/* Processess */}
-            <div className="w-full flex flex-col -space-y-2">
+            <div className="w-full flex flex-col -space-y-1">
                 {processes.map((item) => (
                     <ProcessAnimated
                         key={item.id}
                         className={item.color}
                         title={<h1 className="text-5xl font-semibold">{item.title}</h1>}
                         number={
-                            <p className={cn("text-8xl text-white", oswald.className)}>
+                            <p className={cn("text-7xl text-white", oswald.className)}>
                                 0{item.id}
                             </p>
                         }
