@@ -1,3 +1,4 @@
+import Counter from "@/components/animated/Counter";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { Star, TrendingUp } from "lucide-react";
@@ -143,11 +144,11 @@ export default function AboutSection() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <h1 className={cn("font-semibold text-8xl", oswald.className)}>
+                        {/* <h1 className={cn("font-semibold text-8xl", oswald.className)}>
                             100+
-                        </h1>
+                        </h1> */}
 
-                        {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
+                        <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/>
                         <p className="text-lg font-medium text-zinc-600 tracking-tight">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.

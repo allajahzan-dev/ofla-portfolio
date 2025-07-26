@@ -1,4 +1,3 @@
-import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { Mouse } from "lucide-react";
 
@@ -16,15 +15,6 @@ export default function HeroSection() {
         >
             {/* Shadow */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 via-black/10 to-black/30" />
-
-            {/* Cuttout */}
-            {/* <Image
-                src="/images/home/hero/bg-bg.png"
-                alt="table-cuttout"
-                width={1000}
-                height={1000}
-                className="absolute bottom-[51px] -right-[84px] w-[calc(100%-280px)]"
-            /> */}
 
             {/* Hero content */}
             <div className="h-[calc(100vh-70px)] relative -top-5 z-10 grid grid-cols-2">

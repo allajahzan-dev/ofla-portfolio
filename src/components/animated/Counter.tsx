@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { cn } from "@/lib/utils";
 
 interface CounterProps {
   limit: number;
@@ -28,7 +29,7 @@ export default function Counter({ limit, className }: CounterProps) {
       onEnter: () => {
         gsap.to(obj, {
           val: limit,
-          duration: 1.5,
+          duration: 1,
           ease: "power3.out",
           onUpdate: () => {
             if (counterRef.current) {
@@ -50,7 +51,7 @@ export default function Counter({ limit, className }: CounterProps) {
       onEnterBack: () => {
         gsap.to(obj, {
           val: limit,
-          duration: 1.5,
+          duration: 1,
           ease: "power3.out",
           onUpdate: () => {
             if (counterRef.current) {
@@ -67,7 +68,7 @@ export default function Counter({ limit, className }: CounterProps) {
   }, [limit]);
 
   return (
-    <h1 className={className}>
+    <h1 className={cn("will-change-transform", className)}>
       <span ref={counterRef}>0+</span>
     </h1>
   );
