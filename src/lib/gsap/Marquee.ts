@@ -2,8 +2,6 @@ import { gsap } from "gsap";
 
 // Marquee
 export const marquee = (text: HTMLHeadingElement, wrapper: HTMLDivElement) => {
-  const textWidth = text.offsetWidth;
-
   // Duplicate the text so it appears seamless
   const clone = text.cloneNode(true);
   wrapper.appendChild(clone);
