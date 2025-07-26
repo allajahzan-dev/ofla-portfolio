@@ -18,7 +18,7 @@ export default function ContactIndicator() {
                 {/* Hidden icons container */}
                 <div
                     className={cn(
-                        "flex flex-col items-center gap-4 p-3 py-3 shadow rounded-full bg-[#171717]/20 transition-all opacity-0 duration-300 translate-y-2",
+                        "flex flex-col items-center gap-4 p-3 py-3 shadow rounded-full bg-[#171717]/30 transition-all opacity-0 duration-300 translate-y-2",
                         isHovered && "opacity-100 translate-y-0"
                     )}
                 >
@@ -35,7 +35,7 @@ export default function ContactIndicator() {
                 {/* Main button */}
                 <div
                     onMouseEnter={() => setIsHovered(true)}
-                    className="p-3 bg-[#171717]/20 text-white rounded-full cursor-pointer shadow"
+                    className="p-3 bg-[#171717]/30 text-white rounded-full cursor-pointer shadow"
                 >
                     <AnimatePresence mode="wait">
                         {isHovered ? (

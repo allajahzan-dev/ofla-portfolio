@@ -2,37 +2,37 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { smoothScroller } from "./SmoothScroller";
 
-// Reveal heading with context for proper scoping and cleanup
-export const revealContactHeading = (divRef: React.RefObject<HTMLDivElement | null>) => {
+// Reveal contact heading
+export const revealContactHeading = (div: HTMLDivElement) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.set(divRef.current, {
+  gsap.set(div, {
     y: -385,
   });
 
-  gsap.to(divRef.current, {
+  gsap.to(div, {
     y: 0,
     scrollTrigger: {
-      trigger: divRef.current,
+      trigger: div,
       start: "top 70%",
-      end: "top 9%",
+      end: "top 12%",
       scrub: true,
     },
   });
 
   gsap.fromTo(
-    divRef.current,
+    div,
     {
-      opacity: 0,
+      // opacity: 0,
     },
     {
       opacity: 1,
       scrollTrigger: {
-        trigger: divRef.current,
+        trigger: div,
         start: "top 70%",
-        end: "top 9%",
+        end: "top 12%",
         scrub: true,
-        // markers: true,
+        markers: true,
         onEnter: () => {
           smoothScroller()?.smooth(4);
         },

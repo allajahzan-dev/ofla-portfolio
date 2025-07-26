@@ -54,7 +54,7 @@ export default async function ServicesSection() {
                     </h1>
                 }
                 className="grid grid-cols-3 gap-5 items-start px-10"
-                isServiceSection={true}
+                sectionType="service"
             />
 
             {/* Services */}

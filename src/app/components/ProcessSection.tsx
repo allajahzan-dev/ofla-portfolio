@@ -2,7 +2,6 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
-import ProcessAnimated from "@/components/animated/ProcessAnimated";
 import HeadingAnimated from "@/components/animated/HeadingAnimated";
 
 // Fetch processess
@@ -58,21 +57,24 @@ export default async function ProcessSection() {
                     </p>
                 }
                 className="flex flex-col gap-5 items-center"
+                sectionType="default"
             />
 
             {/* Processess */}
             <div className="w-full flex flex-col -space-y-1">
                 {processes.map((item) => (
-                    <ProcessAnimated
-                        key={item.id}
-                        className={item.color}
-                        title={<h1 className="text-5xl font-semibold">{item.title}</h1>}
-                        number={
-                            <p className={cn("text-7xl text-white", oswald.className)}>
-                                0{item.id}
-                            </p>
-                        }
-                    />
+                    <div
+                       key={item.id}
+                        className={cn(
+                            "flex items-center justify-between px-10 pr-16",
+                            item.color
+                        )}
+                    >
+                        <h1 className="text-5xl font-semibold">{item.title}</h1>
+                        <p className={cn("text-7xl text-white", oswald.className)}>
+                            0{item.id}
+                        </p>
+                    </div>
                 ))}
             </div>
         </section>

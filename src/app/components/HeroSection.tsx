@@ -1,3 +1,5 @@
+import { oswald } from "@/fonts/owald";
+import { cn } from "@/lib/utils";
 import { Mouse } from "lucide-react";
 
 // Hero Section
@@ -31,7 +33,7 @@ export default function HeroSection() {
                     {/* company name */}
                     <div className="w-full flex items-center gap-5">
                         <div className="bg-white w-24 h-0.5 rounded-full" />
-                        <p className="text-base font-medium text-nowrap tracking-wider">
+                        <p className={cn("text-base font-medium text-nowrap tracking-wider")}>
                             NUJOOMU SULTHAN
                         </p>
                     </div>

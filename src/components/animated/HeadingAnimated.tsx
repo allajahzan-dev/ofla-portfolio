@@ -5,14 +5,14 @@ import { revealHeading } from "@/lib/gsap/RevealHeading";
 import { revealServiceHeading } from "@/lib/gsap/RevealServiceHeading";
 import { cn } from "@/lib/utils";
 import React, { ReactNode, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 // Interface for Props
 interface Props {
     title: ReactNode;
     subTitle: ReactNode;
     className?: string;
-    isServiceSection?: boolean;
-    isContactSection?: boolean;
+    sectionType: "service" | "contact" | "default";
 }
 
 // Heading Animated
@@ -20,20 +20,31 @@ export default function HeadingAnimated({
     title,
     subTitle,
     className,
-    isServiceSection,
-    isContactSection,
+    sectionType,
 }: Props) {
-    const divRef = useRef<HTMLDivElement>(null);
+    const divRef = useRef<HTMLDivElement | null>(null);
 
     // Reveal heading animation
     useEffect(() => {
-        if (divRef.current) {
-            if (isServiceSection) revealServiceHeading(divRef);
-            else if (isContactSection) revealContactHeading(divRef);
-            else revealHeading(divRef);
-        }
-    }, [isServiceSection, isContactSection]);
-    
+        const ctx = gsap.context(() => {
+            if (!divRef.current) return;
+
+            switch (sectionType) {
+                case "service":
+                    revealServiceHeading(divRef.current);
+                    break;
+                case "contact":
+                    revealContactHeading(divRef.current);
+                    break;
+                default:
+                    revealHeading(divRef.current);
+                    break;
+            }
+        });
+
+        return () => ctx.revert();
+    }, [sectionType]);
+
     return (
         <div ref={divRef} className={cn("perspective-[1200px] w-full", className)}>
             {title}

@@ -41,8 +41,10 @@ export default async function ProductsSection() {
     const { latestProducts } = await fetchLatestProdcuts();
 
     return (
-        <section className="min-h-screen relative z-30 bg-white flex flex-col gap-20 items-center 
-        px-10 py-40 pb-0 rounded-[50px] -mt-0.5 will-change-transform overflow-hidden">
+        <section
+            className="min-h-screen relative z-30 bg-white flex flex-col gap-20 items-center 
+        px-10 py-40 pb-0 rounded-[50px] -mt-0.5 will-change-transform overflow-hidden"
+        >
             {/* Title */}
             <HeadingAnimated
                 title={
@@ -61,6 +63,7 @@ export default async function ProductsSection() {
                     </p>
                 }
                 className="flex flex-col gap-5 items-center"
+                sectionType="default"
             />
 
             {/* Products */}
@@ -69,20 +72,20 @@ export default async function ProductsSection() {
                     <div
                         key={item.id}
                         className="group flex flex-col w-full p-2 rounded-4xl 
-                cursor-pointer hover:bg-zinc-100 transition-colors duration-300"
+                hover:bg-zinc-100 transition-colors duration-300"
                     >
-                        <div className="w-full h-[700px] rounded-3xl overflow-hidden">
+                        <div className="w-full h-[700px] rounded-3xl overflow-hidden cursor-none">
                             <Image
                                 src={item.img}
                                 alt={item.img.slice(1).split(".")[0]}
-                                width={500}
+                                width={300}
                                 height={100}
                                 // quality={100}
                                 priority
-                                className="h-full w-full object-cover object-bottom scale-105"
+                                className="product-img h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
-                        <div className="w-full flex gap-2 p-5">
+                        <div className="w-full flex gap-2 p-5 cursor-pointer">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1 className="text-4xl font-semibold">{item.title}</h1>
                                 <p className=" text-lg text-zinc-600 font-medium tracking-tight">

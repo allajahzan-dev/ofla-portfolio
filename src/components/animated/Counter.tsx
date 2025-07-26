@@ -12,7 +12,7 @@ interface CounterProps {
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Counter({ limit, className }: CounterProps) {
-  const counterRef = useRef<HTMLSpanElement>(null);
+  const counterRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
     if (!counterRef.current) return;

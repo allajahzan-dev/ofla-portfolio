@@ -44,7 +44,7 @@ export default function AboutSection() {
                             oswald.className
                         )}
                     >
-                        NUJOOMU SULTHAN
+                        SULTHAN <sup className="text-xs relative -top-[5px]">TM</sup>
                     </p>
 
                     <div className="flex flex-col gap-2">

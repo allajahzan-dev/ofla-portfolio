@@ -8,6 +8,7 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
+import MarqueeAnimated from "@/components/animated/MarqueeAnimated";
 
 // Fetch questions
 const fetchQuestions = async (): Promise<{
@@ -40,13 +41,13 @@ interface IQuestions {
 export default async function FaqSection() {
   // Questions
   const { questions } = await fetchQuestions();
-  
+
   return (
     <section
-      className="min-h-screen relative z-20 bg-white flex flex-col gap-20 items-center 
-      px-10 py-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
+      className="min-h-screen relative z-10 bg-white flex flex-col gap-20 items-center 
+      px-10 pt-40 -mt-0.5 rounded-t-[50px] will-change-transform overflow-hidden"
     >
-      <div className="w-full grid grid-cols-3 gap-10">
+      <div className="w-full grid grid-cols-3 gap-5">
         {/* First column */}
         <div className="flex flex-col gap-5">
           <h1 className="font-semibold text-[120px] text-start text-zinc-900 leading-[1]">
@@ -89,6 +90,8 @@ export default async function FaqSection() {
           </div>
         </div>
       </div>
+
+      <MarqueeAnimated/>
     </section>
   );
 }

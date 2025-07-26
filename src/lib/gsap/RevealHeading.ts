@@ -3,17 +3,17 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { smoothScroller } from "./SmoothScroller";
 
 // Reveal heading
-export const revealHeading = (divRef: React.RefObject<HTMLDivElement | null>) => {
+export const revealHeading = (div: HTMLDivElement) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.set(divRef.current, {
+  gsap.set(div, {
     y: -385,
   });
 
-  gsap.to(divRef.current, {
+  gsap.to(div, {
     y: 0,
     scrollTrigger: {
-      trigger: divRef.current,
+      trigger: div,
       start: "top 70%",
       end: "top top",
       scrub: true,
@@ -21,14 +21,14 @@ export const revealHeading = (divRef: React.RefObject<HTMLDivElement | null>) =>
   });
 
   gsap.fromTo(
-    divRef.current,
+    div,
     {
       scale: 1.3,
     },
     {
       scale: 1,
       scrollTrigger: {
-        trigger: divRef.current,
+        trigger: div,
         start: "top 70%",
         end: "top -20%",
         scrub: true,
