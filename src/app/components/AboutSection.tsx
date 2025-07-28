@@ -1,3 +1,4 @@
+// import Counter from "@/components/animated/Counter";
 import Counter from "@/components/animated/Counter";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
@@ -13,17 +14,19 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <section className="min-h-screen relative z-40 bg-zinc-100 flex flex-col gap-20 items-center 
-        px-10 py-40 rounded-[50px] will-change-transform">
+        <section
+            className="min-h-screen relative z-40 bg-zinc-100 flex flex-col gap-20 items-center 
+        px-10 py-40 pt-20 rounded-[50px] will-change-transform"
+        >
             {/* Holder */}
             <div className="absolute top-5 left-[50%] -translate-x-1/2 w-40 h-3 bg-zinc-200 rounded-full" />
 
             {/* Title */}
-            <div className="w-full flex gap-5 absolute left-10 top-10">
+            {/* <div className="w-full flex gap-5 absolute left-10 top-10">
                 <p className="text-2xl font-semibold text-nowrap tracking-wider">
                     About us
                 </p>
-            </div>
+            </div> */}
 
             {/* Small Details */}
             <div className="w-full grid grid-cols-3 gap-5 text-start items-start">
@@ -103,7 +106,7 @@ export default function AboutSection() {
                         </div>
                     </div>
 
-                    <p className="text-4xl font-semibold w-[70%]">
+                    <p className="text-4xl font-semibold w-[100%]">
                         We specialize in premium office chairs, tables and ergonomic seating
                         featuring diverse models designed for every workspace need.
                     </p>
@@ -144,11 +147,11 @@ export default function AboutSection() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
-                        {/* <h1 className={cn("font-semibold text-8xl", oswald.className)}>
+                        <h1 className={cn("font-semibold text-8xl", oswald.className)}>
                             100+
-                        </h1> */}
+                        </h1>
 
-                        <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/>
+                        {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
                         <p className="text-lg font-medium text-zinc-600 tracking-tight">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.
@@ -159,7 +162,7 @@ export default function AboutSection() {
                 {/* Right */}
                 <div
                     style={{
-                        backgroundImage: "url(/images/home/about/workspace.jpeg)",
+                        backgroundImage: "url(/images/home/about/about-image1.jpg)",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}

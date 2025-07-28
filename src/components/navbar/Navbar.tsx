@@ -12,9 +12,9 @@ export default function Navbar() {
 
                 <div className="flex items-center gap-16 tracking-widest">
                     <NavbarItems text="HOME" />
+                    <NavbarItems text="ABOUT US" />
                     <NavbarItems text="PRODUCTS" />
-                    <NavbarItems text="INSIGHTS" />
-                    <NavbarItems text="SERVICES" />
+                    <NavbarItems text="CAREERS" />
                 </div>
 
                 <div className="flex items-start gap-12 tracking-widest">

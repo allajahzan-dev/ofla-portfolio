@@ -27,10 +27,19 @@ export default function MarqueeAnimated() {
         >
             <h1
                 ref={textRef}
-                className={cn("text-[220px] font-medium text-zinc-200", oswald.className)}
+                className={cn(
+                    "text-[220px] font-medium text-zinc-200",
+                    oswald.className
+                )}
             >
-                — SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup>
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
             </h1>
         </div>
     );

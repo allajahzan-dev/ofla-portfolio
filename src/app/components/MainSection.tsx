@@ -27,7 +27,11 @@ function MainSection() {
     return (
         <Fragment>
             <HeroSection />
-            <div className="relative z-50 bg-[#292929] rounded-t-[50px]">
+            <div className="relative z-50 rounded-t-[50px] overflow-hidden">
+                {/* Hard color stop background */}
+                <div className="absolute inset-0 z-[-1] 
+                bg-[linear-gradient(to_bottom,_white_0%,_white_2%,_#292929_2%,_#292929_100%)]" />
+
                 <AboutSection />
                 <ProductsSection />
                 <ServicesSection />

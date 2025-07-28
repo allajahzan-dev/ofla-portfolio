@@ -8,7 +8,7 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
-import MarqueeAnimated from "@/components/animated/MarqueeAnimated";
+// import MarqueeAnimated from "@/components/animated/MarqueeAnimated";
 
 // Fetch questions
 const fetchQuestions = async (): Promise<{
@@ -44,8 +44,8 @@ export default async function FaqSection() {
 
   return (
     <section
-      className="min-h-screen relative z-10 bg-white flex flex-col gap-20 items-center 
-      px-10 pt-40 -mt-0.5 rounded-t-[50px] will-change-transform overflow-hidden"
+      className="h-fit relative z-10 bg-white flex flex-col gap-20 items-center 
+      px-10 py-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
     >
       <div className="w-full grid grid-cols-3 gap-5">
         {/* First column */}
@@ -67,7 +67,7 @@ export default async function FaqSection() {
                 <AccordionItem
                   key={index}
                   value={`item-${index + 1}`}
-                  className="group data-[state=closed]:border-b"
+                  className="group"
                 >
                   <AccordionTrigger className="flex items-center">
                     <h1 className="w-full text-lg font-semibold">{item.question}</h1>
@@ -91,7 +91,7 @@ export default async function FaqSection() {
         </div>
       </div>
 
-      <MarqueeAnimated/>
+      {/* <MarqueeAnimated/> */}
     </section>
   );
 }
