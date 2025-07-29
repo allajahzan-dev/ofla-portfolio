@@ -74,7 +74,7 @@ export default function ListsSection() {
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((_, idx) => (
                             <div
                                 key={idx}
-                                className="p-2 hover:bg-white flex flex-col rounded-3xl"
+                                className="p-2 hover:bg-zinc-100 flex flex-col rounded-3xl"
                             >
                                 <div className="h-[500px] rounded-3xl overflow-hidden">
                                     <Image
