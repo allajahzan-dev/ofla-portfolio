@@ -45,12 +45,14 @@
 
 @theme inline {
   --animate-aurora: aurora 60s linear infinite;
+
   @keyframes aurora {
     from {
       background-position:
         50% 50%,
         50% 50%;
     }
+
     to {
       background-position:
         350% 50%,
@@ -132,18 +134,45 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-html {
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
+* {
+  outline: none;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-blur {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 @keyframes once-ping {
-  75%, 100% {
+
+  75%,
+  100% {
     transform: scale(2);
     opacity: 0;
   }

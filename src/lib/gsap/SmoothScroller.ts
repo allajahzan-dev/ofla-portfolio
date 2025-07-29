@@ -1,18 +1,35 @@
+import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
 
-// Smooth Scroller
+// Register plugins
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+let smootherInstance: ScrollSmoother | null = null;
+
+// Smooth scroller
 export const smoothScroller = () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  if (smootherInstance) return smootherInstance;
 
-  const scroller = ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    smooth: 2,
-    smoothTouch: 0.1,
-    effects: true,
-  });
+  try {
+    smootherInstance = ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.5,
+      smoothTouch: 0.1,
+      effects: true,
+    });
+  } catch (err) {
+    console.warn("ScrollSmoother failed:", err);
+  }
 
-  return scroller;
+  return smootherInstance;
+};
+
+// Kill scroller
+export const killScroller = () => {
+  if (smootherInstance) {
+    smootherInstance.kill();
+    smootherInstance = null;
+  }
 };

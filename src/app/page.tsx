@@ -1,6 +1,6 @@
 import MainSection from "@/app/components/MainSection";
 
-// Home
+// Home page
 export default function Home() {
     return <MainSection />;
 }

@@ -12,26 +12,22 @@ export const metadata: Metadata = {
   creator: "Ahsan allaj pk",
 };
 
+// Root layout
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${urbanist.className}`}>
-      <body className="h-screen w-full bg-white text-[#171717] overflow-x-hidden">
-        <div id="smooth-wrapper" className="w-full h-full">
+    <html lang="en" className={urbanist.className}>
+      <body className="bg-white text-[#171717] overflow-x-hidden">
+        <div id="smooth-wrapper" className="relative">
           <ContactIndicator />
 
-          {/* Sections */}
-          <div id="smooth-content" className="min-h-screen">
-            <Navbar />
-            {children}
-          </div>
-
+          {children}
+          
           <ScrollSmoother />
-
-          <MousePointer/>
+          <MousePointer />
         </div>
       </body>
     </html>
