@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ReactNode } from "react";
 import { revealService } from "@/lib/gsap/RevealService";
 
+// Interface for Props
 interface Props {
     title: ReactNode;
     points: ReactNode;

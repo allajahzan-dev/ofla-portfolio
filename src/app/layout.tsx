@@ -4,7 +4,7 @@ import MousePointer from "@/components/animated/MousePointer";
 import { urbanist } from "@/fonts/urbanist";
 import ScrollSmoother from "@/components/animated/ScrollSmoother";
 import ContactIndicator from "@/components/animated/ContactIndicator";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/common/navbar/Navbar";
 
 export const metadata: Metadata = {
     title: "Sulthan",

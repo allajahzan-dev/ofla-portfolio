@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
 
+// Interface for Props
 interface CounterProps {
   limit: number;
   className?: string;
@@ -12,6 +13,7 @@ interface CounterProps {
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Counter
 export default function Counter({ limit, className }: CounterProps) {
   const counterRef = useRef<HTMLSpanElement | null>(null);
 

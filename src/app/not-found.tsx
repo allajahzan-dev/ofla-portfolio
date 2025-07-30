@@ -1,4 +1,4 @@
-import ContactSection from "@/components/common/ContactSection";
+import ContactSection from "@/components/common/section/ContactSection";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 

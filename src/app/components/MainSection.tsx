@@ -3,7 +3,7 @@ import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
 import ServicesSection from "./ServicesSection";
 import FaqSection from "./FaqSection";
-import ContactSection from "@/components/common/ContactSection";
+import ContactSection from "@/components/common/section/ContactSection";
 import ProcessSection from "./ProcessSection";
 
 // Main Section

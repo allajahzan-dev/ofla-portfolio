@@ -1,6 +1,6 @@
 import ProductsSection from "./ProductsSection";
 import ListsSection from "./ListsSection";
-import ContactSection from "@/components/common/ContactSection";
+import ContactSection from "@/components/common/section/ContactSection";
 
 // MainSection
 export default function MainSection() {

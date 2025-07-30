@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useAnimation } from "framer-motion";
 
+// Mouse pointer
 export default function MousePointer() {
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -16,6 +17,7 @@ export default function MousePointer() {
     const mousePosition = { x: 0, y: 0 };
 
     useEffect(() => {
+        // Handle mouse move
         const handleMouseMove = (e: MouseEvent) => {
             mouseX.set(e.clientX);
             mouseY.set(e.clientY);
@@ -24,10 +26,12 @@ export default function MousePointer() {
             checkInteractiveHover(mousePosition.x, mousePosition.y);
         };
 
+        // Handle scroll
         const handleScroll = () => {
             checkInteractiveHover(mousePosition.x, mousePosition.y);
         };
 
+        // Check interactive hover
         const checkInteractiveHover = (x: number, y: number) => {
             const el = document.elementFromPoint(x, y);
             if (!el) return;
@@ -39,10 +43,12 @@ export default function MousePointer() {
             }
         };
 
+        // Handle mouse over
         const hanldeMoveOver = () => {
             controls.start({ opacity: 1, scale: 1 });
         };
 
+        // Handle mouse out
         const hanldeMoveOut = () => {
             controls.start({ opacity: 0, scale: 0 });
         };
@@ -58,7 +64,7 @@ export default function MousePointer() {
             window.removeEventListener("mouseover", hanldeMoveOver);
             window.removeEventListener("mouseout", hanldeMoveOut);
         };
-    }, [mouseX, mouseY, controls]);
+    }, [mouseX, mouseY, controls, mousePosition]);
 
     return (
         <motion.div

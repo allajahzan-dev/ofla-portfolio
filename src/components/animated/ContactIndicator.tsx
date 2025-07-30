@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
+// Contact indicator
 export default function ContactIndicator() {
     const [isHovered, setIsHovered] = useState(false);
 
