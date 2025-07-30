@@ -7,29 +7,32 @@ import ContactIndicator from "@/components/animated/ContactIndicator";
 import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
-  title: "Nujoomu Sulthan",
-  description: "It'a company porfolio",
-  creator: "Ahsan allaj pk",
+    title: "Sulthan",
+    description: "Company porfolio",
+    creator: "Ahsan allaj pk",
 };
 
 // Root layout
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={urbanist.className}>
-      <body className="bg-white text-[#171717] overflow-x-hidden">
-        <div id="smooth-wrapper" className="relative">
-          <ContactIndicator />
+    return (
+        <html lang="en" className={urbanist.className}>
+            <body className="bg-white text-[#171717] overflow-x-hidden">
+                <div id="smooth-wrapper" className="relative">
+                    <ContactIndicator />
 
-          {children}
-          
-          <ScrollSmoother />
-          <MousePointer />
-        </div>
-      </body>
-    </html>
-  );
+                    <div id="smooth-content">
+                        <Navbar />
+                        {children}
+                    </div>
+
+                    <ScrollSmoother />
+                    <MousePointer />
+                </div>
+            </body>
+        </html>
+    );
 }

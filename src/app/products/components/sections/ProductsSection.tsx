@@ -6,13 +6,7 @@ import React from "react";
 export default function ProductsSection() {
     return (
         <section
-            data-speed="0.1"
-            // style={{
-            //     // backgroundImage: "url(/images/products/bg-image.jpg)",
-            //     backgroundSize: "cover",
-            //     backgroundPosition: "bottom",
-                // filter: "grayscale(100%)",
-            // }}
+            // data-speed="0.1"
             className="min-h-screen relative bg-white flex flex-col items-center justify-center gap-0
         px-10 will-change-transform overflow-hidden"
         >

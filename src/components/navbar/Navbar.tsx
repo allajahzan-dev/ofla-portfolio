@@ -1,15 +1,41 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import NavbarItems from "./NavbarItems";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-// Interface for Props
-interface Props {
-    color?: string;
-    hoverColor?: string;
-}
+export default function Navbar() {
+    const pathname = usePathname();
 
-// Navbar
-export default function Navbar({ color, hoverColor }: Props) {
+    const [color, setColor] = useState<string>("zinc-100");
+    const [hoverColor, setHoverColor] = useState<string>("white");
+
+    // AFTER navigation
+    useLayoutEffect(() => {
+        applyColorByPath(pathname);
+    }, [pathname]);
+
+    // Color logic as a function
+    const applyColorByPath = (path: string) => {
+        let navItem = path.split("/")[1];
+
+        switch (navItem) {
+            case "products":
+                setColor("[#171717]");
+                setHoverColor("black");
+                break;
+            default:
+                setColor("zinc-100");
+                setHoverColor("white");
+        }
+    };
+
+    // BEFORE navigation
+    const handleClick = (targetPath: string) => {
+        // applyColorByPath(targetPath);
+    };
+
     return (
         <div
             className={`w-full px-10 text-white fixed top-0 z-50 will-change-transform`}
@@ -18,31 +44,34 @@ export default function Navbar({ color, hoverColor }: Props) {
                 <p className={`font-extrabold text-xl text-${hoverColor}`}>LOGO</p>
 
                 <div className="flex items-center gap-16 tracking-widest">
-                    <Link href={"/"}>
+                    <Link href="/" onClick={() => handleClick("/")}>
                         <NavbarItems text="HOME" color={color} hoverColor={hoverColor} />
                     </Link>
-                    <Link href={"/about-us"}>
+                    <Link href="/about-us" onClick={() => handleClick("/about-us")}>
                         <NavbarItems
                             text="ABOUT US"
                             color={color}
                             hoverColor={hoverColor}
                         />
                     </Link>
-                    <Link href={"/products"}>
+                    <Link href="/products" onClick={() => handleClick("/products")}>
                         <NavbarItems
                             text="PRODUCTS"
                             color={color}
                             hoverColor={hoverColor}
                         />
                     </Link>
-                    <Link href={"/careers"}>
+                    <Link href="/careers" onClick={() => handleClick("/careers")}>
                         <NavbarItems text="CAREERS" color={color} hoverColor={hoverColor} />
                     </Link>
                 </div>
 
                 <div className="flex items-start gap-12 tracking-widest">
-                    <NavbarItems text="(+91) 123456789" color={color} hoverColor={hoverColor} />
-                    {/* <Mail className="w-5 h-5" /> */}
+                    <NavbarItems
+                        text="(+91) 123456789"
+                        color={color}
+                        hoverColor={hoverColor}
+                    />
                 </div>
             </div>
         </div>

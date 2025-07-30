@@ -1,9 +1,40 @@
+import ContactSection from "@/components/common/ContactSection";
+import { oswald } from "@/fonts/owald";
+import { cn } from "@/lib/utils";
+
+// Not found page
 export default function NotFound() {
-  return (
-    <div className="bg-black min-h-screen flex items-center justify-center text-white">
-      <h1 className="text-2xl font-semibold">404</h1>
-      <div className="w-0.5 h-10 bg-white mx-5"></div>
-      <p className="text-base font-medium">This page could not be found.</p>
-    </div>
-  );
+    return (
+        <div className="bg-white">
+            <div
+                data-speed="0.1"
+                style={{
+                    backgroundImage: "url(/images/home/hero/hero-image.jpg)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+                className="bg-white text-white min-h-screen flex flex-col items-center justify-center"
+            >
+                {/* Shadow */}
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 via-transparent to-transparent" />
+
+                {/* Not found content */}
+                <div className="relative h-screen z-10 text-center flex flex-col justify-center">
+                    <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-center font-medium">
+                        This page could not be found.
+                    </p>
+
+                    <h1
+                        className={cn(
+                            "text-[280px] text-white/50 font-semibold tracking-wide",
+                            oswald.className
+                        )}
+                    >
+                        404
+                    </h1>
+                </div>
+            </div>
+            <ContactSection />
+        </div>
+    );
 }

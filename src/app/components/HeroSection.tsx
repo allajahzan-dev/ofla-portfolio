@@ -46,7 +46,7 @@ export default function HeroSection() {
                 </div> */}
 
                 {/*  */}
-                <p className="absolute top-40 left-1/2 -translate-x-1/2  text-lg text-white text-center font-medium">
+                <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-white text-center font-medium">
                     Experience the perfect fusion of innovative design,
                     <br /> premium craftsmanship, and all day comfort.
                 </p>

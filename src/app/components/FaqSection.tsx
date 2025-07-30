@@ -8,7 +8,6 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
-// import MarqueeAnimated from "@/components/animated/MarqueeAnimated";
 
 // Fetch questions
 const fetchQuestions = async (): Promise<{
@@ -90,8 +89,6 @@ export default async function FaqSection() {
           </div>
         </div>
       </div>
-
-      {/* <MarqueeAnimated/> */}
     </section>
   );
 }

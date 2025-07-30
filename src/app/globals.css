@@ -163,6 +163,10 @@ html {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
+.product-item {
+    transition: all 1s cubic-bezier(0, 0, 0.58, 1) 1s ;
+  }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

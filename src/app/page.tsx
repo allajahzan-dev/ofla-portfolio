@@ -1,4 +1,4 @@
-import MainSection from "@/app/components/MainSection";
+import MainSection from "./components/MainSection";
 
 // Home page
 export default function Home() {
