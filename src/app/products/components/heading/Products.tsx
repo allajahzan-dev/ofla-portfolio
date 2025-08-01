@@ -45,12 +45,12 @@ export default function Products({ items, divRef }: Props) {
                         designed for modern workspaces.
                     </p>
 
-                    <p className="text-lg font-semibold text-zinc-200 relative top-16 flex items-center">
+                    {/* <p className="text-lg font-semibold text-zinc-200 relative top-16 flex items-center">
                         Click&nbsp;
                         <Pointer className="w-5 h-5" />
                         &nbsp;&nbsp;/&nbsp;&nbsp;Scroll&nbsp;
                         <Mouse className="w-5 h-5" />
-                    </p>
+                    </p> */}
                 </div>
             </div>
 
