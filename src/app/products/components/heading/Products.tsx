@@ -3,7 +3,6 @@
 import { oswald } from "@/fonts/owald";
 import { scrollToPanel } from "@/lib/gsap/ScrollToPanel";
 import { cn } from "@/lib/utils";
-import { Mouse, Pointer } from "lucide-react";
 import { RefObject } from "react";
 
 // Interface for Props
@@ -44,13 +43,6 @@ export default function Products({ items, divRef }: Props) {
                         <br />
                         designed for modern workspaces.
                     </p>
-
-                    {/* <p className="text-lg font-semibold text-zinc-200 relative top-16 flex items-center">
-                        Click&nbsp;
-                        <Pointer className="w-5 h-5" />
-                        &nbsp;&nbsp;/&nbsp;&nbsp;Scroll&nbsp;
-                        <Mouse className="w-5 h-5" />
-                    </p> */}
                 </div>
             </div>
 
