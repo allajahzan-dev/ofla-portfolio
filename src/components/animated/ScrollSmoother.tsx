@@ -1,6 +1,6 @@
 "use client";
 
-import { killScroller, smoothScroller } from "@/lib/gsap/SmoothScroller";
+import { killScroller, scrollSmoother } from "@/lib/gsap/ScrollSmoother";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -10,7 +10,7 @@ export default function ScrollSmoother() {
 
     useEffect(() => {
         killScroller();
-        smoothScroller();
+        scrollSmoother();
     }, [pathname]);
 
     return null;

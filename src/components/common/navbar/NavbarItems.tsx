@@ -17,7 +17,7 @@ export default function NavbarItems({ text, color, hoverColor }: Props) {
   console.log(pathname.split("/")[1]);
 
   return (
-    <div className="group flex flex-col gap-0.5 items-center cursor-pointer p-0">
+    <div className="group flex flex-col gap-0.5 items-center cursor-pointer p-0 will-change-transform">
       {/* Text */}
       <p
         className={`text-sm font-bold ${color ? `text-${color}` : "text-zinc-100"

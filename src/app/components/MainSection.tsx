@@ -6,7 +6,7 @@ import FaqSection from "./FaqSection";
 import ContactSection from "@/components/common/section/ContactSection";
 import ProcessSection from "./ProcessSection";
 
-// Main Section
+// Main section
 function MainSection() {
     return (
         <>

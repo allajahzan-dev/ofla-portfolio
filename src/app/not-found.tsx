@@ -20,9 +20,17 @@ export default function NotFound() {
 
                 {/* Not found content */}
                 <div className="relative h-screen z-10 text-center flex flex-col justify-center">
-                    <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-center font-medium">
+                    {/* <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-center font-medium">
                         This page could not be found.
-                    </p>
+                    </p> */}
+                    {/* <span
+                        className={cn(
+                            "absolute top-40 left-1/2 -translate-x-1/2 text-2xl text-white font-medium",
+                            oswald.className
+                        )}
+                    >
+                        PAGE NOT FOUND
+                    </span> */}
 
                     <h1
                         className={cn(
@@ -30,7 +38,7 @@ export default function NotFound() {
                             oswald.className
                         )}
                     >
-                        404
+                        404 <span className="text-2xl relative right-20">PAGE NOT FOUND</span>
                     </h1>
                 </div>
             </div>

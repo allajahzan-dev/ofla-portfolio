@@ -1,10 +1,10 @@
 "use client";
 
+import { gsap } from "gsap";
+import { marquee } from "@/lib/gsap/Marquee";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { marquee } from "@/lib/gsap/Marquee";
 
 // Marquee animated
 export default function MarqueeAnimated() {

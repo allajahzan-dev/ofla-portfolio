@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ReactNode } from "react";
 import { revealService } from "@/lib/gsap/RevealService";
+import { useEffect, useRef } from "react";
+import { ReactNode } from "react";
 
 // Interface for Props
 interface Props {

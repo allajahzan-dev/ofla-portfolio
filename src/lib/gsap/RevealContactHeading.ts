@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { smoothScroller } from "./SmoothScroller";
+import { scrollSmoother } from "./ScrollSmoother";
 
 // Reveal contact heading
 export const revealContactHeading = (div: HTMLDivElement) => {
@@ -34,16 +34,16 @@ export const revealContactHeading = (div: HTMLDivElement) => {
         scrub: true,
         markers: true,
         onEnter: () => {
-          smoothScroller()?.smooth(4);
+          scrollSmoother()?.smooth(4);
         },
         onLeave: () => {
-          smoothScroller()?.smooth(2);
+          scrollSmoother()?.smooth(2);
         },
         onEnterBack: () => {
-          smoothScroller()?.smooth(4);
+          scrollSmoother()?.smooth(4);
         },
         onLeaveBack: () => {
-          smoothScroller()?.smooth(2);
+          scrollSmoother()?.smooth(2);
         },
       },
     }

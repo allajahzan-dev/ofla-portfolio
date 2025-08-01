@@ -1,22 +1,48 @@
-import ProductsSection from "./ProductsSection";
-import ListsSection from "./ListsSection";
+import HeadingSection from "./HeadingSection";
 import ContactSection from "@/components/common/section/ContactSection";
+import path from "path";
+import { promises as fs } from "fs";
 
-// MainSection
-export default function MainSection() {
+// Fetch product items
+const fetchProductItems = async (): Promise<{
+    productItems: IProductItem[];
+}> => {
+    try {
+        const filePath = path.join(
+            process.cwd(),
+            "src",
+            "app",
+            "products",
+            "data",
+            "productItems.json"
+        );
+        const fileContent = await fs.readFile(filePath, "utf-8");
+        const data = JSON.parse(fileContent);
+        return data;
+    } catch (err) {
+        console.error("Failed to read lastest products:", err);
+        return { productItems: [] };
+    }
+};
+
+// Interface for ProductItems
+export interface IProductItem {
+    id: number;
+    img: string;
+    href: string;
+    heading: string;
+}
+
+// Main section
+export default async function MainSection() {
+    // Product items
+    const { productItems } = await fetchProductItems();
+    console.log(productItems);
+    
     return (
-        <>
-            <ProductsSection />
-            <div className="relative z-50 -mt-24 rounded-t-[50px] overflow-hidden">
-                {/* Hard color stop background */}
-                <div
-                    className="absolute inset-0 z-[-1] 
-                bg-[linear-gradient(to_bottom,_white_0%,_white_4%,_#292929_2%,_#292929_100%)]"
-                />
-
-                <ListsSection />
-                <ContactSection />
-            </div>
-        </>
+        <div className="bg-[#292929]">
+            <HeadingSection productItems={productItems} />
+            <ContactSection />
+        </div>
     );
 }

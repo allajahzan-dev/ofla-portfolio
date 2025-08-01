@@ -19,36 +19,18 @@ export default function HeroSection() {
 
             {/* Hero content */}
             <div className="relative h-screen z-10 text-center flex flex-col justify-center">
-                {/* Left side */}
-                {/* <div className="hidden relative -top-12 flex flex-col gap-8 items-start justify-center">
-                
-                    <div className="w-full flex items-center gap-5">
-                        <div className="bg-white w-24 h-0.5 rounded-full" />
-                        <p
-                        className={cn(
-                            "text-lg font-medium tracking-wide",
-                            oswald.className
-                        )}
-                    >
-                        SULTHAN <sup className="text-xs relative -top-[5px]">TM</sup>
-                    </p>
-                    </div>
-               
-                    <h1 className={cn("text-6xl font-extrabold tracking-wide")}>
-                        Where comfort meets productivity, every seat tells
-                        a success story.
-                    </h1>
-
-                    <p className="text-xl font-medium w-[80%]">
-                        Experience the perfect fusion of innovative design, premium
-                        craftsmanship, and all day comfort.
-                    </p>
-                </div> */}
-
-                {/*  */}
-                <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-white text-center font-medium">
+                {/* <p className="w-full absolute bottom-32 left-1/2 -translate-x-1/2  text-lg text-white text-center font-medium">
                     Experience the perfect fusion of innovative design,
                     <br /> premium craftsmanship, and all day comfort.
+                </p> */}
+
+                <p
+                    className={cn(
+                        "w-full absolute top-40 left-1/2 -translate-x-1/2  text-2xl text-white font-medium",
+                        oswald.className
+                    )}
+                >
+                    OFFICE&nbsp;&nbsp;LIFESTYLE&nbsp;&nbsp;ARABIA
                 </p>
 
                 <p
@@ -57,16 +39,15 @@ export default function HeroSection() {
                         oswald.className
                     )}
                 >
-                    SULTHAN
+                    OFLA
                 </p>
-                
             </div>
 
             {/* Explore */}
             <div className="w-[50%] absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex gap-5 items-center justify-between text-white font-medium text-nowrap tracking-wide">
                 <p>Scroll down</p>
                 <div className="bg-white w-full h-0.5 rounded-full" />
-                <Mouse className="w-6 h-6 animate-bounce duration-500 shrink-0" />
+                <Mouse className="w-6 h-6 animate-bounce shrink-0" />
                 <div className="bg-white w-full h-0.5 rounded-full" />
                 <p>Explore more</p>
             </div>

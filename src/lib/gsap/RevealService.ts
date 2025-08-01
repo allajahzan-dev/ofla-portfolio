@@ -2,9 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Reveal service
-export const revealService = (
-  div: HTMLDivElement
-) => {
+export const revealService = (div: HTMLDivElement) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.fromTo(

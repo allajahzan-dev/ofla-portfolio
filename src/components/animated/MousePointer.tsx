@@ -93,7 +93,7 @@ export default function MousePointer() {
                     initial={{ scale: 0.2 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="w-4 h-4 bg-white rounded-full"
+                    className="w-3 h-3 bg-white rounded-full"
                 />
             )}
         </motion.div>
