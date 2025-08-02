@@ -31,7 +31,7 @@ export default function Navbar() {
     };
 
     return (
-        <div
+        <nav
             className={`w-full px-10 text-white fixed top-0 z-50 will-change-transform`}
         >
             <div className="w-full h-20 flex items-center justify-between font-semibold text-sm">
@@ -68,6 +68,6 @@ export default function Navbar() {
                     />
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }

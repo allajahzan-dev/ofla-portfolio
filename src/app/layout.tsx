@@ -8,8 +8,22 @@ import Navbar from "@/components/common/navbar/Navbar";
 
 export const metadata: Metadata = {
     title: "Sulthan",
-    description: "Company porfolio",
-    creator: "Ahsan allaj pk",
+    description:
+        "Premium Dubai-based workspace furniture company offering ergonomic chairs, tables, and modern office solutions.",
+    keywords: [
+        "office furniture Dubai",
+        "ergonomic chairs Dubai",
+        "workspace solutions Dubai",
+        "office furniture India",
+        "ergonomic chairs India",
+        "workspace solutions India",
+        "office tables",
+        "modern office furniture",
+        "workspace furniture",
+    ],
+    robots: "index, follow",
+    creator: "Ahsan Allaj PK",
+    viewport: "width=device-width, initial-scale=1",
 };
 
 // Root layout
@@ -21,17 +35,17 @@ export default function RootLayout({
     return (
         <html lang="en" className={urbanist.className}>
             <body className="bg-white text-[#171717] overflow-x-hidden">
-                <div id="smooth-wrapper" className="relative">
-                    <ContactIndicator />
+                <ContactIndicator />
 
+                <div id="smooth-wrapper" className="relative">
                     <div id="smooth-content">
                         <Navbar />
                         {children}
                     </div>
-
-                    <ScrollSmoother />
-                    <MousePointer />
                 </div>
+
+                <ScrollSmoother />
+                <MousePointer />
             </body>
         </html>
     );

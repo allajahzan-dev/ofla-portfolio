@@ -9,9 +9,9 @@ import ProcessSection from "./ProcessSection";
 // Main section
 function MainSection() {
     return (
-        <>
+        <main>
             <HeroSection />
-            <div className="relative z-50 rounded-t-[50px] overflow-hidden">
+            <section className="relative z-50 rounded-t-[50px] overflow-hidden">
                 {/* Hard color stop background */}
                 <div
                     className="absolute inset-0 z-[-1] 
@@ -24,8 +24,8 @@ function MainSection() {
                 <ProcessSection />
                 <FaqSection />
                 <ContactSection />
-            </div>
-        </>
+            </section>
+        </main>
     );
 }
 

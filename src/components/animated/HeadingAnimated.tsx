@@ -22,22 +22,22 @@ export default function HeadingAnimated({
     className,
     sectionType,
 }: Props) {
-    const divRef = useRef<HTMLDivElement | null>(null);
+    const headerRef = useRef<HTMLDivElement | null>(null);
 
     // Reveal heading animation
     useEffect(() => {
         const ctx = gsap.context(() => {
-            if (!divRef.current) return;
+            if (!headerRef.current) return;
 
             switch (sectionType) {
                 case "service":
-                    revealServiceHeading(divRef.current);
+                    revealServiceHeading(headerRef.current);
                     break;
                 case "contact":
-                    revealContactHeading(divRef.current);
+                    revealContactHeading(headerRef.current);
                     break;
                 default:
-                    revealHeading(divRef.current);
+                    revealHeading(headerRef.current);
                     break;
             }
         });
@@ -46,9 +46,12 @@ export default function HeadingAnimated({
     }, [sectionType]);
 
     return (
-        <div ref={divRef} className={cn("perspective-[1200px] w-full", className)}>
+        <header
+            ref={headerRef}
+            className={cn("perspective-[1200px] w-full", className)}
+        >
             {title}
             {subTitle}
-        </div>
+        </header>
     );
 }

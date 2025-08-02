@@ -48,7 +48,7 @@ export default async function FaqSection() {
     >
       <div className="w-full grid grid-cols-3 gap-5">
         {/* First column */}
-        <div className="flex flex-col gap-5">
+        <header className="flex flex-col gap-5">
           <h1 className="font-semibold text-[120px] text-start text-zinc-900 leading-[1]">
             FAQ
           </h1>
@@ -56,10 +56,10 @@ export default async function FaqSection() {
             Get quick answers for frequently asked questions about our products
             and services.
           </p>
-        </div>
+        </header>
 
         {/* Second column */}
-        <div className="col-span-2">
+        <details className="col-span-2">
           <div className="flex flex-col">
             <Accordion type="multiple">
               {questions.map((item, index) => (
@@ -87,7 +87,7 @@ export default async function FaqSection() {
               ))}
             </Accordion>
           </div>
-        </div>
+        </details>
       </div>
     </section>
   );

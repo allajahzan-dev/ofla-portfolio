@@ -69,7 +69,7 @@ export default async function ProductsSection() {
             {/* Products */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-10 mt-10">
                 {latestProducts.map((item) => (
-                    <div
+                    <figure
                         key={item.id}
                         className="group flex flex-col w-full p-2 rounded-4xl 
                 hover:bg-zinc-100 transition-colors duration-300"
@@ -85,7 +85,7 @@ export default async function ProductsSection() {
                                 className="product-img h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
-                        <div className="w-full flex gap-2 p-5 cursor-pointer">
+                        <figcaption className="w-full flex gap-2 p-5 cursor-pointer">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1 className="text-4xl font-semibold">{item.title}</h1>
                                 <p className=" text-lg text-zinc-600 font-medium tracking-tight">
@@ -100,12 +100,12 @@ export default async function ProductsSection() {
                             >
                                 <ArrowRight className="w-5 h-5" />
                             </div>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
                 ))}
 
                 {/* More */}
-                <div className="w-full flex items-center gap-10 pt-12 pb-10 col-span-2">
+                <footer className="w-full flex items-center gap-10 pt-12 pb-10 col-span-2">
                     <BulletPoint />
                     <div className="bg-zinc-200 w-24 h-0.5 rounded-full flex-1" />
                     <div className=" group flex items-center gap-2 cursor-pointer">
@@ -119,7 +119,7 @@ export default async function ProductsSection() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </footer>
             </div>
         </section>
     );

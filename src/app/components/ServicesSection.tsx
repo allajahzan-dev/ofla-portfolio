@@ -58,26 +58,26 @@ export default async function ServicesSection() {
             />
 
             {/* Services */}
-            <div className="w-full flex flex-col text-white">
+            <details className="w-full flex flex-col text-white">
                 {services.map((service) => (
                     <ServiceAnimated
                         key={service.id}
                         title={
-                            <h1 className="text-7xl font-bold col-span-2">{service.title}</h1>
+                            <summary className="text-7xl font-bold col-span-2">{service.title}</summary>
                         }
                         points={
-                            <div className="col-span-1">
+                            <ul className="col-span-1">
                                 {service.points.map((point, index) => (
-                                    <p key={index} className="text-lg">
+                                    <li key={index} className="text-lg list-none">
                                         <BulletPoint className="text-orange-600" />
                                         &nbsp;&nbsp;{point}
-                                    </p>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         }
                     />
                 ))}
-            </div>
+            </details>
         </section>
     );
 }

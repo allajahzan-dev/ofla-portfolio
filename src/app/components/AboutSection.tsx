@@ -26,8 +26,8 @@ export default function AboutSection() {
                 </p>
             </div> */}
 
-            {/* Small Details */}
-            <div className="w-full grid grid-cols-3 gap-5 text-start items-start">
+            {/* About us */}
+            <aside className="w-full grid grid-cols-3 gap-5 text-start items-start">
                 {/* year */}
                 <h1
                     className={cn(
@@ -38,7 +38,6 @@ export default function AboutSection() {
                     02 <span className="text-2xl relative -left-10">Years</span>
                 </h1>
 
-                {/* Texts */}
                 <div className="col-span-2 flex flex-col gap-8 p-2 px-1">
                     <p
                         className={cn(
@@ -46,7 +45,7 @@ export default function AboutSection() {
                             oswald.className
                         )}
                     >
-                        SULTHAN <sup className="text-xs relative -top-[5px]">TM</sup>
+                        OFLA <sup className="text-xs relative -top-[5px]">TM</sup>
                     </p>
 
                     <div className="flex flex-col gap-2">
@@ -111,12 +110,12 @@ export default function AboutSection() {
                         featuring diverse models designed for every workspace need.
                     </p>
                 </div>
-            </div>
+            </aside>
 
             {/* Contents */}
             <div className="w-full grid grid-cols-3 gap-5">
                 {/* Left */}
-                <div className="relative h-[460px] w-full p-12 bg-white flex flex-col gap-8 rounded-3xl overflow-hidden">
+                <article className="relative h-[460px] w-full p-12 bg-white flex flex-col gap-8 rounded-3xl overflow-hidden">
                     <h1 className="font-semibold text-2xl">
                         Premium workspace solutions
                         <br />
@@ -136,10 +135,10 @@ export default function AboutSection() {
                         width={1000}
                         className="w-80 absolute -bottom-16 -right-16"
                     />
-                </div>
+                </article>
 
                 {/* Center */}
-                <div className="h-[460px] w-full p-12 bg-white flex flex-col justify-between rounded-3xl">
+                <article className="h-[460px] w-full p-12 bg-white flex flex-col justify-between rounded-3xl">
                     <div className="flex items-center justify-between">
                         <p className="font-semibold">Fact 01</p>
                         <div className="p-3 bg-zinc-100 rounded-full">
@@ -157,17 +156,21 @@ export default function AboutSection() {
                             furniture experiences.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 {/* Right */}
-                <div
+                <figure
                     style={{
                         backgroundImage: "url(/images/home/about/about-image1.jpg)",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
                     className="h-[460px] w-full bg-white rounded-3xl overflow-hidden"
-                ></div>
+                >
+                    <figcaption className="sr-only">
+      Office design example
+    </figcaption>
+                </figure>
             </div>
         </section>
     );
