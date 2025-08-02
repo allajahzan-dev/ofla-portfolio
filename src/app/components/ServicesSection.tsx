@@ -58,12 +58,12 @@ export default async function ServicesSection() {
             />
 
             {/* Services */}
-            <details className="w-full flex flex-col text-white">
+            <div className="w-full flex flex-col text-white">
                 {services.map((service) => (
                     <ServiceAnimated
                         key={service.id}
                         title={
-                            <summary className="text-7xl font-bold col-span-2">{service.title}</summary>
+                            <h1 className="text-7xl font-bold col-span-2">{service.title}</h1>
                         }
                         points={
                             <ul className="col-span-1">
@@ -77,7 +77,7 @@ export default async function ServicesSection() {
                         }
                     />
                 ))}
-            </details>
+            </div>
         </section>
     );
 }

@@ -59,7 +59,7 @@ export default async function FaqSection() {
         </header>
 
         {/* Second column */}
-        <details className="col-span-2">
+        <div className="col-span-2">
           <div className="flex flex-col">
             <Accordion type="multiple">
               {questions.map((item, index) => (
@@ -87,7 +87,7 @@ export default async function FaqSection() {
               ))}
             </Accordion>
           </div>
-        </details>
+        </div>
       </div>
     </section>
   );

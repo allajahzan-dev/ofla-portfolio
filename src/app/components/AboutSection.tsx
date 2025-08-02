@@ -41,11 +41,11 @@ export default function AboutSection() {
                 <div className="col-span-2 flex flex-col gap-8 p-2 px-1">
                     <p
                         className={cn(
-                            "text-lg font-medium tracking-wide",
+                            "text-xl font-medium tracking-wide",
                             oswald.className
                         )}
                     >
-                        OFLA <sup className="text-xs relative -top-[5px]">TM</sup>
+                        OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
                     </p>
 
                     <div className="flex flex-col gap-2">
@@ -167,9 +167,6 @@ export default function AboutSection() {
                     }}
                     className="h-[460px] w-full bg-white rounded-3xl overflow-hidden"
                 >
-                    <figcaption className="sr-only">
-      Office design example
-    </figcaption>
                 </figure>
             </div>
         </section>

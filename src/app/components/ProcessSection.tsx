@@ -61,7 +61,7 @@ export default async function ProcessSection() {
             />
 
             {/* Processess */}
-            <details className="w-full flex flex-col -space-y-1">
+            <div className="w-full flex flex-col -space-y-1">
                 {processes.map((item) => (
                     <div
                        key={item.id}
@@ -70,13 +70,13 @@ export default async function ProcessSection() {
                             item.color
                         )}
                     >
-                        <summary className="text-5xl font-semibold">{item.title}</summary>
+                        <h1 className="text-5xl font-semibold">{item.title}</h1>
                         <p className={cn("text-7xl text-white", oswald.className)}>
                             0{item.id}
                         </p>
                     </div>
                 ))}
-            </details>
+            </div>
         </section>
     );
 }
