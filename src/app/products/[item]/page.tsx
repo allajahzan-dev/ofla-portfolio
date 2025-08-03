@@ -2,9 +2,10 @@ import MainSection from "./components/sections/MainSection";
 
 // Interface for Props
 interface Props {
-    params: { item: string };
+    params: Promise<{ item: string }>;
 }
 
-export default function Item({ params }: Props) {
-    return <MainSection params={params} />;
+// Item page
+export default async function Item({ params }: Props) {
+    return <MainSection params={await params} />;
 }

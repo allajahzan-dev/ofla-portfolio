@@ -2,16 +2,15 @@ import ContactSection from "@/components/common/section/ContactSection";
 
 // Interface for Props
 interface Props {
-    params: Promise<{ item: string }>;
+    params: { item: string };
 }
 
 // Main section
-export default async function MainSection({ params }: Props) {
-    const { item } = await params;
+export default function MainSection({ params }: Props) {
     return (
         <main>
             <section className="min-h-screen flex flex-col items-center justify-center">
-                <h1 className="text-8xl font-bold">{item.toUpperCase()}</h1>
+                <h1 className="text-8xl font-bold">{params.item.toUpperCase()}</h1>
             </section>
             <ContactSection/>
         </main>
