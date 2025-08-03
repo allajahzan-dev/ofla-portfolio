@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MousePointer from "@/components/animated/MousePointer";
 import { urbanist } from "@/fonts/urbanist";
-import ScrollSmoother from "@/components/animated/ScrollSmoother";
-import ContactIndicator from "@/components/animated/ContactIndicator";
-import Navbar from "@/components/common/navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
+import ScrollSmoother from "./components/animated/ScrollSmoother";
+import ContactIndicator from "./components/animated/ContactIndicator";
+import MousePointer from "./components/animated/MousePointer";
 
 export const metadata: Metadata = {
-    title: "Sulthan",
+    title: "Office Lifestyle Arabia",
     description:
         "Premium Dubai-based workspace furniture company offering ergonomic chairs, tables, and modern office solutions.",
     keywords: [
@@ -21,9 +21,7 @@ export const metadata: Metadata = {
         "modern office furniture",
         "workspace furniture",
     ],
-    robots: "index, follow",
     creator: "Ahsan Allaj PK",
-    viewport: "width=device-width, initial-scale=1",
 };
 
 // Root layout

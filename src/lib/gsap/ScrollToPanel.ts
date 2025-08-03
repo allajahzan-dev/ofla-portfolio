@@ -2,10 +2,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
 // Scroll to panel
 export const scrollToPanel = (index: number, div: HTMLDivElement) => {
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
   const scrollY = (index / (6 - 1)) * div.offsetWidth;
 
   gsap.to(window, {

@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import HeadingAnimated from "@/components/animated/HeadingAnimated";
+import RevealHeading from "@/components/animated/RevealHeading";
 import path from "path";
 import { promises as fs } from "fs";
 import Image from "next/image";
@@ -46,7 +46,7 @@ export default async function ProductsSection() {
         px-10 py-40 pb-0 rounded-[50px] -mt-0.5 will-change-transform overflow-hidden"
         >
             {/* Title */}
-            <HeadingAnimated
+            <RevealHeading
                 title={
                     <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
                         Latest

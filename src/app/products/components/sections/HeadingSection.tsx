@@ -1,7 +1,7 @@
 "use client";
 
-import Products from "../heading/Products";
-import Items from "../heading/Items";
+import ProductsTitle from "../headings/ProductsTitle";
+import ProductsItem from "../headings/ProductsItem";
 import SnapHeadings from "@/components/animated/SnapSections";
 import { useRef } from "react";
 import { IProductItem } from "./MainSection";
@@ -20,13 +20,13 @@ export default function HeadingSection({ productItems }: Props) {
             divRef={divRef}
             sectionsLength={productItems.length + 1}
             sections={[
-                <Products
+                <ProductsTitle
                     key={"Products"}
                     items={["Chairs", "Tables", "Lounge", "PODs", "Lockers"]}
                     divRef={divRef}
                 />,
                 ...productItems.map((productItem) => (
-                    <Items
+                    <ProductsItem
                         key={productItem.id}
                         href={productItem.href}
                         img={productItem.img}

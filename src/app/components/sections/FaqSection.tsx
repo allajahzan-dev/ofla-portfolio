@@ -68,7 +68,7 @@ export default async function FaqSection() {
                   value={`item-${index + 1}`}
                   className="group"
                 >
-                  <AccordionTrigger className="flex items-center">
+                  <AccordionTrigger className="flex items-center will-change-transform">
                     <h1 className="w-full text-lg font-semibold">{item.question}</h1>
                     <h1
                       className={cn(

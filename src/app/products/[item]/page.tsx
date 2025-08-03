@@ -1,12 +1,10 @@
-"use client";
+import MainSection from "./components/sections/MainSection";
 
-import { useParams } from "next/navigation";
+// Interface for Props
+interface Props {
+    params: { item: string };
+}
 
-// Item page
-export default function Item() {
-  const params = useParams();
-
-  return (
-    <div className="text-8xl text-black font-medium">{params.item}</div>
-  );
+export default function Item({ params }: Props) {
+    return <MainSection params={params} />;
 }

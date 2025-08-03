@@ -1,8 +1,8 @@
-import HeadingAnimated from "@/components/animated/HeadingAnimated";
+import RevealHeading from "@/components/animated/RevealHeading";
+import RevealService from "../animated/RevealService";
 import BulletPoint from "@/components/ui/pointer";
 import path from "path";
 import { promises as fs } from "fs";
-import ServiceAnimated from "@/components/animated/ServiceAnimated";
 
 // Fetch services
 const fetchServices = async (): Promise<{
@@ -41,7 +41,7 @@ export default async function ServicesSection() {
         <section className="min-h-screen relative z-20 bg-[#171717] flex flex-col gap-40 items-center 
         py-40 pb-[calc(160px-64px)] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden">
             {/* Title */}
-            <HeadingAnimated
+            <RevealHeading
                 title={
                     <p className="font-semibold text-lg text-start text-white leading-[1]">
                         Services
@@ -60,7 +60,7 @@ export default async function ServicesSection() {
             {/* Services */}
             <div className="w-full flex flex-col text-white">
                 {services.map((service) => (
-                    <ServiceAnimated
+                    <RevealService
                         key={service.id}
                         title={
                             <h1 className="text-7xl font-bold col-span-2">{service.title}</h1>

@@ -6,8 +6,8 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
-// Marquee animated
-export default function MarqueeAnimated() {
+// Marquee
+export default function Marquee() {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const textRef = useRef<HTMLHeadingElement | null>(null);
 

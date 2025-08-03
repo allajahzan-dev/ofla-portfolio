@@ -2,7 +2,7 @@ import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
-import HeadingAnimated from "@/components/animated/HeadingAnimated";
+import RevealHeading from "@/components/animated/RevealHeading";
 
 // Fetch processess
 const fetchProcesses = async (): Promise<{
@@ -43,7 +43,7 @@ export default async function ProcessSection() {
             pt-[120px] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
         >
             {/* Title */}
-            <HeadingAnimated
+            <RevealHeading
                 title={
                     <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
                         Process

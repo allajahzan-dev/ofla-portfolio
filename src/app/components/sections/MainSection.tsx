@@ -3,8 +3,8 @@ import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
 import ServicesSection from "./ServicesSection";
 import FaqSection from "./FaqSection";
-import ContactSection from "@/components/common/section/ContactSection";
 import ProcessSection from "./ProcessSection";
+import ContactSection from "@/components/common/section/ContactSection";
 
 // Main section
 function MainSection() {

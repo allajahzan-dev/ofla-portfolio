@@ -3,31 +3,31 @@
         {
             "id" : 1,
             "img" : "/images/product/heading/chairs.jpg",
-            "href" : "/product/chairs",
+            "href" : "/products/chairs",
             "heading": "Chairs"
         },
         {
             "id" : 2,
             "img" : "/images/product/heading/tables.jpg",
-            "href" : "/product/tables",
+            "href" : "/products/tables",
             "heading": "Tables"
         },
         {
             "id" : 3,
             "img" : "/images/product/heading/lounge.jpg",
-            "href" : "/product/lounge",
+            "href" : "/products/lounge",
             "heading": "Lounge"
         },
         {
             "id" : 4,
             "img" : "/images/product/heading/pods.jpg",
-            "href" : "/product/pods",
+            "href" : "/products/pods",
             "heading": "Pods"
         },
         {
             "id" : 5,
             "img" : "/images/product/heading/lockers.jpg",
-            "href" : "/product/lockers",
+            "href" : "/products/lockers",
             "heading": "Lockers"
         }
     ]

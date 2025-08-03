@@ -12,8 +12,8 @@ interface Props {
     headingClassName?: string;
 }
 
-// Items
-export default function Items({ href, img, heading, headingClassName }: Props) {
+// Product item
+export default function ProductsItem({ href, img, heading, headingClassName }: Props) {
     return (
         <Link
             href={href}
@@ -32,7 +32,7 @@ export default function Items({ href, img, heading, headingClassName }: Props) {
             >
                 <h1
                     className={cn(
-                        "text-[160px] text-white font-bold tracking-wide",
+                        "text-[160px] text-white font-bold tracking-wide transform-gpu",
                         headingClassName
                     )}
                 >

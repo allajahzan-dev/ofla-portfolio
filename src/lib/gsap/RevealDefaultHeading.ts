@@ -2,8 +2,8 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { scrollSmoother } from "./ScrollSmoother";
 
-// Reveal heading
-export const revealHeading = (div: HTMLDivElement) => {
+// Reveal default heading
+export const revealDefaultHeading = (div: HTMLDivElement) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(div, {

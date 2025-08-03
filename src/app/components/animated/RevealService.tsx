@@ -11,8 +11,8 @@ interface Props {
     points: ReactNode;
 }
 
-// Service animated
-export default function ServiceAnimated({ title, points }: Props) {
+// Reveal service
+export default function RevealService({ title, points }: Props) {
     const divRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function ServiceAnimated({ title, points }: Props) {
     return (
         <div
             ref={divRef}
-            className="w-full grid grid-cols-3 gap-5 p-10 py-16 border-t-[0.5px] border-t-zinc-700"
+            className="w-full grid grid-cols-3 gap-5 p-10 py-16 border-t-[0.5px] border-t-zinc-700 will-change-transform"
         >
             {title}
             {points}

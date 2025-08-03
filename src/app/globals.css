@@ -142,6 +142,10 @@
 
 * {
   outline: none;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -158,20 +162,14 @@ html {
   display: none;
 }
 
-.no-blur {
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-}
-
 .product-item {
-    transition: all 1s cubic-bezier(0, 0, 0.58, 1) 1s ;
-  }
+  transition: all 1s cubic-bezier(0, 0, 0.58, 1) 1s;
+}
 
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 @keyframes once-ping {
 

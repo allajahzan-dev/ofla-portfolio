@@ -23,7 +23,7 @@ export default function SnapSections({
             const sections = document.querySelectorAll(".panel");
             if (!divRef.current) return;
 
-            snapSections(sections, sectionsLength, divRef.current);
+            snapSections(sections, divRef.current);
         }, divRef);
 
         return () => ctx.revert();
@@ -36,7 +36,7 @@ export default function SnapSections({
         >
             <div
                 style={{ width: `${sectionsLength * 100}vw` }}
-                className="flex h-screen will-change-transform"
+                className="flex h-screen"
             >
                 {sections}
             </div>

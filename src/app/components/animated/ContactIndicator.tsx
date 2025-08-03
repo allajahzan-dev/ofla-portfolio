@@ -13,7 +13,7 @@ export default function ContactIndicator() {
     return (
         <div
             onMouseLeave={() => setIsHovered(false)}
-            className="fixed bottom-5 right-5 z-50"
+            className="fixed bottom-5 right-5 z-50 will-change-transform"
         >
             <div className="relative flex flex-col items-center gap-3">
                 {/* Hidden icons container */}

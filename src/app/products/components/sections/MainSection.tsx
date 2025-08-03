@@ -37,12 +37,11 @@ export interface IProductItem {
 export default async function MainSection() {
     // Product items
     const { productItems } = await fetchProductItems();
-    console.log(productItems);
     
     return (
-        <div className="bg-[#292929]">
+        <main className="bg-[#292929]">
             <HeadingSection productItems={productItems} />
             <ContactSection />
-        </div>
+        </main>
     );
 }

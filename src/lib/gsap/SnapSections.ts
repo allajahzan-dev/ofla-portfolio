@@ -4,20 +4,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Snap sections
 export const snapSections = (
   sections: NodeListOf<Element>,
-  sectionsLength: number,
   div: HTMLDivElement
 ) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.to(sections, {
-    xPercent: -100 * (sectionsLength - 1),
+    xPercent: -100 * (sections.length - 1),
     ease: "none",
     scrollTrigger: {
       trigger: div,
       pin: true,
-      scrub: 0.5,
+      scrub: true,
       // snap: {
-      //   snapTo: 1 / (sectionsLength - 1),
+      //   snapTo: 1 / (sections.length - 1),
       //   duration: 0.5,
       //   delay: 0,
       //   ease: "none",

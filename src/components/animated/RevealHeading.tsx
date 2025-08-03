@@ -1,9 +1,9 @@
 "use client";
 
 import { gsap } from "gsap";
-import { revealContactHeading } from "@/lib/gsap/RevealContactHeading";
-import { revealHeading } from "@/lib/gsap/RevealHeading";
+import { revealDefaultHeading } from "@/lib/gsap/RevealDefaultHeading";
 import { revealServiceHeading } from "@/lib/gsap/RevealServiceHeading";
+import { revealContactHeading } from "@/lib/gsap/RevealContactHeading";
 import { cn } from "@/lib/utils";
 import { ReactNode, useEffect, useRef } from "react";
 
@@ -15,8 +15,8 @@ interface Props {
     sectionType: "service" | "contact" | "default";
 }
 
-// Heading Animated
-export default function HeadingAnimated({
+// Reveal heading
+export default function RevealHeading({
     title,
     subTitle,
     className,
@@ -37,7 +37,7 @@ export default function HeadingAnimated({
                     revealContactHeading(headerRef.current);
                     break;
                 default:
-                    revealHeading(headerRef.current);
+                    revealDefaultHeading(headerRef.current);
                     break;
             }
         });
@@ -48,7 +48,10 @@ export default function HeadingAnimated({
     return (
         <header
             ref={headerRef}
-            className={cn("perspective-[1200px] w-full", className)}
+            className={cn(
+                "w-full will-change-transform",
+                className
+            )}
         >
             {title}
             {subTitle}
