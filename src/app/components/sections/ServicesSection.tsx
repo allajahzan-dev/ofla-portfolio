@@ -4,6 +4,13 @@ import BulletPoint from "@/components/ui/pointer";
 import path from "path";
 import { promises as fs } from "fs";
 
+// Interface for servie
+interface IService {
+    id: number;
+    title: string;
+    points: string[];
+}
+
 // Fetch services
 const fetchServices = async (): Promise<{
     services: IService[];
@@ -24,13 +31,6 @@ const fetchServices = async (): Promise<{
         return { services: [] };
     }
 };
-
-// Interface for servie
-interface IService {
-    id: number;
-    title: string;
-    points: string[];
-}
 
 // Service section
 export default async function ServicesSection() {

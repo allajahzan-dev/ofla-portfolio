@@ -154,7 +154,7 @@ body {
 }
 
 html {
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   scroll-behavior: smooth;
 }
 

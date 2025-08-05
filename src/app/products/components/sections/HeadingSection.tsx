@@ -1,37 +1,25 @@
-"use client";
-
-import ProductsTitle from "../headings/ProductsTitle";
-import ProductsItem from "../headings/ProductsItem";
-import SnapHeadings from "@/components/animated/SnapSections";
-import { useRef } from "react";
-import { IProductItem } from "./MainSection";
+import Panel from "../panel/Panel";
+import SnapHeadings from "@/components/animated/SnapPanels";
+import { IProduct } from "../../layout";
 
 // Interface for Props
 interface Props {
-    productItems: IProductItem[];
+    products: IProduct[];
 }
 
 // Heading section
-export default function HeadingSection({ productItems }: Props) {
-    const divRef = useRef<HTMLDivElement | null>(null);
-
+export default function HeadingSection({ products }: Props) {
     return (
         <SnapHeadings
-            divRef={divRef}
-            sectionsLength={productItems.length + 1}
-            sections={[
-                <ProductsTitle
-                    key={"Products"}
-                    items={["Chairs", "Tables", "Lounge", "PODs", "Lockers"]}
-                    divRef={divRef}
-                />,
-                ...productItems.map((productItem) => (
-                    <ProductsItem
-                        key={productItem.id}
-                        href={productItem.href}
-                        img={productItem.img}
-                        heading={productItem.heading}
-                        headingClassName="text-white/80"
+            panelsLength={products.length}
+            panels={[
+                ...products.map((product) => (
+                    <Panel
+                        key={product.id}
+                        href={product.href}
+                        img={product.img}
+                        title={product.title}
+                        titleClassName="text-white/80"
                     />
                 )),
             ]}

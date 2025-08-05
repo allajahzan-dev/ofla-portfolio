@@ -11,7 +11,7 @@ function MainSection() {
     return (
         <main>
             <HeroSection />
-            <section className="relative z-50 rounded-t-[50px] overflow-hidden">
+            <section className="relative rounded-t-[50px] overflow-hidden">
                 {/* Hard color stop background */}
                 <div
                     className="absolute inset-0 z-[-1] 

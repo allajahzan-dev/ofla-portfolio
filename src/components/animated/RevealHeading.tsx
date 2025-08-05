@@ -3,7 +3,7 @@
 import { gsap } from "gsap";
 import { revealDefaultHeading } from "@/lib/gsap/RevealDefaultHeading";
 import { revealServiceHeading } from "@/lib/gsap/RevealServiceHeading";
-import { revealContactHeading } from "@/lib/gsap/RevealContactHeading";
+import { revealProcessHeading } from "@/lib/gsap/RevealProcessHeading";
 import { cn } from "@/lib/utils";
 import { ReactNode, useEffect, useRef } from "react";
 
@@ -12,7 +12,7 @@ interface Props {
     title: ReactNode;
     subTitle: ReactNode;
     className?: string;
-    sectionType: "service" | "contact" | "default";
+    sectionType: "service" | "process" | "default";
 }
 
 // Reveal heading
@@ -33,8 +33,8 @@ export default function RevealHeading({
                 case "service":
                     revealServiceHeading(headerRef.current);
                     break;
-                case "contact":
-                    revealContactHeading(headerRef.current);
+                case "process":
+                    revealProcessHeading(headerRef.current);
                     break;
                 default:
                     revealDefaultHeading(headerRef.current);

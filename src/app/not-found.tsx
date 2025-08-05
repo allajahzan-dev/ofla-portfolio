@@ -19,7 +19,7 @@ export default function NotFound() {
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 via-transparent to-transparent" />
 
                 {/* Not found content */}
-                <div className="relative h-screen z-10 text-center flex flex-col justify-center">
+                <div className="relative h-screen text-center flex flex-col justify-center">
                     {/* <p className="w-full absolute top-40 left-1/2 -translate-x-1/2  text-lg text-center font-medium">
                         This page could not be found.
                     </p> */}

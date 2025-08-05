@@ -8,12 +8,12 @@ import { cn } from "@/lib/utils";
 interface Props {
     href: string;
     img: string;
-    heading: string;
-    headingClassName?: string;
+    title: string;
+    titleClassName?: string;
 }
 
-// Product item
-export default function ProductsItem({ href, img, heading, headingClassName }: Props) {
+// Panel
+export default function Panel({ href, img, title, titleClassName }: Props) {
     return (
         <Link
             href={href}
@@ -33,10 +33,10 @@ export default function ProductsItem({ href, img, heading, headingClassName }: P
                 <h1
                     className={cn(
                         "text-[160px] text-white font-bold tracking-wide transform-gpu",
-                        headingClassName
+                        titleClassName
                     )}
                 >
-                    {heading}
+                    {title}
                 </h1>
             </motion.div>
         </Link>

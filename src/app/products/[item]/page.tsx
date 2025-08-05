@@ -7,5 +7,6 @@ interface Props {
 
 // Item page
 export default async function Item({ params }: Props) {
-    return <MainSection params={await params} />;
+    const data = await params;
+    return <MainSection item={data.item} />;
 }

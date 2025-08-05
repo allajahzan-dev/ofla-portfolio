@@ -2,8 +2,8 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { scrollSmoother } from "./ScrollSmoother";
 
-// Reveal contact heading
-export const revealContactHeading = (div: HTMLDivElement) => {
+// Reveal process heading
+export const revealProcessHeading = (div: HTMLDivElement) => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.set(div, {
@@ -14,8 +14,8 @@ export const revealContactHeading = (div: HTMLDivElement) => {
     y: 0,
     scrollTrigger: {
       trigger: div,
-      start: "top 70%",
-      end: "top 12%",
+      start: "top 80%",
+      end: "top top",
       scrub: true,
     },
   });
@@ -23,14 +23,14 @@ export const revealContactHeading = (div: HTMLDivElement) => {
   gsap.fromTo(
     div,
     {
-      // opacity: 0,
+      scale: 1.3,
     },
     {
-      opacity: 1,
+      scale: 1,
       scrollTrigger: {
         trigger: div,
-        start: "top 70%",
-        end: "top 12%",
+        start: "top 80%",
+        end: "top -25%",
         scrub: true,
         markers: true,
         onEnter: () => {

@@ -54,7 +54,7 @@ export default function MousePointer() {
         };
 
         window.addEventListener("mousemove", handleMouseMove);
-        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("scroll", handleScroll);
         window.addEventListener("mouseover", hanldeMoveOver);
         window.addEventListener("mouseout", hanldeMoveOut);
 
@@ -74,8 +74,8 @@ export default function MousePointer() {
             }}
             initial={{ opacity: 0, scale: 0 }}
             animate={controls}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="pointer-events-none fixed z-50 top-0 left-0 transform -translate-x-1/2 -translate-y-1/2"
+            // transition={{ duration: 0.4, ease: "easeOut" }}
+            className="pointer-events-none fixed z-50 top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transform-gpu"
         >
             {isHoveringInteractive ? (
                 <motion.div

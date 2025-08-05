@@ -17,9 +17,9 @@ export default function Navbar() {
     });
 
     useLayoutEffect(() => {
-        const navItem = pathname.split("/")[1];
+        const route = pathname.split("/")[1];
 
-        switch (navItem) {
+        switch (route) {
             case "products":
                 setStyles({
                     textColor: "text-[#171717]",
@@ -40,8 +40,7 @@ export default function Navbar() {
     }, [pathname]);
 
     return (
-        <div
-        className="w-full px-10 fixed top-0 z-[1000] will-change-transform">
+        <div className="w-full px-10 fixed z-[100] top-0 will-change-transform">
             <div
                 className={`w-full h-20 flex items-center justify-between font-semibold text-sm ${styles.textColor}`}
             >
@@ -62,13 +61,13 @@ export default function Navbar() {
                         <NavbarItems text="PRODUCTS" styles={styles} />
                     </Link>
                     <Link href="/careers">
-                        <NavbarItems text="CAREERS" styles={styles} />
+                        <NavbarItems text="CONTACT" styles={styles} />
                     </Link>
                 </div>
 
                 {/* Contact */}
                 <div className="flex items-start gap-12 tracking-widest">
-                    <NavbarItems text="(+91) 123456789" styles={styles} />
+                    <NavbarItems text="(+91) 1234567890" styles={styles} />
                 </div>
             </div>
         </div>

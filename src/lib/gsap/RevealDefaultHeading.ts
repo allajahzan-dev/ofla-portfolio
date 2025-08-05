@@ -14,7 +14,7 @@ export const revealDefaultHeading = (div: HTMLDivElement) => {
     y: 0,
     scrollTrigger: {
       trigger: div,
-      start: "top 70%",
+      start: "top 62%",
       end: "top top",
       scrub: true,
     },
@@ -29,7 +29,7 @@ export const revealDefaultHeading = (div: HTMLDivElement) => {
       scale: 1,
       scrollTrigger: {
         trigger: div,
-        start: "top 70%",
+        start: "top 62%",
         end: "top -20%",
         scrub: true,
         // markers: true,

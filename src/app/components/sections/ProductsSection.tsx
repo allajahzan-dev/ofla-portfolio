@@ -5,6 +5,15 @@ import { promises as fs } from "fs";
 import Image from "next/image";
 import BulletPoint from "@/components/ui/pointer";
 
+// Interface for LatestProduct
+interface ILatestProduct {
+    id: number;
+    img: string;
+    title: string;
+    description1: string;
+    description2: string;
+}
+
 // Fetch latest products
 const fetchLatestProdcuts = async (): Promise<{
     latestProducts: ILatestProduct[];
@@ -26,15 +35,6 @@ const fetchLatestProdcuts = async (): Promise<{
     }
 };
 
-// Interface for LatestProduct
-interface ILatestProduct {
-    id: number;
-    img: string;
-    title: string;
-    description1: string;
-    description2: string;
-}
-
 // Products section
 export default async function ProductsSection() {
     // Latest products
@@ -48,7 +48,7 @@ export default async function ProductsSection() {
             {/* Title */}
             <RevealHeading
                 title={
-                    <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
+                    <h1 className="font-bold text-[120px] text-center leading-[1]">
                         Latest
                         <br />
                         Products

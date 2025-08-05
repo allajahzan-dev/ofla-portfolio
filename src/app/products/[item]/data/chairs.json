@@ -1,0 +1,31 @@
+{
+    "itemImages" : [
+        {
+            "id" : 1,
+            "img" : ["/images/chairs/chair-1.jpeg"],
+            "title" : "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials" : []
+        },
+        {
+            "id" : 2,
+            "img" : ["/images/chairs/chair-2.jpeg"],
+            "title" : "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials" : []
+        },
+        {
+            "id" : 3,
+            "img" : ["/images/chairs/chair-2.jpeg"],
+            "title" : "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials" : []
+        }
+    ]
+}

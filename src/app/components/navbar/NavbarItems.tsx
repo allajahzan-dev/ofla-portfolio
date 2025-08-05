@@ -32,8 +32,8 @@ export default function NavbarItems({ text, styles }: Props) {
                 <span
                     className={cn(
                         `block h-full ${styles.bgColor} group-hover:${styles.hoverBgColor} transform scale-x-0 transition-transform duration-300 origin-left`,
-                        (pathname.split("/")[1] === "" && text.toLowerCase() === "home") ||
-                            pathname.split("/")[1] === text.toLowerCase()
+                        (pathname === "/" && text.toLowerCase() === "home") ||
+                            pathname === `/${text.toLowerCase()}`
                             ? "scale-x-100"
                             : "group-hover:scale-x-100"
                     )}

@@ -13,7 +13,7 @@ export const scrollSmoother = () => {
   smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    smooth: 1.5,
+    smooth: 1,
     smoothTouch: 0.1,
     effects: true,
   });

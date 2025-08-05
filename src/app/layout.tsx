@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import ScrollSmoother from "./components/animated/ScrollSmoother";
 import ContactIndicator from "./components/animated/ContactIndicator";
 import MousePointer from "./components/animated/MousePointer";
+import PageTransition from "@/components/animated/PageTransition";
 
 export const metadata: Metadata = {
     title: "Office Lifestyle Arabia",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <html lang="en" className={urbanist.className}>
             <body className="bg-white text-[#171717] overflow-x-hidden">
                 <ContactIndicator />
+                <PageTransition />
 
                 <div id="smooth-wrapper" className="relative">
                     <div id="smooth-content">
@@ -41,7 +43,7 @@ export default function RootLayout({
                         {children}
                     </div>
                 </div>
-
+                
                 <ScrollSmoother />
                 <MousePointer />
             </body>

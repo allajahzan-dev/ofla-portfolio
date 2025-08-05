@@ -9,6 +9,12 @@ import { cn } from "@/lib/utils";
 import path from "path";
 import { promises as fs } from "fs";
 
+// Interface for questions
+interface IQuestions {
+  question: string;
+  answer: string;
+}
+
 // Fetch questions
 const fetchQuestions = async (): Promise<{
   questions: IQuestions[];
@@ -30,12 +36,6 @@ const fetchQuestions = async (): Promise<{
   }
 };
 
-// Interface for questions
-interface IQuestions {
-  question: string;
-  answer: string;
-}
-
 // Process section
 export default async function FaqSection() {
   // Questions
@@ -49,7 +49,7 @@ export default async function FaqSection() {
       <div className="w-full grid grid-cols-3 gap-5">
         {/* First column */}
         <header className="flex flex-col gap-5">
-          <h1 className="font-semibold text-[120px] text-start text-zinc-900 leading-[1]">
+          <h1 className="text-[120px] font-bold text-start leading-[1]">
             FAQ
           </h1>
           <p className="text-xl text-start font-semibold text-zinc-600 w-[90%]">
@@ -68,8 +68,8 @@ export default async function FaqSection() {
                   value={`item-${index + 1}`}
                   className="group"
                 >
-                  <AccordionTrigger className="flex items-center will-change-transform">
-                    <h1 className="w-full text-lg font-semibold">{item.question}</h1>
+                  <AccordionTrigger className="flex items-center">
+                    <h1 className="w-full text-lg font-semibold transform-gpu">{item.question}</h1>
                     <h1
                       className={cn(
                         "text-4xl font-semibold text-zinc-400 group-hover:text-[#171717] transition-colors duration-300",

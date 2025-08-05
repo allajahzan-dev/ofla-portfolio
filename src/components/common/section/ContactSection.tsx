@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ContactSection() {
     return (
         <section
-            className="h-[calc(100vh+1px)] relative z-20 bg-[#171717] flex flex-col gap-10 items-center 
+            className="h-[calc(100svh+1.2px)] relative z-20 bg-[#171717] flex flex-col gap-10 items-center 
             px-10 pt-40 rounded-t-[50px] will-change-transform overflow-hidden bg-cover bg-center"
         >
             <header className="w-full grid grid-cols-3 gap-5">

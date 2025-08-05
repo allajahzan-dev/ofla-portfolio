@@ -4,6 +4,13 @@ import path from "path";
 import { promises as fs } from "fs";
 import RevealHeading from "@/components/animated/RevealHeading";
 
+// Interface for processes
+interface IProcess {
+    id: number;
+    title: string;
+    color: string;
+}
+
 // Fetch processess
 const fetchProcesses = async (): Promise<{
     processes: IProcess[];
@@ -25,13 +32,6 @@ const fetchProcesses = async (): Promise<{
     }
 };
 
-// Interface for processes
-interface IProcess {
-    id: number;
-    title: string;
-    color: string;
-}
-
 // Process section
 export default async function ProcessSection() {
     // Processess
@@ -45,7 +45,7 @@ export default async function ProcessSection() {
             {/* Title */}
             <RevealHeading
                 title={
-                    <h1 className="transform-style-preserve-3d font-semibold text-[120px] text-center text-zinc-900 leading-[1]">
+                    <h1 className="font-bold text-[120px] text-center leading-[1]">
                         Process
                     </h1>
                 }
@@ -57,7 +57,7 @@ export default async function ProcessSection() {
                     </p>
                 }
                 className="flex flex-col gap-5 items-center"
-                sectionType="default"
+                sectionType="process"
             />
 
             {/* Processess */}
