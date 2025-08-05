@@ -4,6 +4,8 @@ import React, { useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavbarItems from "./NavbarItems";
+import { oswald } from "@/fonts/owald";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -45,8 +47,16 @@ export default function Navbar() {
                 className={`w-full h-20 flex items-center justify-between font-semibold text-sm ${styles.textColor}`}
             >
                 {/* Logo */}
-                <p className={`font-extrabold text-xl ${styles.hoverTextColor}`}>
-                    LOGO
+                <p
+                    className={cn(
+                        "font-medium text-xl tracking-wide",
+                        styles.hoverTextColor,
+                        oswald.className
+                    )}
+                >
+                    <Link href={"/"}>
+                        OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
+                    </Link>
                 </p>
 
                 {/* Nav Links */}
@@ -60,14 +70,14 @@ export default function Navbar() {
                     <Link href="/products">
                         <NavbarItems text="PRODUCTS" styles={styles} />
                     </Link>
-                    <Link href="/careers">
+                    <Link href="/contact">
                         <NavbarItems text="CONTACT" styles={styles} />
                     </Link>
                 </div>
 
                 {/* Contact */}
                 <div className="flex items-start gap-12 tracking-widest">
-                    <NavbarItems text="(+91) 1234567890" styles={styles} />
+                    <NavbarItems text="CALL" styles={styles} />
                 </div>
             </div>
         </div>

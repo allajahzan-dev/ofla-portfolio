@@ -32,7 +32,7 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
         start: "top 80%",
         end: "top -25%",
         scrub: true,
-        markers: true,
+        // markers: true,
         onEnter: () => {
           scrollSmoother()?.smooth(4);
         },

@@ -1,6 +1,6 @@
-import { fetchProducts } from "../../utils/fetchProducts";
 import Panel from "../panel/Panel";
 import SnapHeadings from "@/components/animated/SnapPanels";
+import { fetchProducts } from "../../utils/fetchProducts";
 
 // Heading section
 export default async function HeadingSection() {

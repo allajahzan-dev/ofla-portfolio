@@ -1,5 +1,4 @@
-import path from "path";
-import { promises as fs } from "fs";
+import { BASE_URL } from "@/constants/baseUrl";
 
 // Interface for processes
 export interface IProcess {
@@ -13,15 +12,8 @@ export const fetchProcesses = async (): Promise<{
     processes: IProcess[];
 }> => {
     try {
-        const filePath = path.join(
-            process.cwd(),
-            "src",
-            "app",
-            "data",
-            "processes.json"
-        );
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const data = JSON.parse(fileContent);
+        const resp = await fetch(`${BASE_URL}/data/home/processes.json`);
+        const data = await resp.json();
         return data;
     } catch (err) {
         console.error("Failed to read proecesses:", err);

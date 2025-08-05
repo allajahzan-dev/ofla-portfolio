@@ -1,6 +1,6 @@
-import ContactSection from "@/components/section/ContactSection";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
+import ContactSection from "@/components/common/ContactSection";
 
 // Not found page
 export default function NotFound() {

@@ -39,7 +39,7 @@ export default async function FaqSection() {
                                     className="group"
                                 >
                                     <AccordionTrigger className="flex items-center">
-                                        <h1 className="w-full text-lg font-semibold transform-gpu">
+                                        <h1 className="w-full text-lg font-semibold will-change-transform">
                                             {item.question}
                                         </h1>
                                         <h1

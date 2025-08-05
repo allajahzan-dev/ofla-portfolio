@@ -26,11 +26,14 @@ export default function HeroSection() {
 
                 <p
                     className={cn(
-                        "w-full absolute bottom-40 left-1/2 -translate-x-1/2  text-2xl text-white font-medium",
+                        "w-full absolute bottom-40 text-2xl text-white font-medium tracking-wide",
+                        "flex items-center justify-center gap-5",
                         oswald.className
                     )}
                 >
-                    OFFICE&nbsp;&nbsp;LIFESTYLE&nbsp;&nbsp;ARABIA
+                    <span>OFFICE</span>
+                    <span>LIFESTYLE</span>
+                    <span>ARABIA</span>
                 </p>
 
                 <p

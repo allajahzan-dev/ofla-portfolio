@@ -1,5 +1,4 @@
-import path from "path";
-import { promises as fs } from "fs";
+import { BASE_URL } from "@/constants/baseUrl";
 
 // Interface for ItemImage
 export interface IItemImage {
@@ -18,20 +17,9 @@ export const fetchItemImages = async (
 ): Promise<{
     itemImages: IItemImage[];
 }> => {
-    console.log("fetch item image", item);
-    
     try {
-        const filePath = path.join(
-            process.cwd(),
-            "src",
-            "app",
-            "products",
-            "[item]",
-            "data",
-            `${item}.json`
-        );
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const data = JSON.parse(fileContent);
+        const resp = await fetch(`${BASE_URL}/data/item/${item}.json`);
+        const data = await resp.json();
         return data;
     } catch (err) {
         console.log("Failed to read item images:", err);

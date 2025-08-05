@@ -14,8 +14,8 @@ export const revealServiceHeading = (div: HTMLDivElement) => {
     y: 0,
     scrollTrigger: {
       trigger: div,
-      start: "top 70%",
-      end: "top 9%",
+      start: "top 68%",
+      end: "top 10%",
       scrub: true,
     },
   });
@@ -29,8 +29,8 @@ export const revealServiceHeading = (div: HTMLDivElement) => {
       scale: 1,
       scrollTrigger: {
         trigger: div,
-        start: "top 70%",
-        end: "top 9%",
+        start: "top 68%",
+        end: "top 10%",
         scrub: true,
         // markers: true,
         onEnter: () => {

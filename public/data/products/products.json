@@ -2,35 +2,35 @@
     "products" : [
         {
             "id" : 1,
-            "img" : "/images/product/heading/chairs.jpg",
+            "img" : "/images/products/heading/chairs.jpg",
             "href" : "/products/chairs",
             "title": "Chairs",
             "description" : "Ergonomic seating solutions with premium comfort and contemporary design for all-day productivity."
         },
         {
             "id" : 2,
-            "img" : "/images/product/heading/tables.jpg",
+            "img" : "/images/products/heading/tables.jpg",
             "href" : "/products/tables",
             "title": "Tables",
             "description": "Stylish and durable tables crafted with high-quality materials for professional workspace environments."
         },
         {
             "id" : 3,
-            "img" : "/images/product/heading/lounge.jpg",
+            "img" : "/images/products/heading/lounge.jpg",
             "href" : "/products/lounge",
             "title": "Lounge",
             "description": "Comfortable reception seating with elegant upholstery perfect for client areas and lounges."
         },
         {
             "id" : 4,
-            "img" : "/images/product/heading/pods.jpg",
+            "img" : "/images/products/heading/pods.jpg",
             "href" : "/products/pods",
             "title": "Pods",
             "description": "Stylish privacy solutions that create quiet, concentrated workspaces within busy office environments."
         },
         {
             "id" : 5,
-            "img" : "/images/product/heading/lockers.jpg",
+            "img" : "/images/products/heading/lockers.jpg",
             "href" : "/products/lockers",
             "title": "Lockers",
             "description": "Heavy-duty personal storage units built for maximum security and long-lasting durability."

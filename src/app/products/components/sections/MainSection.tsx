@@ -1,5 +1,5 @@
 import HeadingSection from "./HeadingSection";
-import ContactSection from "@/components/section/ContactSection";
+import ContactSection from "@/components/common/ContactSection";
 
 // Main section
 export default async function MainSection() {
