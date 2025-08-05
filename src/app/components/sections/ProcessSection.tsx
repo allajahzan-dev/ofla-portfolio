@@ -1,36 +1,7 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import path from "path";
-import { promises as fs } from "fs";
 import RevealHeading from "@/components/animated/RevealHeading";
-
-// Interface for processes
-interface IProcess {
-    id: number;
-    title: string;
-    color: string;
-}
-
-// Fetch processess
-const fetchProcesses = async (): Promise<{
-    processes: IProcess[];
-}> => {
-    try {
-        const filePath = path.join(
-            process.cwd(),
-            "src",
-            "app",
-            "data",
-            "processes.json"
-        );
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const data = JSON.parse(fileContent);
-        return data;
-    } catch (err) {
-        console.error("Failed to read proecesses:", err);
-        return { processes: [] };
-    }
-};
+import { fetchProcesses } from "@/app/utils/fetchProcesses";
 
 // Process section
 export default async function ProcessSection() {
@@ -64,7 +35,7 @@ export default async function ProcessSection() {
             <div className="w-full flex flex-col -space-y-1">
                 {processes.map((item) => (
                     <div
-                       key={item.id}
+                        key={item.id}
                         className={cn(
                             "flex items-center justify-between px-10 pr-16",
                             item.color

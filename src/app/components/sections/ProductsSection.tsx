@@ -1,44 +1,13 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import RevealHeading from "@/components/animated/RevealHeading";
-import path from "path";
-import { promises as fs } from "fs";
 import Image from "next/image";
 import BulletPoint from "@/components/ui/pointer";
-
-// Interface for LatestProduct
-interface ILatestProduct {
-    id: number;
-    img: string;
-    title: string;
-    description1: string;
-    description2: string;
-}
-
-// Fetch latest products
-const fetchLatestProdcuts = async (): Promise<{
-    latestProducts: ILatestProduct[];
-}> => {
-    try {
-        const filePath = path.join(
-            process.cwd(),
-            "src",
-            "app",
-            "data",
-            "latestProducts.json"
-        );
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const data = JSON.parse(fileContent);
-        return data;
-    } catch (err) {
-        console.error("Failed to read lastest products:", err);
-        return { latestProducts: [] };
-    }
-};
+import { fetchLatestProducts } from "@/app/utils/fetchLatestProducts";
 
 // Products section
 export default async function ProductsSection() {
     // Latest products
-    const { latestProducts } = await fetchLatestProdcuts();
+    const { latestProducts } = await fetchLatestProducts();
 
     return (
         <section

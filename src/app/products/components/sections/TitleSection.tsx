@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { IProduct } from "../../layout";
+import { IProduct } from "../../utils/fetchProducts";
 
 // Interface for Props
 interface Props {

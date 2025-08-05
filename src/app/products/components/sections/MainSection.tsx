@@ -1,15 +1,11 @@
 import HeadingSection from "./HeadingSection";
-import ContactSection from "@/components/common/section/ContactSection";
-import { fetchProducts } from "../../layout";
+import ContactSection from "@/components/section/ContactSection";
 
 // Main section
 export default async function MainSection() {
-    // Products
-    const { products } = await fetchProducts();
-
     return (
         <main className="bg-[#292929]">
-            <HeadingSection products={products} />
+            <HeadingSection/>
             <ContactSection />
         </main>
     );

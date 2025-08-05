@@ -1,14 +1,12 @@
+import { fetchProducts } from "../../utils/fetchProducts";
 import Panel from "../panel/Panel";
 import SnapHeadings from "@/components/animated/SnapPanels";
-import { IProduct } from "../../layout";
-
-// Interface for Props
-interface Props {
-    products: IProduct[];
-}
 
 // Heading section
-export default function HeadingSection({ products }: Props) {
+export default async function HeadingSection() {
+    // Products
+    const { products } = await fetchProducts();
+
     return (
         <SnapHeadings
             panelsLength={products.length}
