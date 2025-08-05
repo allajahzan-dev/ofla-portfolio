@@ -47,7 +47,7 @@ export default function TitleSection({ products }: Props) {
         }
 
         setDescription(product.description);
-    }, [selectedProduct, title, pathname]);
+    }, [selectedProduct, products, title, pathname]);
 
     return (
         <section

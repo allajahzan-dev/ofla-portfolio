@@ -15,7 +15,7 @@ export default function ScrollToTop({ element }: Props) {
 
     useLayoutEffect(() => {
         scrollSmoother().scrollTo(element, true, "top top");
-    }, [pathname]);
+    }, [pathname, element]);
 
     return null;
 }

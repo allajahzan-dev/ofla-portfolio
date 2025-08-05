@@ -2,7 +2,7 @@
 
 import { gsap } from "gsap";
 import { snapPanels } from "@/lib/gsap/SnapPanels";
-import { ReactNode, RefObject, useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 
 // Interface for Props
 interface Props {
