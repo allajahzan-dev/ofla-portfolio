@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { IItemImage } from "./MainSection";
 import Image from "next/image";
+import { IItemImage } from "../../utils/fetchItemImages";
 
 // Interface for Props
 interface Props {
