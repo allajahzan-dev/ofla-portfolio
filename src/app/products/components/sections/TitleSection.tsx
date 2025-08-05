@@ -5,7 +5,7 @@ import { usePageTransition } from "@/hooks/usePageTransition";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { IProduct } from "../../utils/fetchProducts";
 
 // Interface for Props
