@@ -1,4 +1,4 @@
-import { BASE_URL } from "@/constants/baseUrl";
+import BASE_URL from "@/constants/baseUrl";
 
 // Interface for questions
 export interface IQuestions {

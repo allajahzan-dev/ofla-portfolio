@@ -15,7 +15,7 @@ export default function ImageSection({ item, itemImages }: Props) {
             className={cn(
                 "relative z-10 bg-zinc-100 flex flex-col items-center justify-center",
                 "px-10 -mt-0.5 rounded-b-[50px] will-change-transform overflow-hidden",
-                itemImages.length === 0 ? "h-[500px] pb-0" : "h-auto pb-40"
+                itemImages.length === 0 ? "h-[calc(100vh-105px)] pb-0" : "h-auto pb-40"
             )}
         >
             {/* Images */}
