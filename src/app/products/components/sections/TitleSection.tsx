@@ -5,7 +5,7 @@ import { usePageTransition } from "@/hooks/usePageTransition";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { IProduct } from "../../utils/fetchProducts";
 
 // Interface for Props
@@ -28,7 +28,7 @@ export default function TitleSection({ products }: Props) {
     const [description, setDescription] = useState<string>("");
 
     // Set description
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (title === "products") {
             setSelectedProduct("");
             setDescription(
@@ -47,7 +47,7 @@ export default function TitleSection({ products }: Props) {
         }
 
         setDescription(product.description);
-    }, [selectedProduct, products, title, pathname]);
+    }, [selectedProduct, products, title]);
 
     return (
         <section

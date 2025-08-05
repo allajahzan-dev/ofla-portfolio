@@ -18,6 +18,8 @@ export const fetchItemImages = async (
 ): Promise<{
     itemImages: IItemImage[];
 }> => {
+    console.log("fetch item image", item);
+    
     try {
         const filePath = path.join(
             process.cwd(),

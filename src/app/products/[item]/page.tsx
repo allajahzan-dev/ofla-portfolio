@@ -8,5 +8,7 @@ interface Props {
 // Item page
 export default async function Item({ params }: Props) {
     const data = await params;
+    console.log(data);
+    
     return <MainSection item={data.item} />;
 }
