@@ -74,7 +74,7 @@ export default function MousePointer() {
             }}
             initial={{ opacity: 0, scale: 0 }}
             animate={controls}
-            // transition={{ duration: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="pointer-events-none fixed z-50 top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transform-gpu"
         >
             {isHoveringInteractive ? (
@@ -93,7 +93,7 @@ export default function MousePointer() {
                     initial={{ scale: 0.2 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="w-3 h-3 bg-white rounded-full"
+                    className="w-4 h-4 bg-transparent rounded-full"
                 />
             )}
         </motion.div>

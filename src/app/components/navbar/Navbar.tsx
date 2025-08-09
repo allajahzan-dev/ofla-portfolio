@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import NavbarItems from "./NavbarItems";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
+import { usePageTransition } from "@/hooks/usePageTransition";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -18,26 +19,41 @@ export default function Navbar() {
         hoverBgColor: "bg-transparent",
     });
 
-    useLayoutEffect(() => {
-        const route = pathname.split("/")[1];
+    // Page navigator
+    const navigator = usePageTransition();
 
-        switch (route) {
-            case "products":
-                setStyles({
-                    textColor: "text-[#171717]",
-                    hoverTextColor: "text-black",
-                    bgColor: "bg-[#171717]",
-                    hoverBgColor: "bg-black",
-                });
-                break;
-            default:
-                setStyles({
-                    textColor: "text-zinc-100",
-                    hoverTextColor: "text-white",
-                    bgColor: "bg-zinc-100",
-                    hoverBgColor: "bg-white",
-                });
-                break;
+    // Handle navigation
+    const handleNavigation = (href: string) => {
+        return (e: React.MouseEvent) => {
+            if (pathname === href) {
+                e.preventDefault();
+                return;
+            }
+
+            navigator(href);
+        };
+    };
+
+    // Set style
+    useLayoutEffect(() => {
+        const route = pathname;
+
+        if (
+            route === "/products"
+        ) {
+            setStyles({
+                textColor: "text-[#171717]",
+                hoverTextColor: "text-black",
+                bgColor: "bg-[#171717]",
+                hoverBgColor: "bg-black",
+            });
+        } else {
+            setStyles({
+                textColor: "text-zinc-100",
+                hoverTextColor: "text-white",
+                bgColor: "bg-zinc-100",
+                hoverBgColor: "bg-white",
+            });
         }
     }, [pathname]);
 
@@ -54,20 +70,20 @@ export default function Navbar() {
                         oswald.className
                     )}
                 >
-                    <Link href={"/"}>
+                    <span onClick={handleNavigation("/")}>
                         OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
-                    </Link>
+                    </span>
                 </p>
 
                 {/* Nav Links */}
                 <div className="flex items-center gap-16 tracking-widest">
-                    <Link href="/">
+                    <Link href={"/"}>
                         <NavbarItems text="HOME" styles={styles} />
                     </Link>
                     <Link href="/about-us">
                         <NavbarItems text="ABOUT US" styles={styles} />
                     </Link>
-                    <Link href="/products">
+                    <Link href={"/products"}>
                         <NavbarItems text="PRODUCTS" styles={styles} />
                     </Link>
                     <Link href="/contact">

@@ -1,31 +1,133 @@
 {
-    "itemImages" : [
+    "itemImages": [
         {
-            "id" : 1,
-            "img" : ["/images/item/chairs/chair-1.jpeg"],
-            "title" : "",
+            "id": 1,
+            "img": [
+                "/images/item/chairs/chair-1-fr.jpeg",
+                "/images/item/chairs/chair-1-sr.jpeg",
+                "/images/item/chairs/chair-1-br.jpeg",
+                "/images/item/chairs/chair-1-b.jpeg"
+            ],
+            "title": "",
             "description": "",
             "colors": [],
             "rating": "",
-            "materials" : []
+            "materials": []
         },
         {
-            "id" : 2,
-            "img" : ["/images/item/chairs/chair-2.jpeg"],
-            "title" : "",
+            "id": 2,
+            "img": [
+                "/images/item/chairs/chair-2.jpeg"
+            ],
+            "title": "",
             "description": "",
             "colors": [],
             "rating": "",
-            "materials" : []
+            "materials": []
         },
         {
-            "id" : 3,
-            "img" : ["/images/item/chairs/chair-2.jpeg"],
-            "title" : "",
+            "id": 3,
+            "img": [
+                "/images/item/chairs/chair.png",
+                "/images/item/chairs/chair-3-f.jpeg",
+                "/images/item/chairs/chair-3-fr.jpeg",
+                "/images/item/chairs/chair-3-br.jpeg"
+            ],
+            "title": "",
             "description": "",
             "colors": [],
             "rating": "",
-            "materials" : []
+            "materials": []
+        },
+        {
+            "id": 4,
+            "img": [
+                "/images/item/chairs/chair-4-f.jpeg",
+                "/images/item/chairs/chair-4-fr.jpeg",
+                "/images/item/chairs/chair-4-b.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 5,
+            "img": [
+                "/images/item/chairs/chair-5-fr.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 6,
+            "img": [
+                "/images/item/chairs/chair-6-fr.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 7,
+            "img": [
+                "/images/item/chairs/chair-7-f.jpeg",
+                "/images/item/chairs/chair-7-fr.jpeg",
+                "/images/item/chairs/chair-7-bl.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 8,
+            "img": [
+                "/images/item/chairs/chair-8-f.jpeg",
+                "/images/item/chairs/chair-8-fr.jpeg",
+                "/images/item/chairs/chair-8-sr.jpeg",
+                "/images/item/chairs/chair-8-br.jpeg",
+                "/images/item/chairs/chair-8-b.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 9,
+            "img": [
+                "/images/item/chairs/chair-9-f.jpeg",
+                "/images/item/chairs/chair-9-fr.jpeg",
+                "/images/item/chairs/chair-9-sr.jpeg",
+                "/images/item/chairs/chair-7-bl.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
+        },
+        {
+            "id": 10,
+            "img": [
+                "/images/item/chairs/chair-10-f.jpeg",
+                "/images/item/chairs/chair-10-fr.jpeg",
+                "/images/item/chairs/chair-10-b.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "colors": [],
+            "rating": "",
+            "materials": []
         }
     ]
 }

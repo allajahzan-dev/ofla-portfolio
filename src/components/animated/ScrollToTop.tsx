@@ -1,21 +1,23 @@
 "use client";
 
-import { scrollSmoother } from "@/lib/gsap/ScrollSmoother";
-import { usePathname } from "next/navigation";
 import { useLayoutEffect } from "react";
+import { usePathname } from "next/navigation";
+import { scrollSmoother } from "@/lib/gsap/ScrollSmoother";
 
-// Interface for Props
-interface Props {
-    element: string;
-}
-
-// Scroll to top
-export default function ScrollToTop({ element }: Props) {
+export default function ScrollToTop() {
     const pathname = usePathname();
 
     useLayoutEffect(() => {
-        scrollSmoother().scrollTo(element, true, "top top");
-    }, [pathname, element]);
+        const smoother = scrollSmoother();
+
+        requestAnimationFrame(() => {
+            if (smoother) {
+                smoother.scrollTo(0, false);
+            } else {
+                window.scrollTo({ top: 0, behavior: "auto" });
+            }
+        });
+    }, [pathname]);
 
     return null;
 }

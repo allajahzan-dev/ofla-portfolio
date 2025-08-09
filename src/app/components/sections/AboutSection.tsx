@@ -161,7 +161,7 @@ export default function AboutSection() {
                 {/* Right */}
                 <figure
                     style={{
-                        backgroundImage: "url(/images/home/about/about-image1.jpg)",
+                        backgroundImage: "url(/images/home/about/workspace.jpeg)",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}

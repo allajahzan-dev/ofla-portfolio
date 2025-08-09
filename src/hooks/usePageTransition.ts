@@ -14,28 +14,25 @@ export function usePageTransition() {
 
         gsap.registerPlugin(CustomEase);
 
-        CustomEase.create("hop", "0.9, 0, 0.1, 1");
+        CustomEase.create("hop", "0.6, 0, 0.1, 1");
 
-        // Reset transition 
+        // Reset transition
         gsap.set(transition, {
             scaleY: 1,
+            opacity: 1,
             height: "100vh",
             onComplete: () => {
-                router.push(href);
+                setTimeout(() => {
+                    router.push(href, { scroll: false });
+
+                    gsap.to(transition, {
+                        scaleY: 0,
+                        duration: 0.5,
+                        delay: 1,
+                        ease: "hop",
+                    });
+                }, 500);
             },
-        });
-
-        gsap.to(transition, {
-            height: "92vh",
-            duration: 0.5,
-            delay: 0.6,
-        });
-
-        gsap.to(transition, {
-            scaleY: 0,
-            duration: 0.5,
-            delay: 1,
-            ease: "hop",
         });
     };
 

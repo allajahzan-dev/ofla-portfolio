@@ -27,4 +27,13 @@ export const killScroller = () => {
     smoother.kill();
     smoother = null;
   }
+
+  // Reset scroll position
+  requestAnimationFrame(() => {
+    if (smoother) {
+      // smoother.scrollTo(0, false);
+    } else {
+      // window.scrollTo({ top: 0, behavior: "auto" });
+    }
+  });
 };

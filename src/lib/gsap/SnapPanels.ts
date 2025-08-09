@@ -14,7 +14,7 @@ export const snapPanels = (
     scrollTrigger: {
       trigger: div,
       pin: true,
-      scrub: 2,
+      scrub: true,
       // snap: {
         // snapTo: 1 / (panels.length - 1),
         // duration: 0.5,

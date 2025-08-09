@@ -38,7 +38,7 @@ export default function NotFound() {
                             oswald.className
                         )}
                     >
-                        404 <span className="text-2xl relative right-20">PAGE NOT FOUND</span>
+                        404 <span className="text-2xl text-white relative right-20">PAGE NOT FOUND</span>
                     </h1>
                 </div>
             </div>

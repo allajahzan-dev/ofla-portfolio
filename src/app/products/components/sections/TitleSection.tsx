@@ -5,8 +5,9 @@ import { usePageTransition } from "@/hooks/usePageTransition";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useLayoutEffect, useState } from "react";
-import { IProduct } from "../../utils/fetchProducts";
+import { useState } from "react";
+import { IProduct } from "@/app/products/utils/fetchProducts";
+import BulletPoint from "@/components/ui/pointer";
 
 // Interface for Props
 interface Props {
@@ -18,98 +19,80 @@ export default function TitleSection({ products }: Props) {
     // Title
     const pathname = usePathname();
     const title = pathname.split("/")[pathname.split("/").length - 1];
-    const formattedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
-    // Page transition navigator
+    // Page navigator
     const navigator = usePageTransition();
 
     // Selected product
     const [selectedProduct, setSelectedProduct] = useState<string>("");
-    const [description, setDescription] = useState<string>("");
 
-    // Set description
-    useLayoutEffect(() => {
-        if (title === "products") {
-            setSelectedProduct("");
-            setDescription(
-                "Quality chairs, tables, storage solutions, and office furniture designed for modern workspaces."
-            );
-            return;
-        }
-        const product = products.find(
-            (product) =>
-                (selectedProduct.toLowerCase() || title) === product.title.toLowerCase()
-        );
+    // Handle navigation
+    const handleNavigation = (href: string, title: string) => {
+        return (e: React.MouseEvent) => {
+            if (pathname === href) {
+                e.preventDefault();
+                return;
+            }
 
-        if (!product) {
-            setDescription("No description found!");
-            return;
-        }
-
-        setDescription(product.description);
-    }, [selectedProduct, products, title]);
+            setSelectedProduct(title);
+            navigator(href);
+        };
+    };
 
     return (
         <section
-            id="title-section"
-            className="h-[calc(100vh-9vh)] w-screen relative bg-zinc-100 flex flex-col items-center justify-center
+            className="h-[calc(100vh-9vh)] w-full relative bg-zinc-100 flex flex-col items-center justify-center
         px-10 will-change-transform overflow-hidden"
         >
             {/* Title */}
-            <div className="relative w-full grid grid-cols-3">
+            <motion.div
+                initial={{ y: -50, scale: 0.9 }}
+                animate={{ y: 0, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="relative top-14 grid grid-cols-3"
+            >
                 <p
                     className={cn(
-                        "font-semibold text-base text-start leading-[1] relative left-0 top-16 h-fit",
+                        "font-semibold text-base text-start leading-[1] relative left-0 top-20 h-fit",
                         oswald.className
                     )}
                 >
                     2023 — {new Date().getFullYear()}
                 </p>
 
-                <div className="col-span-2 flex flex-col text-start will-change-transform">
-                    <span className="overflow-hidden w-[80%]">
-                        <motion.h1
-                            key={selectedProduct || formattedTitle}
-                            initial={{ translateY: "100%" }}
-                            animate={{ translateY: "0%" }}
-                            transition={{ duration: 0.5, delay: 1 }}
-                            className={cn("text-[160px] font-bold")}
-                        >
-                            {selectedProduct || formattedTitle}
-                        </motion.h1>
+                <div className="col-span-2 relative flex flex-col items-start justify-center text-start will-change-transform">
+                    <span className="overflow-hidden">
+                        <h1 className="font-bold text-[160px] tracking-tight">Products</h1>
                     </span>
 
-                    <span className="overflow-hidden pl-2">
-                        <motion.p
-                            key={selectedProduct || formattedTitle}
-                            initial={{ translateY: "100%" }}
-                            animate={{ translateY: "0%" }}
-                            transition={{ duration: 0.5, delay: 1 }}
-                            className="w-[70%] text-2xl font-semibold text-zinc-600 transform-gpu"
-                        >
-                            {description}
-                        </motion.p>
+                    <span className="overflow-hidden pl-2 w-[60%] relative -top-5">
+                        <p className="text-2xl font-semibold text-zinc-600 transform-gpu">
+                            Quality chairs, tables, storage solutions, and office furniture
+                            designed for modern workspaces.
+                        </p>
                     </span>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Products */}
-            <div className="fixed bottom-10 left-[49.5%] -translate-x-1/2 flex items-center gap-12">
+            <div className="w-full absolute bottom-10 px-10 flex items-center justify-between">
                 {products.map((product, index) => (
-                    <p
+                    <motion.a
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
                         key={index}
-                        onClick={() => {
-                            navigator(`/products/${product.title.toLowerCase()}`);
-                            setSelectedProduct(product.title);
-                        }}
+                        href={`/products/${product.title.toLowerCase()}`}
                         className={cn(
-                            "text-lg font-medium hover:text-orange-600 cursor-pointer transform-gpu",
+                            "group text-lg font-semibold hover:text-orange-600 cursor-pointer",
+                            "flex items-center gap-2 transform-gpu",
                             (selectedProduct.toLowerCase() || title) ===
                             product.title.toLowerCase() && "text-orange-600"
                         )}
                     >
+                        <BulletPoint className="group-hover:text-orange-600" />
                         {product.title}
-                    </p>
+                    </motion.a>
                 ))}
             </div>
         </section>

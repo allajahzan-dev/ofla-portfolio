@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { usePageTransition } from "@/hooks/usePageTransition";
+import { usePathname } from "next/navigation";
 
 // Interface for Props
 interface Props {
@@ -14,15 +15,32 @@ interface Props {
 
 // Panel
 export default function Panel({ href, img, title, titleClassName }: Props) {
+    const pathname = usePathname();
+
+    // Page navigator
+    const navigator = usePageTransition();
+
+    // Handle navigation
+    const handleNavigation = (href: string) => {
+        return (e: React.MouseEvent) => {
+            if (pathname === href) {
+                e.preventDefault();
+                return;
+            }
+
+            navigator(href);
+        };
+    };
+
     return (
-        <Link
-            href={href}
+        <span
+            onClick={handleNavigation(href)}
             style={{
                 backgroundImage: `url(${img})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
-            className="panel w-screen h-screen flex items-center justify-center will-change-transform"
+            className="panel w-screen h-screen flex items-center justify-center cursor-pointer will-change-transform"
         >
             <motion.div
                 initial={{ opacity: 0, scale: 0.2 }}
@@ -39,6 +57,6 @@ export default function Panel({ href, img, title, titleClassName }: Props) {
                     {title}
                 </h1>
             </motion.div>
-        </Link>
+        </span>
     );
 }
