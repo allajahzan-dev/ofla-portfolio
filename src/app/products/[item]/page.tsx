@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props) {
 
     // Products
     const { products } = await fetchProducts();
+    
     const product = products.find(
         (product) => product.title.toLowerCase() === data.item
     );

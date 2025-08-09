@@ -1,10 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import BulletPoint from "@/components/ui/pointer";
-import { usePageTransition } from "@/hooks/usePageTransition";
-import { usePathname } from "next/navigation";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -16,23 +12,6 @@ interface Props {
 
 // Image section
 export default function ImageSection({ products }: Props) {
-    const pathname = usePathname();
-
-    // Page navigator
-    const navigator = usePageTransition();
-
-    // Handle navigation
-    const handleNavigation = (href: string) => {
-        return (e: React.MouseEvent) => {
-            if (pathname === href) {
-                e.preventDefault();
-                return;
-            }
-
-            navigator(href);
-        };
-    };
-
     return (
         // <SnapPanels
         //     panelsLength={products.length}

@@ -1,11 +1,8 @@
 "use client";
 
 import { oswald } from "@/fonts/owald";
-import { usePageTransition } from "@/hooks/usePageTransition";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import BulletPoint from "@/components/ui/pointer";
 
@@ -16,29 +13,6 @@ interface Props {
 
 // Title section
 export default function TitleSection({ products }: Props) {
-    // Title
-    const pathname = usePathname();
-    const title = pathname.split("/")[pathname.split("/").length - 1];
-
-    // Page navigator
-    const navigator = usePageTransition();
-
-    // Selected product
-    const [selectedProduct, setSelectedProduct] = useState<string>("");
-
-    // Handle navigation
-    const handleNavigation = (href: string, title: string) => {
-        return (e: React.MouseEvent) => {
-            if (pathname === href) {
-                e.preventDefault();
-                return;
-            }
-
-            setSelectedProduct(title);
-            navigator(href);
-        };
-    };
-
     return (
         <section
             className="h-[calc(100vh-9vh)] w-full relative bg-zinc-100 flex flex-col items-center justify-center
@@ -85,9 +59,7 @@ export default function TitleSection({ products }: Props) {
                         href={`/products/${product.title.toLowerCase()}`}
                         className={cn(
                             "group text-lg font-semibold hover:text-orange-600 cursor-pointer",
-                            "flex items-center gap-2 transform-gpu",
-                            (selectedProduct.toLowerCase() || title) ===
-                            product.title.toLowerCase() && "text-orange-600"
+                            "flex items-center gap-2 transform-gpu"
                         )}
                     >
                         <BulletPoint className="group-hover:text-orange-600" />
