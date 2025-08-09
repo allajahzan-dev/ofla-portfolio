@@ -47,7 +47,7 @@ export default function TitleSection({ products }: Props) {
                 backgroundSize: "cover",
                 backgroundPosition: "center 64%",
             }}
-            className="min-h-screen w-full relative bg-zinc-100 text-zinc-200  flex flex-col items-center justify-end
+            className="min-h-screen w-full relative bg-zinc-100 text-white flex flex-col items-center justify-end
         px-10 will-change-transform overflow-hidden"
         >
             {/* Shadow */}
@@ -57,7 +57,7 @@ export default function TitleSection({ products }: Props) {
             <div className="relative top-0 w-full h-88 flex flex-col items-start">
                 <p
                     className={cn(
-                        "font-semibold text-base text-start leading-[1] absolute left-2 top-0",
+                        "font-semibold text-base text-start tracking-wide leading-[1] absolute left-2 top-0",
                         oswald.className
                     )}
                 >

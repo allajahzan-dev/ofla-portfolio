@@ -79,10 +79,10 @@ export default function ImageSection({ products }: Props) {
                             />
 
                             {/* Shadow */}
-                            <div
+                            {/* <div
                                 className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent 
                             via-black/20 to-transparent"
-                            />
+                            /> */}
 
                             {/* <h1
                                 className={cn(

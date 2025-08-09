@@ -53,7 +53,7 @@ export default function TitleSection({ products }: Props) {
             >
                 <p
                     className={cn(
-                        "font-semibold text-base text-start leading-[1] relative left-0 top-20 h-fit",
+                        "font-semibold text-base text-start tracking-wide leading-[1] relative left-0 top-20 h-fit",
                         oswald.className
                     )}
                 >

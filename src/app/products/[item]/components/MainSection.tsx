@@ -1,7 +1,7 @@
-import ImageSection from "./ImageSection";
 import TitleSection from "./TitleSection";
+import OverviewSection from "./OverviewSection";
+import ImageSection from "./ImageSection";
 import ContactSection from "@/components/common/ContactSection";
-import DescriptionSection from "./DescriptionSection";
 import { fetchItemImages } from "@/app/products/[item]/utils/fetchItemImages";
 import { fetchProducts } from "@/app/products/utils/fetchProducts";
 
@@ -27,7 +27,7 @@ export default async function MainSection({ item }: Props) {
                 bg-[linear-gradient(to_bottom,_white_0%,_white_2%,_#292929_2%,_#292929_100%)]"
                 />
 
-                <DescriptionSection products={products} />
+                <OverviewSection products={products} />
                 <ImageSection item={item} itemImages={itemImages} />
                 <ContactSection />
             </div>

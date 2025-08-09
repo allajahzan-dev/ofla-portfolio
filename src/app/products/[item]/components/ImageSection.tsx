@@ -17,7 +17,7 @@ export default function ImageSection({ item, itemImages }: Props) {
         <section
             className={cn(
                 "relative z-10 min-h-screen bg-zinc-100 flex flex-col items-center justify-center gap-10",
-                "px-10 py-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
+                "px-10 -mt-0.5 rounded-b-[50px] will-change-transform overflow-hidden"
             )}
         >
             {/* Content */}
@@ -33,8 +33,9 @@ export default function ImageSection({ item, itemImages }: Props) {
                             cursor-pointer shadow-[0_0_10px_rgba(0,0,0,0.04)]"
                             >
                                 <Image
-                                    width={500}
-                                    height={500}
+                                    width={1000}
+                                    height={1000}
+                                    quality={100}
                                     src={itemImage?.img[0]}
                                     alt={item + index}
                                     className="h-full w-full object-contain group-hover:scale-100 transition-all duration-500"
