@@ -1,9 +1,12 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import BulletPoint from "@/components/ui/pointer";
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
 import { IItemImage } from "@/app/products/[item]/utils/fetchItemImages";
+import { motion } from "framer-motion";
 
 // Interface for Props
 interface Props {
@@ -26,28 +29,33 @@ export default function ImageSection({ item, itemImages }: Props) {
                     <div className="w-full grid grid-cols-3 gap-5">
                         {/* Images */}
                         {itemImages.map((itemImage, index) => (
-                            <Link
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.3 }}
                                 key={itemImage.id}
-                                href={`/products/${item}/${itemImage.id}`}
                                 className="group relative p-10 h-[500px] w-full bg-white rounded-3xl overflow-hidden 
                             cursor-pointer shadow-[0_0_10px_rgba(0,0,0,0.04)]"
                             >
-                                <Image
-                                    width={1000}
-                                    height={1000}
-                                    quality={100}
-                                    src={itemImage?.img[0]}
-                                    alt={item + index}
-                                    className="h-full w-full object-contain group-hover:scale-100 transition-all duration-500"
-                                />
+                                <Link href={`/products/${item}/${itemImage.id}`}>
+                                    <Image
+                                        width={1000}
+                                        height={1000}
+                                        quality={100}
+                                        src={itemImage?.img[0]}
+                                        alt={item + index}
+                                        className="h-full w-full object-contain group-hover:scale-100 transition-all duration-500"
+                                    />
 
-                                <div
-                                    className="absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white 
+                                    <div
+                                        className="absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white 
                        group-hover:opacity-100 opacity-0 duration-300 transition-opacity"
-                                >
-                                    <ArrowRight className="w-5 h-5" />
-                                </div>
-                            </Link>
+                                    >
+                                        <ArrowRight className="w-5 h-5" />
+                                    </div>
+                                </Link>
+                            </motion.div>
                         ))}
                     </div>
 

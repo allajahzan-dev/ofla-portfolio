@@ -30,7 +30,6 @@ export default function OverviewSection({ products }: Props) {
                         href={`/products/${product.title.toLowerCase()}`}
                         className={cn(
                             "group text-lg font-semibold hover:text-orange-600 cursor-pointer",
-                            "transform-gpu",
                             title === product.title.toLowerCase() && "text-orange-600"
                         )}
                     >
@@ -39,7 +38,7 @@ export default function OverviewSection({ products }: Props) {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ amount: 0.5 }}
                             transition={{ duration: 0.2, delay: 0.2 + index * 0.1 }}
-                            className="flex items-center gap-2 "
+                            className="flex items-center gap-2 will-change-transform"
                         >
                             <BulletPoint
                                 className={cn(

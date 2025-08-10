@@ -1,5 +1,5 @@
 import ContactSection from "@/components/common/ContactSection";
-import { fetchItemImages } from "../../utils/fetchItemImages";
+import { fetchItemImages } from "@/app/products/[item]/utils/fetchItemImages";
 import DetailsSection from "./DetailsSection";
 
 // Interface for Props

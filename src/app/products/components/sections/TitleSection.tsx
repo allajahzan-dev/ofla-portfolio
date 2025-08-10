@@ -59,7 +59,7 @@ export default function TitleSection({ products }: Props) {
                         href={`/products/${product.title.toLowerCase()}`}
                         className={cn(
                             "group text-lg font-semibold hover:text-orange-600 cursor-pointer",
-                            "flex items-center gap-2 transform-gpu"
+                            "flex items-center gap-2 will-change-transform"
                         )}
                     >
                         <BulletPoint className="group-hover:text-orange-600" />

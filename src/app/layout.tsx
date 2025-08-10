@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { urbanist } from "@/fonts/urbanist";
-import Navbar from "./components/navbar/Navbar";
-import ScrollSmoother from "./components/animated/ScrollSmoother";
 import ContactIndicator from "./components/animated/ContactIndicator";
 import MousePointer from "./components/animated/MousePointer";
 import PageTransition from "@/components/animated/PageTransition";
+import SmoothWrapper from "./components/animated/SmoothWrapper";
 
 export const metadata: Metadata = {
     title: "Office Lifestyle Arabia",
@@ -36,15 +35,7 @@ export default function RootLayout({
             <body className="bg-white text-[#171717] overflow-x-hidden">
                 <ContactIndicator />
                 <PageTransition />
-
-                <div id="smooth-wrapper" className="relative">
-                    <div id="smooth-content">
-                        <Navbar />
-                        {children}
-                    </div>
-                </div>
-
-                <ScrollSmoother />
+                <SmoothWrapper>{children}</SmoothWrapper>
                 <MousePointer />
             </body>
         </html>

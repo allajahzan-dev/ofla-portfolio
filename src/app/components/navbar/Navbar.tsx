@@ -39,7 +39,8 @@ export default function Navbar() {
         const route = pathname;
 
         if (
-            route === "/products"
+            /^\/products$/.test(route) ||
+            /^\/products\/[^/]+\/[^/]+$/.test(route)
         ) {
             setStyles({
                 textColor: "text-[#171717]",

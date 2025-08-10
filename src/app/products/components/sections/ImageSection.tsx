@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import BulletPoint from "@/components/ui/pointer";
