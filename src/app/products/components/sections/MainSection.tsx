@@ -1,5 +1,5 @@
 import ImageSection from "./ImageSection";
-import TitleSection from "./TitleSection";
+import TitleSection from "@/components/common/TitleSection";
 import ContactSection from "@/components/common/ContactSection";
 import { fetchProducts } from "@/app/products/utils/fetchProducts";
 
@@ -10,7 +10,11 @@ export default async function MainSection() {
 
     return (
         <main className="bg-[#292929]">
-            <TitleSection products={products} />
+            <TitleSection
+                title="Products"
+                description="Quality chairs, tables, storage solutions, and office furniture
+                designed for modern workspaces."
+            />
             <ImageSection products={products} />
             <ContactSection />
         </main>

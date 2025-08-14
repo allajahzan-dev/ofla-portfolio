@@ -2,44 +2,44 @@
     "products": [
         {
             "id": 1,
-            "img": "/images/products/chairs.jpg",
-            "href": "/products/chairs",
-            "title": "Chairs",
+            "img": "/images/products/pro-seating.jpg",
+            "href": "/products/pro-seating",
+            "title": "Pro seating",
             "description": "Ergonomic seating solutions with premium comfort and contemporary design for all-day productivity."
         },
         {
             "id": 2,
-            "img": "/images/products/tables.jpg",
-            "href": "/products/tables",
-            "title": "Tables",
-            "description": "Stylish and durable tables crafted with high-quality materials for professional workspace environments."
+            "img": "/images/products/work-surfaces.jpg",
+            "href": "/products/work-surfaces",
+            "title": "Work surfaces",
+            "description": "Stylish and durable surfaces crafted with high-quality materials for professional workspace environments."
         },
         {
             "id": 3,
-            "img": "/images/products/lounge.jpg",
-            "href": "/products/lounge",
-            "title": "Lounge",
+            "img": "/images/products/lounge-seating.jpg",
+            "href": "/products/lounge-seating",
+            "title": "Lounge seating",
             "description": "Comfortable reception seating with elegant upholstery perfect for client areas and lounges."
         },
         {
             "id": 4,
-            "img": "/images/products/pods.jpg",
-            "href": "/products/pods",
-            "title": "PODs",
+            "img": "/images/products/work-pods.jpg",
+            "href": "/products/work-pods",
+            "title": "Work pods",
             "description": "Stylish privacy solutions that create quiet, concentrated workspaces within busy office environments."
         },
         {
             "id": 5,
-            "img": "/images/products/lockers.jpg",
-            "href": "/products/lockers",
-            "title": "Lockers",
+            "img": "/images/products/personal-vaults.jpg",
+            "href": "/products/personal-vaults",
+            "title": "Personal vaults",
             "description": "Heavy-duty personal storage units built for maximum security and long-lasting durability."
         },
         {
             "id": 6,
-            "img": "/images/products/storage.jpg",
-            "href": "/products/storage",
-            "title": "Storage",
+            "img": "/images/products/office-storage.jpg",
+            "href": "/products/office-storage",
+            "title": "Office storage",
             "description": "Smart organizational furniture designed to keep your office clutter-free and efficiently arranged."
         }
     ]

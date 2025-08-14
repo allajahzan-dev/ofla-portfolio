@@ -19,7 +19,7 @@ export default async function MainSection({ item, id }: Props) {
     return (
         <main className="bg-[#292929]">
             <DetailsSection itemImage={itemImage} />
-            <ContactSection/>
+            <ContactSection />
         </main>
     );
 }

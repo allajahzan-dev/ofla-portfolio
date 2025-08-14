@@ -11,7 +11,7 @@ export default function DetailsSection({ itemImage }: Props) {
     return (
         <section
             className="min-h-screen w-full relative bg-zinc-100 flex flex-col items-center justify-center
-        px-10 py-20 will-change-transform overflow-hidden"
+        px-10 pt-10 pb-20 will-change-transform overflow-hidden"
         >
             {/* Item images */}
             <div className="w-full h-full">

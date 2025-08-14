@@ -161,12 +161,13 @@ export default function AboutSection() {
                 {/* Right */}
                 <figure
                     style={{
-                        backgroundImage: "url(/images/home/about/workspace.jpeg)",
+                        backgroundImage: "url(/images/home/about/about-image1.jpg)",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
-                    className="h-[460px] w-full bg-white rounded-3xl overflow-hidden"
+                    className="relative h-[460px] w-full bg-white rounded-3xl overflow-hidden"
                 >
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-transparent to-black/10" />
                 </figure>
             </div>
         </section>

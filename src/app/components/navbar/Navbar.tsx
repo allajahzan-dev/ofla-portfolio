@@ -39,8 +39,9 @@ export default function Navbar() {
         const route = pathname;
 
         if (
-            /^\/products$/.test(route) ||
-            /^\/products\/[^/]+\/[^/]+$/.test(route)
+            route === "/products" ||
+            route === "/about-us" ||
+            route === "/contact"
         ) {
             setStyles({
                 textColor: "text-[#171717]",
@@ -59,7 +60,12 @@ export default function Navbar() {
     }, [pathname]);
 
     return (
-        <div className="w-full px-10 fixed z-[100] top-0 will-change-transform">
+        <div
+            className={cn(
+                "w-full px-10 fixed z-[100] top-0 will-change-transform",
+                /^\/products\/[^/]+\/[^/]+$/.test(pathname) ? "hidden" : "block"
+            )}
+        >
             <div
                 className={`w-full h-20 flex items-center justify-between font-semibold text-sm ${styles.textColor}`}
             >

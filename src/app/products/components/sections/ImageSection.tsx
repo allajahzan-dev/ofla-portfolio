@@ -6,6 +6,8 @@ import BulletPoint from "@/components/ui/pointer";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { oswald } from "@/fonts/owald";
 
 // Interface for Props
 interface Props {
@@ -31,21 +33,21 @@ export default function ImageSection({ products }: Props) {
         // />
         <section
             className="min-h-screen relative z-30 bg-zinc-100 flex flex-col gap-10 items-center 
-        px-10 rounded-b-[50px] -mt-0.5 will-change-transform overflow-hidden"
+        px-8 rounded-b-[50px] -mt-0.5 will-change-transform overflow-hidden"
         >
             {/* All images */}
             <motion.div
                 initial={{ y: 80, scale: 0.98 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="w-full grid grid-cols-2 gap-x-5 gap-y-5"
+                className="w-full grid grid-cols-2 gap-x-3 gap-y-3"
             >
                 {products.map((item) => (
                     <Link
                         key={item.id}
                         href={item.href}
-                        className="group flex flex-col w-full p-0 rounded-4xl 
-                    hover:bg-white transition-colors duration-300 "
+                        className="group flex flex-col w-full p-2 rounded-4xl 
+                    hover:bg-transparent transition-colors duration-300 "
                     >
                         {/* Image */}
                         <div className="relative w-full h-[720px] rounded-3xl overflow-hidden cursor-pointer">
@@ -56,24 +58,28 @@ export default function ImageSection({ products }: Props) {
                                 height={1000}
                                 quality={100}
                                 priority
-                                className="h-full w-full object-cover object-center"
+                                className={cn("h-full w-full object-cover group-hover:scale-105 transition-transform duration-300", 
+                                    item.id === 6 ? "object-left" : "object-center"
+                                )}
                             />
 
-                            {/* Shadow */}
-                            {/* <div
-                                className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent 
-                            via-black/20 to-transparent"
-                            /> */}
-
-                            {/* <h1
-                                className={cn(
-                                    "text-6xl text-white/50 font-semibold tracking-wide will-change-transform",
-                                    oswald.className,
-                                    "p-5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
-                                )}
+                            <div
+                                className="absolute z-10 right-5 top-5 py-2.5 px-4 rounded-full bg-white hover:bg-orange-600 hover:text-white 
+                       group-hover:opacity-100 opacity-0 duration-300 transition-opacity"
                             >
-                                {item.title.toUpperCase()}
-                            </h1> */}
+                                <ArrowRight className="w-5 h-5" />
+                            </div>
+
+                            <div className="absolute inset-0 z-0 p-1 px-3 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 rounded-3xl">
+                                <p
+                                    className={cn(
+                                        "text-2xl font-semibold text-white tracking-wide",
+                                        oswald.className
+                                    )}
+                                >
+                                    {item.title.toUpperCase()}
+                                </p>
+                            </div>
                         </div>
 
                         {/* Heading & Description */}

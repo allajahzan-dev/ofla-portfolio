@@ -16,7 +16,7 @@ export default function ContactSection() {
 
                 {/* Second column */}
                 <div className="col-span-2 flex items-end">
-                    <p className="text-4xl font-semibold text-white">
+                    <p className="text-4xl font-semibold text-white will-change-transform">
                         Ready to transform your workspace?
                         <br />
                         Get in touch with our team for expert consultation and personalized

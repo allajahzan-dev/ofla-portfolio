@@ -1,5 +1,5 @@
 import { fetchProducts } from "@/app/products/utils/fetchProducts";
-import MainSection from "./components/MainSection";
+import MainSection from "./components/sections/MainSection";
 
 // Interface for Props
 interface Props {
@@ -19,13 +19,15 @@ export async function generateMetadata({ params }: Props) {
 
     // Products
     const { products } = await fetchProducts();
-    
+
     const product = products.find(
-        (product) => product.title.toLowerCase() === data.item
+        (product) => product.title.toLowerCase() === data.item.split("-").join(" ")
     );
 
     return {
-        title: product?.title || "Office Lifestyle Arabia",
+        title: product?.title
+            ? product.title + " - " + "OFLA"
+            : "Office Lifestyle Arabia",
         description:
             product?.description ||
             `Premium Dubai-based workspace furniture company offering 
