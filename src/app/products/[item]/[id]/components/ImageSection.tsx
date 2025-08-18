@@ -1,6 +1,6 @@
 "use client";
 
-import { IItemImage} from "@/app/products/[item]/utils/fetchItemImages";
+import { IItemImage } from "@/app/products/[item]/utils/fetchItemImages";
 import { Lens } from "@/components/ui/lens";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeftRight } from "lucide-react";
@@ -38,6 +38,7 @@ export default function ImageSection({ itemImage }: Props) {
             <motion.div
                 initial={{ y: 80, scale: 0.98 }}
                 animate={{ y: 0, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 className="w-full h-full py-10 px-0 relative grid grid-cols-2 bg-white"
             >
                 <div className="w-full h-screen  bg-white flex justify-center cursor-pointer overflow-hidden">
