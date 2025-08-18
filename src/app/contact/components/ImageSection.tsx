@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 
 // Image section
 export default function ImageSection() {
@@ -15,10 +16,10 @@ export default function ImageSection() {
 
         ScrollTrigger.create({
             trigger: sectionRef.current,
-            start: "top top", 
-            end: "+=100%", 
-            pin: true, 
-            pinSpacing: false, 
+            start: "top top",
+            end: "+=100%",
+            pin: true,
+            pinSpacing: false,
         });
 
         return () => {
@@ -29,13 +30,20 @@ export default function ImageSection() {
     return (
         <section
             ref={sectionRef}
-            style={{
-                backgroundImage: "url(/images/home/contact/contact.png)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}
-            className="min-h-screen w-full relative flex flex-col items-center justify-center
-        px-10 rounded-b-[50px] will-change-transform overflow-hidden"
-        ></section>
+            className="min-h-screen w-full relative bg-zinc-100 flex flex-col items-center justify-center
+        will-change-transform overflow-hidden"
+        >
+            <motion.div
+                initial={{ y: 80, scale: 0.98 }}
+                animate={{ y: 0, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+            >
+                <img
+                    src="/images/home/contact/contact.png"
+                    alt=""
+                    className="h-full w-full object-cover"
+                />
+            </motion.div>
+        </section>
     );
 }
