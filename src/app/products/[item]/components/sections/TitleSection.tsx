@@ -82,7 +82,7 @@ export default function TitleSection({ products }: Props) {
                         </motion.h1>
                     </span>
 
-                    <span className="overflow-hidden pl-2 w-[53%] relative -top-5">
+                    <span className="overflow-hidden pl-2 w-[60%] relative -top-5">
                         <motion.p
                             key={selectedProduct || formattedTitle}
                             initial={{ translateY: "100%" }}
