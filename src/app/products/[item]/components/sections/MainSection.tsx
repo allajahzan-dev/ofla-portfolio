@@ -15,16 +15,13 @@ export default async function MainSection({ item }: Props) {
     // Item images
     const { itemImages } = await fetchItemImages(item);
 
-    console.log(item.split("-").join(" "));
-    
-
     // Products
     const { products } = await fetchProducts();
 
     return (
         <main>
             <TitleSection products={products} />
-            <div className="bg-[#292929] relative rounded-t-[50px] overflow-hidden">
+            <div className="relative rounded-t-[50px] overflow-hidden">
                 <div
                     className="absolute inset-0 z-0 
                 bg-[linear-gradient(to_bottom,_white_0%,_white_3%,_#292929_2%,_#292929_100%)]"

@@ -35,7 +35,7 @@ export default function AboutSection() {
                         oswald.className
                     )}
                 >
-                    02 <span className="text-2xl relative -left-10">Years</span>
+                    05 <span className="text-2xl relative -left-10">Years</span>
                 </h1>
 
                 <div className="col-span-2 flex flex-col gap-8 p-2 px-1">
@@ -105,7 +105,7 @@ export default function AboutSection() {
                         </div>
                     </div>
 
-                    <p className="text-4xl font-semibold w-[100%]">
+                    <p className="text-4xl font-semibold w-[65%]">
                         We specialize in premium office chairs, tables and ergonomic seating
                         featuring diverse models designed for every workspace need.
                     </p>
@@ -121,7 +121,7 @@ export default function AboutSection() {
                         <br />
                         that drive productivity.
                     </h1>
-                    <p className="text-lg font-medium text-zinc-600 tracking-tight">
+                    <p className="text-lg font-medium text-zinc-600 tracking-tight leading-6">
                         We deliver exceptional office furniture,
                         <br />
                         ergonomic chairs, desks, tables, storage, and workstations, that
@@ -147,11 +147,11 @@ export default function AboutSection() {
                     </div>
                     <div className="flex flex-col gap-5">
                         <h1 className={cn("font-semibold text-8xl", oswald.className)}>
-                            100+
+                            200+
                         </h1>
 
                         {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
-                        <p className="text-lg font-medium text-zinc-600 tracking-tight">
+                        <p className="text-lg font-medium text-zinc-600 tracking-tight leading-6">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.
                         </p>

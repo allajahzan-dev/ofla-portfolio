@@ -7,6 +7,7 @@ export interface IProduct {
     href: string;
     title: string;
     description: string;
+    overview: string;
 }
 
 // Fetch products

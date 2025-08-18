@@ -5,42 +5,48 @@
             "img": "/images/products/pro-seating.jpg",
             "href": "/products/pro-seating",
             "title": "Pro seating",
-            "description": "Ergonomic seating solutions with premium comfort and contemporary design for all-day productivity."
+            "description": "Ergonomic seating solutions with premium comfort and contemporary design for all-day productivity.",
+            "overview": "Our professional seating collection is expertly crafted for superior comfort and modern aesthetics. Each piece combines ergonomic innovation with high-quality materials to create seating solutions that enhance productivity and elevate any workspace environment."
         },
         {
             "id": 2,
             "img": "/images/products/work-surfaces.jpg",
             "href": "/products/work-surfaces",
             "title": "Work surfaces",
-            "description": "Stylish and durable surfaces crafted with high-quality materials for professional workspace environments."
+            "description": "Stylish and durable surfaces crafted with high-quality materials for professional workspace environments.",
+            "overview": "Our professional work surfaces collection features expertly designed desks and tables built for durability and style. Each surface combines premium materials with functional design to create workspace solutions that support productivity and enhance the professional appearance of any office environment."
         },
         {
             "id": 3,
             "img": "/images/products/lounge-seating.jpg",
             "href": "/products/lounge-seating",
             "title": "Lounge seating",
-            "description": "Comfortable reception seating with elegant upholstery perfect for client areas and lounges."
+            "description": "Comfortable reception seating with elegant upholstery perfect for client areas and lounges.",
+            "overview": "Our elegant lounge seating collection is designed to create welcoming and comfortable spaces for clients and employees. Each piece combines luxurious comfort with sophisticated styling to enhance reception areas, waiting spaces, and social zones throughout your workplace."
         },
         {
             "id": 4,
             "img": "/images/products/work-pods.jpg",
             "href": "/products/work-pods",
             "title": "Work pods",
-            "description": "Stylish privacy solutions that create quiet, concentrated workspaces within busy office environments."
+            "description": "Stylish privacy solutions that create quiet, concentrated workspaces within busy office environments.",
+            "overview": "Our innovative work pods collection provides private, focused environments within open office spaces. Each pod combines acoustic engineering with modern design to create quiet sanctuaries that enhance concentration, privacy, and productivity in bustling workplace"
         },
         {
             "id": 5,
             "img": "/images/products/personal-vaults.jpg",
             "href": "/products/personal-vaults",
             "title": "Personal vaults",
-            "description": "Heavy-duty personal storage units built for maximum security and long-lasting durability."
+            "description": "Heavy-duty personal storage units built for maximum security and long-lasting durability.",
+            "overview": "Our secure personal vault collection provides robust storage solutions designed for maximum security and reliability. Each unit combines heavy-duty construction with advanced locking mechanisms to create safe storage spaces that protect valuable personal items and confidential materials in any workplace setting."
         },
         {
             "id": 6,
             "img": "/images/products/office-storage.jpg",
             "href": "/products/office-storage",
             "title": "Office storage",
-            "description": "Smart organizational furniture designed to keep your office clutter-free and efficiently arranged."
+            "description": "Smart organizational furniture designed to keep your office clutter-free and efficiently arranged.",
+            "overview": "Our comprehensive office storage collection features intelligent organizational solutions designed to maximize efficiency and maintain workplace order. Each unit combines functional design with quality construction to create storage systems that streamline office operations and enhance workspace productivity."
         }
     ]
 }

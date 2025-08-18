@@ -3,6 +3,7 @@ import RevealHeading from "@/components/animated/RevealHeading";
 import Image from "next/image";
 import BulletPoint from "@/components/ui/pointer";
 import { fetchLatestProducts } from "@/app/utils/fetchLatestProducts";
+import Link from "next/link";
 
 // Products section
 export default async function ProductsSection() {
@@ -57,7 +58,7 @@ export default async function ProductsSection() {
                         <figcaption className="w-full flex gap-2 p-5 cursor-pointer">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1 className="text-4xl font-semibold">{item.title}</h1>
-                                <p className=" text-lg text-zinc-600 font-medium tracking-tight">
+                                <p className=" text-lg text-zinc-600 font-medium tracking-tight leading-6">
                                     {item.description1}
                                     <br />
                                     {item.description2}
@@ -77,17 +78,17 @@ export default async function ProductsSection() {
                 <footer className="w-full flex items-center gap-10 pt-12 pb-10 col-span-2">
                     <BulletPoint />
                     <div className="bg-zinc-200 w-24 h-0.5 rounded-full flex-1" />
-                    <div className=" group flex items-center gap-2 cursor-pointer">
+                    <Link href={"/products"} className=" group flex items-center gap-2 cursor-pointer">
                         <ArrowUpRight className="w-7 h-7 text-orange-600" />
                         <div className="relative h-7 overflow-hidden">
                             <p className="group-hover:-translate-y-full transition-transform duration-300 text-2xl font-semibold">
-                                More Products
+                                More products
                             </p>
                             <p className="group-hover:-translate-y-full transition-transform duration-300 text-2xl font-semibold text-orange-600">
-                                More Products
+                                More products
                             </p>
                         </div>
-                    </div>
+                    </Link>
                 </footer>
             </div>
         </section>

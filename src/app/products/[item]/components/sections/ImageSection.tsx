@@ -50,7 +50,7 @@ export default function ImageSection({ item, itemImages }: Props) {
 
                                     <div
                                         className="absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white 
-                       group-hover:opacity-100 opacity-0 duration-300 transition-opacity"
+                       opacity-0 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 duration-300 transition-all"
                                     >
                                         <ArrowRight className="w-5 h-5" />
                                     </div>

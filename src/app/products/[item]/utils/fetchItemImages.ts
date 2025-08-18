@@ -5,7 +5,7 @@ export interface IItemImage {
     id: number;
     img: string[];
     title: string;
-    description: string;
+    points: string[];
     colors: string[];
     rating: string;
     materials: string[];

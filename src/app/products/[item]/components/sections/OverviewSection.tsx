@@ -17,6 +17,8 @@ export default function OverviewSection({ products }: Props) {
     const pathname = usePathname();
     const title = pathname.split("/")[pathname.split("/").length - 1];
 
+    const selectedProduct = products.find((product)=>product.title.toLowerCase() === title.split("-").join(" "));
+
     return (
         <section
             className="h-autof w-full relative bg-zinc-100 flex flex-col items-center
@@ -43,7 +45,7 @@ export default function OverviewSection({ products }: Props) {
                         >
                             <BulletPoint
                                 className={cn(
-                                    "group-hover:text-orange-600",
+                                    "text-orange-600",
                                     title.split("-").join(" ") === product.title.toLowerCase() &&
                                     "text-orange-600"
                                 )}
@@ -55,13 +57,10 @@ export default function OverviewSection({ products }: Props) {
             </div>
 
             {/* Overview */}
-            <div className="grid grid-cols-3 gap-5 items-start">
+            <div className="w-full grid grid-cols-3 gap-5 items-start">
                 <p className="font-semibold text-lg text-start leading-[1]">Overview</p>
-                <h1 className="text-4xl text-start font-semibold col-span-2 w-[75%]">
-                    Our premium office chairs are expertly crafted for superior comfort
-                    and professional aesthetics. Each chair combines ergonomic design with
-                    high-quality materials to create seating solutions that enhance
-                    productivity and style in any workspace.
+                <h1 className="text-4xl text-start font-semibold col-span-2 w-[80%]">
+                {selectedProduct?.overview}
                 </h1>
             </div>
         </section>

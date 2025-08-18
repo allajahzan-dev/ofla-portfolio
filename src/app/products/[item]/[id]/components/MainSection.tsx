@@ -1,6 +1,11 @@
-import ContactSection from "@/components/common/ContactSection";
-import { fetchItemImages } from "@/app/products/[item]/utils/fetchItemImages";
+import TitleSection from "./TitleSection";
+import ImageSection from "./ImageSection";
 import DetailsSection from "./DetailsSection";
+import ContactSection from "@/components/common/ContactSection";
+import {
+    fetchItemImages,
+    IItemImage,
+} from "@/app/products/[item]/utils/fetchItemImages";
 
 // Interface for Props
 interface Props {
@@ -10,7 +15,7 @@ interface Props {
 
 // Main section
 export default async function MainSection({ item, id }: Props) {
-    // Item images
+    // Item image
     const { itemImages } = await fetchItemImages(item);
     const itemImage = itemImages.find(
         (itemImage) => itemImage.id === parseInt(id)
@@ -18,7 +23,9 @@ export default async function MainSection({ item, id }: Props) {
 
     return (
         <main className="bg-[#292929]">
-            <DetailsSection itemImage={itemImage} />
+            <TitleSection itemImage={itemImage as IItemImage} />
+            <ImageSection itemImage={itemImage as IItemImage} />
+            <DetailsSection />
             <ContactSection />
         </main>
     );

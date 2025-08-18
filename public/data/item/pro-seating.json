@@ -8,8 +8,12 @@
                 "/images/item/chairs/chair-1-br.jpeg",
                 "/images/item/chairs/chair-1-b.jpeg"
             ],
-            "title": "",
-            "description": "",
+            "title": "Ergonomic High-Back Chair",
+            "points": [
+                "Ergonomic back support",
+                "Mesh ventilation system",
+                "Height adjustable seat"
+            ],
             "colors": [],
             "rating": "",
             "materials": []
@@ -20,7 +24,7 @@
                 "/images/item/chairs/chair-2.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -28,13 +32,12 @@
         {
             "id": 3,
             "img": [
-                "/images/item/chairs/chair.png",
                 "/images/item/chairs/chair-3-f.jpeg",
                 "/images/item/chairs/chair-3-fr.jpeg",
                 "/images/item/chairs/chair-3-br.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -47,7 +50,7 @@
                 "/images/item/chairs/chair-4-b.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -58,7 +61,7 @@
                 "/images/item/chairs/chair-5-fr.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -69,7 +72,7 @@
                 "/images/item/chairs/chair-6-fr.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -82,7 +85,7 @@
                 "/images/item/chairs/chair-7-bl.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -97,7 +100,7 @@
                 "/images/item/chairs/chair-8-b.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -111,7 +114,7 @@
                 "/images/item/chairs/chair-7-bl.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []
@@ -124,7 +127,7 @@
                 "/images/item/chairs/chair-10-b.jpeg"
             ],
             "title": "",
-            "description": "",
+            "points": [],
             "colors": [],
             "rating": "",
             "materials": []

@@ -52,7 +52,7 @@ export default async function FaqSection() {
                                         </h1>
                                     </AccordionTrigger>
 
-                                    <AccordionContent className="text-base font-medium text-zinc-600 w-[70%]">
+                                    <AccordionContent className="text-base font-medium text-zinc-600 w-[60%]">
                                         {item.answer}
                                     </AccordionContent>
                                 </AccordionItem>
