@@ -15,15 +15,10 @@ export default function HeroSection() {
             className="min-h-screen relative -z-10 bg-white flex flex-col items-center justify-start px-10 will-change-transform"
         >
             {/* Shadow */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 via-transparent to-transparent" />
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 via-transparent to-black/60" />
 
             {/* Header */}
             <header className="relative h-screen text-center flex flex-col justify-center">
-                {/* <p className="w-full absolute bottom-32 left-1/2 -translate-x-1/2  text-lg text-white text-center font-medium">
-                    Experience the perfect fusion of innovative design,
-                    <br /> premium craftsmanship, and all day comfort.
-                </p> */}
-
                 <p
                     className={cn(
                         "w-full absolute bottom-40 text-2xl text-white font-medium tracking-wide",
@@ -38,7 +33,7 @@ export default function HeroSection() {
 
                 <p
                     className={cn(
-                        "text-[280px] text-white/50 font-semibold tracking-wide",
+                        "text-[280px] text-white/80 font-semibold tracking-wide",
                         oswald.className
                     )}
                 >

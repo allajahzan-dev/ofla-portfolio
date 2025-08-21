@@ -1,14 +1,24 @@
 import BASE_URL from "@/constants/baseUrl";
 
+// Type for category
+export type TCategory =
+    | "All"
+    | "Executive"
+    | "Public"
+    | "Cafeteria"
+    | "Stools"
+    | "Outdoor";
+
 // Interface for ItemImage
 export interface IItemImage {
     id: number;
     img: string[];
     title: string;
+    category: TCategory;
     points: string[];
-    colors: string[];
-    rating: string;
+    keyFeatures: string[];
     materials: string[];
+    relatedItems: number[];
 }
 
 // Fetch item images

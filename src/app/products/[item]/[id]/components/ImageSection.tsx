@@ -31,24 +31,24 @@ export default function ImageSection({ itemImage }: Props) {
     return (
         <section
             ref={sectionRef}
-            className="h-full w-full relative bg-zinc-100 flex flex-col items-center 
-        pt-2 -mt-0.5 will-change-transform overflow-hidden"
+            className="h-full w-full relative z-10 bg-white flex flex-col items-center
+        -mt-0.5 will-change-transform"
         >
             {/* Images */}
             <motion.div
-                initial={{ y: 80, scale: 0.98 }}
-                animate={{ y: 0, scale: 1 }}
+                initial={{ y: 60 }}
+                animate={{ y: 0}}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="w-full h-full py-10 px-0 relative grid grid-cols-2 bg-white"
+                className="w-full h-full relative pt-10 grid grid-cols-2 bg-white"
             >
                 <div className="w-full h-screen  bg-white flex justify-center cursor-pointer overflow-hidden">
                     <Lens>
                         <AnimatePresence mode="wait">
                             <motion.img
                                 key={mainImage}
-                                initial={{ x: 100 }}
+                                initial={{ x: 50 }}
                                 animate={{ x: 0 }}
-                                exit={{ x: 100 }}
+                                exit={{ x: 50 }}
                                 transition={{ duration: 0.3 }}
                                 src={mainImage}
                                 alt="img"
@@ -68,10 +68,10 @@ export default function ImageSection({ itemImage }: Props) {
                                 <AnimatePresence mode="wait">
                                     <motion.img
                                         key={image}
-                                        initial={{ x: -100 }}
+                                        initial={{ x: -50 }}
                                         animate={{ x: 0 }}
                                         transition={{ duration: 0.3 }}
-                                        exit={{ x: -100 }}
+                                        exit={{ x: -50 }}
                                         src={image}
                                         alt="img"
                                         className="w-full h-full object-contain"

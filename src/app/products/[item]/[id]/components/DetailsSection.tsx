@@ -2,6 +2,7 @@
 
 import BulletPoint from "@/components/ui/pointer";
 import {
+    ArrowRight,
     ArrowUpRight,
     Facebook,
     Instagram,
@@ -19,10 +20,10 @@ export default function DetailsSection() {
 
     return (
         <section
-            className="min-h-screen w-full relative bg-white flex flex-col gap-10 items-center 
+            className="min-h-screen w-full relative z-0 bg-white flex flex-col gap-10 items-center 
         px-10 pt-20 pb-24 rounded-b-[50px] -mt-0.5 will-change-transform overflow-hidden"
         >
-            <div className="w-full h-full grid grid-cols-2 gap-5 items-start">
+            <div className="w-full h-full relative grid grid-cols-2 gap-5 items-start">
                 {/* Details */}
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-5">
@@ -96,41 +97,50 @@ export default function DetailsSection() {
                         <div className="flex flex-col">
                             {[1, 2, 3, 4]
                                 .filter((_, index) => index < 3)
-                                .map((item, index) => (
-                                    <Link
-                                        href={"/products"}
-                                        key={index}
-                                        className="group flex items-center gap-5 cursor-pointer"
-                                    >
-                                        <div className="w-36 bg-white rounded-2xl overflow-hidden shrink-0">
-                                            <img
-                                                src={`/images/item/chairs/chair-${item + 2}-fr.jpeg`}
-                                                alt=""
-                                                className="w-full h-full object-contain"
-                                            />
-                                        </div>
-                                        <div className="flex flex-col gap-2">
-                                            <h1 className="text-lg font-semibold">
-                                                Ergenomic High-Neck Chair
-                                            </h1>
-                                            <p className="text-base font-medium text-zinc-600 w-[80%]">
-                                                {[
-                                                    "Ergonomic back support",
-                                                    "Mesh ventilation system",
-                                                    "Height adjustable seat",
-                                                ].join(", ")}
-                                            </p>
-                                        </div>
-                                    </Link>
+                                .map((id, index) => (
+                                    <div key={index}>
+                                        <Link
+                                            href={`/products/${item}/${id + 2}`}
+                                            className="group flex items-center gap-5 pr-5 cursor-pointer overflow-hidden"
+                                        >
+                                            <div className="w-32 bg-white rounded-2xl overflow-hidden shrink-0">
+                                                <img
+                                                    src={`/images/item/chairs/chair-${id + 2}-fr.jpeg`}
+                                                    alt=""
+                                                    className="w-full h-full object-contain"
+                                                />
+                                            </div>
+                                            <div className="flex flex-col gap-2">
+                                                <h1 className="text-lg font-semibold">
+                                                    Ergenomic High-Neck Chair
+                                                </h1>
+                                                <p className="text-base font-semibold text-zinc-600 w-[80%]">
+                                                    {[
+                                                        "Ergonomic back support",
+                                                        "Mesh ventilation system",
+                                                        "Height adjustable seat",
+                                                    ].join(", ")}
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                className="py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white 
+                                            opacity-0 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 duration-300 transition-all"
+                                            >
+                                                <ArrowRight className="w-5 h-5" />
+                                            </div>
+                                        </Link>
+                                    </div>
                                 ))}
                         </div>
                     </div>
 
+                    {/* Link */}
                     <Link
                         href={`/products/${item}`}
-                        className="group w-fit font-semibold text-lg flex items-center gap-2 cursor-pointer"
+                        className="group w-fit font-semibold text-xl flex items-center gap-2 cursor-pointer"
                     >
-                        <ArrowUpRight className="w-6 h-6 text-orange-600" />
+                        <ArrowUpRight className="w-7 h-7 text-orange-600" />
                         <div className="relative h-7 overflow-hidden">
                             <p className="group-hover:-translate-y-full transition-transform duration-300">
                                 {itemFormatted.split("-").join(" ")}

@@ -121,7 +121,7 @@ export default function AboutSection() {
                         <br />
                         that drive productivity.
                     </h1>
-                    <p className="text-lg font-medium text-zinc-600 tracking-tight leading-6">
+                    <p className="text-lg font-medium text-zinc-600 leading-6">
                         We deliver exceptional office furniture,
                         <br />
                         ergonomic chairs, desks, tables, storage, and workstations, that
@@ -133,7 +133,7 @@ export default function AboutSection() {
                         alt="Doublt Quote"
                         height={1000}
                         width={1000}
-                        className="w-80 absolute -bottom-16 -right-16"
+                        className="w-88 absolute -bottom-20 -right-16"
                     />
                 </article>
 
@@ -151,7 +151,7 @@ export default function AboutSection() {
                         </h1>
 
                         {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
-                        <p className="text-lg font-medium text-zinc-600 tracking-tight leading-6">
+                        <p className="text-lg font-medium text-zinc-600 leading-6">
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.
                         </p>

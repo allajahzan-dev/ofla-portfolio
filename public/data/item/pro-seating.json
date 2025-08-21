@@ -3,134 +3,144 @@
         {
             "id": 1,
             "img": [
-                "/images/item/chairs/chair-1-fr.jpeg",
-                "/images/item/chairs/chair-1-sr.jpeg",
-                "/images/item/chairs/chair-1-br.jpeg",
-                "/images/item/chairs/chair-1-b.jpeg"
+                "/images/item/pro-seating/chair-1-fr.jpeg",
+                "/images/item/pro-seating/chair-1-sr.jpeg",
+                "/images/item/pro-seating/chair-1-br.jpeg",
+                "/images/item/pro-seating/chair-1-b.jpeg"
             ],
             "title": "Ergonomic High-Back Chair",
+            "category": "Executive",
             "points": [
                 "Ergonomic back support",
                 "Mesh ventilation system",
                 "Height adjustable seat"
             ],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 2,
             "img": [
-                "/images/item/chairs/chair-2.jpeg"
+                "/images/item/pro-seating/chair-2.jpeg"
             ],
             "title": "",
+            "category": "Executive",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 3,
             "img": [
-                "/images/item/chairs/chair-3-f.jpeg",
-                "/images/item/chairs/chair-3-fr.jpeg",
-                "/images/item/chairs/chair-3-br.jpeg"
+                "/images/item/pro-seating/chair-3-f.jpeg",
+                "/images/item/pro-seating/chair-3-fr.jpeg",
+                "/images/item/pro-seating/chair-3-br.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 4,
             "img": [
-                "/images/item/chairs/chair-4-f.jpeg",
-                "/images/item/chairs/chair-4-fr.jpeg",
-                "/images/item/chairs/chair-4-b.jpeg"
+                "/images/item/pro-seating/chair-4-f.jpeg",
+                "/images/item/pro-seating/chair-4-fr.jpeg",
+                "/images/item/pro-seating/chair-4-b.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 5,
             "img": [
-                "/images/item/chairs/chair-5-fr.jpeg"
+                "/images/item/pro-seating/chair-5-fr.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 6,
             "img": [
-                "/images/item/chairs/chair-6-fr.jpeg"
+                "/images/item/pro-seating/chair-6-fr.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 7,
             "img": [
-                "/images/item/chairs/chair-7-f.jpeg",
-                "/images/item/chairs/chair-7-fr.jpeg",
-                "/images/item/chairs/chair-7-bl.jpeg"
+                "/images/item/pro-seating/chair-7-f.jpeg",
+                "/images/item/pro-seating/chair-7-fr.jpeg",
+                "/images/item/pro-seating/chair-7-bl.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 8,
             "img": [
-                "/images/item/chairs/chair-8-f.jpeg",
-                "/images/item/chairs/chair-8-fr.jpeg",
-                "/images/item/chairs/chair-8-sr.jpeg",
-                "/images/item/chairs/chair-8-br.jpeg",
-                "/images/item/chairs/chair-8-b.jpeg"
+                "/images/item/pro-seating/chair-8-f.jpeg",
+                "/images/item/pro-seating/chair-8-fr.jpeg",
+                "/images/item/pro-seating/chair-8-sr.jpeg",
+                "/images/item/pro-seating/chair-8-br.jpeg",
+                "/images/item/pro-seating/chair-8-b.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 9,
             "img": [
-                "/images/item/chairs/chair-9-f.jpeg",
-                "/images/item/chairs/chair-9-fr.jpeg",
-                "/images/item/chairs/chair-9-sr.jpeg",
-                "/images/item/chairs/chair-7-bl.jpeg"
+                "/images/item/pro-seating/chair-9-f.jpeg",
+                "/images/item/pro-seating/chair-9-fr.jpeg",
+                "/images/item/pro-seating/chair-9-sr.jpeg",
+                "/images/item/pro-seating/chair-7-bl.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         },
         {
             "id": 10,
             "img": [
-                "/images/item/chairs/chair-10-f.jpeg",
-                "/images/item/chairs/chair-10-fr.jpeg",
-                "/images/item/chairs/chair-10-b.jpeg"
+                "/images/item/pro-seating/chair-10-f.jpeg",
+                "/images/item/pro-seating/chair-10-fr.jpeg",
+                "/images/item/pro-seating/chair-10-b.jpeg"
             ],
             "title": "",
+            "category": "",
             "points": [],
-            "colors": [],
-            "rating": "",
-            "materials": []
+            "materials": [],
+            "keyFeatures": [],
+            "relatedItems": []
         }
     ]
 }

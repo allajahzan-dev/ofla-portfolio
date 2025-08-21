@@ -20,15 +20,12 @@ export default function TitleSection({ products }: Props) {
     const formattedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
     // Selected product
-    const [selectedProduct, setSelectedProduct] = useState<string>("");
     const [description, setDescription] = useState<string>("");
 
     // Set description
     useLayoutEffect(() => {
         const product = products.find(
-            (product) =>
-                (selectedProduct.toLowerCase() || title.split("-").join(" ")) ===
-                product.title.toLowerCase()
+            (product) => title.split("-").join(" ") === product.title.toLowerCase()
         );
 
         if (!product) {
@@ -37,14 +34,17 @@ export default function TitleSection({ products }: Props) {
         }
 
         setDescription(product.description);
-        setSelectedProduct(product.title);
-    }, [selectedProduct, products, title, pathname]);
+        // setSelectedProduct(product.title);
+    }, [products, title, pathname]);
 
     return (
         <section
             data-speed={0.1}
             style={{
-                backgroundImage: `url(/images/products/${title}.jpg)`,
+                backgroundImage: `url(/images/products/${title === "height-adjustable-table"
+                        ? "height-adjustable-tables"
+                        : title
+                    }.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
@@ -55,40 +55,42 @@ export default function TitleSection({ products }: Props) {
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-black/30 to-transparent" />
 
             {/* Title */}
-            <div className="relative top-0 w-full h-88 flex flex-col items-start">
-                <p
-                    className={cn(
-                        "font-semibold text-base text-start tracking-wide leading-[1] absolute left-2 top-0",
-                        oswald.className
-                    )}
-                >
-                    2019 — {new Date().getFullYear()}
-                </p>
-
+            <div className="relative top-0 w-full p-10 pb-16 pl-0 flex flex-col items-start">
                 <div
                     className={cn(
-                        "col-span-2 relative flex flex-col gap-0 items-start text-start will-change-transform"
+                        "relative flex flex-col gap-0 items-start text-start will-change-transform"
                     )}
                 >
+                    <p
+                        className={cn(
+                            "pl-1 font-semibold text-base text-start tracking-wide",
+                            oswald.className
+                        )}
+                    >
+                        2019 — {new Date().getFullYear()}
+                    </p>
+
                     <span className="overflow-hidden">
                         <motion.h1
-                            key={selectedProduct || formattedTitle}
+                            key={formattedTitle}
                             initial={{ translateY: "100%" }}
                             animate={{ translateY: "0%" }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            className={cn("font-bold text-[160px]")}
+                            className={cn("font-bold text-[100px]")}
                         >
-                            {selectedProduct || formattedTitle.split("-").join(" ")}
+                            {title === "height-adjustable-table"
+                                ? "HAT"
+                                : formattedTitle.split("-").join(" ")}
                         </motion.h1>
                     </span>
 
-                    <span className="overflow-hidden pl-2 w-[60%] relative -top-5">
+                    <span className="overflow-hidden w-[63%] relative top-0">
                         <motion.p
-                            key={selectedProduct || formattedTitle}
+                            key={formattedTitle}
                             initial={{ translateY: "100%" }}
                             animate={{ translateY: "0%" }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            className="text-xl font-semibold transform-gpu"
+                            className="pl-1 text-lg font-semibold transform-gpu"
                         >
                             {description}
                         </motion.p>

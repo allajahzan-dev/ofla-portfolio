@@ -55,10 +55,10 @@ export default async function ProductsSection() {
                                 className="product-img h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
-                        <figcaption className="w-full flex gap-2 p-5 cursor-pointer">
+                        <figcaption className="w-full flex gap-2 p-5 cursor-pointer will-change-transform">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1 className="text-4xl font-semibold">{item.title}</h1>
-                                <p className=" text-lg text-zinc-600 font-medium tracking-tight leading-6">
+                                <p className=" text-lg text-zinc-600 font-medium leading-6">
                                     {item.description1}
                                     <br />
                                     {item.description2}

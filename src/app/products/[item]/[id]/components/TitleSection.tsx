@@ -10,12 +10,10 @@ interface Props {
 }
 
 // Title section
-export default function TitleSection({
-    itemImage: { title, points },
-}: Props) {
+export default function TitleSection({ itemImage: { title, points } }: Props) {
     return (
         <section
-            className="h-[calc(100vh-9vh)] w-full relative bg-zinc-100 flex flex-col items-center justify-center
+            className="h-[calc(100vh-30vh)] w-full relative bg-white flex flex-col items-center justify-center
         px-10 will-change-transform overflow-hidden"
         >
             {/* Title */}
@@ -23,7 +21,7 @@ export default function TitleSection({
                 initial={{ y: -50, scale: 0.9 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="relative top-10 w-full flex flex-col items-center justify-center will-change-transform"
+                className="relative top-16 w-full flex flex-col items-center justify-center will-change-transform"
             >
                 <h1 className="font-bold text-[100px] tracking-tight">{title}</h1>
 

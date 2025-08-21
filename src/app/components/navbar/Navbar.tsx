@@ -78,9 +78,9 @@ export default function Navbar() {
                         oswald.className
                     )}
                 >
-                    <span onClick={handleNavigation("/")}>
+                    <Link href={"/"}>
                         OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
-                    </span>
+                    </Link>
                 </p>
 
                 {/* Nav Links */}

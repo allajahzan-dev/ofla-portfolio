@@ -11,7 +11,7 @@ export default async function ProcessSection() {
     return (
         <section
             className="h-min-screen relative z-20 bg-white flex flex-col gap-36 items-center 
-            pt-[120px] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
+            pt-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
         >
             {/* Title */}
             <RevealHeading

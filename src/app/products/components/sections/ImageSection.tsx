@@ -28,7 +28,7 @@ export default function ImageSection({ products }: Props) {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="w-full grid grid-cols-2 gap-x-3 gap-y-3"
             >
-                {products.map((item) => (
+                {products.filter((item) => item.id !== 5).map((item) => (
                     <Link
                         key={item.id}
                         href={item.href}
@@ -42,13 +42,15 @@ export default function ImageSection({ products }: Props) {
                                 alt={item.img.slice(1).split(".")[0]}
                                 width={1000}
                                 height={1000}
-                                quality={100}
                                 priority
                                 className={cn(
                                     "h-full w-full object-cover group-hover:scale-105 transition-transform duration-300",
-                                    item.id === 6 ? "object-left" : "object-center"
+                                    item.id === 3 ? "object-left" : "object-center"
                                 )}
                             />
+
+                            {/* Shadow */}
+                            <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/20 via-transparent to-transparent"/>
 
                             {/* Arrow */}
                             <div

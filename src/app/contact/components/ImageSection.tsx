@@ -34,8 +34,8 @@ export default function ImageSection() {
         will-change-transform overflow-hidden"
         >
             <motion.div
-                initial={{ y: 80, scale: 0.98 }}
-                animate={{ y: 0, scale: 1 }}
+                initial={{ y: 100 }}
+                animate={{ y: 0} }
                 transition={{ duration: 0.5, delay: 0.8 }}
             >
                 <img
