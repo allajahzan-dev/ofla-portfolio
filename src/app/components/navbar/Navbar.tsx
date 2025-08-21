@@ -23,16 +23,16 @@ export default function Navbar() {
     const navigator = usePageTransition();
 
     // Handle navigation
-    const handleNavigation = (href: string) => {
-        return (e: React.MouseEvent) => {
-            if (pathname === href) {
-                e.preventDefault();
-                return;
-            }
+    // const handleNavigation = (href: string) => {
+    //     return (e: React.MouseEvent) => {
+    //         if (pathname === href) {
+    //             e.preventDefault();
+    //             return;
+    //         }
 
-            navigator(href);
-        };
-    };
+    //         navigator(href);
+    //     };
+    // };
 
     // Set style
     useLayoutEffect(() => {
