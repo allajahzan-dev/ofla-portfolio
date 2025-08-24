@@ -3,8 +3,8 @@
 import { IItemImage } from "@/app/products/[item]/utils/fetchItemImages";
 import { Lens } from "@/components/ui/lens";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeftRight, Info } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { ArrowLeftRight } from "lucide-react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 // Interface for Props
@@ -14,8 +14,6 @@ interface Props {
 
 // Image section
 export default function ImageSection({ itemImage }: Props) {
-    const [hasMounted, setHasMounted] = useState(false);
-
     // Images
     const images = itemImage.img || [];
     const [mainImage, setMainImage] = useState(images[0]);
@@ -28,10 +26,6 @@ export default function ImageSection({ itemImage }: Props) {
         setMainImage(clickedImg);
         setThumbs(newThumbs);
     };
-
-    useEffect(() => {
-        setHasMounted(true);
-    }, []);
 
     return (
         <section
