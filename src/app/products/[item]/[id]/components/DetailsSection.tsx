@@ -11,12 +11,34 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { IItemImage } from "@/app/products/[item]/utils/fetchItemImages";
+import { useLayoutEffect, useState } from "react";
+import Image from "next/image";
+
+// Interface for Props
+interface Props {
+    itemImages: IItemImage[];
+    itemImage: IItemImage;
+}
 
 // Details section
-export default function DetailsSection() {
+export default function DetailsSection({ itemImages, itemImage }: Props) {
     const params = useParams();
     const item = params.item as string;
     const itemFormatted = item.charAt(0).toUpperCase() + item.slice(1);
+
+    // Related items
+    const [relatedItems, setRelatedItems] = useState<IItemImage[] | []>([]);
+
+    // Set realted items
+    useLayoutEffect(() => {
+        setRelatedItems(() => {
+            const rItems = itemImage.relatedItems
+                .map((id) => itemImages.find((itemImg) => itemImg.id === id))
+                .filter((itemImage) => itemImage !== undefined);
+            return rItems;
+        });
+    }, [params]);
 
     return (
         <section
@@ -24,21 +46,13 @@ export default function DetailsSection() {
         px-10 pt-20 pb-24 rounded-b-[50px] -mt-0.5 will-change-transform overflow-hidden"
         >
             <div className="w-full h-full relative grid grid-cols-2 gap-5 items-start">
-                {/* Details */}
+                {/* First column */}
                 <div className="flex flex-col gap-20">
+                    {/* Key features */}
                     <div className="flex flex-col gap-5">
                         <p className="font-semibold text-2xl text-start">Key features</p>
                         <ul className="flex flex-col justify-center gap-0 text-lg font-medium">
-                            {[
-                                "High-back ergonomic design with lumbar support",
-                                "Breathable mesh backrest for temperature control",
-                                "Adjustable padded headrest",
-                                "Height-adjustable seat mechanism",
-                                "Height-adjustable seat mechanism",
-                                "360-degree swivel functionality",
-                                "Adjustable armrests with soft padding",
-                                "Tilt mechanism with tension control",
-                            ].map((point, index) => (
+                            {itemImage.keyFeatures.map((point, index) => (
                                 <li key={index} className="list-none">
                                     <BulletPoint className="text-orange-600" />
                                     &nbsp;&nbsp;
@@ -48,20 +62,13 @@ export default function DetailsSection() {
                         </ul>
                     </div>
 
-                    {/* Points */}
+                    {/* Material Specifications */}
                     <div className="flex flex-col gap-5">
                         <p className="font-semibold text-2xl text-start">
                             Material Specifications
                         </p>
                         <ul className="flex flex-col justify-center gap-0 text-lg font-medium">
-                            {[
-                                "Mesh backrest: High-quality breathable fabric",
-                                "Seat cushion: High-density foam with fabric upholstery",
-                                "Frame: Reinforced plastic and metal construction",
-                                "Base: Chrome-plated 5-star aluminum base",
-                                "Armrests: Adjustable PP plastic with soft padding",
-                                "Casters: Dual-wheel nylon rollers",
-                            ].map((point, index) => (
+                            {itemImage.materialSpecification.map((point, index) => (
                                 <li key={index} className="list-none">
                                     <BulletPoint className="text-orange-600" />
                                     &nbsp;&nbsp;
@@ -86,8 +93,9 @@ export default function DetailsSection() {
                     </div>
                 </div>
 
-                {/* Related items */}
+                {/* Second column */}
                 <div className="h-full flex flex-col justify-between">
+                    {/* Related items */}
                     <div className="flex flex-col gap-0">
                         <p className="font-semibold text-2xl text-start flex items-center gap-2">
                             Related Items
@@ -95,31 +103,30 @@ export default function DetailsSection() {
 
                         {/* Items */}
                         <div className="flex flex-col">
-                            {[1, 2, 3, 4]
+                            {relatedItems
                                 .filter((_, index) => index < 3)
-                                .map((id, index) => (
+                                .map((itemImage, index) => (
                                     <div key={index}>
                                         <Link
-                                            href={`/products/${item}/${id + 2}`}
+                                            href={`/products/${item}/${itemImage.id}`}
                                             className="group flex items-center gap-5 pr-5 cursor-pointer overflow-hidden"
                                         >
                                             <div className="w-32 bg-white rounded-2xl overflow-hidden shrink-0">
-                                                <img
-                                                    src={`/images/item/chairs/chair-${id + 2}-fr.jpeg`}
-                                                    alt=""
+                                                <Image
+                                                    width={1000}
+                                                    height={1000}
+                                                    quality={100}
+                                                    src={itemImage.img[0]}
+                                                    alt={item + "-" + (index + 1)}
                                                     className="w-full h-full object-contain"
                                                 />
                                             </div>
                                             <div className="flex flex-col gap-2">
                                                 <h1 className="text-lg font-semibold">
-                                                    Ergenomic High-Neck Chair
+                                                    {itemImage.title}
                                                 </h1>
                                                 <p className="text-base font-semibold text-zinc-600 w-[80%]">
-                                                    {[
-                                                        "Ergonomic back support",
-                                                        "Mesh ventilation system",
-                                                        "Height adjustable seat",
-                                                    ].join(", ")}
+                                                    {itemImage.points.join(", ")}
                                                 </p>
                                             </div>
 

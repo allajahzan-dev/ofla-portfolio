@@ -17,8 +17,9 @@ export interface IItemImage {
     category: TCategory;
     points: string[];
     keyFeatures: string[];
-    materials: string[];
+    materialSpecification: string[];
     relatedItems: number[];
+    colors: string[];
 }
 
 // Fetch item images

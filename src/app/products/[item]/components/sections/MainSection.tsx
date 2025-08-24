@@ -15,8 +15,11 @@ export default async function MainSection({ item }: Props) {
     // Item images
     const { itemImages } = await fetchItemImages(item);
 
-    // Products
+    // Product
     const { products } = await fetchProducts();
+    const product = products.find(
+        (product) => product.title.toLowerCase() === item
+    );
 
     return (
         <main>
@@ -28,7 +31,7 @@ export default async function MainSection({ item }: Props) {
                 />
 
                 <OverviewSection products={products} />
-                <ImageSection item={item} itemImages={itemImages} />
+                <ImageSection item={item} product={product} itemImages={itemImages} />
                 <ContactSection />
             </div>
         </main>

@@ -24,16 +24,16 @@ export default function OverviewSection({ products }: Props) {
     return (
         <section
             className="h-auto w-full relative bg-white flex flex-col items-center gap-20
-        px-10 pt-40 pb-20 rounded-t-[50px] will-change-transform overflow-hidden"
+        px-10 pt-40 pb-20 -mt-0.5 rounded-t-[50px] will-change-transform overflow-hidden"
         >
             {/* Products */}
-            <div className="w-full absolute top-0 p-10 flex items-center justify-between">
+            <div className="w-full absolute top-0 p-10 hidden items-center justify-between">
                 {products.map((product, index) => (
                     <Link
                         key={index}
                         href={product.href}
                         className={cn(
-                            "group text-base font-semibold hover:text-orange-600 cursor-pointer",
+                            "group text-lg font-semibold hover:text-orange-600 cursor-pointer",
                             title.split("-").join(" ") === product.title.toLowerCase() &&
                             "text-orange-600"
                         )}
@@ -63,14 +63,9 @@ export default function OverviewSection({ products }: Props) {
             {/* Overview */}
             <div className="w-full grid grid-cols-3 gap-5 items-start">
                 <p className="font-semibold text-lg text-start leading-[1]">Overview</p>
-                <h1 className="text-4xl text-start font-semibold col-span-2 w-[80%]">
+                <h1 className="text-4xl text-start font-semibold col-span-2 w-[70%]">
                     {selectedProduct?.overview}
                 </h1>
-            </div>
-
-            <div className="w-full grid grid-cols-3 gap-5">
-                <div className="col-span-2 bg-zinc-100 h-96 rounded-3xl"></div>
-                <div className="bg-zinc-100 h-96 rounded-3xl"></div>
             </div>
         </section>
     );

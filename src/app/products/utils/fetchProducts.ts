@@ -8,6 +8,7 @@ export interface IProduct {
     title: string;
     description: string;
     overview: string;
+    categories: string[];
 }
 
 // Fetch products

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import NavbarItems from "./NavbarItems";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { usePageTransition } from "@/hooks/usePageTransition";
+// import { usePageTransition } from "@/hooks/usePageTransition";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -20,7 +20,7 @@ export default function Navbar() {
     });
 
     // Page navigator
-    const navigator = usePageTransition();
+    // const navigator = usePageTransition();
 
     // Handle navigation
     // const handleNavigation = (href: string) => {

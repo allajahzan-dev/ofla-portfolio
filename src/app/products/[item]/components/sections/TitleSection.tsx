@@ -19,10 +19,10 @@ export default function TitleSection({ products }: Props) {
     const title = pathname.split("/")[pathname.split("/").length - 1];
     const formattedTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
-    // Selected product
+    // Product description
     const [description, setDescription] = useState<string>("");
 
-    // Set description
+    // Set product description
     useLayoutEffect(() => {
         const product = products.find(
             (product) => title.split("-").join(" ") === product.title.toLowerCase()
@@ -34,7 +34,6 @@ export default function TitleSection({ products }: Props) {
         }
 
         setDescription(product.description);
-        // setSelectedProduct(product.title);
     }, [products, title, pathname]);
 
     return (
@@ -54,29 +53,30 @@ export default function TitleSection({ products }: Props) {
             {/* Shadow */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-black/30 to-transparent" />
 
-            {/* Title */}
-            <div className="relative top-0 w-full p-10 pb-16 pl-0 flex flex-col items-start">
+            <div className="relative top-0 w-full p-10 pb-12 pl-0 flex flex-col items-start">
                 <div
                     className={cn(
                         "relative flex flex-col gap-0 items-start text-start will-change-transform"
                     )}
                 >
+                    {/* Year */}
                     <p
                         className={cn(
-                            "pl-1 font-semibold text-base text-start tracking-wide",
+                            "pl-1 font-semibold text-base text-start tracking-wide relative top-0",
                             oswald.className
                         )}
                     >
                         2019 — {new Date().getFullYear()}
                     </p>
 
+                    {/* Heading */}
                     <span className="overflow-hidden">
                         <motion.h1
                             key={formattedTitle}
                             initial={{ translateY: "100%" }}
                             animate={{ translateY: "0%" }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            className={cn("font-bold text-[100px]")}
+                            className={cn("font-bold text-[120px]")}
                         >
                             {title === "height-adjustable-table"
                                 ? "HAT"
@@ -84,7 +84,8 @@ export default function TitleSection({ products }: Props) {
                         </motion.h1>
                     </span>
 
-                    <span className="overflow-hidden w-[63%] relative top-0">
+                    {/* Description */}
+                    <span className="overflow-hidden w-[63%] relative -top-0">
                         <motion.p
                             key={formattedTitle}
                             initial={{ translateY: "100%" }}
