@@ -18,7 +18,7 @@ export default async function MainSection({ item }: Props) {
     // Product
     const { products } = await fetchProducts();
     const product = products.find(
-        (product) => product.title.toLowerCase() === item
+        (product) => product.title.toLowerCase() === item.split("-").join(" ")
     );
 
     return (
