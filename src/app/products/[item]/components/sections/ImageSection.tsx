@@ -53,8 +53,8 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
             <div className="w-full flex flex-col gap-10">
                 {/* Categories */}
-                {product && product.categories.length && (
-                    <div className="col-span-3 relative w-full py-10 flex flex-col items-center justify-center">
+                {product && product.categories.length > 0 && (
+                    <div className="col-span-3 relative w-full pt-10 flex flex-col items-center justify-center">
                         <div className="flex gap-5 items-center justify-center">
                             {product.categories.map((item, index) => (
                                 <button
@@ -86,9 +86,8 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                         itemImagesCategoryWise.map((itemImage, index) => (
                             <motion.div
                                 key={itemImage.id + category}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ duration: 0.3 }}
                                 className="group relative p-5 h-auto w-full bg-white overflow-hidden 
                             cursor-pointer rounded-3xl"
