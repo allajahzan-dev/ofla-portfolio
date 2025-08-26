@@ -13,7 +13,7 @@ export const marquee = (text: HTMLHeadingElement, wrapper: HTMLDivElement) => {
     { xPercent: 0 },
     {
       xPercent: -50,
-      duration: 50,
+      duration: 10,
       ease: "linear",
       repeat: -1,
     }

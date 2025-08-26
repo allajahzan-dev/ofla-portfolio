@@ -4,10 +4,15 @@ import { gsap } from "gsap";
 import { marquee } from "@/lib/gsap/Marquee";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";4
+
+// Interface for Props
+interface Props{
+    className: string;
+}
 
 // Marquee
-export default function Marquee() {
+export default function Marquee({ className }: Props) {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const textRef = useRef<HTMLHeadingElement | null>(null);
 
@@ -28,11 +33,12 @@ export default function Marquee() {
             <h1
                 ref={textRef}
                 className={cn(
-                    "text-[170px] font-medium text-zinc-200",
-                    oswald.className
+                    "font-medium",
+                    oswald.className,
+                    className
                 )}
             >
-                OFLA <sup className="">TM</sup> —
+                OFLA <sup>TM</sup> —
             </h1>
         </div>
     );

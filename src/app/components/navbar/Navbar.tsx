@@ -47,14 +47,14 @@ export default function Navbar({ className }: Props) {
             /^\/products\/[^/]+\/[^/]+$/.test(route)
         ) {
             setStyles({
-                textColor: "sm:text-[#171717]",
+                textColor: "md:text-[#171717]",
                 hoverTextColor: "text-black",
                 bgColor: "bg-[#171717]",
                 hoverBgColor: "bg-black",
             });
         } else {
             setStyles({
-                textColor: "sm:text-zinc-100",
+                textColor: "md:text-zinc-100",
                 hoverTextColor: "text-white",
                 bgColor: "bg-zinc-100",
                 hoverBgColor: "bg-white",
@@ -102,8 +102,8 @@ export default function Navbar({ className }: Props) {
             className={cn(
                 className,
                 "w-full bg-white px-4 py-5 fixed z-[100] top-0 left-0 will-change-transform",
-                "shadow-md transition-transform duration-300 ease-in-out",
-                "sm:px-10 sm:py-5 sm:bg-transparent sm:shadow-none",
+                "shadow-md transition-all duration-300 ease-in-out",
+                "md:px-5 xl:px-10 md:bg-transparent md:shadow-none",
                 navVisible ? "translate-y-0" : "-translate-y-full"
             )}
         >
@@ -139,11 +139,11 @@ export default function Navbar({ className }: Props) {
                         <Link href={"/"}>
                             <NavbarItems text="HOME" styles={styles} />
                         </Link>
-                        <Link href="/about-us">
-                            <NavbarItems text="ABOUT US" styles={styles} />
-                        </Link>
                         <Link href={"/products"}>
                             <NavbarItems text="PRODUCTS" styles={styles} />
+                        </Link>
+                        <Link href="/about-us">
+                            <NavbarItems text="ABOUT US" styles={styles} />
                         </Link>
                         <Link href="/contact">
                             <NavbarItems text="CONTACT" styles={styles} />
@@ -153,7 +153,7 @@ export default function Navbar({ className }: Props) {
                     {/* Contact */}
                     <div
                         className="hidden items-start gap-12 tracking-widest
-                    sm:flex"
+                        md:flex"
                     >
                         <NavbarItems text="CALL" styles={styles} />
                     </div>
@@ -161,7 +161,7 @@ export default function Navbar({ className }: Props) {
                     {/* Hamburger */}
                     <div
                         className="block cursor-pointer
-                        sm:hidden"
+                        md:hidden"
                     >
                         <Hamburger action={() => setToggle(!toggle)} toggle={toggle} />
                     </div>
@@ -169,70 +169,72 @@ export default function Navbar({ className }: Props) {
 
                 {/* Nav items on mobile */}
                 <div
-                    className="relative h-full w-full bg-white flex flex-col gap-6 items-start
+                    className="relative h-full w-full pb-4 bg-white flex flex-col items-start justify-between
                     font-semibold text-[#171717]"
                 >
-                    <div className="flex flex-col gap-3">
-                        <p className="text-sm text-zinc-400">Links</p>
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-3">
+                            <p className="text-sm text-zinc-400">Links</p>
 
-                        <div
-                            className="flex flex-col gap-1 text-lg 
-                        [&>a:hover]:text-orange-500 [&>a:hover]:transition-colors [&>a:hover]:duration-300"
-                        >
-                            <Link href={"/"} onClick={() => setToggle(false)}>
-                                <p>Home</p>
-                            </Link>
-                            <Link href={"/about-us"} onClick={() => setToggle(false)}>
-                                <p>About us</p>
-                            </Link>
-                            <Link href={"/products"} onClick={() => setToggle(false)}>
-                                <p>Products</p>
-                            </Link>
-                            <Link href={"/contact"} onClick={() => setToggle(false)}>
-                                Contact
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-3">
-                        <p className="text-sm text-zinc-400">Get in touch</p>
-
-                        <div
-                            className="flex flex-col gap-1 text-lg 
-                        [&>:is(p,a):hover]:text-orange-500 [&>:is(p,a):hover]:transition-colors [&>:is(p,a):hover]:duration-300"
-                        >
-                            <Link
-                                href={"mailto:ofla@info.in"}
-                                onClick={() => setToggle(false)}
+                            <div
+                                className="flex flex-col gap-1 text-lg 
+                              [&>a:hover]:text-orange-500 [&>a:hover]:transition-colors [&>a:hover]:duration-300"
                             >
-                                ofla@info.in
-                            </Link>
-                            <p>+91 123 456 789</p>
-                            <p>Dubai, India</p>
-                            <div className="flex items-center gap-2 mt-2">
-                                <Link
-                                    href={"https://www.instagram.com/"}
-                                    className="hover:text-orange-600 transition-colors duration-300 flex items-center justify-center rounded-full"
-                                >
-                                    <Instagram className="w-5 h-5" />
+                                <Link href={"/"} onClick={() => setToggle(false)}>
+                                    <p>Home</p>
                                 </Link>
-                                <Link
-                                    href={"/https://facebook.com"}
-                                    className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
-                                >
-                                    <Facebook className="w-5 h-5" />
+                                <Link href={"/products"} onClick={() => setToggle(false)}>
+                                    <p>Products</p>
                                 </Link>
-                                <Link
-                                    href={"/https://x.com"}
-                                    className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
-                                >
-                                    <Twitter className="w-5 h-5" />
+                                <Link href={"/about-us"} onClick={() => setToggle(false)}>
+                                    <p>About us</p>
                                 </Link>
+                                <Link href={"/contact"} onClick={() => setToggle(false)}>
+                                    Contact
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col gap-3">
+                            <p className="text-sm text-zinc-400">Get in touch</p>
+
+                            <div
+                                className="flex flex-col gap-1 text-lg 
+                              [&>:is(p,a):hover]:text-orange-500 [&>:is(p,a):hover]:transition-colors [&>:is(p,a):hover]:duration-300"
+                            >
+                                <Link
+                                    href={"mailto:ofla@info.in"}
+                                    onClick={() => setToggle(false)}
+                                >
+                                    ofla@info.in
+                                </Link>
+                                <p>+91 123 456 789</p>
+                                <p>Dubai, India</p>
+                                <div className="flex items-center gap-2 mt-2">
+                                    <Link
+                                        href={"https://www.instagram.com/"}
+                                        className="hover:text-orange-600 transition-colors duration-300 flex items-center justify-center rounded-full"
+                                    >
+                                        <Instagram className="w-5 h-5" />
+                                    </Link>
+                                    <Link
+                                        href={"/https://facebook.com"}
+                                        className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
+                                    >
+                                        <Facebook className="w-5 h-5" />
+                                    </Link>
+                                    <Link
+                                        href={"/https://x.com"}
+                                        className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
+                                    >
+                                        <Twitter className="w-5 h-5" />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <Marquee />
+                    <Marquee className="text-[160px] text-zinc-200" />
                 </div>
             </div>
         </div>
