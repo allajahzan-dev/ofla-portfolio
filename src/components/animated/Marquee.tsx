@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { marquee } from "@/lib/gsap/Marquee";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { useEffect, useRef } from "react";4
+import { useEffect, useRef } from "react";
 
 // Interface for Props
 interface Props{
