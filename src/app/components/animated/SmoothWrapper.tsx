@@ -11,9 +11,14 @@ export default function SmoothWrapper({ children }: { children: ReactNode }) {
 
     return (
         <Fragment key={pathname}>
+            {/* Mobile navbar */}
+            <Navbar className="block md:hidden" />
+
+            {/* Smooth wrapper */}
             <div id="smooth-wrapper" className="relative">
                 <div id="smooth-content">
-                    <Navbar />
+                    {/* Desktop navbar */}
+                    <Navbar className="hidden md:block" />
                     {children}
                 </div>
             </div>

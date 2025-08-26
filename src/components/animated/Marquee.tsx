@@ -23,23 +23,16 @@ export default function Marquee() {
     return (
         <div
             ref={wrapperRef}
-            className="flex whitespace-nowrap w-max will-change-transform"
+            className="flex whitespace-nowrap will-change-transform"
         >
             <h1
                 ref={textRef}
                 className={cn(
-                    "text-[220px] font-medium text-zinc-200",
+                    "text-[170px] font-medium text-zinc-200",
                     oswald.className
                 )}
             >
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
-                SULTHAN <sup className="text-[100px] relative -top-[105px]">TM</sup> —
+                OFLA <sup className="">TM</sup> —
             </h1>
         </div>
     );

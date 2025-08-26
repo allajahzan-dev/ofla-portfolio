@@ -22,7 +22,12 @@ export default function NavbarItems({ text, styles }: Props) {
         <div className="group flex flex-col gap-0.5 items-center cursor-pointer p-0 will-change-transform">
             {/* Text */}
             <p
-                className={`text-sm font-bold ${styles.textColor} group-hover:${styles.hoverTextColor}`}
+                className={cn(
+                    "text-sm font-bold",
+                    pathname === "/"
+                        ? `text-[#171717] ${styles.textColor}`
+                        : `${styles.textColor} group-hover:${styles.hoverTextColor}`
+                )}
             >
                 {text}
             </p>

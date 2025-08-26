@@ -81,7 +81,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                 )}
 
                 {/* Images */}
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid grid-cols-3 gap-0">
                     {itemImagesCategoryWise &&
                         itemImagesCategoryWise.map((itemImage, index) => (
                             <motion.div
@@ -89,7 +89,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.3 }}
-                                className="group relative p-5 h-auto w-full bg-white overflow-hidden 
+                                className="group relative p-2 h-auto w-full bg-white overflow-hidden 
                             cursor-pointer rounded-3xl"
                             >
                                 <Link href={`/products/${item}/${itemImage.id}`}>
@@ -99,7 +99,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                         height={1000}
                                         quality={100}
                                         priority
-                                        src={itemImage?.img[0]}
+                                        src={itemImage?.img[1] || "/"}
                                         alt={item + "-" + (index + 1)}
                                         className="h-[400px] w-full object-contain group-hover:scale-100 transition-all duration-500"
                                     />
