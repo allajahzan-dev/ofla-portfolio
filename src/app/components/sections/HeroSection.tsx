@@ -1,6 +1,6 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { Mouse, Pointer } from "lucide-react";
+import { Mouse } from "lucide-react";
 
 // Hero Section
 export default function HeroSection() {
