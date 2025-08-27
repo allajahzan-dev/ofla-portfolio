@@ -1,7 +1,8 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { Star, TrendingUp } from "lucide-react";
+import { ArrowUpRight, Star, TrendingUp } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo } from "react";
 
 // About Section
@@ -13,9 +14,9 @@ export default function AboutSection() {
 
     return (
         <section
-            className="min-h-screen relative z-40 px-4 py-40 pt-20 bg-zinc-100 flex flex-col gap-20 items-center 
-            rounded-[40px] will-change-transform
-            md:px-5 xl:px-10 md:rounded-t-[50px]"
+            className="min-h-screen relative z-40 px-4 py-20 pt-20 bg-zinc-100 flex flex-col gap-20 items-center 
+            rounded-[35px] will-change-transform
+            md:px-5 xl:px-10 lg:py-40 md:rounded-[50px]"
         >
             {/* Holder */}
             <div
@@ -23,16 +24,8 @@ export default function AboutSection() {
                 md:w-40"
             />
 
-            {/* Title */}
-            {/* <div className="w-full flex gap-5 absolute left-10 top-10">
-                <p className="text-2xl font-semibold text-nowrap tracking-wider">
-                    About us
-                </p>
-            </div> */}
-
-            {/* About us */}
             <aside className="w-full grid grid-cols-3 gap-5 text-start items-start">
-                {/* year */}
+                {/* Nothing - something */}
                 <div
                     className="relative -top-6 font-semibold flex items-center
                     sm:-top-8 md:-top-10 lg:-top-16"
@@ -46,7 +39,6 @@ export default function AboutSection() {
                     >
                         0-1
                     </h1>
-                    {/* <span className="text-2xl relative md:top-14 lg:top-16">Years</span> */}
                 </div>
 
                 <div className="col-span-2 flex flex-col gap-8 p-2 px-1">
@@ -59,6 +51,7 @@ export default function AboutSection() {
                         OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
                     </p>
 
+                    {/* Users */}
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2">
                             {users.map((user, index) => {
@@ -116,13 +109,11 @@ export default function AboutSection() {
                     </div>
 
                     <p
-                        className="w-full text-[22px] font-semibold leading-7
-                        md:w-[90%] lg:w-[78%] xl:w-[60%] md:text-[28px] lg:text-4xl md:leading-8 lg:leading-10"
+                        className="w-full text-[22px] font-semibold leading-6
+                        md:w-[90%] lg:w-[78%] xl:w-[60%] md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
                     >
                         We specialize in premium office chairs, tables, lounges, and
                         ergonomic solutions for every workspace need.
-                        {/* We specialize in premium office chairs, tables and ergonomic seating
-                        featuring diverse models designed for every workspace need. */}
                     </p>
                 </div>
             </aside>
@@ -134,37 +125,61 @@ export default function AboutSection() {
             >
                 {/* Left */}
                 <article
-                    className="order-1 relative h-auto w-full p-8 bg-white flex flex-col gap-8 rounded-3xl overflow-hidden
-                    md:order-3 lg:order-1 md:h-[480px] md:p-12"
+                    className="order-1 relative h-auto w-full p-8 bg-white flex flex-col gap-6 rounded-3xl overflow-hidden
+                    md:order-3 lg:order-1 md:h-[540px] lg:h-[480px] md:p-12 md:gap-8"
                 >
                     <h1
-                        className="font-semibold text-xl
-                        md:text-2xl"
+                        className="w-full font-semibold text-xl leading-6
+                        xl:w-[98%] lg:text-2xl"
                     >
                         Premium workspace solutions that drive productivity.
                     </h1>
                     <p
-                        className="relative z-10 w-[90%] text-base font-semibold text-zinc-600 leading-6
+                        className="relative z-10 w-[90%] text-base font-semibold text-zinc-600 leading-5 tracking-tight
                         md:w-full lg:text-lg lg:font-medium"
                     >
                         They deliver exceptional premium office furniture, ergonomic chairs,
-                        tables, lounges, and workstations, that enhance workplace.
-                        {/* performance and clients satisfaction. */}
+                        tables, lounges, workstations, that enhance workplace.
                     </p>
+                    <div className="relative z-10 flex items-center gap-2">
+                        <div
+                            className="relative border-[3px] border-white rounded-full w-12 h-12 shadow shrink-0 overflow-hidden
+                            md:w-14 md:h-14"
+                        >
+                            <Image
+                                width={100}
+                                height={100}
+                                src={`/images/home/about/user2.png`}
+                                alt={`Testimonial-user`}
+                                className="h-full w-full object-cover rounded-full"
+                            />
+                        </div>
+                        <div className="flex flex-col">
+                            <p
+                                className="text-base font-semibold
+                                md:text-lg"
+                            >
+                                Angelina Jolie
+                            </p>
+                            <p className="text-sm font-semibold text-zinc-600">
+                                CEO at Cybrosis
+                            </p>
+                        </div>
+                    </div>
                     <Image
                         src="/svgs/home/doubleQuote.svg"
                         alt="Doublt Quote"
                         height={1000}
                         width={1000}
-                        className="w-44 absolute z-0 -bottom-10 -right-6
-                        md:w-88 md:-bottom-20 md:-right-16"
+                        className="w-54 absolute z-0 -bottom-14 -right-6
+                        md:w-96 lg:w-88 md:-bottom-20 md:-right-20 lg:-right-16"
                     />
                 </article>
 
                 {/* Center */}
                 <article
                     className="order-2 w-full h-auto p-8 bg-white flex flex-col justify-between gap-5 rounded-3xl
-                    md:h-[480px] md:p-12"
+                    md:h-[540px] lg:h-[480px] md:p-12"
                 >
                     <div className="flex items-center justify-between">
                         <p className="font-semibold">Fact 01</p>
@@ -173,8 +188,8 @@ export default function AboutSection() {
                         </div>
                     </div>
                     <div
-                        className="flex flex-col gap-5 
-                        md:gap-10"
+                        className="flex flex-col gap-6 
+                        md:gap-8"
                     >
                         <h1
                             className={cn(
@@ -188,8 +203,8 @@ export default function AboutSection() {
 
                         {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
                         <p
-                            className="text-base font-semibold text-zinc-600 leading-6
-                            lg:text-lg lg:font-medium"
+                            className="w-[80%] text-base font-semibold text-zinc-600 leading-5 tracking-tight
+                            sm:w-[60%] md:w-full lg:text-lg lg:font-medium"
                         >
                             Satisfied clients with 99% on-time delivery and exceptional office
                             furniture experiences.
@@ -204,10 +219,37 @@ export default function AboutSection() {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
-                    className="order-3 col-span-1 relative w-full h-[500px] bg-white rounded-3xl overflow-hidden
-                    md:order-1 lg:order-3 md:col-span-2 lg:col-span-1 md:h-[480px]"
+                    className="order-3 col-span-1 relative w-full h-[580px] bg-white rounded-3xl overflow-hidden
+                    md:order-1 lg:order-3 md:col-span-2 lg:col-span-1 md:h-[540px] lg:h-[480px]"
                 >
-                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 via-transparent to-black/60" />
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
+
+                    <div
+                        className="p-8 absolute bottom-0 left-0 flex flex-col items-start gap-5 text-white
+                        md:p-12"
+                    >
+                        <p
+                            className="w-[65%] text-xl font-semibold leading-6
+                            sm:w-[60%] lg:w-[75%] lg:text-2xl"
+                        >
+                            Futuristic design, materials and more about us
+                        </p>
+
+                        <Link
+                            href={"/about-us"}
+                            className=" group flex items-center gap-2 cursor-pointer"
+                        >
+                            <ArrowUpRight className="w-5 h-5 text-orange-600" />
+                            <div className="relative h-7 overflow-hidden text-lg font-semibold">
+                                <p className="group-hover:-translate-y-full transition-transform duration-300">
+                                    See more
+                                </p>
+                                <p className="group-hover:-translate-y-full transition-transform duration-300 text-orange-600">
+                                    See more
+                                </p>
+                            </div>
+                        </Link>
+                    </div>
                 </figure>
             </div>
         </section>

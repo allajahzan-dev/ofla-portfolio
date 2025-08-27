@@ -31,22 +31,22 @@ export default function HeroSection() {
 
                 <p
                     className={cn(
-                        "w-full relative -top-5 text-lg text-white font-medium tracking-wide",
-                        "flex items-center justify-center gap-5",
-                        "sm:text-xl md:text-2xl",
+                        "w-full relative -top-6 text-lg text-white font-medium tracking-wide",
+                        "flex items-center justify-center gap-3",
+                        "sm:text-xl md:text-2xl sm:-top-8 md:-top-10",
                         oswald.className
                     )}
                 >
-                    <span>OFFICE</span>
-                    <span>LIFESTYLE</span>
-                    <span>ARABIA</span>
+                    <span>Office</span>
+                    <span>Lifestyle</span>
+                    <span>Arabia</span>
                 </p>
             </header>
 
             {/* Explore */}
             <footer
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-5 items-center justify-between text-sm text-white font-medium text-nowrap tracking-wide
-                w-[80%] md-[70%] lg:w-[60%] xl:w-[50%] sm:text-base sm:flex"
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden gap-5 items-center justify-between text-sm text-white font-medium text-nowrap tracking-wide
+                w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] sm:text-base md:flex"
             >
                 <p>Scroll</p>
                 <div className="bg-white w-full h-0.5 rounded-full" />
@@ -54,6 +54,13 @@ export default function HeroSection() {
                 <div className="bg-white w-full h-0.5 rounded-full" />
                 <p>Explore</p>
             </footer>
+
+            <div
+                className="absolute bottom-16 left-1/2 -translate-x-1/2 text-white flex flex-col items-center animate-pulse
+            md:hidden"
+            >
+                <p className="text-base font-semibold">Scroll Down</p>
+            </div>
         </section>
     );
 }
