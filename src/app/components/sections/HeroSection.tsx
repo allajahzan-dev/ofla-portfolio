@@ -56,8 +56,8 @@ export default function HeroSection() {
             </footer>
 
             <div
-                className="absolute bottom-16 left-1/2 -translate-x-1/2 text-white flex flex-col items-center animate-pulse
-            md:hidden"
+                className="absolute bottom-16 left-1/2 -translate-x-1/2 text-white flex flex-col items-center
+                md:hidden"
             >
                 <p className="text-base font-semibold">Scroll Down</p>
             </div>

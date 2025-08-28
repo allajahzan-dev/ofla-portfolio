@@ -34,16 +34,16 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
         scrub: true,
         // markers: true,
         onEnter: () => {
-          scrollSmoother()?.smooth(4);
+          scrollSmoother()?.smooth(3);
         },
         onLeave: () => {
-          scrollSmoother()?.smooth(2);
+          scrollSmoother()?.smooth(1);
         },
         onEnterBack: () => {
-          scrollSmoother()?.smooth(4);
+          scrollSmoother()?.smooth(3);
         },
         onLeaveBack: () => {
-          scrollSmoother()?.smooth(2);
+          scrollSmoother()?.smooth(1);
         },
       },
     }

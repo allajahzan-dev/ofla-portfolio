@@ -11,11 +11,13 @@ function MainSection() {
     return (
         <main>
             <HeroSection />
-            <section className="relative -mt-5 rounded-[35px] overflow-hidden
-            md:mt-0 md:rounded-[50px]">
+            <section
+                className="relative -mt-5 rounded-[35px] overflow-hidden
+                md:mt-0 lg:rounded-[50px]"
+            >
                 <div
                     className="absolute inset-0 z-0 
-                bg-[linear-gradient(to_bottom,_white_0%,_white_2%,_#292929_2%,_#292929_100%)]"
+                    bg-[linear-gradient(to_bottom,_white_0%,_white_2%,_#292929_2%,_#292929_100%)]"
                 />
 
                 <AboutSection />

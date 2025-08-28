@@ -9,8 +9,9 @@ export default async function ServicesSection() {
     const { services } = await fetchServices();
 
     return (
-        <section className="min-h-screen relative z-20 bg-[#171717] flex flex-col gap-40 items-center 
-        py-40 pb-[calc(160px-64px)] -mt-0.5 rounded-[50px] will-change-transform overflow-hidden">
+        <section className="min-h-screen relative z-20 px-4 py-40 pb-[calc(160px-64px)] bg-[#171717] flex flex-col gap-40 items-center 
+                -mt-0.5 rounded-[35px] will-change-transform overflow-hidden
+                md:px-5 xl:px-10 lg:rounded-[50px]">
             {/* Title */}
             <RevealHeading
                 title={
