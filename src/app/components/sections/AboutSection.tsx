@@ -1,6 +1,6 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Star, TrendingUp } from "lucide-react";
+import { ArrowUpRight, Plus, Star, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
@@ -34,7 +34,7 @@ export default function AboutSection() {
                         className={cn(
                             "w-fit text-[90px] text-nowrap",
                             oswald.className,
-                            "sm:text-[100px] md:text-[136px] lg:text-[190px]"
+                            "sm:text-[100px] md:text-[136px] lg:text-[188px]"
                         )}
                     >
                         0-1
@@ -193,21 +193,21 @@ export default function AboutSection() {
                     >
                         <h1
                             className={cn(
-                                "font-medium text-6xl",
+                                "font-normal text-6xl tracking-tight flex items-center",
                                 oswald.className,
                                 "md:text-[78px] lg:text-8xl"
                             )}
                         >
-                            200+
+                            200<span className="text-5xl">+</span>
                         </h1>
 
                         {/* <Counter className={`font-semibold text-8xl ${oswald.className}`} limit={100}/> */}
                         <p
-                            className="w-[80%] text-base font-semibold text-zinc-600 leading-5 tracking-tight
-                            sm:w-[60%] md:w-full lg:text-lg lg:font-medium"
+                            className="w-full text-base font-semibold text-zinc-600 leading-5 tracking-tight
+                            lg:w-[90%] lg:text-lg lg:font-medium"
                         >
-                            Satisfied clients with 99% on-time delivery and exceptional office
-                            furniture experiences.
+                            Satisfied clients with 99% on-time delivery
+                            and exceptional experiences.
                         </p>
                     </div>
                 </article>
@@ -230,7 +230,7 @@ export default function AboutSection() {
                     >
                         <p
                             className="w-[65%] text-xl font-semibold leading-6
-                            sm:w-[60%] lg:w-[75%] lg:text-2xl"
+                            sm:w-[60%] lg:w-[85%] lg:text-2xl"
                         >
                             Futuristic design, materials and more about us
                         </p>
