@@ -169,72 +169,70 @@ export default function Navbar({ className }: Props) {
 
                 {/* Nav items on mobile */}
                 <div
-                    className="relative h-full w-full pb-4 bg-white flex flex-col items-start justify-between
+                    className="relative h-full w-full pb-4 bg-white flex flex-col items-start gap-6
                     font-semibold text-[#171717]"
                 >
-                    <div className="flex flex-col gap-6">
-                        <div className="flex flex-col gap-3">
-                            <p className="text-sm text-zinc-400">Links</p>
+                    <div className="flex flex-col gap-3">
+                        <p className="text-sm text-zinc-400">Links</p>
 
-                            <div
-                                className="flex flex-col gap-1 text-lg 
+                        <div
+                            className="flex flex-col gap-1 text-lg 
                               [&>a:hover]:text-orange-500 [&>a:hover]:transition-colors [&>a:hover]:duration-300"
-                            >
-                                <Link href={"/"} onClick={() => setToggle(false)}>
-                                    <p>Home</p>
-                                </Link>
-                                <Link href={"/products"} onClick={() => setToggle(false)}>
-                                    <p>Products</p>
-                                </Link>
-                                <Link href={"/about-us"} onClick={() => setToggle(false)}>
-                                    <p>About us</p>
-                                </Link>
-                                <Link href={"/contact"} onClick={() => setToggle(false)}>
-                                    Contact
-                                </Link>
-                            </div>
+                        >
+                            <Link href={"/"} onClick={() => setToggle(false)}>
+                                <p>Home</p>
+                            </Link>
+                            <Link href={"/products"} onClick={() => setToggle(false)}>
+                                <p>Products</p>
+                            </Link>
+                            <Link href={"/about-us"} onClick={() => setToggle(false)}>
+                                <p>About us</p>
+                            </Link>
+                            <Link href={"/contact"} onClick={() => setToggle(false)}>
+                                Contact
+                            </Link>
                         </div>
+                    </div>
 
-                        <div className="flex flex-col gap-3">
-                            <p className="text-sm text-zinc-400">Get in touch</p>
+                    <div className="flex flex-col gap-3">
+                        <p className="text-sm text-zinc-400">Get in touch</p>
 
-                            <div
-                                className="flex flex-col gap-1 text-lg 
+                        <div
+                            className="flex flex-col gap-1 text-lg 
                               [&>:is(p,a):hover]:text-orange-500 [&>:is(p,a):hover]:transition-colors [&>:is(p,a):hover]:duration-300"
+                        >
+                            <Link
+                                href={"mailto:info@ofla.in"}
+                                onClick={() => setToggle(false)}
                             >
+                                info@ofla.in
+                            </Link>
+                            <p>+91 123 456 789</p>
+                            <p>Dubai, India</p>
+                            <div className="flex items-center gap-2 mt-2">
                                 <Link
-                                    href={"mailto:ofla@info.in"}
-                                    onClick={() => setToggle(false)}
+                                    href={"https://www.instagram.com/"}
+                                    className="hover:text-orange-600 transition-colors duration-300 flex items-center justify-center rounded-full"
                                 >
-                                    ofla@info.in
+                                    <Instagram className="w-5 h-5" />
                                 </Link>
-                                <p>+91 123 456 789</p>
-                                <p>Dubai, India</p>
-                                <div className="flex items-center gap-2 mt-2">
-                                    <Link
-                                        href={"https://www.instagram.com/"}
-                                        className="hover:text-orange-600 transition-colors duration-300 flex items-center justify-center rounded-full"
-                                    >
-                                        <Instagram className="w-5 h-5" />
-                                    </Link>
-                                    <Link
-                                        href={"/https://facebook.com"}
-                                        className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
-                                    >
-                                        <Facebook className="w-5 h-5" />
-                                    </Link>
-                                    <Link
-                                        href={"/https://x.com"}
-                                        className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
-                                    >
-                                        <Twitter className="w-5 h-5" />
-                                    </Link>
-                                </div>
+                                <Link
+                                    href={"/https://facebook.com"}
+                                    className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
+                                >
+                                    <Facebook className="w-5 h-5" />
+                                </Link>
+                                <Link
+                                    href={"/https://x.com"}
+                                    className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
+                                >
+                                    <Twitter className="w-5 h-5" />
+                                </Link>
                             </div>
                         </div>
                     </div>
 
-                    <Marquee className="text-[160px] text-zinc-200" />
+                    <Marquee className="text-[160px] relative top-5" />
                 </div>
             </div>
         </div>

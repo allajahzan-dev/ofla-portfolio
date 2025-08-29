@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function ContactSection() {
     return (
         <section
+            id="contact-section"
             className="h-[calc(100svh+1.2px)] relative z-20 bg-[#171717] flex flex-col gap-10 items-center 
             px-10 pt-40 rounded-t-[50px] will-change-transform overflow-hidden bg-cover bg-center"
         >

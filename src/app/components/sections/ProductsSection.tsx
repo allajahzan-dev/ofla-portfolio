@@ -12,7 +12,7 @@ export default async function ProductsSection() {
 
     return (
         <section
-            className="min-h-screen relative z-30 px-4 py-20 pb-40 bg-white flex flex-col gap-12 items-center 
+            className="min-h-screen relative z-30 px-4 py-24 pb-40 bg-white flex flex-col gap-12 items-center 
             rounded-[35px] -mt-0.5 will-change-transform overflow-hidden
             md:px-5 xl:px-10 lg:py-40 md:gap-20 lg:rounded-[50px]"
         >
@@ -80,7 +80,7 @@ export default async function ProductsSection() {
                                     {item.title}
                                 </h1>
                                 <p
-                                    className="w-[80%] text-base text-zinc-600 font-semibold leading-5
+                                    className="w-[80%] text-base text-zinc-600 font-semibold tracking-tight leading-5
                                     sm:w-[80%] lg:w-[78%] xl:w-[60%] lg:text-lg lg:font-medium"
                                 >
                                     {item.description1}

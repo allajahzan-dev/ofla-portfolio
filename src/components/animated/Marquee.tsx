@@ -38,7 +38,7 @@ export default function Marquee({ className }: Props) {
                     className
                 )}
             >
-                OFLA <sup>TM</sup> —
+                OFLA <sup>TM</sup> — OFLA <sup>TM</sup> — OFLA <sup>TM</sup> —
             </h1>
         </div>
     );

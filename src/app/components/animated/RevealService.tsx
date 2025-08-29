@@ -27,7 +27,8 @@ export default function RevealService({ title, points }: Props) {
     return (
         <div
             ref={divRef}
-            className="w-full grid grid-cols-3 gap-5 p-10 py-16 border-t-[0.5px] border-t-zinc-700 will-change-transform"
+            className="w-full grid grid-cols-1 items-center px-4 py-10 gap-5 border-t-[0.5px] border-t-zinc-700 will-change-transform
+            lg:grid-cols-3 md:px-9 lg:px-10 lg:py-16"
         >
             {title}
             {points}
