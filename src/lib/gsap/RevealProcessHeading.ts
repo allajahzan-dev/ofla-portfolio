@@ -22,15 +22,15 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
       // Specific configs for each breakpoints
       const configs = {
         isMobile: {
-          y: { start: "top 98%" },
+          y: { start: "top 92%" },
           scale: 1.1,
         },
         isTablet: {
-          y: { start: "top 90%" },
+          y: { start: "top 86%" },
           scale: 1.3,
         },
         isDesktop: {
-          y: { start: "top 80%" },
+          y: { start: "top 78%" },
           scale: 1.3,
         },
       };
@@ -52,7 +52,7 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
         scrollTrigger: {
           trigger: div,
           start: currentConfig.y.start,
-          end: "top top",
+          end: "top 10%",
           scrub: true,
         },
       });
@@ -67,9 +67,9 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
           scrollTrigger: {
             trigger: div,
             start: currentConfig.y.start,
-            end: "top -25%",
+            end: "top 10%",
             scrub: true,
-            // markers: true,
+            markers: true,
             onEnter: () => {
               scrollSmoother()?.smooth(3);
             },
