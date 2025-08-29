@@ -38,7 +38,7 @@ export default async function ServicesSection() {
 
                         {/* See more */}
                         <Link
-                            href={"/about-us/#contact-section"}
+                            href={"/about-us"}
                             className=" group flex items-center gap-2 cursor-pointer"
                         >
                             <ArrowUpRight className="w-5 h-5 text-orange-600" />

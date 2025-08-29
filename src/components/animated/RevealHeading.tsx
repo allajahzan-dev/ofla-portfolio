@@ -48,10 +48,7 @@ export default function RevealHeading({
     return (
         <header
             ref={headerRef}
-            className={cn(
-                "w-full will-change-transform",
-                className
-            )}
+            className={cn("w-full will-change-transform", className)}
         >
             {title}
             {subTitle}

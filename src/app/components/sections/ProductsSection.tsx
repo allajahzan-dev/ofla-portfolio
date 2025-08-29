@@ -20,7 +20,7 @@ export default async function ProductsSection() {
             <RevealHeading
                 title={
                     <h1
-                        className="font-bold text-[72px] text-center leading-[1]
+                        className="text-[72px] text-center font-bold leading-[1]
                         md:text-[82px] lg:text-[120px]"
                     >
                         Latest
@@ -30,8 +30,8 @@ export default async function ProductsSection() {
                 }
                 subTitle={
                     <p
-                        className="text-base text-center font-semibold text-zinc-600
-                        md:text-xl"
+                        className="text-base text-center font-bold text-zinc-600 tracking-tight
+                        md:text-xl md:font-semibold"
                     >
                         Discover our complete range of premium office furniture
                         <br className="hidden sm:block" /> and workspace solutions designed

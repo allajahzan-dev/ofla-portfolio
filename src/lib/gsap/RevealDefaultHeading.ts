@@ -11,8 +11,8 @@ export const revealDefaultHeading = (div: HTMLDivElement) => {
   mm.add(
     {
       // Define breakpoints
-      isMobile: "(max-width: 767px)",
-      isTablet: "(min-width: 768px) and (max-width: 1023px)",
+      isMobile: "(max-width: 767.9px)",
+      isTablet: "(min-width: 768px) and (max-width: 1023.9px)",
       isDesktop: "(min-width: 1024px)",
     },
     (context) => {

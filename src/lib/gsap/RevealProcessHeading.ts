@@ -12,8 +12,8 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
   mm.add(
     {
       // Define breakpoints
-      isMobile: "(max-width: 767px)",
-      isTablet: "(min-width: 768px) and (max-width: 1023px)",
+      isMobile: "(max-width: 767.9px)",
+      isTablet: "(min-width: 768px) and (max-width: 1023.9px)",
       isDesktop: "(min-width: 1024px)",
     },
     (context) => {
@@ -69,7 +69,6 @@ export const revealProcessHeading = (div: HTMLDivElement) => {
             start: currentConfig.y.start,
             end: "top 10%",
             scrub: true,
-            markers: true,
             onEnter: () => {
               scrollSmoother()?.smooth(3);
             },
