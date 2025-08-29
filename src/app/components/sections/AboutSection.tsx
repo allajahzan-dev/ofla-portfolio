@@ -1,6 +1,6 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Plus, Star, TrendingUp } from "lucide-react";
+import { ArrowUpRight, Star, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
