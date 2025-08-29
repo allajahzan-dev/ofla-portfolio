@@ -55,7 +55,7 @@ export default async function ProductsSection() {
                         lg:p-2 lg:hover:bg-zinc-100"
                     >
                         <div
-                            className="w-full h-[480px] rounded-3xl overflow-hidden cursor-none
+                            className="w-full h-[520px] rounded-3xl overflow-hidden cursor-none
                             md:h-[500px] lg:h-[600px] xl:h-[700px]"
                         >
                             <Image
@@ -69,8 +69,7 @@ export default async function ProductsSection() {
                             />
                         </div>
                         <figcaption
-                            className="w-full flex gap-2 p-3 py-5 cursor-pointer will-change-transform
-                            lg:p-5"
+                            className="w-full flex gap-2 p-5 py-5 cursor-pointer will-change-transform"
                         >
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1

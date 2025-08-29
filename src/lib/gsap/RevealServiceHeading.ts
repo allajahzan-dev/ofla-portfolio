@@ -22,7 +22,7 @@ export const revealServiceHeading = (div: HTMLDivElement) => {
       // Specific configs for each breakpoints
       const configs = {
         isMobile: {
-          y: { start: "top 74%", end: "top 12%" },
+          y: { start: "top 74%", end: "top 10%" },
           scale: 1,
         },
         isTablet: {
@@ -44,7 +44,7 @@ export const revealServiceHeading = (div: HTMLDivElement) => {
       if (!currentConfig) return;
 
       // Reset initial state
-      gsap.set(div, { y: -385 });
+      gsap.set(div, { y: -420 });
 
       // Animate on scroll
       gsap.to(div, {

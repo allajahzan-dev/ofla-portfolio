@@ -10,18 +10,25 @@ export default async function ProcessSection() {
 
     return (
         <section
-            className="h-min-screen relative z-20 bg-white flex flex-col gap-36 items-center 
-            pt-40 -mt-0.5 rounded-[50px] will-change-transform overflow-hidden"
+            className="h-min-screen relative z-20 pt-24 bg-white flex flex-col gap-36 items-center 
+            mt-0.5 rounded-[35px] will-change-transform overflow-hidden
+            lg:pt-40 lg:rounded-[50px]"
         >
             {/* Title */}
             <RevealHeading
                 title={
-                    <h1 className="font-bold text-[120px] text-center leading-[1]">
+                    <h1
+                        className="font-bold text-[72px] text-center leading-[1]
+                        md:text-[82px] lg:text-[120px]"
+                    >
                         Process
                     </h1>
                 }
                 subTitle={
-                    <p className="text-xl text-center font-semibold text-zinc-600">
+                    <p
+                        className="text-base text-center font-semibold text-zinc-600
+                        md:text-xl"
+                    >
                         Let’s dive into the process. From first idea to final
                         <br />
                         launch, every step is clear and intentional.
@@ -37,12 +44,24 @@ export default async function ProcessSection() {
                     <div
                         key={item.id}
                         className={cn(
-                            "flex items-center justify-between px-10 pr-16",
-                            item.color
+                            "flex items-center justify-between px-4 pr-4",
+                            item.color,
+                            "md:px-10 md:pr-16"
                         )}
                     >
-                        <h1 className="text-5xl font-semibold">{item.title}</h1>
-                        <p className={cn("text-7xl text-white", oswald.className)}>
+                        <h1
+                            className="text-3xl font-semibold
+                            md:text-[38px] lg:text-5xl"
+                        >
+                            {item.title}
+                        </h1>
+                        <p
+                            className={cn(
+                                "text-6xl text-white",
+                                oswald.className,
+                                "md:text-7xl"
+                            )}
+                        >
                             0{item.id}
                         </p>
                     </div>

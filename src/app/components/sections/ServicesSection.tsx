@@ -27,8 +27,8 @@ export default async function ServicesSection() {
                     <div className="w-full flex flex-col items-start gap-6 col-span-2">
                         {/* Title */}
                         <h1
-                            className="text-2xl text-start font-semibold
-                            md:text-[28px] lg:text-4xl"
+                            className="text-2xl text-start font-semibold leading-6
+                            md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
                         >
                             Our services are designed <br className="hidden lg:block" /> to
                             provide <br className="hidden md:block lg:hidden" /> complete{" "}
@@ -79,7 +79,7 @@ export default async function ServicesSection() {
                                         className="text-base font-semibold list-none
                                         lg:text-lg md:font-medium"
                                     >
-                                        <BulletPoint className="text-orange-600" />
+                                        <BulletPoint className="text-zinc-400" />
                                         &nbsp;&nbsp;{point}
                                     </li>
                                 ))}
