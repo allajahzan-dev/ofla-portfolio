@@ -26,7 +26,7 @@ export default async function FaqSection() {
                 lg:grid-cols-3 lg:gap-5"
             >
                 {/* First column */}
-                <header className="flex flex-col gap-8">
+                <header className="w-full flex flex-col gap-8">
                     <h1
                         className="text-[72px] text-start font-bold leading-[1]
                         md:text-[82px] lg:text-[120px]"
@@ -34,11 +34,11 @@ export default async function FaqSection() {
                         FAQ
                     </h1>
                     <p
-                        className="text-base text-start font-bold text-zinc-600 tracking-tight
+                        className="text-base text-start font-bold text-zinc-600 leading-5 tracking-tight
                         md:text-xl md:font-semibold"
                     >
                         Get quick answers for frequently asked questions
-                        <br className="block lg:hidden" />
+                        <br className="hidden sm:block lg:hidden" />{" "}
                         about our products and services.
                     </p>
                     <Link
@@ -83,7 +83,7 @@ export default async function FaqSection() {
                                     </AccordionTrigger>
 
                                     <AccordionContent
-                                        className="w-[90%] text-base font-semibold text-zinc-600
+                                        className="w-[92%] text-base font-semibold text-zinc-600 leading-5
                                         md:w-[60%]"
                                     >
                                         {item.answer}

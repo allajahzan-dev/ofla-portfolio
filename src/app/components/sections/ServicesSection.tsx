@@ -27,7 +27,7 @@ export default async function ServicesSection() {
                     <div className="w-full flex flex-col items-start gap-6 col-span-2">
                         {/* Title */}
                         <h1
-                            className="text-2xl text-start font-semibold leading-6
+                            className="text-2xl text-start font-semibold leading-7
                             md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
                         >
                             Our services are designed <br className="hidden lg:block" /> to

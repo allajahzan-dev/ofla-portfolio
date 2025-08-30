@@ -1,71 +1,108 @@
-import { Copyright, Facebook, Instagram, Twitter } from "lucide-react";
+import {
+    ArrowUpRight,
+    Copyright,
+    Facebook,
+    Instagram,
+    Twitter,
+} from "lucide-react";
 import Link from "next/link";
 
 // Contact section
 export default function ContactSection() {
     return (
         <section
-            id="contact-section"
-            className="h-[calc(100svh+1.2px)] relative z-20 bg-[#171717] flex flex-col gap-10 items-center 
-            px-10 pt-40 rounded-t-[50px] will-change-transform overflow-hidden bg-cover bg-center"
+            className="h-[calc(100svh+1.2px)] relative z-20 px-4 pt-24 bg-[#171717] text-white flex flex-col gap-10 items-center 
+            rounded-t-[35px] will-change-transform overflow-hidden
+            md:px-5 xl:px-10 lg:pt-40 lg:rounded-t-[50px]"
         >
-            <header className="w-full grid grid-cols-3 gap-5">
+            <header
+                className="w-full grid grid-cols-1 gap-8
+                lg:grid-cols-2 lg:gap-5"
+            >
                 {/* First column */}
-                <h1 className="font-semibold text-[120px] text-start text-white leading-[1]">
-                    Let&rsquo;s connect
+                <h1
+                    className="text-[72px] font-bold text-start leading-[1]
+                    md:text-[82px] lg:text-[120px]"
+                >
+                    Let&rsquo;s
+                    <br />
+                    connect
                 </h1>
 
                 {/* Second column */}
-                <div className="col-span-2 flex items-end">
-                    <p className="text-4xl font-semibold text-white will-change-transform">
+                <div className="flex flex-col items-start justify-between gap-8">
+                    <Link
+                        href={"/contact"}
+                        className="w-fit group flex items-center gap-2 cursor-pointer"
+                    >
+                        <ArrowUpRight className="w-5 h-5 text-orange-600" />
+                        <div className="relative h-7 overflow-hidden text-lg font-semibold">
+                            <p className="group-hover:-translate-y-full transition-transform duration-300">
+                                Contact details
+                            </p>
+                            <p className="group-hover:-translate-y-full transition-transform duration-300 text-orange-600">
+                                Contact details
+                            </p>
+                        </div>
+                    </Link>
+                    <p
+                        className="text-xl font-semibold will-change-transform leading-6
+                        md:text-2xl xl:text-3xl md:leading-7 xl:leading-8"
+                    >
                         Ready to transform your workspace?
                         <br />
-                        Get in touch with our team for expert consultation and personalized
-                        office solutions.
+                        Get in touch with our team for expert consultation{" "}
+                        <br className="hidden sm:block lg:hidden" /> and personalized office
+                        solutions.
                     </p>
                 </div>
             </header>
 
             {/* Icons and button */}
-            <div className="w-full flex flex-col gap-5 text-zinc-400 font-medium">
-                <div className="grid grid-cols-3 gap-5">
-                    <div className="flex items-center gap-2">
-                        <Link
-                            href={"/https://instagram.com"}
-                            className="bg-zinc-800 hover:bg-white text-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
-                        >
-                            <Instagram className="w-6 h-6" />
-                        </Link>
-                        <Link
-                            href={"/https://facebook.com"}
-                            className="bg-zinc-800 hover:bg-white text-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
-                        >
-                            <Facebook className="w-6 h-6" />
-                        </Link>
-                        <Link
-                            href={"/https://x.com"}
-                            className="bg-zinc-800 hover:bg-white text-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
-                        >
-                            <Twitter className="w-6 h-6" />
-                        </Link>
-                    </div>
-                    <div className="col-span-2 flex items-c enter justify-between">
-                        <Link
-                            href={"mailto:sulthan@example.com"}
-                            className="w-full p-5 flex items-center justify-center text-2xl font-medium rounded-full 
-                        border border-white hover:bg-white text-white hover:text-[#171717] transition-colors duration-300"
-                        >
-                            sulthan@example.com
-                        </Link>
-                    </div>
+            <div className="w-full grid grid-cols-2 font-medium">
+                <div className="flex items-center gap-2">
+                    <Link
+                        href={"/https://instagram.com"}
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                    >
+                        <Instagram className="w-6 h-6" />
+                    </Link>
+                    <Link
+                        href={"/https://facebook.com"}
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                    >
+                        <Facebook className="w-6 h-6" />
+                    </Link>
+                    <Link
+                        href={"/https://x.com"}
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                    >
+                        <Twitter className="w-6 h-6" />
+                    </Link>
+                </div>
+                <div className="flex items-c enter justify-between">
+                    <Link
+                        href={"mailto:info@ofla.in"}
+                        className="w-full p-5 flex items-center justify-center text-2xl font-medium rounded-full 
+                        border border-white hover:bg-white hover:text-[#171717] transition-colors duration-300"
+                    >
+                        info@ofla.in
+                    </Link>
                 </div>
             </div>
 
-            <footer className="w-full p-10 absolute bottom-0 left-0 flex items-end justify-between text-white">
+            <footer
+                className="w-full p-8 px-4 absolute bottom-0 left-0 flex items-center font-medium
+                md:px-5 xl:px-10"
+            >
                 <p className="flex items-center gap-2 self-end">
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved
                 </p>
+                <div className="mx-3 w-0.5 h-5 bg-white" />
+                <Link className="hover:text-orange-600" href="https://github.com/allajahzan-dev" target="_blank">
+                    dev
+                </Link>
             </footer>
         </section>
     );

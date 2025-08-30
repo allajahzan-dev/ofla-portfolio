@@ -26,7 +26,7 @@ export default async function ProcessSection() {
                 }
                 subTitle={
                     <p
-                        className="text-base text-center font-bold text-zinc-600 tracking-tight
+                        className="text-base text-center font-bold text-zinc-600 leading-5 tracking-tight
                         md:text-xl md:font-semibold"
                     >
                         Let’s dive into the process. From first idea to final
