@@ -38,8 +38,8 @@ export default async function FaqSection() {
                         md:text-xl md:font-semibold"
                     >
                         Get quick answers for frequently asked questions
-                        <br className="hidden sm:block lg:hidden" />{" "}
-                        about our products and services.
+                        <br className="hidden sm:block lg:hidden" /> about our products and
+                        services.
                     </p>
                     <Link
                         href={"/contact"}
@@ -83,7 +83,7 @@ export default async function FaqSection() {
                                     </AccordionTrigger>
 
                                     <AccordionContent
-                                        className="w-[92%] text-base font-semibold text-zinc-600 leading-5
+                                        className="w-[88%] text-base font-semibold text-zinc-600 leading-5
                                         md:w-[60%]"
                                     >
                                         {item.answer}

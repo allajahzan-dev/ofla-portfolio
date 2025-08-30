@@ -62,19 +62,22 @@ export default function ContactSection() {
             <div className="w-full grid grid-cols-2 font-medium">
                 <div className="flex items-center gap-2">
                     <Link
-                        href={"/https://instagram.com"}
+                        href={"https://instagram.com"}
+                        target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
                     >
                         <Instagram className="w-6 h-6" />
                     </Link>
                     <Link
-                        href={"/https://facebook.com"}
+                        href={"https://facebook.com"}
+                        target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
                     >
                         <Facebook className="w-6 h-6" />
                     </Link>
                     <Link
-                        href={"/https://x.com"}
+                        href={"https://x.com"}
+                        target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
                     >
                         <Twitter className="w-6 h-6" />
@@ -99,10 +102,10 @@ export default function ContactSection() {
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved
                 </p>
-                <div className="mx-3 w-0.5 h-5 bg-white" />
+                {/* <div className="mx-3 w-0.5 h-5 bg-white" />
                 <Link className="hover:text-orange-600" href="https://github.com/allajahzan-dev" target="_blank">
                     dev
-                </Link>
+                </Link> */}
             </footer>
         </section>
     );

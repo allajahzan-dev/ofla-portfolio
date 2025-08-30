@@ -135,7 +135,7 @@ export default function AboutSection() {
                         Premium workspace solutions that drive productivity.
                     </h1>
                     <p
-                        className="relative z-10 w-[90%] text-base font-medium text-zinc-600 leading-5 tracking-tight
+                        className="relative z-10 w-[90%] text-base font-semibold text-zinc-600 leading-5 tracking-tight
                         md:w-full lg:text-lg lg:font-medium"
                     >
                         They deliver exceptional premium office furniture, ergonomic chairs,
