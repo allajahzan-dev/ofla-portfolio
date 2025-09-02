@@ -10,9 +10,9 @@ export default async function ProcessSection() {
 
     return (
         <section
-            className="h-min-screen relative z-20 pt-24 bg-white flex flex-col gap-36 items-center 
+            className="min-h-screen relative z-20 pt-24 bg-white flex flex-col items-center justify-between
             mt-0.5 rounded-[35px] will-change-transform overflow-hidden
-            lg:pt-40 lg:rounded-[50px]"
+            xl:pt-40 xl:rounded-[50px]"
         >
             {/* Title */}
             <RevealHeading
@@ -27,7 +27,7 @@ export default async function ProcessSection() {
                 subTitle={
                     <p
                         className="text-base text-center font-bold text-zinc-600 leading-5 tracking-tight
-                        md:text-xl md:font-semibold"
+                        md:text-xl md:font-semibold md:leading-6"
                     >
                         Let’s dive into the process. From first idea to final
                         <br />

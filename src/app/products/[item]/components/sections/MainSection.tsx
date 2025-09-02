@@ -24,10 +24,13 @@ export default async function MainSection({ item }: Props) {
     return (
         <main>
             <TitleSection products={products} />
-            <div className="relative rounded-t-[50px] overflow-hidden">
+            <div
+                className="relative -mt-5 rounded-t-[35px] overflow-hidden
+                md:mt-0 xl:rounded-t-[50px]"
+            >
                 <div
                     className="absolute inset-0 z-0 
-                bg-[linear-gradient(to_bottom,_white_0%,_white_3%,_#292929_2%,_#292929_100%)]"
+                    bg-[linear-gradient(to_bottom,_white_0%,_white_3%,_#292929_2%,_#292929_100%)]"
                 />
 
                 <OverviewSection products={products} />

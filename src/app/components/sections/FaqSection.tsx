@@ -19,7 +19,7 @@ export default async function FaqSection() {
         <section
             className="h-fit relative z-10 px-4 py-24 bg-white flex flex-col gap-20 items-center 
             -mt-0.5 rounded-[35px] will-change-transform overflow-hidden
-            md:px-5 xl:px-10 lg:py-40 lg:rounded-[50px]"
+            md:px-5 xl:px-10 xl:py-40 xl:rounded-[50px]"
         >
             <div
                 className="w-full grid grid-cols-1 gap-10
@@ -35,7 +35,7 @@ export default async function FaqSection() {
                     </h1>
                     <p
                         className="text-base text-start font-bold text-zinc-600 leading-5 tracking-tight
-                        md:text-xl md:font-semibold"
+                        md:text-xl md:font-semibold md:leading-6"
                     >
                         Get quick answers for frequently asked questions
                         <br className="hidden sm:block lg:hidden" /> about our products and

@@ -11,9 +11,9 @@ import Link from "next/link";
 export default function ContactSection() {
     return (
         <section
-            className="h-[calc(100svh+1.2px)] relative z-20 px-4 pt-24 bg-[#171717] text-white flex flex-col gap-10 items-center 
+            className="h-auto relative z-20 px-4 pt-24 bg-[#171717] text-white flex flex-col gap-10 items-center
             rounded-t-[35px] will-change-transform overflow-hidden
-            md:px-5 xl:px-10 lg:pt-40 lg:rounded-t-[50px]"
+            lg:h-[calc(100svh+1.2px)] md:px-5 xl:px-10 lg:pt-40 lg:rounded-t-[50px]"
         >
             <header
                 className="w-full grid grid-cols-1 gap-8
@@ -30,7 +30,7 @@ export default function ContactSection() {
                 </h1>
 
                 {/* Second column */}
-                <div className="flex flex-col items-start justify-between gap-8">
+                <div className="flex flex-col items-start justify- gap-8">
                     <Link
                         href={"/contact"}
                         className="w-fit group flex items-center gap-2 cursor-pointer"
@@ -59,28 +59,43 @@ export default function ContactSection() {
             </header>
 
             {/* Icons and button */}
-            <div className="w-full grid grid-cols-2 font-medium">
+            <div
+                className="w-full grid grid-cols-1 gap-8 font-medium
+                lg:grid-cols-2 lg:gap-0"
+            >
                 <div className="flex items-center gap-2">
                     <Link
                         href={"https://instagram.com"}
                         target="_blank"
-                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
+                        lg:w-12 lg:h-12"
                     >
-                        <Instagram className="w-6 h-6" />
+                        <Instagram
+                            className="w-5 h-5
+                        lg:w-6 lg:h-6"
+                        />
                     </Link>
                     <Link
                         href={"https://facebook.com"}
                         target="_blank"
-                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
+                        lg:w-12 lg:h-12"
                     >
-                        <Facebook className="w-6 h-6" />
+                        <Facebook
+                            className="w-5 h-5
+                        lg:w-6 lg:h-6"
+                        />
                     </Link>
                     <Link
                         href={"https://x.com"}
                         target="_blank"
-                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-12 h-12 transition-colors duration-300 flex items-center justify-center rounded-full"
+                        className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
+                        lg:w-12 lg:h-12"
                     >
-                        <Twitter className="w-6 h-6" />
+                        <Twitter
+                            className="w-5 h-5
+                        lg:w-6 lg:h-6"
+                        />
                     </Link>
                 </div>
                 <div className="flex items-c enter justify-between">
@@ -94,10 +109,7 @@ export default function ContactSection() {
                 </div>
             </div>
 
-            <footer
-                className="w-full p-8 px-4 absolute bottom-0 left-0 flex items-center font-medium
-                md:px-5 xl:px-10"
-            >
+            <footer className="w-full py-8 bottom-0 left-0 flex items-center font-medium">
                 <p className="flex items-center gap-2 self-end">
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved

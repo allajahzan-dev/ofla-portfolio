@@ -48,14 +48,14 @@ export default function Navbar({ className }: Props) {
         ) {
             setStyles({
                 textColor: "md:text-[#171717]",
-                hoverTextColor: "text-black",
+                hoverTextColor: "group-hover:text-zinc-800",
                 bgColor: "bg-[#171717]",
                 hoverBgColor: "bg-black",
             });
         } else {
             setStyles({
                 textColor: "md:text-zinc-100",
-                hoverTextColor: "text-white",
+                hoverTextColor: "group-hover:text-zinc-200",
                 bgColor: "bg-zinc-100",
                 hoverBgColor: "bg-white",
             });
@@ -101,10 +101,15 @@ export default function Navbar({ className }: Props) {
             id="navbar-section"
             className={cn(
                 className,
-                "w-full bg-white px-4 py-5 fixed z-[100] top-0 left-0 will-change-transform",
-                "shadow-md transition-all duration-300 ease-in-out",
+                "w-full px-4 py-5 fixed z-[100] top-0 left-0 will-change-transform",
+                "shadow-none transition-all duration-300 ease-in-out",
                 "md:px-5 xl:px-10 md:bg-transparent md:shadow-none",
-                navVisible ? "translate-y-0" : "-translate-y-full"
+                navVisible ? "translate-y-0" : "-translate-y-full",
+                pathname === "/products" ||
+                pathname === "/about-us" ||
+                pathname === "/contact"
+                    ? "bg-zinc-100"
+                    : "bg-white"
             )}
         >
             <div
@@ -169,8 +174,14 @@ export default function Navbar({ className }: Props) {
 
                 {/* Nav items on mobile */}
                 <div
-                    className="relative h-full w-full pb-4 bg-white flex flex-col items-start gap-6
-                    font-semibold text-[#171717]"
+                    className={cn(
+                        "relative h-full w-full pb-4 flex flex-col items-start gap-6 font-semibold text-[#171717]",
+                        pathname === "/products" ||
+                        pathname === "/about-us" ||
+                        pathname === "/contact"
+                            ? "bg-zinc-100"
+                            : "bg-white"
+                    )}
                 >
                     <div className="flex flex-col gap-3">
                         <p className="text-sm text-zinc-400">Links</p>

@@ -16,7 +16,7 @@ export default function AboutSection() {
         <section
             className="min-h-screen relative z-40 px-4 py-24 bg-zinc-100 flex flex-col gap-20 items-center 
             rounded-[35px] will-change-transform
-            md:px-5 xl:px-10 lg:py-40 lg:rounded-[50px]"
+            md:px-5 xl:px-10 xl:py-40 xl:rounded-[50px]"
         >
             {/* Holder */}
             <div

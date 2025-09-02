@@ -14,7 +14,7 @@ export default async function ProductsSection() {
         <section
             className="min-h-screen relative z-30 px-4 py-24 pb-40 bg-white flex flex-col gap-20 items-center 
             rounded-[35px] -mt-0.5 will-change-transform overflow-hidden
-            md:px-5 xl:px-10 lg:py-40 md:gap-20 lg:rounded-[50px]"
+            md:px-5 xl:px-10 xl:py-40 xl:rounded-[50px]"
         >
             {/* Title */}
             <RevealHeading
@@ -31,7 +31,7 @@ export default async function ProductsSection() {
                 subTitle={
                     <p
                         className="text-base text-center font-bold text-zinc-600 leading-5 tracking-tight
-                        md:text-xl md:font-semibold"
+                        md:text-xl md:font-semibold md:leading-6"
                     >
                         Discover our complete range of premium office furniture
                         <br className="hidden sm:block" /> and workspace solutions designed

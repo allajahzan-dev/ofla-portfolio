@@ -23,9 +23,16 @@ export default function OverviewSection({ products }: Props) {
 
     return (
         <section
-            className="h-auto w-full relative bg-white flex flex-col items-center gap-20
-        px-10 pt-40 pb-20 -mt-0.5 rounded-t-[50px] will-change-transform overflow-hidden"
+            className="h-auto w-full relative px-4 pt-24 pb-0 bg-white flex flex-col items-center gap-20
+            -mt-0.5 rounded-t-[35px] will-change-transform overflow-hidden
+            md:px-5 xl:px-10 xl:pt-40 md:pb-20 xl:rounded-t-[50px]"
         >
+            {/* Holder */}
+            <div
+                className="w-32 h-3 bg-zinc-200 absolute top-5 left-[50%] -translate-x-1/2 rounded-full
+                md:w-40"
+            />
+
             {/* Products */}
             <div className="w-full absolute top-0 p-10 hidden items-center justify-between">
                 {products.map((product, index) => (
@@ -61,9 +68,17 @@ export default function OverviewSection({ products }: Props) {
             </div>
 
             {/* Overview */}
-            <div className="w-full grid grid-cols-3 gap-5 items-start">
-                <p className="font-semibold text-lg text-start leading-[1]">Overview</p>
-                <h1 className="text-4xl text-start font-semibold col-span-2 w-[70%]">
+            <div
+                className="w-full grid md:flex lg:grid grid-cols-1 gap-10 items-start
+                md:grid-cols-3"
+            >
+                <p className="font-semibold text-base text-start leading-[1]">
+                    Overview
+                </p>
+                <h1
+                    className="w-[100%] text-2xl text-start font-semibold col-span-2 leading-6 
+                    md:w-[75%] lg:w-[85%] md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
+                >
                     {selectedProduct?.overview}
                 </h1>
             </div>

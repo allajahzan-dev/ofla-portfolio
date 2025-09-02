@@ -12,8 +12,8 @@ export default async function MainSection() {
         <main className="bg-[#292929]">
             <TitleSection
                 title="Products"
-                description="Quality chairs, tables, storage solutions, and office furniture
-                designed for modern workspaces."
+                description="Quality office furniture
+                designed for every modern workspaces."
             />
             <ImageSection products={products} />
             <ContactSection />

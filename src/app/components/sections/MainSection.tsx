@@ -13,7 +13,7 @@ function MainSection() {
             <HeroSection />
             <section
                 className="relative -mt-5 rounded-t-[35px] overflow-hidden
-                md:mt-0 lg:rounded-t-[50px]"
+                md:mt-0 xl:rounded-t-[50px]"
             >
                 <div
                     className="absolute inset-0 z-0 

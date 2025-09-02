@@ -23,17 +23,15 @@ export default function NavbarItems({ text, styles }: Props) {
             {/* Text */}
             <p
                 className={cn(
-                    "text-sm font-bold",
-                    pathname === "/"
-                        ? `text-[#171717] ${styles.textColor}`
-                        : `${styles.textColor} group-hover:${styles.hoverTextColor}`
+                    "text-sm font-extrabold ",
+                    `${styles.textColor} ${styles.hoverTextColor}`
                 )}
             >
                 {text}
             </p>
 
             {/* Animated underline */}
-            <div className="w-full h-[2px] relative overflow-hidden rounded-full">
+            {/* <div className="w-full h-[2px] relative overflow-hidden rounded-full">
                 <span
                     className={cn(
                         `block h-full ${styles.bgColor} group-hover:${styles.hoverBgColor} transform scale-x-0 transition-transform duration-300 origin-left`,
@@ -43,7 +41,7 @@ export default function NavbarItems({ text, styles }: Props) {
                             : "group-hover:scale-x-100"
                     )}
                 />
-            </div>
+            </div> */}
         </div>
     );
 }
