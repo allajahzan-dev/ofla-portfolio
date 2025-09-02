@@ -3,7 +3,7 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 // Interface for Props
 interface Props {

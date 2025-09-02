@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
 
 // Interface for Props
 interface Props {
@@ -16,8 +15,6 @@ interface Props {
 
 // Navbar Items
 export default function NavbarItems({ text, styles }: Props) {
-    const pathname = usePathname();
-
     return (
         <div className="group flex flex-col gap-0.5 items-center cursor-pointer p-0 will-change-transform">
             {/* Text */}

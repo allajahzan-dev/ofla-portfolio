@@ -6,8 +6,6 @@ import BulletPoint from "@/components/ui/pointer";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { oswald } from "@/fonts/owald";
 
 // Interface for Props
 interface Props {
