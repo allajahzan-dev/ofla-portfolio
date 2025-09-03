@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useLayoutEffect, useState } from "react";
 import { IProduct } from "@/app/products/utils/fetchProducts";
+import BreakText from "@/components/helper/BreakText";
 
 // Interface for Props
 interface Props {
@@ -21,16 +22,6 @@ export default function TitleSection({ products }: Props) {
 
     // Product description
     const [description, setDescription] = useState<string>("");
-
-    const breakText = (text: string, breakAfter = 3) => {
-        const words = text.split(" ");
-        return (
-            <>
-                {words.slice(0, breakAfter).join(" ")} <br />
-                {words.slice(breakAfter).join(" ")}
-            </>
-        );
-    };
 
     // Set product description
     useLayoutEffect(() => {
@@ -110,7 +101,7 @@ export default function TitleSection({ products }: Props) {
                         className="pl-1 text-base font-semibold transform-gpu leading-5
                         md:pl-2 md:text-lg lg:text-xl lg:leading-6"
                     >
-                        {breakText(description, 4)}
+                        {BreakText({ text: description, breakAfter: 4})}
                     </p>
                 </motion.div>
             </div>

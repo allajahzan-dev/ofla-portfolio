@@ -39,7 +39,7 @@ export default function TitleSection({ title, description }: Props) {
         >
             {/* Title */}
             <motion.div
-                initial={isSmall ? { y: -20, scale: 1 } : { y: -50, scale: 0.9 }}
+                initial={isSmall ? { y: -20, scale: 1 } : { y: -40, scale: 0.9 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="relative top-2 w-full grid grid-cols-1 gap-10

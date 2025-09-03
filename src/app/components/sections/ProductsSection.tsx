@@ -55,7 +55,7 @@ export default async function ProductsSection() {
                         lg:p-2 lg:hover:bg-zinc-100"
                     >
                         <div
-                            className="w-full h-[520px] rounded-3xl overflow-hidden cursor-none
+                            className="w-full h-[520px] rounded-3xl overflow-hidden cursor-pointer
                             md:h-[500px] lg:h-[600px] xl:h-[700px]"
                         >
                             <Image
@@ -63,9 +63,9 @@ export default async function ProductsSection() {
                                 alt={item.img.slice(1).split(".")[0]}
                                 width={300}
                                 height={100}
-                                // quality={100}
+                                quality={100}
                                 priority
-                                className="product-img h-full w-full object-cover object-bottom scale-105"
+                                className="h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
                         <figcaption
