@@ -112,7 +112,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                             ) : (
                                 <Menu className="w-5 h-5" />
                             )}
-                            <span className="text-base font-semibold">
+                            <span className="text-lg font-semibold">
                                 {category === "All" ? "Filter by categories" : category}
                             </span>
                         </div>
@@ -176,7 +176,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                             className="text-sm text-center font-semibold leading-4
                                             md:text-base md:leading-5"
                                         >
-                                            {BreakText({ text: itemImage.title, breakAfter: 2, className: "block sm:hidden" })}
+                                            {BreakText({ text: itemImage.title, breakAfter: 1, className: "block sm:hidden" })}
                                         </h1>
                                         <div className="flex items-center gap-0">
                                             {itemImage.colors.map((color, index) => (

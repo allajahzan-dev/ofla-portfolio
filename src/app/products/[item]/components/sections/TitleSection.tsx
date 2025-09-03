@@ -88,8 +88,8 @@ export default function TitleSection({ products }: Props) {
 
                     {/* Heading */}
                     <h1
-                        className="font-bold text-[80px]
-                        md:text-[100px] lg:text-[120px] leading-[0.9]"
+                        className="font-bold text-[80px] tracking-tight
+                        sm:text-[100px] md:text-[110px] xl:text-[160px] leading-[0.9]"
                     >
                         {title === "height-adjustable-table"
                             ? "HAT"
@@ -98,10 +98,10 @@ export default function TitleSection({ products }: Props) {
 
                     {/* Description */}
                     <p
-                        className="pl-1 text-base font-semibold transform-gpu leading-5
-                        md:pl-2 md:text-lg lg:text-xl lg:leading-6"
+                        className="text-lg font-semibold transform-gpu leading-5
+                        md:pl-2 sm:text-xl xl:text-2xl sm:leading-6 xl:leading-7"
                     >
-                        {BreakText({ text: description, breakAfter: 4})}
+                        {BreakText({ text: description, breakAfter: 4 })}
                     </p>
                 </motion.div>
             </div>

@@ -72,7 +72,7 @@ export default function OverviewSection({ products }: Props) {
                 className="w-full grid md:flex lg:grid grid-cols-1 gap-10 items-start
                 md:grid-cols-3"
             >
-                <p className="font-semibold text-base text-start leading-[1]">
+                <p className="font-semibold text-lg text-start leading-[1]">
                     Overview
                 </p>
                 <h1

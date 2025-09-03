@@ -42,7 +42,7 @@ export default function TitleSection({ title, description }: Props) {
                 initial={isSmall ? { y: -20, scale: 1 } : { y: -40, scale: 0.9 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="relative top-2 w-full grid grid-cols-1 gap-10
+                className="relative top-2 w-full grid grid-cols-1 gap-5
                 md:grid-cols-3 md:top-14 md:gap-0"
             >
                 <p
@@ -61,7 +61,7 @@ export default function TitleSection({ title, description }: Props) {
                 >
                     <span className="overflow-hidden">
                         <h1
-                            className="font-bold text-[88px] tracking-tight
+                            className="font-bold text-[80px] tracking-tight
                             sm:text-[100px] md:text-[110px] xl:text-[160px]"
                         >
                             {title}

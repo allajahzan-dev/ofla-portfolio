@@ -109,7 +109,7 @@ export default function AboutSection() {
                     </div>
 
                     <p
-                        className="w-full text-[22px] font-semibold leading-6
+                        className="w-full text-2xl font-semibold leading-6
                         md:w-[90%] lg:w-[78%] xl:w-[60%] md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
                     >
                         We specialize in premium office chairs, tables, lounges, and
