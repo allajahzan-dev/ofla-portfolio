@@ -27,11 +27,11 @@ export default function OverviewSection({ products }: Props) {
             -mt-0.5 rounded-t-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:pt-40 xl:pb-0 xl:rounded-t-[50px]"
         >
-            {/* Holder */}
+            {/* Holder
             <div
                 className="w-32 h-3 bg-zinc-200 absolute top-5 left-[50%] -translate-x-1/2 rounded-full
                 md:w-40"
-            />
+            /> */}
 
             {/* Products */}
             <div className="w-full absolute top-0 p-10 hidden items-center justify-between">
@@ -77,7 +77,7 @@ export default function OverviewSection({ products }: Props) {
                 </p>
                 <h1
                     className="w-[100%] text-2xl text-start font-semibold col-span-2 leading-6 
-                    md:w-[75%] lg:w-[85%] md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
+                    md:w-[80%] lg:w-[90%] xl:w-[85%] md:text-[28px] lg:text-4xl md:leading-7 lg:leading-9"
                 >
                     {selectedProduct?.overview}
                 </h1>

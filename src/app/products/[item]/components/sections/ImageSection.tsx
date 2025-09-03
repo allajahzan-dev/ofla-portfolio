@@ -176,7 +176,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                             className="text-sm text-center font-semibold leading-4
                                             md:text-base md:leading-5"
                                         >
-                                            {BreakText({ text: itemImage.title, breakAfter: 2 })}
+                                            {BreakText({ text: itemImage.title, breakAfter: 2, className: "block sm:hidden" })}
                                         </h1>
                                         <div className="flex items-center gap-0">
                                             {itemImage.colors.map((color, index) => (
@@ -207,8 +207,10 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
             {/* If no images */}
             {itemImagesCategoryWise.length === 0 && (
-                <h1 className="text-lg font-semibold text-zinc-600 flex-1 flex items-center justify-center
-                    sm:text-xl md:text-2xl">
+                <h1
+                    className="text-lg font-semibold text-zinc-600 flex-1 flex items-center justify-center
+                    sm:text-xl md:text-2xl"
+                >
                     No images found!
                 </h1>
             )}

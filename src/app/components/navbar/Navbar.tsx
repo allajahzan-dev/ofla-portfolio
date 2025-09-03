@@ -125,9 +125,8 @@ export default function Navbar({ className }: Props) {
                     <span
                         className={cn(
                             "relative font-medium text-xl tracking-wide",
-                            pathname === "/"
-                                ? `text-black ${styles.textColor}`
-                                : styles.textColor,
+                            "text-black",
+                            styles.textColor,
                             oswald.className
                         )}
                     >
