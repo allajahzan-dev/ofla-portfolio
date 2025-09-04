@@ -1,6 +1,5 @@
 import TitleSection from "./TitleSection";
 import ImageSection from "./ImageSection";
-import DetailsSection from "./DetailsSection";
 import ContactSection from "@/components/common/ContactSection";
 import {
     fetchItemImages,
@@ -25,10 +24,10 @@ export default async function MainSection({ item, id }: Props) {
         <main className="bg-[#292929]">
             <TitleSection itemImage={itemImage as IItemImage} />
             <ImageSection itemImage={itemImage as IItemImage} />
-            <DetailsSection
+            {/* <DetailsSection
                 itemImages={itemImages}
                 itemImage={itemImage as IItemImage}
-            />
+            /> */}
             <ContactSection />
         </main>
     );

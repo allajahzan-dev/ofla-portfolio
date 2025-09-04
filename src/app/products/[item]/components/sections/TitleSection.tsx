@@ -63,7 +63,7 @@ export default function TitleSection({ products }: Props) {
 
             {/* Shadow */}
             <div
-                className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-black/40 to-transparent
+                className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-black/20 to-transparent
                 md:via-black/20"
             />
 
@@ -98,8 +98,8 @@ export default function TitleSection({ products }: Props) {
 
                     {/* Description */}
                     <p
-                        className="text-lg font-semibold transform-gpu leading-5
-                        md:pl-2 sm:text-xl xl:text-2xl sm:leading-6 xl:leading-7"
+                        className="text-base font-semibold transform-gpu leading-5
+                        md:pl-2 sm:text-xl sm:leading-6 xl:leading-7"
                     >
                         {BreakText({ text: description, breakAfter: 4 })}
                     </p>

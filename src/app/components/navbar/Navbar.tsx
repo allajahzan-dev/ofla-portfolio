@@ -101,15 +101,15 @@ export default function Navbar({ className }: Props) {
             id="navbar-section"
             className={cn(
                 className,
-                "w-full px-4 py-5 fixed z-[100] top-0 left-0 will-change-transform",
+                "w-full bg-zinc-100 px-4 py-5 fixed z-[100] top-0 left-0 will-change-transform",
                 "shadow-none transition-all duration-300 ease-in-out",
                 "md:px-5 xl:px-10 md:bg-transparent md:shadow-none",
-                navVisible ? "translate-y-0" : "-translate-y-full",
-                pathname === "/products" ||
-                pathname === "/about-us" ||
-                pathname === "/contact"
-                    ? "bg-zinc-100"
-                    : "bg-white"
+                navVisible ? "translate-y-0" : "-translate-y-full"
+                // pathname === "/products" ||
+                // pathname === "/about-us" ||
+                // pathname === "/contact"
+                //     ? "bg-zinc-100"
+                //     : "bg-white"
             )}
         >
             <div
@@ -118,6 +118,7 @@ export default function Navbar({ className }: Props) {
                     "transition-all duration-500 ease-[cubic-bezier(0.6,0,0.1,1)]",
                     styles.textColor,
                     toggle ? "h-[100svh]" : "h-7"
+                    // /^\/products\/[^/]+\/[^/]+$/.test(pathname) ? "hidden" : "block"
                 )}
             >
                 <div className="w-full flex items-center justify-between">
@@ -174,12 +175,7 @@ export default function Navbar({ className }: Props) {
                 {/* Nav items on mobile */}
                 <div
                     className={cn(
-                        "relative h-full w-full pb-4 flex flex-col items-start gap-6 font-semibold text-[#171717]",
-                        pathname === "/products" ||
-                        pathname === "/about-us" ||
-                        pathname === "/contact"
-                            ? "bg-zinc-100"
-                            : "bg-white"
+                        "relative bg-zinc-100 h-full w-full pb-4 flex flex-col items-start gap-6 font-semibold text-[#171717]"
                     )}
                 >
                     <div className="flex flex-col gap-3">

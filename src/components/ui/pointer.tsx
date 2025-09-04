@@ -7,5 +7,5 @@ interface Props {
 
 // Bullet point
 export default function BulletPoint({ className }: Props) {
-    return <span className={cn("text-xl text-zinc-600 sm:text-2xl", className)}>⊹</span>;
+    return <span className={cn("text-xl text-zinc-600 lg:text-2xl", className)}>⊹</span>;
 }

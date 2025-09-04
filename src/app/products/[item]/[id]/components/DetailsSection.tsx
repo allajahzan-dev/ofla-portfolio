@@ -43,9 +43,9 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
     return (
         <section
             className="min-h-screen w-full relative z-0 bg-white flex flex-col gap-10 items-center 
-        px-10 pt-20 pb-24 rounded-b-[50px] -mt-0.5 will-change-transform overflow-hidden"
+        px-10 pt-20 pb-24 rounded-b-[35px] -mt-0.5 will-change-transform overflow-hidden"
         >
-            <div className="w-full h-full relative grid grid-cols-2 gap-5 items-start">
+            <div className="w-full h-full relative hidden grid grid-cols-2 gap-5 items-start">
                 {/* First column */}
                 <div className="flex flex-col gap-20">
                     {/* Key features */}

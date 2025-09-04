@@ -176,7 +176,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                             className="text-sm text-center font-semibold leading-4
                                             md:text-base md:leading-5"
                                         >
-                                            {BreakText({ text: itemImage.title, breakAfter: 1, className: "block sm:hidden" })}
+                                            {BreakText({ text: itemImage.title, breakAfter: 2, className: "block sm:hidden" })}
                                         </h1>
                                         <div className="flex items-center gap-0">
                                             {itemImage.colors.map((color, index) => (
