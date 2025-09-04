@@ -20,7 +20,7 @@ export default function TitleSection({
         <section
             className="h-auto w-full relative px-4 pt-32 pb-5 bg-white flex flex-col items-center justify-center
             will-change-transform overflow-hidden
-            md:px-5 xl:px-10 md:pt-36 lg:pt-44 lg:pb-20"
+            md:px-5 xl:px-10 md:pt-36 lg:pt-44"
         >
             {/* Title */}
             <motion.div
@@ -41,7 +41,7 @@ export default function TitleSection({
                 </h1>
 
                 <ul
-                    className="flex flex-col items-center justify-center gap-1
+                    className="flex flex-col items-center justify-center gap-2
                     lg:flex-row lg:gap-3"
                 >
                     {points.map((point, index) => (
@@ -49,7 +49,7 @@ export default function TitleSection({
                             key={index}
                             className="text-lg font-semibold list-none flex items-center gap-3 leading-5"
                         >
-                            {point} 
+                            {point}
                             {index !== 2 && (
                                 <BulletPoint className="text-zinc-600 hidden lg:block" />
                             )}

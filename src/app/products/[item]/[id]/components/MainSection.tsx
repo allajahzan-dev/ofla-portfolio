@@ -5,6 +5,7 @@ import {
     fetchItemImages,
     IItemImage,
 } from "@/app/products/[item]/utils/fetchItemImages";
+import DetailsSection from "./DetailsSection";
 
 // Interface for Props
 interface Props {
@@ -24,10 +25,10 @@ export default async function MainSection({ item, id }: Props) {
         <main className="bg-[#292929]">
             <TitleSection itemImage={itemImage as IItemImage} />
             <ImageSection itemImage={itemImage as IItemImage} />
-            {/* <DetailsSection
+            <DetailsSection
                 itemImages={itemImages}
                 itemImage={itemImage as IItemImage}
-            /> */}
+            />
             <ContactSection />
         </main>
     );
