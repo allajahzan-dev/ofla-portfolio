@@ -14,6 +14,7 @@ export interface IItemImage {
     id: number;
     img: string[];
     title: string;
+    description: string;
     category: TCategory;
     points: string[];
     keyFeatures: string[];

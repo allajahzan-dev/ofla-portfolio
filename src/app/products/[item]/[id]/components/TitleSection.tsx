@@ -63,7 +63,7 @@ export default function TitleSection({
                             key={index}
                             className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
                         >
-                            <Circle className={cn("w-4 h-4 text-white", color)} />
+                            <Circle className={cn("w-5 h-5 text-white", color)} />
                         </div>
                     ))}
                 </div>

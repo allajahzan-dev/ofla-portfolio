@@ -82,9 +82,7 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                             className="w-[100%] text-2xl font-semibold transform-gpu leading-6
                             lg:w-[45%] "
                         >
-                            Ergonomic executive mesh chair designed for superior comfort and
-                            posture support, featuring breathable mesh, adjustable height, and
-                            smooth-rolling wheels.
+                            {itemImage.description}
                         </p>
                     </div>
 
