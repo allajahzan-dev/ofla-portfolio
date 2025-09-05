@@ -109,7 +109,8 @@ export default function ContactSection() {
                 </div>
             </div>
 
-            <footer className="w-full py-8 bottom-0 left-0 flex items-center font-medium">
+            <footer className="w-full py-8 relative bottom-0 left-0 flex items-center font-medium
+                    lg:absolute lg:px-5 xl:px-10">
                 <p className="flex items-center gap-2 self-end">
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved

@@ -28,7 +28,7 @@ export default function PageTransition() {
 
     return (
         <div
-            className="page-transition fixed z-[1000] left-0 top-0 h-screen w-screen bg-[#171717] 
+            className="page-transition fixed z-[1000] left-0 top-0 h-screen w-screen bg-white 
         flex items-center justify-center origin-top pointer-events-none"
         ></div>
     );

@@ -185,7 +185,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                                     className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
                                                 >
                                                     <Circle
-                                                        className={cn("w-3 h-3 text-white -skew-6", color)}
+                                                        className={cn("w-3 h-3 text-white", color)}
                                                     />
                                                 </div>
                                             ))}

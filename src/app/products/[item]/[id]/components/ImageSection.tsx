@@ -39,7 +39,10 @@ export default function ImageSection({ itemImage }: Props) {
                 lg:grid-cols-1"
             >
                 {/* Item images */}
-                <div className="relative h-full w-full flex flex-col gap-2 justify-center cursor-pointer overflow-hidden">
+                <div
+                    className="relative h-full w-full grid grid-cols-1 gap-2 justify-center cursor-pointer overflow-hidden
+                     lg:grid-cols-2"
+                >
                     {/* Lens */}
                     <div className="bg-white rounded-lg">
                         <Lens>
@@ -59,66 +62,35 @@ export default function ImageSection({ itemImage }: Props) {
                     </div>
 
                     {/* Remaining images */}
-                    {thumbs.length > 0 && (
-                        <div
-                            className="relative h-40 grid grid-cols-4 grid-rows-1 gap-0 overflow-hidden 
-                            md:h-48"
-                        >
-                            {thumbs.map((image, index) => (
-                                <motion.div
-                                    key={index}
-                                    onClick={() => handleSwapImage(image, index)}
-                                    className="group relative w-full h-full bg-white rounded-lg cursor-pointer"
-                                >
-                                    <AnimatePresence mode="wait">
-                                        <motion.img
-                                            key={image}
-                                            initial={{ x: 0, opacity: 0 }}
-                                            animate={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: 0.3 }}
-                                            src={image}
-                                            alt="img"
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </AnimatePresence>
-                                </motion.div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-
-                {/* {thumbs.length > 0 && (
-                    <div className={cn("relative w-full h-screen grid grid-cols-2 grid-rows-2")}>
-                        {thumbs.map((image, index) => (
-                            <motion.div
-                                key={index}
-                                className="group relative w-full h-full bg-white flex justify-center cursor-pointer"
+                    <div className="h-40 lg:h-[calc(78vh)]">
+                        {thumbs.length > 0 && (
+                            <div
+                                className="relative h-40 grid grid-cols-4 grid-rows-1 overflow-hidden 
+                            md:h-full lg:grid-cols-2 lg:grid-rows-2"
                             >
-                                <AnimatePresence mode="wait">
-                                    <motion.img
-                                        key={image}
-                                        initial={{ x: -50, opacity: 0 }}
-                                        animate={{ x: 0, opacity: 1 }}
-                                        exit={{ x: -50, opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        src={image}
-                                        alt="img"
-                                        className="w-full h-full object-contain"
-                                    />
-                                </AnimatePresence>
-
-                                <motion.div
-                                    initial={{ scale: 1 }}
-                                    whileTap={{ scale: 0 }}
-                                    onClick={() => handleSwapImage(image, index)}
-                                    className="p-3 bg-zinc-100 shadow absolute top-1/2 -translate-y-1/2 -left-8 rounded-xl opacity-100 group-hover:opacity-100 transition-all duration-300"
-                                >
-                                    <ArrowLeftRight className="w-5 h-5" />
-                                </motion.div>
-                            </motion.div>
-                        ))}
+                                {thumbs.map((image, index) => (
+                                    <motion.div
+                                        key={index}
+                                        onClick={() => handleSwapImage(image, index)}
+                                        className="group relative w-full h-full bg-white rounded-lg cursor-pointer"
+                                    >
+                                        <AnimatePresence mode="wait">
+                                            <motion.img
+                                                key={image}
+                                                initial={{ x: 0, opacity: 0 }}
+                                                animate={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.3 }}
+                                                src={image}
+                                                alt="img"
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </AnimatePresence>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        )}
                     </div>
-                )} */}
+                </div>
             </motion.div>
         </section>
     );

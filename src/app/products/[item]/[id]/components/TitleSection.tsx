@@ -20,7 +20,7 @@ export default function TitleSection({
         <section
             className="h-auto w-full relative px-4 pt-32 pb-5 bg-white flex flex-col items-center justify-center
             will-change-transform overflow-hidden
-            md:px-5 xl:px-10 md:pt-36 lg:pt-44"
+            md:px-5 xl:px-10 md:py-36 lg:py-40"
         >
             {/* Title */}
             <motion.div
@@ -51,7 +51,7 @@ export default function TitleSection({
                         >
                             {point}
                             {index !== 2 && (
-                                <BulletPoint className="text-zinc-600 hidden lg:block" />
+                                <BulletPoint className="text-orange-600 hidden lg:block" />
                             )}
                         </li>
                     ))}
@@ -63,7 +63,7 @@ export default function TitleSection({
                             key={index}
                             className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
                         >
-                            <Circle className={cn("w-4 h-4 text-white -skew-6", color)} />
+                            <Circle className={cn("w-4 h-4 text-white", color)} />
                         </div>
                     ))}
                 </div>
