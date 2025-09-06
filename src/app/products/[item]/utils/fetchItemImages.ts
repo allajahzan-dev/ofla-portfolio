@@ -4,10 +4,14 @@ import BASE_URL from "@/constants/baseUrl";
 export type TCategory =
     | "All"
     | "Executive"
-    | "Public"
-    | "Cafeteria"
+    | "Task"
+    | "Guest"
     | "Stools"
-    | "Outdoor";
+    | "Study"
+    | "Cafeteria"
+    | "Workspace"
+    | "Meeting"
+;
 
 // Interface for ItemImage
 export interface IItemImage {
