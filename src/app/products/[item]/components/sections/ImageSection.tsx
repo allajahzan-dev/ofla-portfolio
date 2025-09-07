@@ -166,7 +166,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                         height={1000}
                                         quality={100}
                                         priority
-                                        src={itemImage?.img[1] || "/"}
+                                        src={itemImage?.img[1] || itemImage?.img[0] || "/"}
                                         alt={item + "-" + (index + 1)}
                                         className="h-[230px] sm:h-[300px] md:h-[350px] lg:h-[380px] w-full object-contain group-hover:scale-100 transition-all duration-500"
                                     />

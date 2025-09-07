@@ -2,6 +2,7 @@
 
 import { IItemImage } from "@/app/products/[item]/utils/fetchItemImages";
 import { Lens } from "@/components/ui/lens";
+import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -28,7 +29,7 @@ export default function ImageSection({ itemImage }: Props) {
     return (
         <section
             className="h-full w-full relative z-20 px-4 bg-white flex gap-8 flex-col items-start
-            -mt-0.5 will-change-transform
+            -mt-20 will-change-transform
             md:px-5 xl:px-10"
         >
             <motion.div
@@ -40,8 +41,10 @@ export default function ImageSection({ itemImage }: Props) {
             >
                 {/* Item images */}
                 <div
-                    className="relative h-full w-full grid grid-cols-1 gap-2 justify-center cursor-pointer overflow-hidden
-                     lg:grid-cols-2"
+                    className={cn(
+                        "relative h-full w-full grid grid-cols-1 gap-2 justify-center cursor-pointer overflow-hidden",
+                        thumbs.length === 0 ? "lg:grid-cols-1" : "lg:grid-cols-2"
+                    )}
                 >
                     {/* Lens */}
                     <div className="bg-white rounded-lg">
@@ -62,8 +65,8 @@ export default function ImageSection({ itemImage }: Props) {
                     </div>
 
                     {/* Remaining images */}
-                    <div className="h-36 lg:h-[calc(78vh)]">
-                        {thumbs.length > 0 && (
+                    {thumbs.length > 0 && (
+                        <div className="h-36 lg:h-[calc(78vh)]">
                             <div
                                 className="relative h-full grid grid-cols-4 grid-rows-1 overflow-hidden 
                             md:h-full lg:grid-cols-2 lg:grid-rows-2"
@@ -88,8 +91,8 @@ export default function ImageSection({ itemImage }: Props) {
                                     </motion.div>
                                 ))}
                             </div>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
             </motion.div>
         </section>
