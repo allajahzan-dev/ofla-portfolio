@@ -172,83 +172,88 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                 </div>
 
                 {/* Second column */}
-                <div className="h-full relative">
-                    {/* Related items */}
-                    <div className="flex flex-col gap-5">
-                        <p
-                            className="font-semibold text-xl text-start
+                {relatedItems.length > 0 && (
+                    <div className="h-full relative">
+                        {/* Related items */}
+                        <div className="flex flex-col gap-5">
+                            <p
+                                className="font-semibold text-xl text-start
                             md:text-2xl"
-                        >
-                            You may also like
-                        </p>
+                            >
+                                You may also like
+                            </p>
 
-                        <Carousel className="lg:px-10">
-                            <CarouselContent>
-                                {relatedItems
-                                    .filter((_, index) => index < 3)
-                                    .map((itemImage, index) => (
-                                        <CarouselItem
-                                            key={index}
-                                            className="md:basis-1/2 lg:basis-1/3"
-                                        >
-                                            <div
-                                                key={itemImage.id}
-                                                className="group relative p-2 h-auto w-full bg-white overflow-hidden cursor-pointer"
+                            <Carousel className="lg:px-10">
+                                <CarouselContent>
+                                    {relatedItems
+                                        .filter((_, index) => index < 3)
+                                        .map((itemImage, index) => (
+                                            <CarouselItem
+                                                key={index}
+                                                className="md:basis-1/2 lg:basis-1/3"
                                             >
-                                                <Link href={`/products/${item}/${itemImage.id}`}>
-                                                    <Image
-                                                        key={itemImage.id}
-                                                        width={1000}
-                                                        height={1000}
-                                                        quality={100}
-                                                        priority
-                                                        src={itemImage?.img[1] || "/"}
-                                                        alt={item + "-" + (index + 1)}
-                                                        className="h-[350px] lg:h-[380px] w-full object-contain group-hover:scale-100 transition-all duration-500"
-                                                    />
+                                                <div
+                                                    key={itemImage.id}
+                                                    className="group relative p-2 h-auto w-full bg-white overflow-hidden cursor-pointer"
+                                                >
+                                                    <Link href={`/products/${item}/${itemImage.id}`}>
+                                                        <Image
+                                                            key={itemImage.id}
+                                                            width={1000}
+                                                            height={1000}
+                                                            quality={100}
+                                                            priority
+                                                            src={itemImage?.img[1] || "/"}
+                                                            alt={item + "-" + (index + 1)}
+                                                            className="h-[350px] lg:h-[380px] w-full object-contain group-hover:scale-100 transition-all duration-500"
+                                                        />
 
-                                                    <div className="py-2 flex flex-col gap-5 items-center justify-center">
-                                                        <h1
-                                                            className="text-sm text-center font-semibold leading-4
+                                                        <div className="py-2 flex flex-col gap-5 items-center justify-center">
+                                                            <h1
+                                                                className="text-sm text-center font-semibold leading-4
                                                             md:text-base md:leading-5"
-                                                        >
-                                                            {BreakText({
-                                                                text: itemImage.title,
-                                                                breakAfter: 2,
-                                                                className: "hidden",
-                                                            })}
-                                                        </h1>
-                                                        <div className="flex items-center gap-0">
-                                                            {itemImage.colors.map((color, index) => (
-                                                                <div
-                                                                    key={index}
-                                                                    className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
-                                                                >
-                                                                    <Circle
-                                                                        className={cn("w-3 h-3 text-white", color)}
-                                                                    />
-                                                                </div>
-                                                            ))}
+                                                            >
+                                                                {BreakText({
+                                                                    text: itemImage.title,
+                                                                    breakAfter: 2,
+                                                                    className: "hidden",
+                                                                })}
+                                                            </h1>
+                                                            <div className="flex items-center gap-0">
+                                                                {itemImage.colors.map((color, index) => (
+                                                                    <div
+                                                                        key={index}
+                                                                        className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
+                                                                    >
+                                                                        <Circle
+                                                                            className={cn(
+                                                                                "w-3 h-3 text-white",
+                                                                                color
+                                                                            )}
+                                                                        />
+                                                                    </div>
+                                                                ))}
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div
-                                                        className="hidden absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white
+                                                        <div
+                                                            className="hidden absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white
                                                         opacity-0 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 duration-300 transition-all
                                                         lg:block"
-                                                    >
-                                                        <ArrowRight className="w-5 h-5" />
-                                                    </div>
-                                                </Link>
-                                            </div>
-                                        </CarouselItem>
-                                    ))}
-                            </CarouselContent>
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
+                                                        >
+                                                            <ArrowRight className="w-5 h-5" />
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </CarouselItem>
+                                        ))}
+                                </CarouselContent>
+                                <CarouselPrevious />
+                                <CarouselNext />
+                            </Carousel>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
 
             {/* More */}

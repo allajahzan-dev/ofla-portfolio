@@ -62,10 +62,10 @@ export default function ImageSection({ itemImage }: Props) {
                     </div>
 
                     {/* Remaining images */}
-                    <div className="h-40 lg:h-[calc(78vh)]">
+                    <div className="h-36 lg:h-[calc(78vh)]">
                         {thumbs.length > 0 && (
                             <div
-                                className="relative h-40 grid grid-cols-4 grid-rows-1 overflow-hidden 
+                                className="relative h-full grid grid-cols-4 grid-rows-1 overflow-hidden 
                             md:h-full lg:grid-cols-2 lg:grid-rows-2"
                             >
                                 {thumbs.map((image, index) => (
