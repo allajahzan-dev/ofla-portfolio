@@ -35,7 +35,7 @@ export default function TitleSection({
                 >
                     {BreakText({
                         text: title,
-                        breakAfter: 2,
+                        breakAfter: title.split(" ").length <= 3 ? 1: 2,
                         className: "block lg:hidden",
                     })}
                 </h1>

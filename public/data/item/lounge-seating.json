@@ -1,0 +1,75 @@
+{
+    "itemImages": [
+        {
+            "id": 1,
+            "img": [
+                "/images/item/lounge-seating/lounge1/img1.jpeg"
+            ],
+            "title": "Curved Sectional Sofa",
+            "description": "Modern curved sectional sofa featuring curved design, channel tufted backrest, neutral upholstery, and sleek contemporary styling for lounge areas.",
+            "category": "",
+            "points": [
+                "Curved sectional configuration",
+                "Channel tufted backrest design",
+                "Neutral beige upholstery finish"
+            ],
+            "materialSpecification": [
+                "Upholstery: High-quality fabric in neutral beige tone",
+                "Frame: Solid hardwood construction with reinforced joints",
+                "Cushioning: High-density foam with fiber wrap",
+                "Legs: Concealed base with sturdy support structure",
+                "Stitching: Double-stitched seams for durability",
+                "Filling: Premium polyester fiber and foam blend",
+                "Base: Hidden metal frame support system"
+            ],
+            "keyFeatures": [
+                "Spacious curved sectional seating for multiple users",
+                "Distinctive curved corner design for modern appeal",
+                "Channel tufted backrest for visual texture and comfort",
+                "Low-profile contemporary silhouette",
+                "Generous seat cushions for comfortable lounging",
+                "Neutral color suitable for various interior schemes",
+                "Seamless corner connection for smooth flow"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 2,
+            "img": [
+                "/images/item/lounge-seating/lounge2/img2.jpeg",
+                "/images/item/lounge-seating/lounge2/img1.jpeg",
+                "/images/item/lounge-seating/lounge2/img3.jpeg",
+                "/images/item/lounge-seating/lounge2/img4.jpeg"
+            ],
+            "title": "Modular Sectional Sofa",
+            "description": "Contemporary modular sectional sofa featuring separable components, rounded edges, neutral upholstery, and flexible configuration options for customizable seating arrangements.",
+            "category": "",
+            "points": [
+                "Modular separable components",
+                "Rounded contemporary styling",
+                "Neutral beige upholstery"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium fabric in neutral beige tone",
+                "Frame: Solid hardwood construction with reinforced joints",
+                "Cushioning: High-density foam core with soft padding",
+                "Base: Concealed support structure with connecting hardware",
+                "Stitching: Reinforced seams for modular durability",
+                "Connectors: Hidden interlocking mechanism between pieces",
+                "Filling: High-resilience foam with fiber wrap overlay"
+            ],
+            "keyFeatures": [
+                "Flexible modular system allows custom configurations",
+                "Individual components can be separated and rearranged",
+                "Rounded corner and edge design for modern appeal",
+                "Low-profile contemporary silhouette",
+                "Generous cushioning for comfortable seating",
+                "Seamless connection system between modules",
+                "Expandable design for various room sizes"
+            ],
+            "colors": [],
+            "relatedItems": []
+        }
+    ]
+}

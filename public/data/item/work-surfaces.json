@@ -3,115 +3,9 @@
         {
             "id": 1,
             "img": [
-                "/images/item/work-surfaces/executive/table2/img2.jpeg",
-                "/images/item/work-surfaces/executive/table2/img1.jpeg",
-                "/images/item/work-surfaces/executive/table2/img3.jpeg"
-            ],
-            "title": "Executive L-Shaped Desk",
-            "description": "Contemporary executive L-shaped desk with curved design, integrated storage cabinet, premium finish, and spacious work surface for executive offices.",
-            "category": "Executive",
-            "points": [
-                "Modern curved design aesthetics",
-                "Integrated storage solutions",
-                "Executive workspace functionality"
-            ],
-            "materialSpecification": [
-                "Desktop: High-grade engineered wood with premium laminate finish in beige/taupe",
-                "Storage Cabinet: Matching laminate finish with soft-close hinges",
-                "Edge Banding: PVC edge banding for durability and smooth finish",
-                "Hardware: Concealed European hinges with soft-close mechanism",
-                "Base: Solid wood construction with adjustable leveling glides",
-                "Locks: High-security cylinder locks for cabinet storage",
-                "Cable Management: Integrated wire management grommets"
-            ],
-            "keyFeatures": [
-                "Spacious L-shaped configuration maximizing workspace area",
-                "Curved design elements for modern aesthetic appeal",
-                "Integrated storage cabinet with locking mechanism",
-                "Smooth laminate surface resistant to scratches and stains",
-                "Cable management system for organized workspace",
-                "Soft-close cabinet doors for quiet operation",
-                "Executive-grade construction for durability"
-            ],
-            "colors": [],
-            "relatedItems": []
-        },
-        {
-            "id": 2,
-            "img": [
-                "/images/item/work-surfaces/executive/table3/img2.jpeg",
-                "/images/item/work-surfaces/executive/table3/img1.jpeg"
-            ],
-            "title": "Executive Office Desk",
-            "description": "Professional executive desk with integrated side pedestal, spacious work surface, built-in storage drawers, and modern two-tone finish design.",
-            "category": "Executive",
-            "points": [
-                "Integrated pedestal design",
-                "Spacious executive workspace",
-                "Modern professional aesthetics"
-            ],
-            "materialSpecification": [
-                "Desktop: High-quality engineered wood with laminate finish in brown/walnut",
-                "Pedestal: Matching laminate construction with cream/beige accent",
-                "Edge Banding: Durable PVC edge banding for longevity",
-                "Hardware: Heavy-duty drawer slides with soft-close mechanism",
-                "Handles: Modern rectangular metal pulls in brushed finish",
-                "Base: Solid panel construction with adjustable leveling feet",
-                "Cable Management: Integrated cord management grommet"
-            ],
-            "keyFeatures": [
-                "Spacious rectangular desktop for maximum work area",
-                "Integrated right-side pedestal with multiple drawer storage",
-                "Two-tone finish combining brown desktop with cream base",
-                "Soft-close drawer mechanism for quiet operation",
-                "Cable management system for organized workspace",
-                "Scratch and stain-resistant laminate surface",
-                "Heavy-duty construction for long-term durability"
-            ],
-            "colors": [],
-            "relatedItems": []
-        },
-        {
-            "id": 3,
-            "img": [
                 "/images/item/work-surfaces/executive/table4/img2.jpeg",
-                "/images/item/work-surfaces/executive/table4/img1.jpeg"
-            ],
-            "title": "Executive L-Shaped Desk",
-            "description": "Contemporary L-shaped executive desk with integrated storage cabinet, CPU compartment, curved design, and professional two-tone finish.",
-            "category": "Executive",
-            "points": [
-                "L-shaped workspace configuration",
-                "Integrated storage cabinet system",
-                "Modern curved design aesthetics"
-            ],
-            "materialSpecification": [
-                "Desktop: Engineered wood with laminate finish in warm brown",
-                "Storage Unit: MDF construction with cream laminate coating",
-                "Edge Banding: PVC edge protection for durability",
-                "Hardware: Metal drawer slides and cabinet hinges",
-                "Handles: Sleek metal pulls in brushed finish",
-                "Base: Panel construction with adjustable feet",
-                "Cable Management: Integrated wire management grommets"
-            ],
-            "keyFeatures": [
-                "Spacious L-shaped configuration for corner placement",
-                "Built-in storage cabinet with drawers and compartments",
-                "Dedicated CPU tower storage with ventilation access",
-                "Smooth curved edges for safety and style",
-                "Two-tone finish combining brown and cream colors",
-                "Cable management system for organized workspace",
-                "Scratch-resistant laminate work surface"
-            ],
-            "colors": [],
-            "relatedItems": []
-        },
-        {
-            "id": 4,
-            "img": [
-                "/images/item/work-surfaces/executive/table7/img2.jpeg",
-                "/images/item/work-surfaces/executive/table7/img1.jpeg",
-                "/images/item/work-surfaces/executive/table7/img3.jpeg"
+                "/images/item/work-surfaces/executive/table4/img1.jpeg",
+                "/images/item/work-surfaces/executive/table4/img3.jpeg"
             ],
             "title": "Premium Executive Desk",
             "description": "Luxurious executive desk featuring dual side pedestals, spacious work surface, integrated storage compartments, and sophisticated gray finish design.",
@@ -143,10 +37,10 @@
             "relatedItems": []
         },
         {
-            "id": 5,
+            "id": 2,
             "img": [
-                "/images/item/work-surfaces/executive/table8/img1.jpeg",
-                "/images/item/work-surfaces/executive/table8/img2.jpeg"
+                "/images/item/work-surfaces/executive/table5/img1.jpeg",
+                "/images/item/work-surfaces/executive/table5/img2.jpeg"
             ],
             "title": "Executive L-Shaped Desk",
             "description": "Premium L-shaped executive desk with dual pedestals, curved design, integrated storage compartments, and sophisticated gray professional finish.",
@@ -178,10 +72,10 @@
             "relatedItems": []
         },
         {
-            "id": 6,
+            "id": 3,
             "img": [
-                "/images/item/work-surfaces/executive/table9/img2.jpeg",
-                "/images/item/work-surfaces/executive/table9/img1.jpeg"
+                "/images/item/work-surfaces/executive/table6/img2.jpeg",
+                "/images/item/work-surfaces/executive/table6/img1.jpeg"
             ],
             "title": "Executive L-Shaped Desk",
             "description": "Premium L-shaped executive desk with dual pedestals, curved design, integrated storage compartments, and sophisticated gray professional finish.",
@@ -213,10 +107,10 @@
             "relatedItems": []
         },
         {
-            "id": 7,
+            "id": 4,
             "img": [
-                "/images/item/work-surfaces/executive/table10/img2.jpeg",
-                "/images/item/work-surfaces/executive/table10/img1.jpeg"
+                "/images/item/work-surfaces/executive/table7/img2.jpeg",
+                "/images/item/work-surfaces/executive/table7/img1.jpeg"
             ],
             "title": "Executive L-Shaped Desk",
             "description": "Premium L-shaped executive desk with dual pedestals, curved design, integrated storage compartments, and sophisticated gray professional finish.",
@@ -248,7 +142,7 @@
             "relatedItems": []
         },
         {
-            "id": 8,
+            "id": 5,
             "img": [
                 "/images/item/work-surfaces/meeting/table1/img1.jpeg"
             ],
@@ -256,9 +150,9 @@
             "description": "Contemporary meeting table featuring integrated technology hub, LED accent lighting, premium gray finish, and sleek minimalist design for boardrooms.",
             "category": "Meeting",
             "points": [
-                "Integrated technology management system",
+                "Integrated technology system",
                 "LED accent lighting feature",
-                "Modern minimalist conference design"
+                "Modern conference design"
             ],
             "materialSpecification": [
                 "Desktop: Premium engineered wood with gray laminate finish",
@@ -282,12 +176,12 @@
             "relatedItems": []
         },
         {
-            "id": 9,
+            "id": 6,
             "img": [
-                "/images/item/work-surfaces/executive/table13/img2.jpeg",
-                "/images/item/work-surfaces/executive/table13/img1.jpeg",
-                "/images/item/work-surfaces/executive/table13/img3.jpeg",
-                "/images/item/work-surfaces/executive/table13/img4.jpeg"
+                "/images/item/work-surfaces/executive/table8/img2.jpeg",
+                "/images/item/work-surfaces/executive/table8/img1.jpeg",
+                "/images/item/work-surfaces/executive/table8/img3.jpeg",
+                "/images/item/work-surfaces/executive/table8/img4.jpeg"
             ],
             "title": "Executive L-Shaped Desk",
             "description": "Modern executive L-shaped desk featuring distinctive angular metal legs, integrated storage credenza, and rich walnut finish design.",
@@ -319,7 +213,216 @@
             "relatedItems": []
         },
         {
+            "id": 7,
+            "img": [
+                "/images/item/work-surfaces/executive/table1/img2.jpeg",
+                "/images/item/work-surfaces/executive/table1/img1.jpeg",
+                "/images/item/work-surfaces/executive/table1/img3.jpeg"
+            ],
+            "title": "Executive L-Shaped Desk",
+            "description": "Contemporary executive L-shaped desk with curved design, integrated storage cabinet, premium finish, and spacious work surface for executive offices.",
+            "category": "Executive",
+            "points": [
+                "Modern curved design aesthetics",
+                "Integrated storage solutions",
+                "Executive workspace functionality"
+            ],
+            "materialSpecification": [
+                "Desktop: High-grade engineered wood with premium laminate finish in beige/taupe",
+                "Storage Cabinet: Matching laminate finish with soft-close hinges",
+                "Edge Banding: PVC edge banding for durability and smooth finish",
+                "Hardware: Concealed European hinges with soft-close mechanism",
+                "Base: Solid wood construction with adjustable leveling glides",
+                "Locks: High-security cylinder locks for cabinet storage",
+                "Cable Management: Integrated wire management grommets"
+            ],
+            "keyFeatures": [
+                "Spacious L-shaped configuration maximizing workspace area",
+                "Curved design elements for modern aesthetic appeal",
+                "Integrated storage cabinet with locking mechanism",
+                "Smooth laminate surface resistant to scratches and stains",
+                "Cable management system for organized workspace",
+                "Soft-close cabinet doors for quiet operation",
+                "Executive-grade construction for durability"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 8,
+            "img": [
+                "/images/item/work-surfaces/executive/table2/img2.jpeg",
+                "/images/item/work-surfaces/executive/table2/img1.jpeg"
+            ],
+            "title": "Executive Office Desk",
+            "description": "Professional executive desk with integrated side pedestal, spacious work surface, built-in storage drawers, and modern two-tone finish design.",
+            "category": "Executive",
+            "points": [
+                "Integrated pedestal design",
+                "Spacious executive workspace",
+                "Modern professional aesthetics"
+            ],
+            "materialSpecification": [
+                "Desktop: High-quality engineered wood with laminate finish in brown/walnut",
+                "Pedestal: Matching laminate construction with cream/beige accent",
+                "Edge Banding: Durable PVC edge banding for longevity",
+                "Hardware: Heavy-duty drawer slides with soft-close mechanism",
+                "Handles: Modern rectangular metal pulls in brushed finish",
+                "Base: Solid panel construction with adjustable leveling feet",
+                "Cable Management: Integrated cord management grommet"
+            ],
+            "keyFeatures": [
+                "Spacious rectangular desktop for maximum work area",
+                "Integrated right-side pedestal with multiple drawer storage",
+                "Two-tone finish combining brown desktop with cream base",
+                "Soft-close drawer mechanism for quiet operation",
+                "Cable management system for organized workspace",
+                "Scratch and stain-resistant laminate surface",
+                "Heavy-duty construction for long-term durability"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 9,
+            "img": [
+                "/images/item/work-surfaces/executive/table3/img2.jpeg",
+                "/images/item/work-surfaces/executive/table3/img1.jpeg"
+            ],
+            "title": "Executive L-Shaped Desk",
+            "description": "Contemporary L-shaped executive desk with integrated storage cabinet, CPU compartment, curved design, and professional two-tone finish.",
+            "category": "Executive",
+            "points": [
+                "L-shaped workspace configuration",
+                "Integrated storage cabinet system",
+                "Modern curved design aesthetics"
+            ],
+            "materialSpecification": [
+                "Desktop: Engineered wood with laminate finish in warm brown",
+                "Storage Unit: MDF construction with cream laminate coating",
+                "Edge Banding: PVC edge protection for durability",
+                "Hardware: Metal drawer slides and cabinet hinges",
+                "Handles: Sleek metal pulls in brushed finish",
+                "Base: Panel construction with adjustable feet",
+                "Cable Management: Integrated wire management grommets"
+            ],
+            "keyFeatures": [
+                "Spacious L-shaped configuration for corner placement",
+                "Built-in storage cabinet with drawers and compartments",
+                "Dedicated CPU tower storage with ventilation access",
+                "Smooth curved edges for safety and style",
+                "Two-tone finish combining brown and cream colors",
+                "Cable management system for organized workspace",
+                "Scratch-resistant laminate work surface"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
             "id": 10,
+            "img": [
+                "/images/item/work-surfaces/meeting/table2/img1.jpeg"
+            ],
+            "title": "Modern Conference Table",
+            "description": "Contemporary rectangular meeting table with chrome legs, mobile storage pedestal, white laminate finish, and integrated cable management system.",
+            "category": "Meeting",
+            "points": [
+                "Rectangular conference table design",
+                "Mobile storage pedestal unit",
+                "Chrome metal leg framework"
+            ],
+            "materialSpecification": [
+                "Desktop: High-grade engineered wood with white laminate finish",
+                "Storage Unit: Matching white laminate with mobile casters",
+                "Legs: Chrome-plated steel tube construction",
+                "Edge Banding: Seamless PVC edge protection",
+                "Hardware: Heavy-duty drawer slides and cabinet mechanisms",
+                "Casters: Dual-wheel mobile casters with locking mechanism",
+                "Cable Management: Integrated wire management grommets"
+            ],
+            "keyFeatures": [
+                "Spacious rectangular conference surface",
+                "Mobile storage unit for flexibility",
+                "Chrome metal leg support system",
+                "Clean white contemporary finish",
+                "Cable management for AV equipment",
+                "Scratch and stain-resistant surface",
+                "Heavy-duty commercial construction"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 11,
+            "img": [
+                "/images/item/work-surfaces/meeting/table3/img1.jpeg"
+            ],
+            "title": "Modern Conference Table",
+            "description": "Modern rectangular meeting table featuring wood-grain finish, angled chrome legs, central storage unit, and sleek contemporary design for professional spaces.",
+            "category": "Meeting",
+            "points": [
+                "Rectangular conference table design",
+                "Central integrated storage pedestal",
+                "Chrome metal leg framework"
+            ],
+            "materialSpecification": [
+                "Desktop: High-grade engineered wood with white laminate finish",
+                "Storage Unit: Matching white laminate with mobile casters",
+                "Legs: Chrome-plated steel tube construction",
+                "Edge Banding: Seamless PVC edge protection",
+                "Hardware: Heavy-duty drawer slides and cabinet mechanisms",
+                "Casters: Dual-wheel mobile casters with locking mechanism",
+                "Cable Management: Integrated wire management grommets"
+            ],
+            "keyFeatures": [
+                "Spacious rectangular conference surface",
+                "Mobile storage unit for flexibility",
+                "Chrome metal leg support system",
+                "Clean white contemporary finish",
+                "Cable management for AV equipment",
+                "Scratch and stain-resistant surface",
+                "Heavy-duty commercial construction"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+         {
+            "id": 12,
+            "img": [
+                "/images/item/work-surfaces/workspace/table3/img1.jpeg",
+                "/images/item/work-surfaces/workspace/table3/img2.jpeg"
+            ],
+            "title": "Modular Workspace System",
+            "description": "Modern dual-user workspace system featuring shared desktop, individual privacy screens, dual storage cabinets, and chrome legs for collaborative office environments.",
+            "category": "Workspace",
+            "points": [
+                "Dual workstation with privacy screens",
+                "Storage cabinets with CPU compartments",
+                "Chrome legs with wood-grain finish"
+            ],
+            "materialSpecification": [
+                "Desktop: Engineered wood with wood-grain laminate finish",
+                "Storage Cabinets: Matching wood-grain laminate with metal handles",
+                "Privacy Screens: Solid laminate panels in coordinating finish",
+                "Legs: Chrome-plated steel with angular design",
+                "Hardware: Heavy-duty drawer slides with cam locks",
+                "Edge Banding: PVC edge protection in matching color",
+                "CPU Holders: Ventilated compartments with adjustable sizing"
+            ],
+            "keyFeatures": [
+                "Dual workstation configuration for two users",
+                "Individual privacy screens for focused work",
+                "Two separate storage cabinets with locking drawers",
+                "Dedicated CPU holder compartments in each cabinet",
+                "Chrome-plated angled leg support system",
+                "Cable management system for organized setup",
+                "Modular system allows workspace expansion"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 13,
             "img": [
                 "/images/item/work-surfaces/workspace/table1/img1.jpeg",
                 "/images/item/work-surfaces/workspace/table1/img3.jpeg",
@@ -356,7 +459,7 @@
             "relatedItems": []
         },
         {
-            "id": 11,
+            "id": 14,
             "img": [
                 "/images/item/work-surfaces/workspace/table2/img3.jpeg",
                 "/images/item/work-surfaces/workspace/table2/img1.jpeg",
