@@ -1,9 +1,8 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import RevealHeading from "@/components/animated/RevealHeading";
 import Image from "next/image";
-import BulletPoint from "@/components/ui/pointer";
 import { fetchLatestProducts } from "@/app/utils/fetchLatestProducts";
-import Link from "next/link";
+import More from "@/components/common/More";
 
 // Products section
 export default async function ProductsSection() {
@@ -68,9 +67,7 @@ export default async function ProductsSection() {
                                 className="h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
-                        <figcaption
-                            className="w-full flex gap-2 p-5 py-5 cursor-pointer will-change-transform"
-                        >
+                        <figcaption className="w-full flex gap-2 p-5 py-5 cursor-pointer will-change-transform">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1
                                     className="text-2xl font-semibold
@@ -99,36 +96,7 @@ export default async function ProductsSection() {
             </div>
 
             {/* More */}
-            <footer
-                className="w-full px-4 py-10 absolute bottom-0 flex items-center gap-3 col-span-1
-                md:px-10 md:gap-10 md:col-span-2"
-            >
-                <BulletPoint />
-                <div
-                    className="bg-zinc-200 w-24 h-[1.6px] rounded-full flex-1
-                    md:h-0.5"
-                />
-                <Link
-                    href={"/products"}
-                    className="group flex items-center gap-2 cursor-pointer"
-                >
-                    <ArrowUpRight
-                        className="w-5 h-5 text-orange-600
-                        md:w-7 md:h-7"
-                    />
-                    <div
-                        className="relative h-7 text-lg font-semibold overflow-hidden
-                        md:text-2xl"
-                    >
-                        <p className="group-hover:-translate-y-full transition-transform duration-300">
-                            More products
-                        </p>
-                        <p className="group-hover:-translate-y-full transition-transform duration-300 text-orange-600">
-                            More products
-                        </p>
-                    </div>
-                </Link>
-            </footer>
+            <More text="More products" href="/products" />
         </section>
     );
 }

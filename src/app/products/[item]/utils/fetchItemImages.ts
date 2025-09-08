@@ -1,17 +1,21 @@
 import BASE_URL from "@/constants/baseUrl";
 
-// Type for category
+// Type for Category
 export type TCategory =
     | "All"
-    | "Executive"
-    | "Task"
-    | "Guest"
+    | "Leather Seating"
+    | "Ergonomic Seating"
     | "Stools"
     | "Study"
     | "Cafeteria"
-    | "Workspace"
-    | "Meeting"
-;
+    | "Public Seating";
+
+// Type for Sub category
+export type TSubCategory =
+    | "All"
+    | "Executive"
+    | "Task"
+    | "Guest";
 
 // Interface for ItemImage
 export interface IItemImage {
@@ -20,6 +24,7 @@ export interface IItemImage {
     title: string;
     description: string;
     category: TCategory;
+    subCategory: TSubCategory;
     points: string[];
     keyFeatures: string[];
     materialSpecification: string[];

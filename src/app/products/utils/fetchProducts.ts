@@ -1,4 +1,5 @@
 import BASE_URL from "@/constants/baseUrl";
+import { TCategory, TSubCategory } from "@/app/products/[item]/utils/fetchItemImages";
 
 // Interface for ProductItems
 export interface IProduct {
@@ -8,7 +9,9 @@ export interface IProduct {
     title: string;
     description: string;
     overview: string;
-    categories: string[];
+    categories: {
+        [key in TCategory]: TSubCategory[];
+    };
 }
 
 // Fetch products

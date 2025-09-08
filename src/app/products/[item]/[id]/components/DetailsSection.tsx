@@ -25,6 +25,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import More from "@/components/common/More";
 
 // Interface for Props
 interface Props {
@@ -178,7 +179,7 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                         <div className="flex flex-col gap-5">
                             <p
                                 className="font-semibold text-xl text-start
-                            md:text-2xl"
+                                md:text-2xl"
                             >
                                 You may also like
                             </p>
@@ -211,7 +212,7 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                                                         <div className="py-2 flex flex-col gap-5 items-center justify-center">
                                                             <h1
                                                                 className="text-sm text-center font-semibold leading-4
-                                                            md:text-base md:leading-5"
+                                                                md:text-base md:leading-5"
                                                             >
                                                                 {BreakText({
                                                                     text: itemImage.title,
@@ -238,8 +239,8 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
 
                                                         <div
                                                             className="hidden absolute top-5 right-5 py-2.5 px-4 rounded-full bg-black hover:bg-orange-600 text-white
-                                                        opacity-0 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 duration-300 transition-all
-                                                        lg:block"
+                                                            opacity-0 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 duration-300 transition-all
+                                                            lg:block"
                                                         >
                                                             <ArrowRight className="w-5 h-5" />
                                                         </div>
@@ -257,36 +258,10 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
             </div>
 
             {/* More */}
-            <footer
-                className="w-full px-4 py-10 absolute bottom-0 flex items-center gap-3 col-span-1
-                md:px-10 md:gap-10 md:col-span-2"
-            >
-                <BulletPoint />
-                <div
-                    className="bg-zinc-200 w-24 h-[1.6px] rounded-full flex-1
-                    md:h-0.5"
-                />
-                <Link
-                    href={"/products"}
-                    className="group flex items-center gap-2 cursor-pointer"
-                >
-                    <ArrowUpRight
-                        className="w-5 h-5 text-orange-600
-                        md:w-7 md:h-7"
-                    />
-                    <div
-                        className="relative h-8 text-lg font-semibold overflow-hidden
-                        md:text-2xl"
-                    >
-                        <p className="group-hover:-translate-y-full transition-transform duration-300">
-                            {itemFormatted.split("-").join(" ")}
-                        </p>
-                        <p className="group-hover:-translate-y-full transition-transform duration-300 text-orange-600">
-                            {itemFormatted.split("-").join(" ")}
-                        </p>
-                    </div>
-                </Link>
-            </footer>
+            <More
+                text={itemFormatted.split("-").join(" ")}
+                href={`/products/${item}`}
+            />
         </section>
     );
 }

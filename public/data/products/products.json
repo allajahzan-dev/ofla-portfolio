@@ -7,15 +7,25 @@
             "title": "Pro seating",
             "description": "Ergonomic seating with premium comfort and modern design.",
             "overview": "Our professional seating collection is expertly crafted for superior comfort and modern aesthetics. Each piece combines ergonomic innovation with high-quality materials to create seating solutions that enhance productivity and elevate any workspace environment.",
-            "categories": [
-                "All",
-                "Executive",
-                "Task",
-                "Geust",
-                "Stools",
-                "Study",
-                "Cafeteria"
-            ]
+            "categories": {
+                "All": [],
+                "Leather": [
+                    "All",
+                    "Executive",
+                    "Task",
+                    "Guest"
+                ],
+                "Ergonomic": [
+                    "All",
+                    "Executive",
+                    "Task",
+                    "Guest"
+                ],
+                "Stools": [],
+                "Study": [],
+                "Cafeteria": [],
+                "Public": []
+            }
         },
         {
             "id": 2,
@@ -24,13 +34,13 @@
             "title": "Work surfaces",
             "description": "Durable and stylish desks built for modern workspaces.",
             "overview": "Our work surfaces collection features desks and tables built for durability and style. Each surface combines premium materials with functional design to create solutions that support productivity and enhance any office environment.",
-            "categories": [
-                "All",
-                "Executive",
-                "Workspace",
-                "Meeting",
-                "Study"
-            ]
+            "categories": {
+                "All": [],
+                "Executive": [],
+                "Workspace": [],
+                "Meeting": [],
+                "Study": []
+            }
         },
         {
             "id": 3,
@@ -39,12 +49,12 @@
             "title": "Height adjustable table",
             "description": "Electronic height adjustable tables for healthier work.",
             "overview": "Our height adjustable tables support workplace wellness with robust construction and intuitive electric controls. Each workstation allows users to switch between sitting and standing positions to improve posture and work performance.",
-            "categories": [
-                "All",
-                "Executive",
-                "Workspace",
-                "Meeting"
-            ]
+            "categories": {
+                "All": [],
+                "Executive": [],
+                "Workspace": [],
+                "Meeting": []
+            }
         },
         {
             "id": 4,
@@ -53,7 +63,7 @@
             "title": "Lounge seating",
             "description": "Comfortable seating for lounges and reception areas.",
             "overview": "Our lounge seating collection creates welcoming and comfortable spaces for clients and employees. Each piece combines luxurious comfort with sophisticated styling to enhance reception areas and social zones.",
-            "categories": []
+            "categories": {}
         },
         {
             "id": 5,
@@ -62,7 +72,7 @@
             "title": "Office storage",
             "description": "Smart storage to keep your office clutter-free.",
             "overview": "Our office storage collection features intelligent solutions designed to maximize efficiency and maintain workplace order. Each unit combines functional design with quality construction to streamline office operations.",
-            "categories": []
+            "categories": {}
         },
         {
             "id": 6,
@@ -71,7 +81,7 @@
             "title": "Personal vaults",
             "description": "Secure and durable storage for personal valuables.",
             "overview": "Our personal vault collection provides robust storage solutions for maximum security and reliability. Each unit combines heavy-duty construction with advanced locking mechanisms to protect valuable items and confidential materials.",
-            "categories": []
+            "categories": {}
         },
         {
             "id": 7,
@@ -80,7 +90,7 @@
             "title": "Privacy pods",
             "description": "Private pods for focused work in busy offices.",
             "overview": "Our innovative work pods collection provides private, focused environments within open office spaces. Each pod combines acoustic engineering with modern design to create quiet sanctuaries that enhance concentration, privacy, and productivity in bustling workplace",
-            "categories": []
+            "categories": {}
         }
     ]
 }

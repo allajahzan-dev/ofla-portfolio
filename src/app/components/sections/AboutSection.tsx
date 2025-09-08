@@ -51,7 +51,7 @@ export default function AboutSection() {
                         OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
                     </p>
 
-                    {/* Users */}
+                    {/* professionals */}
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2">
                             {users.map((user, index) => {
@@ -94,8 +94,6 @@ export default function AboutSection() {
 
                         <p className="font-semibold text-base text-zinc-600">
                             Trusted by professionals
-                            <br />
-                            {/* who value quality, comfort, and ergonomic design. */}
                         </p>
 
                         <div className="flex items-center gap-1">

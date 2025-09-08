@@ -2,24 +2,19 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import {
-    ArrowDownRight,
-    ArrowRight,
-    Check,
-    Circle,
-    Menu,
-    X,
-} from "lucide-react";
+import { ArrowRight, Circle } from "lucide-react";
 import Link from "next/link";
 import {
     IItemImage,
     TCategory,
+    TSubCategory,
 } from "@/app/products/[item]/utils/fetchItemImages";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import BulletPoint from "@/components/ui/pointer";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import BreakText from "@/components/helper/BreakText";
+import Category from "../filter/Category";
+import More from "@/components/common/More";
 
 // Interface for Props
 interface Props {
@@ -35,7 +30,12 @@ export default function ImageSection({ item, product, itemImages }: Props) {
         useState<IItemImage[]>(itemImages);
 
     // Category
-    const [category, setCategory] = useState<TCategory>("All");
+    const [category, setCategory] = useState<TCategory>(
+        product ? (Object.keys(product.categories)[0] as TCategory) : "All"
+    );
+
+    // Category
+    const [subCategory, setSubCategory] = useState<TSubCategory>("All");
 
     // Toggle category
     const [toggleCategoryMenu, SetToggleCategoryMenu] = useState<boolean>(false);
@@ -49,11 +49,18 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                 (itemImage) => itemImage.category === category
             );
 
-            setItemImagesCategoryWise(filteredImages);
+            if (subCategory === "All") {
+                setItemImagesCategoryWise(filteredImages);
+            } else {
+                const filteredImagesBySubCategory = filteredImages.filter(
+                    (itemImage) => itemImage.subCategory === subCategory
+                );
+                setItemImagesCategoryWise(filteredImagesBySubCategory);
+            }
         }
 
         SetToggleCategoryMenu(false);
-    }, [category, itemImages]);
+    }, [category, subCategory, itemImages]);
 
     return (
         <section
@@ -61,94 +68,22 @@ export default function ImageSection({ item, product, itemImages }: Props) {
             -mt-0.5 rounded-b-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:py-40 xl:rounded-b-[50px]"
         >
-            {/* category and Images */}
             <div className="w-full flex flex-col gap-10">
-                {/* Categories on desktop */}
-                {product && product.categories.length > 0 && (
-                    <div
-                        className="col-span-3 relative w-full pt-0 hidden flex-col items-center justify-center
-                        lg:flex"
-                    >
-                        <div className="flex gap-5 items-center justify-center">
-                            {product.categories.map((item, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setCategory(item as TCategory)}
-                                    className={cn(
-                                        "group p-1 px-5 rounded-full cursor-pointer",
-                                        item === category && "bg-[#171717] text-white"
-                                    )}
-                                >
-                                    <motion.span
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                        viewport={{ amount: 0.2, once: true }}
-                                        transition={{ duration: 0.2, delay: 0.2 + index * 0.1 }}
-                                        className="flex items-center gap-2 text-base font-semibold will-change-transform"
-                                    >
-                                        <span>{item}</span>
-                                    </motion.span>
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-                )}
-
-                {/* Categories on mobile */}
-                {product && product.categories.length > 0 && (
-                    <div
-                        className="col-span-3 relative w-full pt-0 flex flex-col items-start justify-between
-                        lg:hidden"
-                    >
-                        <div
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                SetToggleCategoryMenu(!toggleCategoryMenu);
-                            }}
-                            className="p-0 flex items-center gap-2 cursor-pointer"
-                        >
-                            {toggleCategoryMenu ? (
-                                <X className="w-5 h-5" />
-                            ) : (
-                                <Menu className="w-5 h-5" />
-                            )}
-                            <span className="text-lg font-semibold">
-                                {category === "All" ? "Filter by categories" : category}
-                            </span>
-                        </div>
-
-                        <div
-                            className={cn(
-                                "relative z-50 left-0 top-5 w-full shadow-[0_0_10px_0_rgba(0,0,0,0)] rounded-lg overflow-hidden",
-                                toggleCategoryMenu ? "block" : "hidden"
-                            )}
-                        >
-                            <div
-                                className="flex flex-col gap-0 p-0 bg-white text-base font-semibold
-                                sm:font-medium"
-                            >
-                                {product.categories.map((item, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setCategory(item as TCategory);
-                                        }}
-                                        className="p-2 flex items-center justify-between text-start hover:bg-zinc-100 rounded-md cursor-pointer"
-                                    >
-                                        {item}
-                                        {category === item && <Check className="w-5 h-5" />}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                )}
+                {/* Filter by Category */}
+                <Category
+                    product={product}
+                    category={category}
+                    setCategory={setCategory}
+                    subCategory={subCategory}
+                    setSubCategory={setSubCategory}
+                    toggleCategoryMenu={toggleCategoryMenu}
+                    SetToggleCategoryMenu={SetToggleCategoryMenu}
+                />
 
                 {/* Images */}
                 <div
                     className="grid grid-cols-2
-                    sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                    sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-16"
                 >
                     {itemImagesCategoryWise &&
                         itemImagesCategoryWise.map((itemImage, index) => (
@@ -176,7 +111,11 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                             className="text-sm text-center font-semibold leading-4
                                             md:text-base md:leading-5"
                                         >
-                                            {BreakText({ text: itemImage.title, breakAfter: 2, className: "block sm:hidden" })}
+                                            {BreakText({
+                                                text: itemImage.title,
+                                                breakAfter: 2,
+                                                className: "block sm:hidden",
+                                            })}
                                         </h1>
                                         <div className="flex items-center gap-0">
                                             {itemImage.colors.map((color, index) => (
@@ -184,9 +123,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
                                                     key={index}
                                                     className="rounded-full shadow-[0_0_10px_0_rgba(0,0,0,0)]"
                                                 >
-                                                    <Circle
-                                                        className={cn("w-3 h-3 text-white", color)}
-                                                    />
+                                                    <Circle className={cn("w-3 h-3 text-white", color)} />
                                                 </div>
                                             ))}
                                         </div>
@@ -216,36 +153,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
             )}
 
             {/* More */}
-            <footer
-                className="w-full px-4 py-10 absolute bottom-0 flex items-center gap-3 col-span-1
-                md:px-10 md:gap-10 md:col-span-2"
-            >
-                <BulletPoint />
-                <div
-                    className="bg-zinc-200 w-24 h-[1.6px] rounded-full flex-1
-                    md:h-0.5"
-                />
-                <Link
-                    href={"/products"}
-                    className="group flex items-center gap-2 cursor-pointer"
-                >
-                    <ArrowDownRight
-                        className="w-5 h-5 text-orange-600
-                        md:w-7 md:h-7"
-                    />
-                    <div
-                        className="relative h-7 text-lg font-semibold overflow-hidden
-                        md:text-2xl"
-                    >
-                        <p className="group-hover:-translate-y-full transition-transform duration-300">
-                            Brochure
-                        </p>
-                        <p className="group-hover:-translate-y-full transition-transform duration-300 text-orange-600">
-                            Brochure
-                        </p>
-                    </div>
-                </Link>
-            </footer>
+            <More text="Brochure" action={() => alert("Downloading Brochure")} />
         </section>
     );
 }

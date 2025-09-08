@@ -105,11 +105,6 @@ export default function Navbar({ className }: Props) {
                 "shadow-none transition-all duration-300 ease-in-out",
                 "md:px-5 xl:px-10 md:bg-transparent md:shadow-none",
                 navVisible ? "translate-y-0" : "-translate-y-full"
-                // pathname === "/products" ||
-                // pathname === "/about-us" ||
-                // pathname === "/contact"
-                //     ? "bg-zinc-100"
-                //     : "bg-white"
             )}
         >
             <div
@@ -118,7 +113,6 @@ export default function Navbar({ className }: Props) {
                     "transition-all duration-500 ease-[cubic-bezier(0.6,0,0.1,1)]",
                     styles.textColor,
                     toggle ? "h-[100svh]" : "h-7"
-                    // /^\/products\/[^/]+\/[^/]+$/.test(pathname) ? "hidden" : "block"
                 )}
             >
                 <div className="w-full flex items-center justify-between">
