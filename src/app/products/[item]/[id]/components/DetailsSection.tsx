@@ -1,9 +1,7 @@
 "use client";
 
-import BulletPoint from "@/components/ui/pointer";
 import {
     ArrowRight,
-    ArrowUpRight,
     Circle,
     Dot,
     Facebook,

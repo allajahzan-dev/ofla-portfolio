@@ -1,5 +1,3 @@
-import { oswald } from "@/fonts/owald";
-import { cn } from "@/lib/utils";
 import { Mouse } from "lucide-react";
 
 // Hero Section

@@ -1,9 +1,8 @@
 "use client";
 
 import BulletPoint from "@/components/ui/pointer";
-import { ArrowUpRight, LucideProps } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 // Interface for Props
 interface Props {
