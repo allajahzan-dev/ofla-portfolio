@@ -10,7 +10,7 @@ import {
     TSubCategory,
 } from "@/app/products/[item]/utils/fetchItemImages";
 import { motion } from "framer-motion";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import BreakText from "@/components/helper/BreakText";
 import Category from "../filter/Category";
