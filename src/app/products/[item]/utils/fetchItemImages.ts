@@ -2,13 +2,13 @@ import BASE_URL from "@/constants/baseUrl";
 
 // Type for Category
 export type TCategory =
-    | "All"
-    | "Leather Seating"
-    | "Ergonomic Seating"
+    | ""
+    | "Leather"
+    | "Ergonomic"
     | "Stools"
     | "Study"
     | "Cafeteria"
-    | "Public Seating";
+    | "Public";
 
 // Type for Sub category
 export type TSubCategory =

@@ -13,7 +13,7 @@ export default function HeroSection() {
             className="min-h-screen relative -z-10 bg-white flex flex-col items-center justify-center px-10 will-change-transform"
         >
             {/* Shadow */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 via-transparent to-black/60" />
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-transparent to-black/40" />
 
             {/* Header */}
             <div className="relative text-center flex flex-col justify-center">
@@ -30,7 +30,8 @@ export default function HeroSection() {
                 <img
                     src="/images/home/hero/logo-white.png"
                     alt="logo"
-                    className="w-[1000px] opacity-80"
+                    className="w-[400px] 
+                    md:w-[500px] lg:w-[600px]"
                 />
 
                 {/* <p

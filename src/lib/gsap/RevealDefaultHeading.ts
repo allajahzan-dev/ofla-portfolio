@@ -66,10 +66,10 @@ export const revealDefaultHeading = (div: HTMLDivElement) => {
             start: currentConfig.y.start,
             end: "top top",
             scrub: true,
-            onEnter: () => scrollSmoother()?.smooth(3),
-            onLeave: () => scrollSmoother()?.smooth(1),
-            onEnterBack: () => scrollSmoother()?.smooth(3),
-            onLeaveBack: () => scrollSmoother()?.smooth(1),
+            onEnter: () => scrollSmoother()?.smooth(1),
+            onLeave: () => scrollSmoother()?.smooth(0.5),
+            onEnterBack: () => scrollSmoother()?.smooth(1),
+            onLeaveBack: () => scrollSmoother()?.smooth(0.5),
           },
         }
       );

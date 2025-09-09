@@ -70,16 +70,16 @@ export const revealServiceHeading = (div: HTMLDivElement) => {
             end: currentConfig.y.end,
             scrub: true,
             onEnter: () => {
-              scrollSmoother()?.smooth(3);
+              scrollSmoother()?.smooth(1);
             },
             onLeave: () => {
-              scrollSmoother()?.smooth(1);
+              scrollSmoother()?.smooth(0.5);
             },
             onEnterBack: () => {
-              scrollSmoother()?.smooth(3);
+              scrollSmoother()?.smooth(1);
             },
             onLeaveBack: () => {
-              scrollSmoother()?.smooth(1);
+              scrollSmoother()?.smooth(0.5);
             },
           },
         }

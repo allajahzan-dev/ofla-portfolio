@@ -115,10 +115,10 @@ export default function ContactSection() {
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved
                 </p>
-                <div className="mx-3 w-0.5 h-5 bg-white" />
+                {/* <div className="mx-3 w-0.5 h-5 bg-white" />
                 <Link className="hover:text-orange-600" href="https://github.com/allajahzan-dev" target="_blank">
                     dev
-                </Link>
+                </Link> */}
             </footer>
         </section>
     );

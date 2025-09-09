@@ -40,8 +40,10 @@ export async function generateMetadata({ params }: Props) {
     );
 
     return {
-        title: itemImage?.title ? itemImage.title + " - " + "OFLA" : "aa",
-        description: `Premium Dubai-based workspace furniture company offering 
+        title: itemImage?.title
+            ? itemImage.title + " - " + "OFLA"
+            : "Page not found - OFLA",
+        description: `Premium Dubai-based office workspace furniture company offering 
             ergonomic chairs, tables, longues, pods, lockers, storage 
             and modern office solutions.`,
     };

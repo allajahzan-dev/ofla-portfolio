@@ -30,7 +30,7 @@ export default function Category({
     SetToggleCategoryMenu,
 }: Props) {
     return (
-        <div>
+        <>
             {/* On desktop */}
             {product && Object.keys(product.categories).length > 0 && (
                 <div
@@ -136,7 +136,7 @@ export default function Category({
                             <Menu className="w-5 h-5" />
                         )}
                         <span className="text-lg font-semibold">
-                            {category === "All" ? "Filter by categories" : category}
+                            {category}
                         </span>
                     </div>
 
@@ -168,6 +168,6 @@ export default function Category({
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 }

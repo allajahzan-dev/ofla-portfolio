@@ -4,6 +4,7 @@ import ImageSection from "./ImageSection";
 import ContactSection from "@/components/common/ContactSection";
 import { fetchItemImages } from "@/app/products/[item]/utils/fetchItemImages";
 import { fetchProducts } from "@/app/products/utils/fetchProducts";
+import { redirect } from "next/navigation";
 
 // Interface for Props
 interface Props {
@@ -12,14 +13,19 @@ interface Props {
 
 // Main section
 export default async function MainSection({ item }: Props) {
-    // Item images
-    const { itemImages } = await fetchItemImages(item);
-
     // Product
     const { products } = await fetchProducts();
     const product = products.find(
         (product) => product.title.toLowerCase() === item.split("-").join(" ")
     );
+
+    // Redirect to not found
+    if (!product) {
+        redirect("/not-found");
+    }
+
+    // Item images
+    const { itemImages } = await fetchItemImages(item);
 
     return (
         <main>

@@ -102,7 +102,7 @@
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Breathable mesh comfort",
@@ -238,7 +238,7 @@
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Breathable mesh comfort",
@@ -282,7 +282,7 @@
                 "/images/item/pro-seating/ergonomic/chair2/executive/white/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
-             "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
+            "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
             "category": "Ergonomic",
             "subCategory": "Executive",
             "points": [
@@ -375,7 +375,7 @@
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Breathable mesh comfort",
@@ -446,9 +446,9 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-black",
-               "fill-zinc-600",
-               "fill-gray-400"
+                "fill-black",
+                "fill-zinc-600",
+                "fill-gray-400"
             ],
             "relatedItems": []
         },
@@ -488,9 +488,9 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-black",
-               "fill-zinc-600",
-               "fill-gray-400"
+                "fill-black",
+                "fill-zinc-600",
+                "fill-gray-400"
             ],
             "relatedItems": []
         },
@@ -504,7 +504,7 @@
             "title": "Guest Cantilever Mesh Chair",
             "description": "Professional cantilever guest chair with distinctive patterned mesh design in sleek black finish, perfect for modern office visitor seating areas.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Distinctive mesh pattern comfort",
@@ -529,9 +529,9 @@
                 "Professional all-black color scheme"
             ],
             "colors": [
-               "fill-black",
-               "fill-zinc-600",
-               "fill-gray-400"
+                "fill-black",
+                "fill-zinc-600",
+                "fill-gray-400"
             ],
             "relatedItems": []
         },
@@ -571,9 +571,9 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-zinc-600",
-               "fill-zinc-400",
-               "fill-black"
+                "fill-zinc-600",
+                "fill-zinc-400",
+                "fill-black"
             ],
             "relatedItems": []
         },
@@ -613,9 +613,9 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-gray-400",
-               "fill-black",
-               "fill-zinc-600"
+                "fill-gray-400",
+                "fill-black",
+                "fill-zinc-600"
             ],
             "relatedItems": []
         },
@@ -655,9 +655,9 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-gray-400",
-               "fill-black",
-               "fill-zinc-600"
+                "fill-gray-400",
+                "fill-black",
+                "fill-zinc-600"
             ],
             "relatedItems": []
         },
@@ -883,7 +883,7 @@
             "title": "Guest Cantilever Mesh Chair",
             "description": "Sleek high-back task chair in professional all-black design, featuring breathable mesh support, integrated headrest, and ergonomic functionality for enhanced productivity.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Professional visitor seating",
@@ -950,7 +950,7 @@
             ],
             "colors": [
                 "fill-zinc-400",
-                "fill-black" 
+                "fill-black"
             ],
             "relatedItems": []
         },
@@ -990,8 +990,8 @@
                 "Smooth-rolling dual-wheel casters"
             ],
             "colors": [
-               "fill-zinc-400",
-               "fill-black"
+                "fill-zinc-400",
+                "fill-black"
             ],
             "relatedItems": []
         },
@@ -1006,7 +1006,7 @@
             "title": "Professional Guest Mesh Chair",
             "description": "Elegant visitor chair with black cantilever frame, offering professional appearance and comfortable mesh seating for client meetings and office reception areas.",
             "category": "Ergonomic",
-            "subCategory": "Geust",
+            "subCategory": "Guest",
             "points": [
                 "Cantilever frame design",
                 "Breathable mesh comfort",
@@ -1031,8 +1031,48 @@
                 "Space-efficient cantilever structure"
             ],
             "colors": [
-               "fill-black",
-               "fill-zinc-400"
+                "fill-black",
+                "fill-zinc-400"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 25,
+            "img": [
+                "/images/item/pro-seating/leather/chair1/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair1/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair1/executive/chair-sr.jpeg"
+            ],
+            "title": "Executive High-Back Leather Chair",
+            "description": "Premium high-back executive chair featuring segmented black leather upholstery, chrome armrests, polished aluminum base, and ergonomic design for executive offices.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back segmented leather design",
+                "Chrome armrests and aluminum base",
+                "Executive swivel chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium black leather with contrast stitching",
+                "Frame: Heavy-duty steel construction with reinforcement",
+                "Armrests: Chrome-plated steel with leather padding",
+                "Base: Polished aluminum 5-star pedestal",
+                "Casters: Dual-wheel carpet casters with smooth rolling",
+                "Mechanism: Pneumatic height adjustment with tilt control",
+                "Padding: High-density foam core with leather wrapping"
+            ],
+            "keyFeatures": [
+                "High-back design for superior neck and head support",
+                "Segmented leather upholstery for premium comfort",
+                "Chrome-plated armrests with padded leather tops",
+                "Polished aluminum 5-star base for stability",
+                "360-degree swivel with smooth rolling casters",
+                "Height adjustment mechanism for ergonomic positioning",
+                "Tilt function for relaxed seating positions"
+            ],
+            "colors": [
+                "fill-black",
+                "fill-[#c6613f]"
             ],
             "relatedItems": []
         }

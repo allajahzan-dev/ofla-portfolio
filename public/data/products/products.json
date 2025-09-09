@@ -8,14 +8,13 @@
             "description": "Ergonomic seating with premium comfort and modern design.",
             "overview": "Our professional seating collection is expertly crafted for superior comfort and modern aesthetics. Each piece combines ergonomic innovation with high-quality materials to create seating solutions that enhance productivity and elevate any workspace environment.",
             "categories": {
-                "All": [],
-                "Leather": [
+                "Ergonomic": [
                     "All",
                     "Executive",
                     "Task",
                     "Guest"
                 ],
-                "Ergonomic": [
+                "Leather": [
                     "All",
                     "Executive",
                     "Task",
@@ -35,7 +34,6 @@
             "description": "Durable and stylish desks built for modern workspaces.",
             "overview": "Our work surfaces collection features desks and tables built for durability and style. Each surface combines premium materials with functional design to create solutions that support productivity and enhance any office environment.",
             "categories": {
-                "All": [],
                 "Executive": [],
                 "Workspace": [],
                 "Meeting": [],
@@ -50,7 +48,6 @@
             "description": "Electronic height adjustable tables for healthier work.",
             "overview": "Our height adjustable tables support workplace wellness with robust construction and intuitive electric controls. Each workstation allows users to switch between sitting and standing positions to improve posture and work performance.",
             "categories": {
-                "All": [],
                 "Executive": [],
                 "Workspace": [],
                 "Meeting": []

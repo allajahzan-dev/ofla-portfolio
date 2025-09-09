@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: Props) {
     return {
         title: product?.title
             ? product.title + " - " + "OFLA"
-            : "Office Lifestyle Arabia",
+            : "Page not found - OFLA",
         description:
             product?.description ||
-            `Premium Dubai-based workspace furniture company offering 
+            `Premium Dubai-based office workspace furniture company offering 
             ergonomic chairs, tables, longues, pods, lockers, storage 
             and modern office solutions.`,
     };

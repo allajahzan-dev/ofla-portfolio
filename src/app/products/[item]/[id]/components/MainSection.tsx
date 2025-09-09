@@ -6,6 +6,7 @@ import {
     IItemImage,
 } from "@/app/products/[item]/utils/fetchItemImages";
 import DetailsSection from "./DetailsSection";
+import { redirect } from "next/navigation";
 
 // Interface for Props
 interface Props {
@@ -20,6 +21,11 @@ export default async function MainSection({ item, id }: Props) {
     const itemImage = itemImages.find(
         (itemImage) => itemImage.id === parseInt(id)
     );
+
+    // Redirect to not found
+    if (!itemImage) {
+        redirect("/not-found");
+    }
 
     return (
         <main className="bg-[#292929]">

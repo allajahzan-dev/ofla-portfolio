@@ -10,7 +10,7 @@ import {
     TSubCategory,
 } from "@/app/products/[item]/utils/fetchItemImages";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import BreakText from "@/components/helper/BreakText";
 import Category from "../filter/Category";
@@ -31,7 +31,9 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
     // Category
     const [category, setCategory] = useState<TCategory>(
-        product ? (Object.keys(product.categories)[0] as TCategory) : "All"
+        product && Object.keys(product.categories).length > 0
+            ? (Object.keys(product.categories)[0] as TCategory)
+            : ""
     );
 
     // Category
@@ -42,23 +44,21 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
     // Filter images by category
     useEffect(() => {
-        if (category === "All") {
-            setItemImagesCategoryWise(itemImages);
-        } else {
-            const filteredImages = itemImages.filter(
+        let filtered = itemImages;
+
+        if (category !== "") {
+            filtered = filtered.filter(
                 (itemImage) => itemImage.category === category
             );
-
-            if (subCategory === "All") {
-                setItemImagesCategoryWise(filteredImages);
-            } else {
-                const filteredImagesBySubCategory = filteredImages.filter(
-                    (itemImage) => itemImage.subCategory === subCategory
-                );
-                setItemImagesCategoryWise(filteredImagesBySubCategory);
-            }
         }
 
+        if (subCategory !== "All") {
+            filtered = filtered.filter(
+                (itemImage) => itemImage.subCategory === subCategory
+            );
+        }
+
+        setItemImagesCategoryWise(filtered);
         SetToggleCategoryMenu(false);
     }, [category, subCategory, itemImages]);
 
