@@ -3,11 +3,11 @@
         {
             "id": 1,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-br.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-b.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-br.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-b.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
@@ -50,9 +50,9 @@
         {
             "id": 2,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-b.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/task/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/black/chair-b.jpeg"
             ],
             "title": "Ergonomic Task Mesh Chair",
             "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
@@ -95,9 +95,9 @@
         {
             "id": 3,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-bl.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/guest/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/black/chair-bl.jpeg"
             ],
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
@@ -140,10 +140,10 @@
         {
             "id": 4,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
@@ -186,9 +186,9 @@
         {
             "id": 5,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-b.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/task/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/grey/chair-b.jpeg"
             ],
             "title": "Ergonomic Task Mesh Chair",
             "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
@@ -231,9 +231,9 @@
         {
             "id": 6,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/guest/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/grey/chair-bl.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/guest/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/grey/chair-bl.jpeg"
             ],
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
@@ -276,10 +276,10 @@
         {
             "id": 7,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/white/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/white/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/white/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/white/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
@@ -322,9 +322,9 @@
         {
             "id": 8,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/task/white/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/white/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/white/chair-b.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-b.jpeg"
             ],
             "title": "Ergonomic Task Mesh Chair",
             "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
@@ -367,10 +367,10 @@
         {
             "id": 9,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair2/guest/white/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/white/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/white/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/white/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-br.jpeg"
             ],
             "title": "Professional Guest Mesh Chair",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
@@ -413,10 +413,10 @@
         {
             "id": 10,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/executive/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated black finish for premium office comfort.",
@@ -455,10 +455,10 @@
         {
             "id": 11,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/task/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/black/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-br.jpeg"
             ],
             "title": "Task High-Back Mesh Chair",
             "description": "Sleek high-back task chair in professional all-black design, featuring distinctive patterned mesh support and ergonomic functionality for enhanced productivity.",
@@ -497,9 +497,9 @@
         {
             "id": 12,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/guest/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/guest/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/guest/black/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-br.jpeg"
             ],
             "title": "Guest Cantilever Mesh Chair",
             "description": "Professional cantilever guest chair with distinctive patterned mesh design in sleek black finish, perfect for modern office visitor seating areas.",
@@ -538,10 +538,10 @@
         {
             "id": 13,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/executive/black-grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black-grey/chair-fr-opened.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black-grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/black-grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-fr-opened.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated grey finish for premium office comfort.",
@@ -580,10 +580,10 @@
         {
             "id": 14,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/executive/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/executive/grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-br.jpeg"
             ],
             "title": "Premium Executive Mesh Chair",
             "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated grey finish for premium office comfort.",
@@ -622,10 +622,10 @@
         {
             "id": 15,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair8/task/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair8/task/grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-br.jpeg"
             ],
             "title": "Task High-Back Mesh Chair",
             "description": "Sleek high-back task chair in professional all-grey design, featuring distinctive patterned mesh support and ergonomic functionality for enhanced productivity.",
@@ -664,11 +664,11 @@
         {
             "id": 16,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-br.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-b.jpeg"
+                "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-br.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-b.jpeg"
             ],
             "title": "Executive High-Back Mesh Chair",
             "description": "Premium high-back executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
@@ -706,10 +706,10 @@
         {
             "id": 17,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/task/white/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair3/task/white/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/task/white/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/task/white/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/task/white/chair-br.jpeg"
             ],
             "title": "Task Mid-Back Mesh Chair",
             "description": "Efficient mid-back task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
@@ -747,10 +747,10 @@
         {
             "id": 18,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-br.jpeg"
             ],
             "title": "Executive High-Back Mesh Chair",
             "description": "Premium high-back executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
@@ -792,8 +792,8 @@
         {
             "id": 19,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair1/task/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair1/task/black/chair-fr.jpeg"
+                "/images/item/pro-seating/ergonomic/chair3/task/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair3/task/black/chair-fr.jpeg"
             ],
             "title": "Task Mid-Back Mesh Chair",
             "description": "Efficient mid-back task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
@@ -916,10 +916,10 @@
         {
             "id": 22,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair9/executive/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/executive/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/executive/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/executive/grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair5/executive/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/executive/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/executive/grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/executive/grey/chair-br.jpeg"
             ],
             "title": "Executive High-Back Mesh Chair",
             "description": "Modern high-back executive chair with adjustable headrest, grey mesh design, white frame accents, and premium ergonomic features for executive comfort.",
@@ -957,10 +957,10 @@
         {
             "id": 23,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair9/task/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/task/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/task/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/task/grey/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair5/task/grey/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/task/grey/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/task/grey/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/task/grey/chair-br.jpeg"
             ],
             "title": "Task Mid-Back Mesh Chair",
             "description": "Efficient mid-back task chair with breathable grey mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
@@ -998,10 +998,10 @@
         {
             "id": 24,
             "img": [
-                "/images/item/pro-seating/ergonomic/chair9/guest/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/guest/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/guest/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair9/guest/black/chair-br.jpeg"
+                "/images/item/pro-seating/ergonomic/chair5/guest/black/chair-f.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/guest/black/chair-fr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/guest/black/chair-sr.jpeg",
+                "/images/item/pro-seating/ergonomic/chair5/guest/black/chair-br.jpeg"
             ],
             "title": "Professional Guest Mesh Chair",
             "description": "Elegant visitor chair with black cantilever frame, offering professional appearance and comfortable mesh seating for client meetings and office reception areas.",
@@ -1072,7 +1072,209 @@
             ],
             "colors": [
                 "fill-black",
-                "fill-[#c6613f]"
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 26,
+            "img": [
+                "/images/item/pro-seating/leather/chair1/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair1/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair1/task/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair1/task/chair-br.jpeg"
+            ],
+            "title": "Task Mid-Back Leather Chair",
+            "description": "Professional mid-back task chair featuring black leather upholstery, chrome cantilever armrests, polished aluminum base, and ergonomic design for workstations.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Mid-back leather task design",
+                "Chrome cantilever armrest structure",
+                "Professional swivel chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium black leather with contrast stitching",
+                "Frame: Heavy-duty steel construction with reinforcement",
+                "Armrests: Chrome-plated steel with leather padding",
+                "Base: Polished aluminum 5-star pedestal",
+                "Casters: Dual-wheel carpet casters with smooth rolling",
+                "Mechanism: Pneumatic height adjustment with tilt control",
+                "Padding: High-density foam core with leather wrapping"
+            ],
+            "keyFeatures": [
+                "Mid-back design for lumbar and back support",
+                "Premium black leather upholstery with contrast stitching",
+                "Chrome-plated cantilever armrests with integrated support",
+                "Polished aluminum 5-star base for durability",
+                "360-degree swivel with smooth rolling casters",
+                "Pneumatic height adjustment for optimal positioning",
+                "Tilt mechanism for comfortable working angles"
+            ],
+            "colors": [
+                "fill-black",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 27,
+            "img": [
+                "/images/item/pro-seating/leather/chair1/guest/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair1/guest/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair1/guest/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair1/guest/chair-br.jpeg"
+            ],
+            "title": "Guest Mid-Back Leather Chair",
+            "description": "Professional guest chair featuring black leather upholstery, chrome cantilever frame, padded armrests, and stationary design for conference rooms.",
+            "category": "Leather",
+            "subCategory": "Guest",
+            "points": [
+                "Mid-back leather guest design",
+                "Chrome cantilever frame structure",
+                "Stationary conference chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium black leather with reinforced seaming",
+                "Backrest: Mid-back leather construction with ergonomic curve",
+                "Frame: Chrome-plated steel cantilever construction",
+                "Armrests: Fixed padded armrests with leather covering",
+                "Base: Chrome cantilever frame with protective floor glides",
+                "Seat: Cushioned leather seat with high-density foam",
+                "Padding: Medium-density foam core throughout"
+            ],
+            "keyFeatures": [
+                "Mid-back design for comfortable seating support",
+                "Premium black leather upholstery with contrast stitching",
+                "Chrome-plated cantilever frame with sleek profile",
+                "Padded armrests with leather covering",
+                "Stationary base with floor glides for stability",
+                "Ergonomic seat and backrest positioning",
+                "Stackable design for space efficiency"
+            ],
+            "colors": [
+                "fill-black",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 28,
+            "img": [
+                "/images/item/pro-seating/leather/chair2/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair2/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair2/executive/chair-bl.jpeg"
+            ],
+            "title": " Executive High-Back Leather Chair",
+            "description": "Premium high-back executive chair featuring tan leather upholstery, chrome armrests, polished aluminum base, and ergonomic design for executive offices.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back leather executive design",
+                "Chrome armrests and aluminum base",
+                "Executive swivel chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium tan leather with reinforced seaming",
+                "Backrest: High-back leather construction with ergonomic curve",
+                "Frame: Heavy-duty steel construction with chrome plating",
+                "Armrests: Chrome-plated steel with integrated design",
+                "Base: Polished aluminum 5-star pedestal",
+                "Casters: Dual-wheel carpet casters with smooth operation",
+                "Mechanism: Pneumatic height adjustment with tilt control"
+            ],
+            "keyFeatures": [
+                "High-back design for superior neck and head support",
+                "Premium tan leather upholstery with contrast stitching",
+                "Chrome-plated armrests with leather-wrapped tops",
+                "Polished aluminum 5-star base for stability",
+                "360-degree swivel with smooth rolling casters",
+                "Pneumatic height adjustment for ergonomic positioning",
+                "Tilt function with tension control for relaxed seating"
+            ],
+            "colors": [
+                "fill-[#b48d66]",
+                "fill-black"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 29,
+            "img": [
+                "/images/item/pro-seating/leather/chair2/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair2/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair2/task/chair-bl.jpeg"
+            ],
+            "title": "Task Mid-Back Leather Chair",
+            "description": "Contemporary mid-back task chair featuring tan leather upholstery, chrome armrests, polished aluminum base, and ergonomic design for professional workspaces.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Mid-back tan leather task design",
+                "Chrome armrests and aluminum base",
+                "Executive swivel chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium tan leather with precision stitching",
+                "Backrest: Mid-back leather with ergonomic curve",
+                "Frame: Steel construction with chrome-plated finish",
+                "Armrests: Chrome-plated steel with leather tops",
+                "Base: Polished aluminum 5-star pedestal",
+                "Casters: Dual-wheel carpet casters for smooth movement",
+                "Mechanism: Pneumatic height adjustment with tilt function"
+            ],
+            "keyFeatures": [
+                "Mid-back design with ergonomic lumbar support",
+                "Premium tan leather upholstery with clean lines",
+                "Chrome-plated armrests with leather padding",
+                "Polished aluminum 5-star base for durability",
+                "360-degree swivel with smooth-rolling casters",
+                "Pneumatic height adjustment for optimal positioning",
+                "Tilt mechanism with tension control"
+            ],
+            "colors": [
+                "fill-[#b48d66]",
+                "fill-black"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 30,
+            "img": [
+                "/images/item/pro-seating/leather/chair2/guest/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair2/guest/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair2/guest/chair-bl.jpeg"
+            ],
+            "title": "Guest Mid-Back Leather Chair",
+            "description": "Contemporary mid-back guest chair featuring tan leather upholstery, chrome armrests, cantilever base design, and ergonomic comfort for visitors.",
+            "category": "Leather",
+            "subCategory": "Guest",
+            "points": [
+                "Mid-back tan leather guest design",
+                "Chrome armrests and cantilever base",
+                "Visitor chair configuration"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium tan leather with precision stitching",
+                "Backrest: Mid-back leather with ergonomic curve",
+                "Frame: Steel construction with chrome-plated finish",
+                "Armrests: Chrome-plated steel with leather tops",
+                "Base: Chrome cantilever frame design",
+                "Glides: Floor-protective glides for stability",
+                "Mechanism: Fixed position seating"
+            ],
+            "keyFeatures": [
+                "Mid-back design with ergonomic lumbar support",
+                "Premium tan leather upholstery with clean lines",
+                "Chrome-plated armrests with leather padding",
+                "Cantilever chrome base for stability and style",
+                "Fixed seating position ideal for meetings",
+                "Ergonomic seat contour for visitor comfort",
+                "Non-swivel design for conference and reception areas"
+            ],
+            "colors": [
+                "fill-[#b48d66]",
+                "fill-black"
             ],
             "relatedItems": []
         }

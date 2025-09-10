@@ -30,17 +30,32 @@ export default function ImageSection({ item, product, itemImages }: Props) {
         useState<IItemImage[]>(itemImages);
 
     // Category
-    const [category, setCategory] = useState<TCategory>(
-        product && Object.keys(product.categories).length > 0
-            ? (Object.keys(product.categories)[0] as TCategory)
-            : ""
-    );
+    const [category, setCategory] = useState<TCategory>("");
 
-    // Category
+    // Sub category
     const [subCategory, setSubCategory] = useState<TSubCategory>("All");
 
     // Toggle category
     const [toggleCategoryMenu, SetToggleCategoryMenu] = useState<boolean>(false);
+
+    // Reset category and sub category
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const savedCategory = localStorage.getItem("category") as TCategory;
+            const savedSubCategory = localStorage.getItem(
+                "subCategory"
+            ) as TSubCategory;
+
+            setCategory(
+                savedCategory ||
+                (product && Object.keys(product.categories).length > 0
+                    ? (Object.keys(product.categories)[0] as TCategory)
+                    : "")
+            );
+
+            setSubCategory(savedSubCategory || "All");
+        }
+    }, [product]);
 
     // Filter images by category
     useEffect(() => {

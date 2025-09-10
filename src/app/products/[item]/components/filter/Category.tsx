@@ -1,3 +1,5 @@
+"use client";
+
 import { IProduct } from "@/app/products/utils/fetchProducts";
 import { Dispatch, SetStateAction } from "react";
 import { cn } from "@/lib/utils";
@@ -46,6 +48,7 @@ export default function Category({
                                         onClick={() => {
                                             setCategory(cat as TCategory);
                                             setSubCategory("All");
+                                            localStorage.setItem("category", cat);
                                         }}
                                         className={cn(
                                             "group p-1 px-5 rounded-full cursor-pointer",
@@ -64,7 +67,7 @@ export default function Category({
                                         >
                                             <span>{cat}</span>
 
-                                            {/* Icon */}
+                                            {/* Chevron */}
                                             {product.categories[cat as TCategory].length > 0 &&
                                                 (cat === category ? (
                                                     <ChevronDown className="w-4 h-4" />
@@ -82,9 +85,10 @@ export default function Category({
                                                     (subCat, subIndex) => (
                                                         <button
                                                             key={subIndex}
-                                                            onClick={() =>
-                                                                setSubCategory(subCat as TSubCategory)
-                                                            }
+                                                            onClick={() => {
+                                                                setSubCategory(subCat as TSubCategory);
+                                                                localStorage.setItem("subCategory", subCat);
+                                                            }}
                                                             className={cn(
                                                                 "group p-1 px-5 rounded-full cursor-pointer",
                                                                 subCat === subCategory &&
@@ -135,9 +139,7 @@ export default function Category({
                         ) : (
                             <Menu className="w-5 h-5" />
                         )}
-                        <span className="text-lg font-semibold">
-                            {category}
-                        </span>
+                        <span className="text-lg font-semibold">{category}</span>
                     </div>
 
                     {/* List of categories */}

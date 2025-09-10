@@ -28,9 +28,9 @@ export default function ImageSection({ itemImage }: Props) {
 
     return (
         <section
-            className="h-full w-full relative z-20 px-4 bg-white flex gap-8 flex-col items-start
-            -mt-20 will-change-transform
-            md:px-5 xl:px-10"
+            className="h-full w-full relative z-20 px-4 mt-0 bg-white flex gap-8 flex-col items-start
+            will-change-transform
+            md:px-5 xl:px-10 md:-mt-20"
         >
             <motion.div
                 initial={{ y: 40, scale: 0.9 }}
