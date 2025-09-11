@@ -4,6 +4,7 @@ import { IProduct } from "@/app/products/utils/fetchProducts";
 import More from "@/components/common/More";
 import { motion } from "framer-motion";
 import ProductImages from "@/components/common/ProductImages";
+import { useLayoutEffect } from "react";
 
 // Interface for Props
 interface Props {
@@ -12,6 +13,11 @@ interface Props {
 
 // Image section
 export default function ImageSection({ products }: Props) {
+    // Clear local storage
+    useLayoutEffect(() => {
+        localStorage.clear();
+    }, []);
+
     return (
         <section
             className="min-h-screen relative z-30 px-4 pb-40 bg-zinc-100 flex flex-col gap-20 items-center 

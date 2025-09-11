@@ -81,9 +81,9 @@ export default function ImageSection({ item, product, itemImages }: Props) {
         <section
             className="relative z-10 min-h-screen bg-white px-4 py-10 pb-40 flex flex-col items-center justify-between gap-10
             -mt-0.5 rounded-b-[35px] will-change-transform overflow-hidden
-            md:px-5 xl:px-10 xl:py-40 xl:rounded-b-[50px]"
+            md:px-5 xl:px-10 xl:py-32 xl:rounded-b-[50px]"
         >
-            <div className="w-full flex flex-col gap-10">
+            <div className="w-full flex flex-col">
                 {/* Filter by Category */}
                 <Category
                     product={product}
@@ -97,8 +97,13 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
                 {/* Images */}
                 <div
-                    className="grid grid-cols-2
-                    sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-16"
+                    className={cn(
+                        "grid grid-cols-2",
+                        "sm:grid-cols-2 lg:grid-cols-3 gap-2",
+                        product && Object.keys(product.categories).length > 0
+                            ? "mt-24"
+                            : "mt-0"
+                    )}
                 >
                     {itemImagesCategoryWise &&
                         itemImagesCategoryWise.map((itemImage, index) => (
@@ -160,7 +165,7 @@ export default function ImageSection({ item, product, itemImages }: Props) {
             {/* If no images */}
             {itemImagesCategoryWise.length === 0 && (
                 <h1
-                    className="text-lg font-semibold text-zinc-600 flex-1 flex items-center justify-center
+                    className="relative -top-10 text-lg font-semibold text-zinc-600 flex-1 flex items-center justify-center
                     sm:text-xl md:text-2xl"
                 >
                     No images found!

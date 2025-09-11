@@ -47,8 +47,9 @@ export default function Category({
                                     <button
                                         onClick={() => {
                                             setCategory(cat as TCategory);
-                                            setSubCategory("All");
                                             localStorage.setItem("category", cat);
+                                            setSubCategory("All");
+                                            localStorage.setItem("subCategory", "All");
                                         }}
                                         className={cn(
                                             "group p-1 px-5 rounded-full cursor-pointer",
@@ -159,6 +160,9 @@ export default function Category({
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         setCategory(item as TCategory);
+                                        localStorage.setItem("category", item);
+                                        setSubCategory("All");
+                                        localStorage.setItem("subCategory", "All");
                                     }}
                                     className="p-2 flex items-center justify-between text-start hover:bg-zinc-100 rounded-md cursor-pointer"
                                 >
@@ -168,6 +172,48 @@ export default function Category({
                             ))}
                         </div>
                     </div>
+
+                    {/* Sub categories */}
+                    {category && product.categories[category as TCategory].length > 0 && (
+                        <div
+                            className="absolute left-1/2 -translate-x-1/2 top-14
+                             sm:left-0 sm:-translate-x-0"
+                        >
+                            <div
+                                className="flex gap-0 items-center justify-center
+                                sm:gap-5"
+                            >
+                                {product.categories[category as TCategory].map(
+                                    (subCat, subIndex) => (
+                                        <button
+                                            key={subIndex}
+                                            onClick={() => {
+                                                setSubCategory(subCat as TSubCategory);
+                                                localStorage.setItem("subCategory", subCat);
+                                            }}
+                                            className={cn(
+                                                "group p-1 px-5 rounded-full cursor-pointer",
+                                                subCat === subCategory && "bg-[#171717] text-white"
+                                            )}
+                                        >
+                                            <motion.span
+                                                initial={{ opacity: 0, scale: 0.8 }}
+                                                whileInView={{ opacity: 1, scale: 1 }}
+                                                viewport={{ amount: 0.2, once: true }}
+                                                transition={{
+                                                    duration: 0.2,
+                                                    delay: 0.2 + subIndex * 0.1,
+                                                }}
+                                                className="flex items-center gap-2 text-base font-semibold will-change-transform"
+                                            >
+                                                <span>{subCat}</span>
+                                            </motion.span>
+                                        </button>
+                                    )
+                                )}
+                            </div>
+                        </div>
+                    )}
                 </div>
             )}
         </>
