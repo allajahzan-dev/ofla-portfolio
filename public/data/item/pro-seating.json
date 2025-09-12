@@ -1279,6 +1279,666 @@
             "relatedItems": []
         },
         {
+            "id": 34,
+            "img": [
+                "/images/item/pro-seating/leather/chair4/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair4/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair4/executive/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair4/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair4/executive/chair-b.jpeg"
+            ],
+            "title": "Executive High-Back Leather Chair",
+            "description": "Premium executive leather chair featuring different colors upholstery, adjustable headrest, white armrests, chrome base, and ergonomic design for professionals.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back executive design",
+                "Premium colors leather upholstery",
+                "Retractable footrest feature"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple colors",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: White adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with tilt",
+                "Padding: High-density foam with leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling"
+            ],
+            "keyFeatures": [
+                "High-back ergonomic design with lumbar support",
+                "Adjustable padded headrest for neck comfort",
+                "Premium leather upholstery in various colors",
+                "White adjustable armrests with ergonomic positioning",
+                "360-degree swivel with height adjustment",
+                "Tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 35,
+            "img": [
+                "/images/item/pro-seating/leather/chair4/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair4/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair4/task/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair4/task/chair-fr-g.jpeg",
+                "/images/item/pro-seating/leather/chair4/task/chair-f-w.jpeg"
+            ],
+            "title": "Task Mid-Back Leather Chair",
+            "description": "Professional task chair featuring leather upholstery, mid-back design, white adjustable armrests, chrome base, and ergonomic comfort features.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Mid-back task chair design",
+                "Premium colors leather upholstery",
+                "Chrome base with rolling casters"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: White adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with tilt",
+                "Padding: High-density foam with leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling"
+            ],
+            "keyFeatures": [
+                "Mid-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various colors",
+                "White adjustable armrests with ergonomic positioning",
+                "360-degree swivel with height adjustment",
+                "Tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters",
+                "Professional task chair styling"
+            ],
+            "colors": [
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 36,
+            "img": [
+                "/images/item/pro-seating/leather/chair4/guest/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair4/guest/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair4/guest/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair4/guest/chair-fr-g.jpeg",
+                "/images/item/pro-seating/leather/chair4/guest/chair-f-w.jpeg"
+            ],
+            "title": "Guest Mid-Back Leather Chair",
+            "description": "Professional guest chair featuring leather upholstery, mid-back design, chrome armrests, cantilever base design, and comfortable visitor seating.",
+            "category": "Leather",
+            "subCategory": "Guest",
+            "points": [
+                "Mid-back guest visitor design",
+                "Premium colors leather upholstery",
+                "Chrome cantilever base without wheels"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with chrome finish",
+                "Armrests: Chrome fixed arms with ergonomic design",
+                "Base: Chrome cantilever frame design",
+                "Glides: Floor-protective glides for stability",
+                "Mechanism: Fixed position seating",
+                "Padding: High-density foam with leather wrapping"
+            ],
+            "keyFeatures": [
+                "Mid-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various color options",
+                "Chrome armrests with sleek modern styling",
+                "Cantilever base for stability and style",
+                "Fixed seating position ideal for meetings",
+                "Contoured seat for visitor comfort",
+                "Professional appearance for guest seating"
+            ],
+            "colors": [
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 37,
+            "img": [
+                "/images/item/pro-seating/leather/chair5/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair5/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair5/executive/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair5/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair5/executive/chair-b.jpeg"
+            ],
+            "title": "Executive High-Back Leather Chair",
+            "description": "Premium executive leather chair featuring different colors upholstery, adjustable headrest, white armrests, chrome base, and ergonomic design for professionals.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back executive design",
+                "Premium colors leather upholstery",
+                "Retractable footrest feature"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple colors",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: White adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with tilt",
+                "Padding: High-density foam with leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling"
+            ],
+            "keyFeatures": [
+                "High-back ergonomic design with lumbar support",
+                "Adjustable padded headrest for neck comfort",
+                "Premium leather upholstery in various colors",
+                "White adjustable armrests with ergonomic positioning",
+                "360-degree swivel with height adjustment",
+                "Tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-zinc-200",
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 38,
+            "img": [
+                "/images/item/pro-seating/leather/chair5/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair5/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair5/task/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair5/task/chair-fr-g.jpeg",
+                "/images/item/pro-seating/leather/chair5/task/chair-f-b.jpeg"
+            ],
+            "title": "Task Mid-Back Leather Chair",
+            "description": "Professional task chair featuring leather upholstery, mid-back design, white adjustable armrests, chrome base, and ergonomic comfort features.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Mid-back task chair design",
+                "Premium colors leather upholstery",
+                "Chrome base with rolling casters"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: White adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with tilt",
+                "Padding: High-density foam with leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling"
+            ],
+            "keyFeatures": [
+                "Mid-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various colors",
+                "White adjustable armrests with ergonomic positioning",
+                "360-degree swivel with height adjustment",
+                "Tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters",
+                "Professional task chair styling"
+            ],
+            "colors": [
+                "fill-zinc-200",
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 39,
+            "img": [
+                "/images/item/pro-seating/leather/chair5/guest/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair5/guest/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair5/guest/chair-br.jpeg"
+            ],
+            "title": "Guest Mid-Back Leather Chair",
+            "description": "Professional guest chair featuring leather upholstery, mid-back design, chrome armrests, cantilever base design, and comfortable visitor seating.",
+            "category": "Leather",
+            "subCategory": "Guest",
+            "points": [
+                "Mid-back guest visitor design",
+                "Premium colors leather upholstery",
+                "Chrome cantilever base without wheels"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with chrome finish",
+                "Armrests: Chrome fixed arms with ergonomic design",
+                "Base: Chrome cantilever frame design",
+                "Glides: Floor-protective glides for stability",
+                "Mechanism: Fixed position seating",
+                "Padding: High-density foam with leather wrapping"
+            ],
+            "keyFeatures": [
+                "Mid-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various color options",
+                "Chrome armrests with sleek modern styling",
+                "Cantilever base for stability and style",
+                "Fixed seating position ideal for meetings",
+                "Contoured seat for visitor comfort",
+                "Professional appearance for guest seating"
+            ],
+            "colors": [
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-[#5c8894]",
+                "fill-zinc-500",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 40,
+            "img": [
+                "/images/item/pro-seating/leather/chair6/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair6/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair6/executive/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair6/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair6/executive/chair-b.jpeg"
+            ],
+            "title": "Executive High-Back Leather Chair",
+            "description": "Premium executive chair featuring leather upholstery, adjustable headrest, retractable footrest, chrome armrests, and advanced ergonomic comfort features.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back design with headrest",
+                "Premium leather in multiple colors",
+                "Retractable footrest feature"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: Chrome adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Footrest: Retractable chrome footrest with padding",
+                "Mechanism: Pneumatic height adjustment with advanced tilt",
+                "Padding: High-density foam with leather wrapping"
+            ],
+            "keyFeatures": [
+                "High-back ergonomic design with lumbar support",
+                "Adjustable padded headrest for neck comfort",
+                "Premium leather upholstery in various color options",
+                "Chrome adjustable armrests with ergonomic positioning",
+                "Retractable footrest for enhanced comfort",
+                "360-degree swivel with height adjustment",
+                "Advanced tilt mechanism with tension contro"
+            ],
+            "colors": [
+                "fill-[#db9967]",
+                "fill-zinc-200",
+                "fill-[#7a3339]",
+                "fill-[#495369]",
+                "fill-zinc-500"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 41,
+            "img": [
+                "/images/item/pro-seating/leather/chair6/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair6/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair6/task/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair6/task/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair6/task/chair-b.jpeg"
+            ],
+            "title": "Task Mid-Back Leather Chair",
+            "description": "Professional task chair featuring leather upholstery, mid-back design, retractable footrest, chrome armrests, and ergonomic comfort features.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Mid-back task chair design",
+                "Premium leather in multiple colors",
+                "Retractable footrest feature"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with white polymer accents",
+                "Armrests: Chrome adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Footrest: Retractable chrome footrest with padding",
+                "Mechanism: Pneumatic height adjustment with advanced tilt",
+                "Padding: High-density foam with leather wrapping"
+            ],
+            "keyFeatures": [
+                "Mid-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various color options",
+                "Chrome adjustable armrests with ergonomic positioning",
+                "Retractable footrest for enhanced comfort",
+                "360-degree swivel with height adjustment",
+                "Advanced tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-[#db9967]",
+                "fill-zinc-200",
+                "fill-[#7a3339]",
+                "fill-[#495369]",
+                "fill-zinc-500"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 42,
+            "img": [
+                "/images/item/pro-seating/leather/chair7/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair7/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair7/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair7/executive/chair-fr-w.jpeg",
+                "/images/item/pro-seating/leather/chair7/executive/chair-f-r.jpeg"
+            ],
+            "title": "Executive High-Back Leather Chair",
+            "description": "Premium executive chair featuring leather upholstery, adjustable headrest, retractable footrest, chrome armrests, and advanced ergonomic comfort features.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "High-back executive design",
+                "Premium leather in multiple colors",
+                "Chrome base with rolling casters"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel frame with contemporary design",
+                "Armrests: Grey adjustable arms with soft surfaces",
+                "Base: Chrome-finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with tilt",
+                "Padding: High-density foam with leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling"
+            ],
+            "keyFeatures": [
+                "High-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various color options",
+                "Grey adjustable armrests with ergonomic positioning",
+                "360-degree swivel with height adjustment",
+                "Tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters",
+                "Professional executive styling"
+            ],
+            "colors": [
+                "fill-zinc-500",
+                "fill-[#5c8894]",
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 43,
+            "img": [
+                "/images/item/pro-seating/leather/chair7/guest/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair7/guest/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair7/guest/chair-br.jpeg"
+            ],
+            "title": "Guest Mid-Back Leather Chair",
+            "description": "Premium guest chair featuring leather upholstery, high-back design, chrome cantilever base, ergonomic support, and professional styling for office environments.",
+            "category": "Leather",
+            "subCategory": "Guest",
+            "points": [
+                "Mid-back guest visitor design",
+                "Premium colors leather upholstery",
+                "Chrome cantilever base without wheels"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Steel cantilever frame with contemporary design",
+                "Armrests: Grey fixed arms with soft surfaces",
+                "Base: Chrome-finished steel cantilever base",
+                "Support: Cantilever spring mechanism for comfort",
+                "Padding: High-density foam with leather wrapping",
+                "Glides: Floor protection glides with smooth movement"
+            ],
+            "keyFeatures": [
+                "High-back ergonomic design with lumbar support",
+                "Premium leather upholstery in various color options",
+                "Grey fixed armrests with ergonomic positioning",
+                "Stable cantilever chrome base design",
+                "Contoured backrest for optimal support",
+                "Smooth floor glides for easy positioning",
+                "Professional guest seating styling"
+            ],
+            "colors": [
+                "fill-zinc-500",
+                "fill-[#5c8894]",
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-zinc-200"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 44,
+            "img": [
+                "/images/item/pro-seating/leather/chair8/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair8/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair8/executive/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair8/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair8/executive/chair-b.jpeg"
+            ],
+            "title": "Executive Dual-Back Leather Chair",
+            "description": "Premium executive chair featuring dual-back leather upholstery, adjustable headrest, ergonomic support, and advanced mechanisms for superior office comfort.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "Dual-back ergonomic design",
+                "Premium leather in multiple colors",
+                "Advanced adjustments with headrest"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Reinforced steel frame with contemporary dual-back structure",
+                "Armrests: Adjustable arms with soft leather surfaces",
+                "Base: Black finished aluminum 5-star base",
+                "Mechanism: Advanced pneumatic height adjustment with multi-tilt",
+                "Padding: High-density foam with premium leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling motion"
+            ],
+            "keyFeatures": [
+                "Unique dual-back design for optimal spinal alignment",
+                "Premium leather upholstery in various color options",
+                "Adjustable headrest for neck and shoulder support",
+                "360-degree swivel with pneumatic height adjustment",
+                "Multi-function tilt mechanism with tension control",
+                "Adjustable armrests with ergonomic positioning",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-black",
+                "fill-zinc-300",
+                "fill-[#73483f]"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 45,
+            "img": [
+                "/images/item/pro-seating/leather/chair8/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair8/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair8/task/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair8/task/chair-br.jpeg"
+            ],
+            "title": "Task Dual-Back Leather Chair",
+            "description": "Professional task chair featuring dual-back fabric upholstery, ergonomic support, adjustable armrests, and smooth mobility for productive office environments.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Dual-back ergonomic design",
+                "Premium leather in multiple colors",
+                "Adjustable armrests and mechanisms"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium fabric material in multiple color options",
+                "Frame: Reinforced steel frame with contemporary dual-back structure",
+                "Armrests: Adjustable arms with soft fabric surfaces",
+                "Base: Black finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with multi-tilt function",
+                "Padding: High-density foam with fabric wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling motion"
+            ],
+            "keyFeatures": [
+                "Unique dual-back design for optimal spinal alignment",
+                "Premium leather upholstery in various color options",
+                "Adjustable armrests with ergonomic positioning",
+                "360-degree swivel with pneumatic height adjustment",
+                "Multi-function tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters",
+                "Professional task seating styling"
+            ],
+            "colors": [
+                "fill-black",
+                "fill-zinc-300",
+                "fill-[#73483f]"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 46,
+            "img": [
+                "/images/item/pro-seating/leather/chair9/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair9/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair9/executive/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair9/executive/chair-br.jpeg"
+            ],
+            "title": "Executive Dual-Back Leather Chair",
+            "description": "Premium executive chair featuring dual-back leather upholstery, adjustable headrest, ergonomic support, and advanced mechanisms for superior office comfort.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "Dual-back ergonomic design",
+                "Premium leather in multiple colors",
+                "Advanced adjustments with headrest"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Reinforced steel frame with contemporary dual-back structure",
+                "Armrests: Adjustable arms with soft leather surfaces",
+                "Base: Black finished aluminum 5-star base",
+                "Mechanism: Advanced pneumatic height adjustment with multi-tilt",
+                "Padding: High-density foam with premium leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling motion"
+            ],
+            "keyFeatures": [
+                "Unique dual-back design for optimal spinal alignment",
+                "Premium leather upholstery in various color options",
+                "Adjustable headrest for neck and shoulder support",
+                "360-degree swivel with pneumatic height adjustment",
+                "Multi-function tilt mechanism with tension control",
+                "Adjustable armrests with ergonomic positioning",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-[#5c8894]",
+                "fill-zinc-400",
+                "fill-black"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 47,
+            "img": [
+                "/images/item/pro-seating/leather/chair9/task/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair9/task/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair9/task/chair-sr.jpeg",
+                "/images/item/pro-seating/leather/chair9/task/chair-br.jpeg"
+            ],
+            "title": "Task Dual-Back Leather Chair",
+            "description": "Professional task chair featuring dual-back fabric upholstery, ergonomic support, adjustable armrests, and smooth mobility for productive office environments.",
+            "category": "Leather",
+            "subCategory": "Task",
+            "points": [
+                "Dual-back ergonomic design",
+                "Premium leather in multiple colors",
+                "Adjustable armrests and mechanisms"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium fabric material in multiple color options",
+                "Frame: Reinforced steel frame with contemporary dual-back structure",
+                "Armrests: Adjustable arms with soft fabric surfaces",
+                "Base: Black finished aluminum 5-star base",
+                "Mechanism: Pneumatic height adjustment with multi-tilt function",
+                "Padding: High-density foam with fabric wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling motion"
+            ],
+            "keyFeatures": [
+                "Unique dual-back design for optimal spinal alignment",
+                "Premium leather upholstery in various color options",
+                "Adjustable armrests with ergonomic positioning",
+                "360-degree swivel with pneumatic height adjustment",
+                "Multi-function tilt mechanism with tension control",
+                "Smooth-rolling dual-wheel casters",
+                "Professional task seating styling"
+            ],
+            "colors": [
+                "fill-[#5c8894]",
+                "fill-zinc-400",
+                "fill-black"
+            ],
+            "relatedItems": []
+        },
+        {
+            "id": 48,
+            "img": [
+                "/images/item/pro-seating/leather/chair10/executive/chair-f.jpeg",
+                "/images/item/pro-seating/leather/chair10/executive/chair-fr.jpeg",
+                "/images/item/pro-seating/leather/chair10/executive/chair-br.jpeg",
+                "/images/item/pro-seating/leather/chair10/executive/chair-fr-w.jpeg",
+                "/images/item/pro-seating/leather/chair10/executive/chair-f-y.jpeg"
+            ],
+            "title": "Executive Premium Leather Office Chair",
+            "description": "Luxury executive chair featuring premium leather upholstery, adjustable headrest, ergonomic design, and polished chrome base for sophisticated office environments.",
+            "category": "Leather",
+            "subCategory": "Executive",
+            "points": [
+                "Premium leather executive design",
+                "Adjustable headrest for comfort",
+                "Retractable footrest feature"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in multiple color options",
+                "Frame: Reinforced steel frame with contemporary design",
+                "Armrests: Leather-padded adjustable arms with ergonomic support",
+                "Base: Polished chrome-finished aluminum 5-star base",
+                "Mechanism: Advanced pneumatic height adjustment with multi-tilt",
+                "Padding: High-density foam with premium leather wrapping",
+                "Casters: Dual-wheel carpet casters with smooth rolling motion"
+            ],
+            "keyFeatures": [
+                "High-back design with integrated headrest support",
+                "Premium leather upholstery in various color options",
+                "Adjustable headrest for neck and shoulder comfort",
+                "360-degree swivel with pneumatic height adjustment",
+                "Multi-function tilt mechanism with tension control",
+                "Ergonomic armrests with leather padding",
+                "Smooth-rolling dual-wheel casters"
+            ],
+            "colors": [
+                "fill-[#384257]",
+                "fill-zinc-200",
+                "fill-[#7a3339]",
+                "fill-[#b77653]",
+                "fill-zinc-500"
+            ],
+            "relatedItems": []
+        },
+        {
             "id": 31,
             "img": [
                 "/images/item/pro-seating/leather/chair3/executive/chair-f.jpeg",
@@ -1404,141 +2064,6 @@
                 "fill-[#ad5665]",
                 "fill-zinc-500",
                 "fill-black"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 34,
-            "img": [
-                "/images/item/pro-seating/leather/chair4/executive/chair-f.jpeg",
-                "/images/item/pro-seating/leather/chair4/executive/chair-fr.jpeg",
-                "/images/item/pro-seating/leather/chair4/executive/chair-sr.jpeg",
-                "/images/item/pro-seating/leather/chair4/executive/chair-br.jpeg",
-                "/images/item/pro-seating/leather/chair4/executive/chair-b.jpeg"
-            ],
-            "title": "Executive High-Back Leather Chair",
-            "description": "Premium executive leather chair featuring different colors upholstery, adjustable headrest, white armrests, chrome base, and ergonomic design for professionals.",
-            "category": "Leather",
-            "subCategory": "Executive",
-            "points": [
-                "High-back executive design",
-                "Premium colors leather upholstery",
-                "Chrome base with rolling casters"
-            ],
-            "materialSpecification": [
-                "Upholstery: Premium genuine leather in multiple colors",
-                "Frame: Steel frame with white polymer accents",
-                "Armrests: White adjustable arms with soft surfaces",
-                "Base: Chrome-finished aluminum 5-star base",
-                "Mechanism: Pneumatic height adjustment with tilt",
-                "Padding: High-density foam with leather wrapping",
-                "Casters: Dual-wheel carpet casters with smooth rolling"
-            ],
-            "keyFeatures": [
-                "High-back ergonomic design with lumbar support",
-                "Adjustable padded headrest for neck comfort",
-                "Premium leather upholstery in various colors",
-                "White adjustable armrests with ergonomic positioning",
-                "360-degree swivel with height adjustment",
-                "Tilt mechanism with tension control",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-[#7a3339]",
-                "fill-[#b77653]",
-                "fill-[#5c8894]",
-                "fill-zinc-500",
-                "fill-zinc-200"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 35,
-            "img": [
-                "/images/item/pro-seating/leather/chair4/task/chair-f.jpeg",
-                "/images/item/pro-seating/leather/chair4/task/chair-fr.jpeg",
-                "/images/item/pro-seating/leather/chair4/task/chair-br.jpeg",
-                "/images/item/pro-seating/leather/chair4/task/chair-fr-g.jpeg",
-                "/images/item/pro-seating/leather/chair4/task/chair-f-w.jpeg"
-            ],
-            "title": "Task Mid-Back Leather Chair",
-            "description": "Professional task chair featuring leather upholstery, mid-back design, white adjustable armrests, chrome base, and ergonomic comfort features.",
-            "category": "Leather",
-            "subCategory": "Task",
-            "points": [
-                "Mid-back task chair design",
-                "Premium colors leather upholstery",
-                "Chrome base with rolling casters"
-            ],
-            "materialSpecification": [
-                "Upholstery: Premium genuine leather in multiple color options",
-                "Frame: Steel frame with white polymer accents",
-                "Armrests: White adjustable arms with soft surfaces",
-                "Base: Chrome-finished aluminum 5-star base",
-                "Mechanism: Pneumatic height adjustment with tilt",
-                "Padding: High-density foam with leather wrapping",
-                "Casters: Dual-wheel carpet casters with smooth rolling"
-            ],
-            "keyFeatures": [
-                "Mid-back ergonomic design with lumbar support",
-                "Premium leather upholstery in various colors",
-                "White adjustable armrests with ergonomic positioning",
-                "360-degree swivel with height adjustment",
-                "Tilt mechanism with tension control",
-                "Smooth-rolling dual-wheel casters",
-                "Professional task chair styling"
-            ],
-            "colors": [
-                "fill-[#7a3339]",
-                "fill-[#b77653]",
-                "fill-[#5c8894]",
-                "fill-zinc-500",
-                "fill-zinc-200"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 36,
-            "img": [
-                "/images/item/pro-seating/leather/chair4/guest/chair-f.jpeg",
-                "/images/item/pro-seating/leather/chair4/guest/chair-fr.jpeg",
-                "/images/item/pro-seating/leather/chair4/guest/chair-br.jpeg",
-                "/images/item/pro-seating/leather/chair4/guest/chair-fr-g.jpeg",
-                "/images/item/pro-seating/leather/chair4/guest/chair-f-w.jpeg"
-            ],
-            "title": "Guest Mid-Back Leather Chair",
-            "description": "Professional guest chair featuring leather upholstery, mid-back design, chrome armrests, cantilever base design, and comfortable visitor seating.",
-            "category": "Leather",
-            "subCategory": "Guest",
-            "points": [
-                "Mid-back guest visitor design",
-                "Premium colors leather upholstery",
-                "Chrome cantilever base without wheels"
-            ],
-            "materialSpecification": [
-                "Upholstery: Premium genuine leather in multiple color options",
-                "Frame: Steel frame with chrome finish",
-                "Armrests: Chrome fixed arms with ergonomic design",
-                "Base: Chrome cantilever frame design",
-                "Glides: Floor-protective glides for stability",
-                "Mechanism: Fixed position seating",
-                "Padding: High-density foam with leather wrapping"
-            ],
-            "keyFeatures": [
-                "Mid-back ergonomic design with lumbar support",
-                "Premium leather upholstery in various color options",
-                "Chrome armrests with sleek modern styling",
-                "Cantilever base for stability and style",
-                "Fixed seating position ideal for meetings",
-                "Contoured seat for visitor comfort",
-                "Professional appearance for guest seating"
-            ],
-            "colors": [
-                "fill-[#7a3339]",
-                "fill-[#b77653]",
-                "fill-[#5c8894]",
-                "fill-zinc-500",
-                "fill-zinc-200"
             ],
             "relatedItems": []
         }
