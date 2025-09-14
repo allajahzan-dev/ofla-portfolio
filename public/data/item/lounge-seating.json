@@ -5,7 +5,7 @@
             "img": [
                 "/images/item/lounge-seating/lounge1/img1.jpeg"
             ],
-            "title": "Curved Sectional Sofa",
+            "title": "Curved Sectional Lounge Sofa",
             "description": "Modern curved sectional sofa featuring curved design, channel tufted backrest, neutral upholstery, and sleek contemporary styling for lounge areas.",
             "category": "",
             "points": [
@@ -42,7 +42,7 @@
                 "/images/item/lounge-seating/lounge2/img3.jpeg",
                 "/images/item/lounge-seating/lounge2/img4.jpeg"
             ],
-            "title": "Modular Sectional Sofa",
+            "title": "Modular Sectional Lounge Sofa",
             "description": "Contemporary modular sectional sofa featuring separable components, rounded edges, neutral upholstery, and flexible configuration options for customizable seating arrangements.",
             "category": "",
             "points": [
@@ -68,6 +68,418 @@
                 "Seamless connection system between modules",
                 "Expandable design for various room sizes"
             ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 3,
+            "img": [
+                "/images/item/lounge-seating/lounge3/img1.jpeg",
+                "/images/item/lounge-seating/lounge3/img2.jpeg",
+                "/images/item/lounge-seating/lounge3/img3.jpeg",
+                "/images/item/lounge-seating/lounge3/img4.jpeg"
+            ],
+            "title": "Modular Sectional Lounge Sofa",
+            "description": "Contemporary modular sectional lounge in coral pink upholstery featuring multiple configurable pieces for versatile seating arrangements and modern living spaces.",
+            "category": "",
+            "points": [
+                "Modular configurable pieces",
+                "Contemporary coral pink upholstery",
+                "Minimalist modern aesthetic"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium fabric in coral pink contemporary finish",
+                "Frame: Engineered hardwood frame with reinforced joints",
+                "Cushions: High-density foam core with soft fabric covering",
+                "Pillows: Matching coral pink throw pillows with removable covers",
+                "Construction: Modular interlocking system for easy reconfiguration",
+                "Base: Integrated platform base with modern low-profile design",
+                "Filling: Premium polyester fiber fill for lasting comfort"
+            ],
+            "keyFeatures": [
+                "Multi-piece modular construction for versatile arrangements",
+                "Can be configured as sectional sofa or separate seating units",
+                "Includes extended chaise lounge section for relaxation",
+                "Contemporary low-profile design with clean lines",
+                "Plush seat cushions for optimal comfort",
+                "Matching throw pillows included for added comfort",
+                "Seamless modular connection system"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 4,
+            "img": [
+                "/images/item/lounge-seating/lounge4/img1.jpeg",
+                "/images/item/lounge-seating/lounge4/img2.jpeg"
+            ],
+            "title": "Modern Curved Lounge Sofa",
+            "description": "Contemporary curved lounge sofa in light grey fabric upholstery featuring sleek metal legs and minimalist design for modern interiors.",
+            "category": "",
+            "points": [
+                "Curved contemporary design",
+                "Light grey fabric upholstery",
+                "Sleek black metal legs"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium light grey fabric with soft texture",
+                "Frame: Reinforced hardwood frame with modern construction",
+                "Legs: Black powder-coated metal with angular geometric design",
+                "Cushions: Integrated foam padding with fabric covering",
+                "Construction: Solid frame construction for durability",
+                "Filling: High-density foam for optimal comfort and support",
+                "Base: Metal leg frame with contemporary styling"
+            ],
+            "keyFeatures": [
+                "Curved silhouette with contemporary styling",
+                "Premium light grey fabric upholstery",
+                "Clean lines with minimalist design approach",
+                "Comfortable seat and back cushion integration",
+                "Sleek black metal leg frame with angular design",
+                "Low-profile modern seating height",
+                "Soft rounded edges for contemporary appeal"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 5,
+            "img": [
+                "/images/item/lounge-seating/lounge5/img1.jpeg",
+                "/images/item/lounge-seating/lounge5/img2.jpeg"
+            ],
+            "title": "Modern fabric lounge sofa",
+            "description": "Modern sage green fabric lounge sofa featuring soft rounded edges, minimalist design, and sleek black metal legs for contemporary interiors.",
+            "category": "",
+            "points": [
+                "Sage green fabric upholstery",
+                "Soft rounded contemporary design",
+                "Sleek black metal legs"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium sage green fabric with soft textured weave",
+                "Frame: Reinforced hardwood frame with modern construction",
+                "Legs: Black powder-coated metal with slim cylindrical design",
+                "Cushions: Integrated high-density foam padding with fabric covering",
+                "Construction: Solid frame construction for durability and comfort",
+                "Filling: Premium foam core for optimal support and relaxation",
+                "Base: Slim metal leg frame with contemporary styling"
+            ],
+            "keyFeatures": [
+                "Premium sage green fabric upholstery with textured finish",
+                "Soft rounded edges and contemporary curved silhouette",
+                "Comfortable integrated seat and back cushioning",
+                "Sleek black metal leg frame with minimal design",
+                "Low-profile modern seating height",
+                "Clean lines with Scandinavian-inspired styling",
+                "Single-seat and multi-seat configurations available"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 6,
+            "img": [
+                "/images/item/lounge-seating/lounge6/img1.jpeg",
+                "/images/item/lounge-seating/lounge6/img2.jpeg"
+            ],
+            "title": "Contemporary Taupe Lounge Sofa",
+            "description": "Contemporary dual-tone leather sofa featuring taupe and charcoal upholstery with distinctive angular black metal legs for sophisticated modern interiors.",
+            "category": "",
+            "points": [
+                "Premium taupe leather upholstery",
+                "Plush padded cushioning design",
+                "Sleek black metal leg frame"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium genuine leather in rich taupe finish",
+                "Frame: Reinforced hardwood construction",
+                "Legs: Black powder-coated metal with slim profile",
+                "Cushions: High-density foam with leather covering",
+                "Construction: Solid frame for durability",
+                "Filling: Premium foam padding for comfort",
+                "Base: Minimalist black metal leg framework"
+            ],
+            "keyFeatures": [
+                "Premium taupe leather upholstery with smooth finish",
+                "Generously padded back cushions with horizontal pleating",
+                "Rounded armrests for enhanced comfort and style",
+                "Available in single armchair and two-seater configurations",
+                "Low-profile black metal legs with minimalist design",
+                "Luxurious soft leather with rich texture",
+                "Contemporary silhouette with clean lines"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 7,
+            "img": [
+                "/images/item/lounge-seating/lounge7/img1.jpeg",
+                "/images/item/lounge-seating/lounge7/img2.jpeg"
+            ],
+            "title": "Modern Grey Lounge Sofa",
+            "description": "Contemporary charcoal grey fabric sofa featuring clean geometric lines, block armrests, and sleek black metal legs for modern living spaces.",
+            "category": "",
+            "points": [
+                "Charcoal grey fabric upholstery",
+                "Geometric block armrest design",
+                "Black metal leg framework"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium charcoal grey fabric with smooth finish",
+                "Frame: Reinforced hardwood with modern construction",
+                "Legs: Black powder-coated metal with slim design",
+                "Cushions: High-density foam with fabric covering",
+                "Construction: Solid frame for enhanced durability",
+                "Filling: Structured foam padding for support",
+                "Base: Black metal framework with clean lines"
+            ],
+            "keyFeatures": [
+                "Premium charcoal grey fabric upholstery with smooth texture",
+                "Bold geometric block armrests for modern aesthetic",
+                "Clean-lined contemporary silhouette with structured design",
+                "Available in single armchair and two-seater sofa options",
+                "Sleek black metal legs with minimalist profile",
+                "Firm structured cushioning for optimal support",
+                "Low-profile design with elevated modern stance"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 8,
+            "img": [
+                "/images/item/lounge-seating/lounge8/img1.jpeg",
+                "/images/item/lounge-seating/lounge8/img2.jpeg"
+            ],
+            "title": "Mid-Century Modern Lounge Sofa",
+            "description": "Retro-inspired cream fabric sofa featuring vibrant mustard yellow side panels and natural wood legs for mid-century modern interiors.",
+            "category": "",
+            "points": [
+                "Cream and mustard two-tone design",
+                "Natural wood tapered legs",
+                "Mid-century modern styling"
+            ],
+            "materialSpecification": [
+                "Upholstery: Premium cream fabric with mustard accents",
+                "Frame: Solid hardwood construction with reinforcement",
+                "Legs: Natural wood with tapered mid-century styling",
+                "Cushions: High-density foam with fabric covering",
+                "Construction: Traditional frame with modern comfort features",
+                "Filling: Premium foam padding for optimal support",
+                "Base: Solid wood leg framework with angled design"
+            ],
+            "keyFeatures": [
+                "Premium cream fabric upholstery with soft texture",
+                "Bold mustard yellow side panels for retro accent",
+                "Natural wood tapered legs with mid-century design",
+                "Available in single armchair and two-seater configurations",
+                "Plush back cushions for enhanced comfort",
+                "Vintage-inspired silhouette with contemporary comfort",
+                "Warm color palette combining cream and mustard tones"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 9,
+            "img": [
+                "/images/item/lounge-seating/lounge9/img1.jpeg",
+                "/images/item/lounge-seating/lounge9/img2.jpeg"
+            ],
+            "title": "Modern Two-Tone Lounge Sofa",
+            "description": "Contemporary dual-tone leather sofa featuring taupe and charcoal upholstery with distinctive angular black metal legs for sophisticated modern interiors.",
+            "category": "",
+            "points": [
+                "Two-tone leather upholstery",
+                "Angular black metal legs",
+                "Contemporary minimalist style"
+            ],
+            "materialSpecification": [
+                "Upholstery: Genuine leather in dual-tone taupe and charcoal",
+                "Frame: Reinforced hardwood with modern construction",
+                "Legs: Powder-coated black steel X-frame design",
+                "Cushions: High-density foam with leather covering",
+                "Construction: Solid frame for durability and stability",
+                "Filling: Premium foam for comfort and shape retention",
+                "Base: Angular metal framework with geometric styling"
+            ],
+            "keyFeatures": [
+                "Two-tone leather with taupe center and charcoal sides",
+                "Angular black metal base with geometric X-frame",
+                "Clean contemporary silhouette with structured cushioning",
+                "Single armchair and three-seater configurations available",
+                "Low-profile modern seating with sleek proportions",
+                "Structured cushions for optimal comfort and support",
+                "Sophisticated taupe and charcoal color contrast"
+            ],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 10,
+            "img": [
+                "/images/item/lounge-seating/lounge10/img1.jpeg",
+                "/images/item/lounge-seating/lounge10/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 11,
+            "img": [
+                "/images/item/lounge-seating/lounge11/img1.jpeg",
+                "/images/item/lounge-seating/lounge11/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 12,
+            "img": [
+                "/images/item/lounge-seating/lounge12/img1.jpeg",
+                "/images/item/lounge-seating/lounge12/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 13,
+            "img": [
+                "/images/item/lounge-seating/lounge13/img1.jpeg",
+                "/images/item/lounge-seating/lounge13/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 14,
+            "img": [
+                "/images/item/lounge-seating/lounge14/img1.jpeg",
+                "/images/item/lounge-seating/lounge14/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 15,
+            "img": [
+                "/images/item/lounge-seating/lounge15/img1.jpeg",
+                "/images/item/lounge-seating/lounge15/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 16,
+            "img": [
+                "/images/item/lounge-seating/lounge16/img1.jpeg",
+                "/images/item/lounge-seating/lounge16/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 17,
+            "img": [
+                "/images/item/lounge-seating/lounge17/img1.jpeg",
+                "/images/item/lounge-seating/lounge17/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 18,
+            "img": [
+                "/images/item/lounge-seating/lounge18/img1.jpeg",
+                "/images/item/lounge-seating/lounge18/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 19,
+            "img": [
+                "/images/item/lounge-seating/lounge19/img1.jpeg",
+                "/images/item/lounge-seating/lounge19/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
+            "colors": [],
+            "relatedItems": []
+        },
+        {
+            "id": 20,
+            "img": [
+                "/images/item/lounge-seating/lounge20/img1.jpeg",
+                "/images/item/lounge-seating/lounge20/img2.jpeg"
+            ],
+            "title": "",
+            "description": "",
+            "category": "",
+            "points": [],
+            "materialSpecification": [],
+            "keyFeatures": [],
             "colors": [],
             "relatedItems": []
         }

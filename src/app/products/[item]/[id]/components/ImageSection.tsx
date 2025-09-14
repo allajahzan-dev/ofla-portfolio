@@ -52,8 +52,8 @@ export default function ImageSection({ itemImage }: Props) {
                             <AnimatePresence mode="wait">
                                 <motion.img
                                     key={mainImage}
-                                    initial={{ x: 0, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.3 }}
                                     src={mainImage}
                                     alt="img"
@@ -80,8 +80,8 @@ export default function ImageSection({ itemImage }: Props) {
                                         <AnimatePresence mode="wait">
                                             <motion.img
                                                 key={image}
-                                                initial={{ x: 0, opacity: 0 }}
-                                                animate={{ x: 0, opacity: 1 }}
+                                                initial={{ opacity: 0, scale: 0.9 }}
+                                                animate={{ opacity: 1, scale: 1 }}
                                                 transition={{ duration: 0.3 }}
                                                 src={image}
                                                 alt="img"
