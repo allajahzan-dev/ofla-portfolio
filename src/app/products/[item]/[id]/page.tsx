@@ -16,11 +16,13 @@ export async function generateStaticParams() {
 
     for (const item of products) {
         // Item images
-        const { itemImages } = await fetchItemImages(item.title.toLowerCase());
+        const { itemImages } = await fetchItemImages(
+            item.title.toLowerCase().split(" ").join("-")
+        );
 
         for (const itemImage of itemImages) {
             params.push({
-                item: item.title.toLowerCase(),
+                item: item.title.toLowerCase().split(" ").join("-"),
                 id: itemImage.id.toString(),
             });
         }
