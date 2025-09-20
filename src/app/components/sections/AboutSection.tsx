@@ -1,17 +1,12 @@
+import Clients from "@/components/common/Clients";
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Star, TrendingUp } from "lucide-react";
+import { ArrowUpRight, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo } from "react";
 
 // About Section
 export default function AboutSection() {
-    // Users
-    const users = useMemo(() => {
-        return ["/user1.png", "/user2.png", "/user3.png", "/user4.png", ""];
-    }, []);
-
     return (
         <section
             className="min-h-screen relative z-40 px-4 py-24 bg-zinc-100 flex flex-col gap-20 items-center 
@@ -51,60 +46,8 @@ export default function AboutSection() {
                         OFLA <sup className="text-sm relative -top-[5px]">TM</sup>
                     </p>
 
-                    {/* professionals */}
-                    <div className="flex flex-col gap-2">
-                        <div className="flex items-center gap-2">
-                            {users.map((user, index) => {
-                                return (
-                                    <div
-                                        key={index}
-                                        className={cn(
-                                            "relative border-[3px] border-white rounded-full w-12 h-12 shadow shrink-0 overflow-hidden",
-                                            index === 0 && "z-10",
-                                            index === 1 && "-left-6 z-20",
-                                            index === 2 && "-left-[52px] z-30",
-                                            index === 3 && "-left-[78px] z-40",
-                                            index === 4 && "-left-[105px] z-50"
-                                        )}
-                                    >
-                                        {user ? (
-                                            <Image
-                                                width={100}
-                                                height={100}
-                                                src={`/images/home/about` + user}
-                                                alt={`User${index}`}
-                                                className="h-full w-full object-cover rounded-full"
-                                            />
-                                        ) : (
-                                            <div className="bg-[#171717] h-full flex items-center justify-center">
-                                                <p
-                                                    className={cn(
-                                                        "text-white text-lg font-semibold",
-                                                        oswald.className
-                                                    )}
-                                                >
-                                                    95+
-                                                </p>
-                                            </div>
-                                        )}
-                                    </div>
-                                );
-                            })}
-                        </div>
-
-                        <p className="font-semibold text-base text-zinc-600">
-                            Trusted by professionals
-                        </p>
-
-                        <div className="flex items-center gap-1">
-                            {[1, 2, 3, 4, 5].map((_, index) => (
-                                <Star
-                                    key={index}
-                                    className="w-3 h-3 text-orange-400 fill-orange-400"
-                                />
-                            ))}
-                        </div>
-                    </div>
+                    {/* Clients */}
+                    <Clients/>
 
                     <p
                         className="w-full text-2xl font-semibold leading-6
