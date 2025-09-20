@@ -2,10 +2,6 @@ import ContactSection from "@/components/common/ContactSection";
 import TitleSection from "@/components/common/TitleSection";
 import ImageSection from "./ImageSection";
 import AboutSection from "./AboutSection";
-import { Star } from "lucide-react";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
-import { oswald } from "@/fonts/owald";
 import Clients from "@/components/common/Clients";
 
 // Main section

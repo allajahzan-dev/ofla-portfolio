@@ -118,11 +118,11 @@ export default function AboutSection() {
             {/* Points */}
             <div className="w-full">
                 <div
-                    className="group border-b border-zinc-300 py-5 grid grid-cols-1 gap-5 px-4
+                    className="group border-b border-zinc-200 py-5 grid grid-cols-1 gap-5 px-4
                     md:px-9 lg:px-10 lg:grid-cols-3"
                 >
                     <h1
-                        className="text-3xl font-semibold
+                        className="text-2xl font-semibold
                         lg:text-4xl"
                     >
                         Innovation
@@ -139,7 +139,7 @@ export default function AboutSection() {
                         <h1
                             className={cn(
                                 oswald.className,
-                                "text-2xl font-semibold text-[#171717] transition-colors duration-300"
+                                "text-2xl font-semibold text-zinc-400 group-hover:text-[#171717] transition-colors duration-300"
                             )}
                         >
                             01
@@ -148,11 +148,11 @@ export default function AboutSection() {
                 </div>
 
                 <div
-                    className="group border-b border-zinc-300 py-5 grid grid-cols-1 gap-5 px-4
+                    className="group border-b border-zinc-200 py-5 grid grid-cols-1 gap-5 px-4
                     md:px-9 lg:px-10 lg:grid-cols-3"
                 >
                     <h1
-                        className="text-3xl font-semibold
+                        className="text-2xl font-semibold
                         lg:text-4xl"
                     >
                         Comfortness
@@ -169,7 +169,7 @@ export default function AboutSection() {
                         <h1
                             className={cn(
                                 oswald.className,
-                                "text-2xl font-semibold text-[#171717] transition-colors duration-300"
+                                "text-2xl font-semibold text-zinc-400 group-hover:text-[#171717] transition-colors duration-300"
                             )}
                         >
                             02
@@ -182,7 +182,7 @@ export default function AboutSection() {
                     md:px-9 lg:px-10 lg:grid-cols-3"
                 >
                     <h1
-                        className="text-3xl font-semibold
+                        className="text-2xl font-semibold
                         lg:text-4xl"
                     >
                         Sustainability
@@ -199,7 +199,7 @@ export default function AboutSection() {
                         <h1
                             className={cn(
                                 oswald.className,
-                                "text-2xl font-semibold text-[#171717] transition-colors duration-300"
+                                "text-2xl font-semibold text-zinc-400 group-hover:text-[#171717] transition-colors duration-300"
                             )}
                         >
                             03
