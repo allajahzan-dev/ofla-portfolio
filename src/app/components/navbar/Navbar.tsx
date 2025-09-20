@@ -150,12 +150,13 @@ export default function Navbar({ className }: Props) {
                     </div>
 
                     {/* Contact */}
-                    <div
+                    <a
+                        href="tel:+971505027003"
                         className="hidden items-start gap-12 tracking-widest
                         md:flex"
                     >
                         <NavbarItems text="CALL" styles={styles} />
-                    </div>
+                    </a>
 
                     {/* Hamburger */}
                     <div
@@ -201,29 +202,34 @@ export default function Navbar({ className }: Props) {
                             className="flex flex-col gap-1 text-lg 
                               [&>:is(p,a):hover]:text-orange-500 [&>:is(p,a):hover]:transition-colors [&>:is(p,a):hover]:duration-300"
                         >
-                            <Link
-                                href={"mailto:info@ofla.in"}
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ofla.in"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 onClick={() => setToggle(false)}
                             >
                                 info@ofla.in
-                            </Link>
-                            <p>+91 123 456 789</p>
+                            </a>
+                            <a href="tel:+971505027003">+971 505027003</a>
                             <p>Dubai, India</p>
                             <div className="flex items-center gap-2 mt-2">
                                 <Link
-                                    href={"https://www.instagram.com/"}
+                                    href={"https://www.instagram.com/ofla.ae"}
+                                    target="_blank"
                                     className="hover:text-orange-600 transition-colors duration-300 flex items-center justify-center rounded-full"
                                 >
                                     <Instagram className="w-5 h-5" />
                                 </Link>
                                 <Link
-                                    href={"/https://facebook.com"}
+                                    href={"/https://facebook.com/ofla.ae"}
+                                    target="_blank"
                                     className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
                                 >
                                     <Facebook className="w-5 h-5" />
                                 </Link>
                                 <Link
-                                    href={"/https://x.com"}
+                                    href={"/https://x.com/ofla.ae"}
+                                    target="_blank"
                                     className="hover:text-orange-600 transition-colors duration-500 flex items-center justify-center rounded-full"
                                 >
                                     <Twitter className="w-5 h-5" />

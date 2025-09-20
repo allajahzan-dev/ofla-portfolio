@@ -65,7 +65,7 @@ export default function ContactSection() {
             >
                 <div className="flex items-center gap-2">
                     <Link
-                        href={"https://instagram.com"}
+                        href={"https://instagram.com/ofla.ae"}
                         target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
                         lg:w-12 lg:h-12"
@@ -76,7 +76,7 @@ export default function ContactSection() {
                         />
                     </Link>
                     <Link
-                        href={"https://facebook.com"}
+                        href={"https://facebook.com/ofla.ae"}
                         target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
                         lg:w-12 lg:h-12"
@@ -87,7 +87,7 @@ export default function ContactSection() {
                         />
                     </Link>
                     <Link
-                        href={"https://x.com"}
+                        href={"https://x.com/ofla.ae"}
                         target="_blank"
                         className="bg-zinc-800 hover:bg-white hover:text-[#171717] w-10 h-10 transition-colors duration-300 flex items-center justify-center rounded-full
                         lg:w-12 lg:h-12"
@@ -99,18 +99,22 @@ export default function ContactSection() {
                     </Link>
                 </div>
                 <div className="flex items-c enter justify-between">
-                    <Link
-                        href={"mailto:info@ofla.in"}
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ofla.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-full p-5 flex items-center justify-center text-2xl font-medium rounded-full 
                         border border-white hover:bg-white hover:text-[#171717] transition-colors duration-300"
                     >
                         info@ofla.in
-                    </Link>
+                    </a>
                 </div>
             </div>
 
-            <footer className="w-full py-8 relative bottom-0 left-0 flex items-center font-medium
-                    lg:absolute lg:px-5 xl:px-10">
+            <footer
+                className="w-full py-8 relative bottom-0 left-0 flex items-center font-medium
+                    lg:absolute lg:px-5 xl:px-10"
+            >
                 <p className="flex items-center gap-2 self-end">
                     <Copyright className="w-5 h-5" /> {new Date().getFullYear()} All
                     rights reserved
