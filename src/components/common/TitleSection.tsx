@@ -3,16 +3,17 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useLayoutEffect, useState } from "react";
+import { ReactNode, useLayoutEffect, useState } from "react";
 
 // Interface for Props
 interface Props {
     title: string;
     description: string;
+    children?: ReactNode;
 }
 
 // Title section
-export default function TitleSection({ title, description }: Props) {
+export default function TitleSection({ title, description, children }: Props) {
     const [isSmall, setIsSmall] = useState<boolean>(false);
 
     // Media query
@@ -45,15 +46,17 @@ export default function TitleSection({ title, description }: Props) {
                 className="relative top-2 w-full grid grid-cols-1 gap-5
                 md:grid-cols-3 md:top-14 md:gap-0"
             >
-                <p
-                    className={cn(
-                        "order-2 pl-1 font-semibold text-base text-start tracking-wide leading-[1] relative left-0 top-0 h-fit",
-                        oswald.className,
-                        "md:order-1 md:top-14 xl:top-20"
-                    )}
-                >
-                    2019 — {new Date().getFullYear()}
-                </p>
+                {children || (
+                    <p
+                        className={cn(
+                            "order-2 pl-1 font-semibold text-base text-start tracking-wide leading-[1] relative left-0 top-0 h-fit",
+                            oswald.className,
+                            "md:order-1 md:top-14 xl:top-20"
+                        )}
+                    >
+                        2019 — {new Date().getFullYear()}
+                    </p>
+                )}
 
                 <div
                     className="order-1 col-span-1 relative flex flex-col items-start justify-center text-start will-change-transform
