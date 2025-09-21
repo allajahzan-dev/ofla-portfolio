@@ -17,7 +17,7 @@ export default function ImageSection() {
             >
                 <img
                     src="/images/about-us/about-image.jpg"
-                    alt=""
+                    alt="about-image"
                     className="h-full w-full object-cover object-center"
                 />
             </motion.div>
