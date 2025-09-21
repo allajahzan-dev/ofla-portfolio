@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // Image section
 export default function ImageSection() {
@@ -15,7 +16,10 @@ export default function ImageSection() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="h-full w-full"
             >
-                <img
+                <Image
+                    width={1000}
+                    height={1000}
+                    quality={100}
                     src="/images/about-us/about-image.jpg"
                     alt="about-image"
                     className="h-full w-full object-cover object-center"

@@ -48,7 +48,7 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                 .filter((itemImage) => itemImage !== undefined);
             return rItems;
         });
-    }, [params]);
+    }, [params, itemImage.relatedItems, itemImages]);
 
     return (
         <section
