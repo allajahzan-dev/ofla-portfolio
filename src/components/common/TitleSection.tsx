@@ -3,6 +3,7 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
 // Interface for Props
@@ -14,11 +15,17 @@ interface Props {
 
 // Title section
 export default function TitleSection({ title, description, children }: Props) {
+    const pathanme = usePathname();
+    const isAboutUs = pathanme === "/about-us";
+
     return (
         <section
-            className="h-[58vh] w-full relative px-4 bg-zinc-100 flex flex-col items-center justify-center
-            will-change-transform overflow-hidden
-            md:h-[68vh] xl:h-[calc(100vh-9vh)] md:px-5 xl:px-10"
+            className={cn(
+                "w-full relative px-4 bg-zinc-100 flex flex-col items-center justify-center",
+                "will-change-transform overflow-hidden",
+                isAboutUs ? "h-[70vh]" : "h-[58vh]",
+                "md:h-[68vh] xl:h-[calc(100vh-9vh)] md:px-5 xl:px-10"
+            )}
         >
             {/* Title */}
             <motion.div
