@@ -98,8 +98,8 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                                 Key features
                             </p>
                             <ul
-                                className="flex flex-col justify-center gap-0 text-base font-semibold
-                                md:text-lg"
+                                className="flex flex-col justify-center gap-0 text-base font-semibold leading-5 tracking-tight
+                                md:text-lg md:font-medium"
                             >
                                 {itemImage.keyFeatures.map((point, index) => (
                                     <li
@@ -122,8 +122,8 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
                                 Material Specifications
                             </p>
                             <ul
-                                className="flex flex-col justify-center gap-0 text-base font-semibold
-                                md:text-lg"
+                                className="flex flex-col justify-center gap-0 text-base font-semibold leading-5 tracking-tight
+                                md:text-lg md:font-medium"
                             >
                                 {itemImage.materialSpecification.map((point, index) => (
                                     <li

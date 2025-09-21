@@ -65,7 +65,7 @@ export default function TitleSection({ title, description, children }: Props) {
                         lg:pl-2 sm:w-[60%] md:w-[70%] lg:w-[55%] xl:w-[55%]"
                     >
                         <p
-                            className="text-lg font-semibold text-zinc-600 transform-gpu leading-5
+                            className="text-lg font-semibold text-zinc-600 will-change-transform leading-5
                             sm:text-xl xl:text-2xl sm:leading-6 xl:leading-7"
                         >
                             {description}
