@@ -52,8 +52,8 @@ export default function DetailsSection({ itemImages, itemImage }: Props) {
 
     return (
         <section
-            className="min-h-screen w-full relative z-0 px-4 pt-10 pb-40 bg-white flex flex-col gap-10 items-center 
-            rounded-b-[35px] -mt-0.5 will-change-transform overflow-hidden
+            className="min-h-screen w-full relative z-0 px-4 pt-10 pb-40 -mt-0.5 bg-white flex flex-col gap-10 items-center 
+            rounded-b-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 md:pt-20 xl:rounded-b-[50px]"
         >
             <div

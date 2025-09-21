@@ -20,8 +20,8 @@ export default function ImageSection({ products }: Props) {
 
     return (
         <section
-            className="min-h-screen relative z-30 px-4 pb-40 bg-zinc-100 flex flex-col gap-20 items-center 
-            -mt-0.5 rounded-b-[35px] will-change-transform overflow-hidden
+            className="min-h-screen relative z-30 px-4 pb-40 -mt-0.5 bg-zinc-100 flex flex-col gap-20 items-center 
+            rounded-b-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:rounded-b-[50px]"
         >
             {/* All images */}

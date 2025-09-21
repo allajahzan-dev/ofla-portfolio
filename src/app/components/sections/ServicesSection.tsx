@@ -12,8 +12,8 @@ export default async function ServicesSection() {
 
     return (
         <section
-            className="min-h-screen relative z-20 py-24 pb-16 bg-[#171717] text-white flex flex-col gap-20 items-center 
-            -mt-0.5 rounded-[35px] will-change-transform overflow-hidden
+            className="min-h-screen relative z-20 py-24 pb-16 -mt-0.5 bg-[#171717] text-white flex flex-col gap-20 items-center 
+            rounded-[35px] will-change-transform overflow-hidden
             xl:py-40 xl:pb-[calc(160px-64px)] lg:gap-40 xl:rounded-[50px]"
         >
             {/* Heading */}

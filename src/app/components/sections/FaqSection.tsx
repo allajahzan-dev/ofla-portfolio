@@ -17,8 +17,8 @@ export default async function FaqSection() {
 
     return (
         <section
-            className="h-fit relative z-10 px-4 py-24 bg-white flex flex-col gap-20 items-center 
-            -mt-0.5 rounded-[35px] will-change-transform overflow-hidden
+            className="h-fit relative z-10 px-4 py-24 -mt-0.5 bg-white flex flex-col gap-20 items-center 
+            rounded-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:py-40 xl:rounded-[50px]"
         >
             <div

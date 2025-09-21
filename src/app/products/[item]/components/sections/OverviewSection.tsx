@@ -19,8 +19,8 @@ export default function OverviewSection({ products }: Props) {
 
     return (
         <section
-            className="h-auto w-full relative px-4 pt-24 pb-10 bg-white flex flex-col items-center gap-20
-            -mt-0.5 rounded-t-[35px] will-change-transform overflow-hidden
+            className="h-auto w-full relative px-4 pt-24 pb-10 -mt-0.5 bg-white flex flex-col items-center gap-20
+            rounded-t-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:pt-40 xl:pb-5 xl:rounded-t-[50px]"
         >
             {/* Overview */}

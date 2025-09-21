@@ -79,8 +79,8 @@ export default function ImageSection({ item, product, itemImages }: Props) {
 
     return (
         <section
-            className="relative z-10 min-h-screen bg-white px-4 py-10 pb-40 flex flex-col items-center justify-between gap-10
-            -mt-0.5 rounded-b-[35px] will-change-transform overflow-hidden
+            className="relative z-10 min-h-screen bg-white px-4 py-10 pb-40 -mt-0.5 flex flex-col items-center justify-between gap-10
+            rounded-b-[35px] will-change-transform overflow-hidden
             md:px-5 xl:px-10 xl:py-32 xl:rounded-b-[50px]"
         >
             <div className="w-full flex flex-col">

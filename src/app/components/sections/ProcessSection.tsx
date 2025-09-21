@@ -10,8 +10,8 @@ export default async function ProcessSection() {
 
     return (
         <section
-            className="min-h-screen relative z-20 pt-24 bg-white flex flex-col items-center justify-between
-            mt-0.5 rounded-[35px] will-change-transform overflow-hidden
+            className="min-h-screen relative z-20 pt-24 -mt-0.5 bg-white flex flex-col items-center justify-between
+            rounded-[35px] will-change-transform overflow-hidden
             xl:pt-40 xl:rounded-[50px]"
         >
             {/* Title */}
