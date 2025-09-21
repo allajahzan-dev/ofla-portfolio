@@ -3,6 +3,7 @@ import RevealHeading from "@/components/animated/RevealHeading";
 import Image from "next/image";
 import { fetchLatestProducts } from "@/app/utils/fetchLatestProducts";
 import More from "@/components/common/More";
+import Link from "next/link";
 
 // Products section
 export default async function ProductsSection() {
@@ -48,8 +49,9 @@ export default async function ProductsSection() {
                 md:gap-y-10"
             >
                 {latestProducts.map((item) => (
-                    <figure
+                    <Link
                         key={item.id}
+                        href={item.href}
                         className="group flex flex-col w-full p-0 hover:bg-transparent transition-colors duration-300 rounded-4xl
                         lg:p-2 lg:hover:bg-zinc-100"
                     >
@@ -67,7 +69,7 @@ export default async function ProductsSection() {
                                 className="h-full w-full object-cover object-bottom scale-105"
                             />
                         </div>
-                        <figcaption className="w-full flex gap-2 p-5 py-5 cursor-pointer will-change-transform">
+                        <span className="w-full flex gap-2 p-5 py-5 cursor-pointer will-change-transform">
                             <div className="flex flex-col gap-2 flex-1">
                                 <h1
                                     className="text-2xl font-semibold
@@ -90,8 +92,8 @@ export default async function ProductsSection() {
                             >
                                 <ArrowRight className="w-5 h-5" />
                             </div>
-                        </figcaption>
-                    </figure>
+                        </span>
+                    </Link>
                 ))}
             </div>
 

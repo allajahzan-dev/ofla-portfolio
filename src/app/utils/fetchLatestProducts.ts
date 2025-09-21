@@ -5,6 +5,7 @@ export interface ILatestProduct {
     id: number;
     img: string;
     title: string;
+    href: string;
     description1: string;
     description2: string;
 }
