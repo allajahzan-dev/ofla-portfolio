@@ -3,7 +3,7 @@
 import { oswald } from "@/fonts/owald";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ReactNode, useLayoutEffect, useState } from "react";
+import { ReactNode } from "react";
 
 // Interface for Props
 interface Props {
@@ -14,24 +14,6 @@ interface Props {
 
 // Title section
 export default function TitleSection({ title, description, children }: Props) {
-    const [isSmall, setIsSmall] = useState<boolean>(false);
-
-    // Media query
-    useLayoutEffect(() => {
-        if (typeof window === "undefined") return;
-
-        const mq = window.matchMedia("(max-width: 767px)");
-        const handleResize = (e: MediaQueryListEvent | MediaQueryList) =>
-            setIsSmall(e.matches);
-
-        // Initial check
-        handleResize(mq);
-
-        // Listener
-        mq.addEventListener("change", handleResize);
-        return () => mq.removeEventListener("change", handleResize);
-    }, []);
-
     return (
         <section
             className="h-[58vh] w-full relative px-4 bg-zinc-100 flex flex-col items-center justify-center
@@ -40,7 +22,7 @@ export default function TitleSection({ title, description, children }: Props) {
         >
             {/* Title */}
             <motion.div
-                initial={isSmall ? { y: -20, scale: 1 } : { y: -40, scale: 0.9 }}
+                initial={{ y: -40, scale: 0.9 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="relative top-2 w-full grid grid-cols-1 gap-5

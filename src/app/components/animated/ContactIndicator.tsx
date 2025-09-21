@@ -13,6 +13,7 @@ export default function ContactIndicator() {
     return (
         <div
             onMouseLeave={() => setIsHovered(false)}
+            onClick={() => setIsHovered(false)}
             className={cn("fixed z-10 bottom-5 right-5 will-change-transform")}
         >
             <div className="relative flex flex-col items-center gap-3">
@@ -23,19 +24,44 @@ export default function ContactIndicator() {
                         isHovered && "opacity-100 translate-y-0"
                     )}
                 >
-                    <Image
-                        src="/svgs/home/whatsapp.svg"
-                        alt="WhatsApp"
-                        width={100}
-                        height={100}
-                        className="w-8 cursor-pointer"
-                    />
-                    <Image src="/svgs/home/gmail.svg" alt="Gmail" width={100} height={100} className="w-8 cursor-pointer" />
+                    {/* Whatsapp */}
+                    <a
+                        href="https://wa.me/+971505027003"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/svgs/home/whatsapp.svg"
+                            alt="WhatsApp"
+                            width={100}
+                            height={100}
+                            className="w-8 cursor-pointer"
+                        />
+                    </a>
+
+                    {/* Gmail */}
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ofla.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/svgs/home/gmail.svg"
+                            alt="Gmail"
+                            width={100}
+                            height={100}
+                            className="w-8 cursor-pointer"
+                        />
+                    </a>
                 </div>
 
                 {/* Main button */}
                 <div
                     onMouseEnter={() => setIsHovered(true)}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        setIsHovered(true);
+                    }}
                     className="p-3 bg-[#171717]/30 text-white rounded-full cursor-pointer shadow"
                 >
                     <AnimatePresence mode="wait">
