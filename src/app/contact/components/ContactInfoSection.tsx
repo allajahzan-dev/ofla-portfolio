@@ -8,6 +8,8 @@ export default function ContactInfoSection() {
             rounded-b-[35px] will-change-transform overflow-hidden
             lg:py-40 xl:gap-40 lg:rounded-b-[50px]"
         >
+
+          
       
     </section>
   )
