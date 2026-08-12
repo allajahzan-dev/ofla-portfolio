@@ -9,8 +9,8 @@
                 "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-br.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/executive/black/chair-b.jpeg"
             ],
-            "title": "Premium Executive Mesh Chair",
-            "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
+            "title": "Henry Executive Chair Black",
+            "description": "Henry executive chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
             "category": "Ergonomic",
             "subCategory": "Executive",
             "points": [
@@ -54,8 +54,8 @@
                 "/images/item/pro-seating/ergonomic/chair1/task/black/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/task/black/chair-b.jpeg"
             ],
-            "title": "Ergonomic Task Mesh Chair",
-            "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
+            "title": "Henry Task Chair Black",
+            "description": "Henry task chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
             "category": "Ergonomic",
             "subCategory": "Task",
             "points": [
@@ -99,7 +99,7 @@
                 "/images/item/pro-seating/ergonomic/chair1/guest/black/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/guest/black/chair-bl.jpeg"
             ],
-            "title": "Professional Guest Mesh Chair",
+            "title": "Henry Guest Chair Black",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
             "subCategory": "Guest",
@@ -145,8 +145,8 @@
                 "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/executive/grey/chair-br.jpeg"
             ],
-            "title": "Premium Executive Mesh Chair",
-            "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
+            "title": "Henry Executive Chair Grey",
+            "description": "Henry executive chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
             "category": "Ergonomic",
             "subCategory": "Executive",
             "points": [
@@ -190,8 +190,8 @@
                 "/images/item/pro-seating/ergonomic/chair1/task/grey/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/task/grey/chair-b.jpeg"
             ],
-            "title": "Ergonomic Task Mesh Chair",
-            "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
+            "title": "Henry Task Chair Grey",
+            "description": "Henry task chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
             "category": "Ergonomic",
             "subCategory": "Task",
             "points": [
@@ -235,8 +235,8 @@
                 "/images/item/pro-seating/ergonomic/chair1/guest/grey/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/guest/grey/chair-bl.jpeg"
             ],
-            "title": "Professional Guest Mesh Chair",
-            "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
+            "title": "Henry Guest Chair Grey",
+            "description": "Henry guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
             "subCategory": "Guest",
             "points": [
@@ -281,7 +281,7 @@
                 "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/executive/white/chair-br.jpeg"
             ],
-            "title": "Premium Executive Mesh Chair",
+            "title": "Henry Executive Chair White",
             "description": "Premium executive mesh chair featuring advanced lumbar support, breathable mesh backrest, adjustable height, padded armrests, and ergonomic comfort design.",
             "category": "Ergonomic",
             "subCategory": "Executive",
@@ -326,7 +326,7 @@
                 "/images/item/pro-seating/ergonomic/chair1/task/white/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/task/white/chair-b.jpeg"
             ],
-            "title": "Ergonomic Task Mesh Chair",
+            "title": "Henry Task Chair White",
             "description": "Ergonomic mesh chair with lumbar support, breathable backrest, padded seat, adjustable height, swivel function, and tilt control for all-day comfort.",
             "category": "Ergonomic",
             "subCategory": "Task",
@@ -372,7 +372,7 @@
                 "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair1/guest/white/chair-br.jpeg"
             ],
-            "title": "Professional Guest Mesh Chair",
+            "title": "Henry Guest Chair White",
             "description": "Stylish cantilever guest chair with breathable mesh back, chrome steel frame, padded seat, fixed armrests, and stationary base for visitor seating.",
             "category": "Ergonomic",
             "subCategory": "Guest",
@@ -411,257 +411,6 @@
             ]
         },
         {
-            "id": 10,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black/chair-br.jpeg"
-            ],
-            "title": "Premium Executive Mesh Chair",
-            "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated black finish for premium office comfort.",
-            "category": "Ergonomic",
-            "subCategory": "Executive",
-            "points": [
-                "Advanced lumbar support system",
-                "Distinctive mesh pattern design",
-                "Executive comfort seating"
-            ],
-            "materialSpecification": [
-                "Backrest: Premium patterned mesh fabric in black",
-                "Headrest: Adjustable padded cushion with ergonomic curve",
-                "Seat: High-density molded foam with black fabric upholstery",
-                "Frame: Black reinforced nylon and steel construction",
-                "Base: Heavy-duty black nylon 5-star base",
-                "Gas cylinder: Class 3 certified pneumatic lift",
-                "Armrests: Adjustable black PP with soft padding"
-            ],
-            "keyFeatures": [
-                "High-back design with adjustable padded headrest",
-                "Distinctive patterned mesh backrest for ventilation",
-                "Integrated lumbar support system",
-                "Height-adjustable padded seat cushion",
-                "360-degree swivel with smooth tilt mechanism",
-                "Adjustable armrests with black finish",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-black",
-                "fill-zinc-600",
-                "fill-gray-400"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 11,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/black/chair-br.jpeg"
-            ],
-            "title": "Task High-Back Mesh Chair",
-            "description": "Sleek high-back task chair in professional all-black design, featuring distinctive patterned mesh support and ergonomic functionality for enhanced productivity.",
-            "category": "Ergonomic",
-            "subCategory": "Task",
-            "points": [
-                "High-back mesh support",
-                "All-black professional design",
-                "Enhanced task productivity"
-            ],
-            "materialSpecification": [
-                "Backrest: High-density patterned mesh fabric in black",
-                "Seat: High-density molded foam with black fabric upholstery",
-                "Frame: Black reinforced nylon and steel construction",
-                "Base: Heavy-duty black nylon 5-star base",
-                "Gas cylinder: Class 3 certified pneumatic lift",
-                "Armrests: Adjustable black PP with ergonomic design",
-                "Casters: 60mm dual-wheel nylon rollers"
-            ],
-            "keyFeatures": [
-                "High-back design with distinctive patterned mesh",
-                "Breathable mesh backrest with integrated lumbar support",
-                "Ergonomic lumbar support system",
-                "Height-adjustable padded seat cushion",
-                "360-degree swivel with tilt mechanism",
-                "Adjustable armrests with black finish",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-black",
-                "fill-zinc-600",
-                "fill-gray-400"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 12,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/guest/black/chair-br.jpeg"
-            ],
-            "title": "Guest Cantilever Mesh Chair",
-            "description": "Professional cantilever guest chair with distinctive patterned mesh design in sleek black finish, perfect for modern office visitor seating areas.",
-            "category": "Ergonomic",
-            "subCategory": "Guest",
-            "points": [
-                "Cantilever frame design",
-                "Distinctive mesh pattern comfort",
-                "Professional visitor seating"
-            ],
-            "materialSpecification": [
-                "Backrest: High-quality patterned mesh fabric in black",
-                "Seat: Medium-density foam with black fabric upholstery",
-                "Frame: Black powder-coated steel cantilever construction",
-                "Base: Tubular steel with black finish",
-                "Armrests: Fixed black steel with ergonomic design",
-                "Foot caps: Non-slip rubber protectors",
-                "Hardware: Corrosion-resistant black steel fittings"
-            ],
-            "keyFeatures": [
-                "High-back design with distinctive patterned mesh",
-                "Cantilever black steel frame for stability",
-                "No-wheel stationary base design",
-                "Breathable patterned mesh backrest for ventilation",
-                "Padded seat cushion for guest comfort",
-                "Fixed armrests with ergonomic positioning",
-                "Professional all-black color scheme"
-            ],
-            "colors": [
-                "fill-black",
-                "fill-zinc-600",
-                "fill-gray-400"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 13,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-fr-opened.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/black-grey/chair-br.jpeg"
-            ],
-            "title": "Premium Executive Mesh Chair",
-            "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated grey finish for premium office comfort.",
-            "category": "Ergonomic",
-            "subCategory": "Executive",
-            "points": [
-                "Advanced lumbar support system",
-                "Distinctive mesh pattern design",
-                "Executive comfort seating"
-            ],
-            "materialSpecification": [
-                "Backrest: Premium patterned mesh fabric in grey",
-                "Headrest: Adjustable padded cushion with ergonomic curve",
-                "Seat: High-density molded foam with grey fabric upholstery",
-                "Frame: Black reinforced nylon and steel construction",
-                "Base: Heavy-duty black nylon 5-star base",
-                "Gas cylinder: Class 3 certified pneumatic lift",
-                "Armrests: Adjustable black PP with soft padding"
-            ],
-            "keyFeatures": [
-                "High-back design with adjustable padded headrest",
-                "Distinctive patterned mesh backrest for ventilation",
-                "Integrated lumbar support system",
-                "Height-adjustable padded seat cushion",
-                "360-degree swivel with smooth tilt mechanism",
-                "Adjustable armrests with black finish",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-zinc-600",
-                "fill-zinc-400",
-                "fill-black"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 14,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/executive/grey/chair-br.jpeg"
-            ],
-            "title": "Premium Executive Mesh Chair",
-            "description": "Luxury executive chair with distinctive patterned mesh design, adjustable headrest, ergonomic features, and sophisticated grey finish for premium office comfort.",
-            "category": "Ergonomic",
-            "subCategory": "Executive",
-            "points": [
-                "Advanced lumbar support system",
-                "Distinctive mesh pattern design",
-                "Executive comfort seating"
-            ],
-            "materialSpecification": [
-                "Backrest: Premium patterned mesh fabric in grey",
-                "Headrest: Adjustable padded cushion with ergonomic curve",
-                "Seat: High-density molded foam with grey fabric upholstery",
-                "Frame: Grey reinforced nylon and steel construction",
-                "Base: Heavy-duty grey nylon 5-star base",
-                "Gas cylinder: Class 3 certified pneumatic lift",
-                "Armrests: Adjustable grey PP with soft padding"
-            ],
-            "keyFeatures": [
-                "High-back design with adjustable padded headrest",
-                "Distinctive patterned mesh backrest for ventilation",
-                "Integrated lumbar support system",
-                "Height-adjustable padded seat cushion",
-                "360-degree swivel with smooth tilt mechanism",
-                "Adjustable armrests with grey finish",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-gray-400",
-                "fill-black",
-                "fill-zinc-600"
-            ],
-            "relatedItems": []
-        },
-        {
-            "id": 15,
-            "img": [
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-f.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-fr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-sr.jpeg",
-                "/images/item/pro-seating/ergonomic/chair2/task/grey/chair-br.jpeg"
-            ],
-            "title": "Task High-Back Mesh Chair",
-            "description": "Sleek high-back task chair in professional all-grey design, featuring distinctive patterned mesh support and ergonomic functionality for enhanced productivity.",
-            "category": "Ergonomic",
-            "subCategory": "Task",
-            "points": [
-                "High-back mesh support",
-                "All-grey professional design",
-                "Enhanced task productivity"
-            ],
-            "materialSpecification": [
-                "Backrest: High-density patterned mesh fabric in grey",
-                "Seat: High-density molded foam with grey fabric upholstery",
-                "Frame: Grey reinforced nylon and steel construction",
-                "Base: Heavy-duty grey nylon 5-star base",
-                "Gas cylinder: Class 3 certified pneumatic lift",
-                "Armrests: Adjustable grey PP with ergonomic design",
-                "Casters: 60mm dual-wheel nylon rollers"
-            ],
-            "keyFeatures": [
-                "High-back design with distinctive patterned mesh",
-                "Breathable mesh backrest with integrated lumbar support",
-                "Ergonomic lumbar support system",
-                "Height-adjustable padded seat cushion",
-                "360-degree swivel with tilt mechanism",
-                "Adjustable armrests with grey finish",
-                "Smooth-rolling dual-wheel casters"
-            ],
-            "colors": [
-                "fill-gray-400",
-                "fill-black",
-                "fill-zinc-600"
-            ],
-            "relatedItems": []
-        },
-        {
             "id": 16,
             "img": [
                 "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-f.jpeg",
@@ -670,8 +419,8 @@
                 "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-br.jpeg",
                 "/images/item/pro-seating/ergonomic/chair3/executive/white/chair-b.jpeg"
             ],
-            "title": "Executive High-Back Mesh Chair",
-            "description": "Premium high-back executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
+            "title": "Cosmos Executive Chair White",
+            "description": "Cosmos executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
             "category": "Ergonomic",
             "subCategory": "Executive",
             "points": [
@@ -711,8 +460,8 @@
                 "/images/item/pro-seating/ergonomic/chair3/task/white/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair3/task/white/chair-br.jpeg"
             ],
-            "title": "Task Mid-Back Mesh Chair",
-            "description": "Efficient mid-back task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
+            "title": "Cosmos Task Chair White",
+            "description": "Cosmos task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
             "category": "Ergonomic",
             "subCategory": "Task",
             "points": [
@@ -752,8 +501,8 @@
                 "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair3/executive/black/chair-br.jpeg"
             ],
-            "title": "Executive High-Back Mesh Chair",
-            "description": "Premium high-back executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
+            "title": "Cosmos Executive Chair Black",
+            "description": "Cosmos executive chair featuring adjustable headrest, breathable mesh design, and elegant white accents for superior comfort and professional style.",
             "category": "Ergonomic",
             "subCategory": "Executive",
             "points": [
@@ -795,8 +544,8 @@
                 "/images/item/pro-seating/ergonomic/chair3/task/black/chair-f.jpeg",
                 "/images/item/pro-seating/ergonomic/chair3/task/black/chair-fr.jpeg"
             ],
-            "title": "Task Mid-Back Mesh Chair",
-            "description": "Efficient mid-back task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
+            "title": "Cosmos Task Chair Black",
+            "description": "Cosmos task chair with breathable mesh support, clean white frame design, and essential ergonomic features for productive daily work.",
             "category": "Ergonomic",
             "subCategory": "Task",
             "points": [
@@ -840,8 +589,8 @@
                 "/images/item/pro-seating/ergonomic/chair4/task/black/chair-sr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair4/task/black/chair-b.jpeg"
             ],
-            "title": "Task Mid-Back Mesh Chair",
-            "description": "Sleek high-back task chair in professional all-black design, featuring breathable mesh support, integrated headrest, and ergonomic functionality for enhanced productivity.",
+            "title": "Butterfly Task Chair",
+            "description": "Sleek high-back butterfly task chair in professional all-black design, featuring breathable mesh support, integrated headrest, and ergonomic functionality for enhanced productivity.",
             "category": "Ergonomic",
             "subCategory": "Task",
             "points": [
@@ -880,8 +629,8 @@
                 "/images/item/pro-seating/ergonomic/chair4/guest/grey/chair-fr.jpeg",
                 "/images/item/pro-seating/ergonomic/chair4/guest/grey/chair-br.jpeg"
             ],
-            "title": "Guest Cantilever Mesh Chair",
-            "description": "Sleek high-back task chair in professional all-black design, featuring breathable mesh support, integrated headrest, and ergonomic functionality for enhanced productivity.",
+            "title": "Butterfly Guest Chair",
+            "description": "Sleek high-back butterfly task chair in professional all-black design, featuring breathable mesh support, integrated headrest, and ergonomic functionality for enhanced productivity.",
             "category": "Ergonomic",
             "subCategory": "Guest",
             "points": [
