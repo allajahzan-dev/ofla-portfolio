@@ -3,9 +3,9 @@ import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
 import ServicesSection from "./ServicesSection";
 import FaqSection from "./FaqSection";
-// import ProcessSection from "./ProcessSection";
+import ProcessSection from "./ProcessSection";
 import ContactSection from "@/components/common/ContactSection";
-import ProjectSection from "./ProjectSection";
+// import ProjectSection from "./ProjectSection";
 
 // Main section
 function MainSection() {
@@ -24,8 +24,8 @@ function MainSection() {
         <AboutSection />
         <ProductsSection />
         <ServicesSection />
-        <ProjectSection />
-        {/* <ProcessSection /> */}
+        {/* <ProjectSection /> */}
+        <ProcessSection />
         <FaqSection />
         <ContactSection />
       </section>
